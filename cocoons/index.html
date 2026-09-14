@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>COCOONS Boutique — Designer Ethnic & Contemporary Wear | DP Road, Aundh, Pune</title>
+<meta name="description" content="Step into COCOONS on DP Road, Aundh, Pune. Explore designer Indo-Western fusion, pure handwoven silks, custom festive kurtis, and bespoke tailoring.">
+
+<!-- Google Fonts: Italiana for high-fashion editorial elegance + Plus Jakarta Sans for clean modern readability -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+<!-- Lucide Icons -->
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<style>
+:root {
+  --primary-deep: #431b18;      /* Rich Espresso Plum */
+  --primary: #85332c;           /* Warm Terracotta Crimson */
+  --primary-light: #a84b43;
+  --accent-gold: #cfa85f;       /* Warm Champagne Gold */
+  --accent-soft: #f4e8d3;       /* Silk Ecru */
+  --cream: #fbf9f6;             /* Warm Pearl Linen */
+  --cream-dark: #f2ede4;
+  --surface: #ffffff;
+  --border: #e8e2d8;
+  --text-dark: #211c19;
+  --text-muted: #746c66;
+  --wa: #25D366;
+  --wa-dark: #128C7E;
+  --font-display: 'Italiana', serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --shadow-sm: 0 2px 10px rgba(67, 27, 24, 0.04);
+  --shadow-md: 0 10px 30px rgba(67, 27, 24, 0.07);
+  --shadow-lg: 0 20px 50px rgba(67, 27, 24, 0.12);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--cream);
+  color: var(--text-dark);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Concept Demo Banner */
+.concept-header {
+  background: #1c1917;
+  color: #e7e5e4;
+  font-size: 12px;
+  padding: 8px 16px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.concept-header a {
+  color: #facc15;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* Announcement Bar */
+.announcement-bar {
+  background: var(--primary-deep);
+  color: #fce7e7;
+  padding: 8px 16px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.announcement-bar span {
+  color: var(--accent-gold);
+}
+
+/* Site Navigation */
+header.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(251, 249, 246, 0.94);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  transition: all 0.2s ease;
+}
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-box {
+  display: flex;
+  flex-direction: column;
+}
+.logo-title {
+  font-family: var(--font-display);
+  font-size: 32px;
+  letter-spacing: 0.12em;
+  color: var(--primary-deep);
+  line-height: 1;
+  font-weight: 400;
+}
+.logo-subtitle {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: var(--primary);
+  font-weight: 700;
+  margin-top: 4px;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  list-style: none;
+}
+.nav-links a {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-dark);
+  transition: color 0.2s;
+}
+.nav-links a:hover {
+  color: var(--primary);
+}
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.btn-phone {
+  text-decoration: none;
+  color: var(--primary-deep);
+  font-weight: 700;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.btn-nav-wa {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #25D366;
+  color: #fff;
+  padding: 9px 18px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.25);
+}
+.btn-nav-wa:hover {
+  background: #1ea952;
+  transform: translateY(-1px);
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  padding: 60px 24px 80px;
+  background: radial-gradient(circle at 80% 20%, rgba(207, 168, 95, 0.12) 0%, transparent 60%),
+              radial-gradient(circle at 10% 80%, rgba(133, 51, 44, 0.07) 0%, transparent 50%),
+              var(--cream);
+  border-bottom: 1px solid var(--border);
+}
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 48px;
+  align-items: center;
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(133, 51, 44, 0.08);
+  color: var(--primary);
+  border: 1px solid rgba(133, 51, 44, 0.18);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.hero-title {
+  font-family: var(--font-display);
+  font-size: 58px;
+  line-height: 1.12;
+  color: var(--primary-deep);
+  letter-spacing: 0.02em;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.hero-title em {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--primary);
+  font-weight: 500;
+}
+.hero-subtitle {
+  font-size: 16px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 32px;
+  max-width: 540px;
+}
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+.btn-hero-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--primary);
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(133, 51, 44, 0.28);
+  transition: all 0.2s;
+}
+.btn-hero-primary:hover {
+  background: var(--primary-deep);
+  transform: translateY(-2px);
+}
+.btn-hero-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  color: var(--primary-deep);
+  border: 1px solid var(--border);
+  padding: 14px 24px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.btn-hero-secondary:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.hero-stats {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+.stat-item h3 {
+  font-family: var(--font-display);
+  font-size: 32px;
+  color: var(--primary-deep);
+  font-weight: 400;
+  line-height: 1;
+}
+.stat-item p {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 4px;
+}
+
+/* Hero Visual Showcase */
+.hero-visual {
+  position: relative;
+}
+.hero-main-card {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(207, 168, 95, 0.3);
+}
+.hero-main-card img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+.hero-overlay-pill {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 16px 20px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.overlay-info h4 {
+  font-family: var(--font-serif);
+  font-size: 16px;
+  color: var(--primary-deep);
+  font-weight: 600;
+}
+.overlay-info p {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.pill-badge {
+  background: var(--accent-soft);
+  color: var(--primary-deep);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* Trust Bar */
+.trust-strip {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 24px;
+}
+.trust-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.trust-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.trust-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--cream-dark);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.trust-text h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary-deep);
+}
+.trust-text p {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* Collections Lookbook Section */
+.collections-section {
+  padding: 80px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.section-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+.section-title {
+  font-family: var(--font-display);
+  font-size: 42px;
+  color: var(--primary-deep);
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+}
+.section-desc {
+  font-size: 15px;
+  color: var(--text-muted);
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+/* Filter Tabs */
+.filter-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.tab-btn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-dark);
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.tab-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.tab-btn.active {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+  box-shadow: 0 4px 14px rgba(133, 51, 44, 0.25);
+}
+
+/* Lookbook Grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+.product-card {
+  background: var(--surface);
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+.product-img-box {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+.product-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.product-card:hover .product-img-box img {
+  transform: scale(1.05);
+}
+.product-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(6px);
+  color: var(--primary-deep);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 999px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.product-details {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+.product-cat {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--primary);
+  margin-bottom: 6px;
+}
+.product-title {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  color: var(--primary-deep);
+  font-weight: 600;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+.product-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+.product-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+.product-price {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary-deep);
+}
+.btn-wa-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #25D366;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.btn-wa-card:hover {
+  background: #1ea952;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35);
+}
+
+/* Tailoring & Custom Styling Section */
+.services-section {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 80px 24px;
+}
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 56px;
+  align-items: center;
+}
+.service-photo-stack {
+  position: relative;
+}
+.service-photo-stack img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: var(--shadow-lg);
+}
+.floating-quote-card {
+  position: absolute;
+  bottom: -24px;
+  right: -20px;
+  background: var(--primary-deep);
+  color: #fff;
+  padding: 20px 24px;
+  border-radius: 16px;
+  max-width: 280px;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(207, 168, 95, 0.3);
+}
+.floating-quote-card p {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #fce7e7;
+}
+.floating-quote-card span {
+  display: block;
+  margin-top: 8px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-gold);
+  font-weight: 700;
+}
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 28px;
+}
+.service-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 16px;
+  background: var(--cream);
+  border-radius: 16px;
+  border: 1px solid var(--border);
+}
+.service-icon {
+  width: 44px;
+  height: 44px;
+  background: var(--accent-soft);
+  color: var(--primary-deep);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.service-content h4 {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  color: var(--primary-deep);
+  margin-bottom: 4px;
+}
+.service-content p {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* Reviews Section */
+.reviews-section {
+  padding: 80px 24px;
+  background: var(--cream);
+}
+.reviews-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 40px;
+}
+.review-card {
+  background: var(--surface);
+  border-radius: 20px;
+  padding: 28px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.stars {
+  color: #f59e0b;
+  display: flex;
+  gap: 4px;
+  margin-bottom: 14px;
+}
+.review-text {
+  font-size: 14px;
+  color: #374151;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+.reviewer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.reviewer-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--cream-dark);
+  color: var(--primary-deep);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+}
+.reviewer-info h5 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary-deep);
+}
+.reviewer-info span {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+/* Location & Studio Details */
+.visit-section {
+  padding: 80px 24px;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+}
+.visit-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 52px;
+  align-items: center;
+}
+.visit-info h2 {
+  font-family: var(--font-display);
+  font-size: 38px;
+  color: var(--primary-deep);
+  margin-bottom: 16px;
+}
+.visit-info p.lead {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+.location-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 32px;
+}
+.loc-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px 20px;
+  background: var(--cream);
+  border-radius: 14px;
+  border: 1px solid var(--border);
+}
+.loc-item-icon {
+  color: var(--primary);
+  margin-top: 2px;
+}
+.loc-item-text h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary-deep);
+  margin-bottom: 3px;
+}
+.loc-item-text p {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+.visit-cta-group {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.btn-maps {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--primary);
+  color: #fff;
+  padding: 13px 24px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.btn-maps:hover {
+  background: var(--primary-deep);
+}
+.btn-call-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  color: var(--primary-deep);
+  border: 1px solid var(--border);
+  padding: 13px 22px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.btn-call-outline:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.hours-box {
+  background: var(--primary-deep);
+  color: #fff;
+  padding: 36px;
+  border-radius: 24px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(207, 168, 95, 0.25);
+}
+.hours-box h3 {
+  font-family: var(--font-display);
+  font-size: 28px;
+  margin-bottom: 6px;
+  color: #fff;
+}
+.hours-box p.hours-sub {
+  font-size: 13px;
+  color: #fca5a5;
+  margin-bottom: 24px;
+}
+.hours-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+}
+.hours-table tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.hours-table td {
+  padding: 10px 0;
+  font-size: 13px;
+}
+.hours-table .day {
+  color: #f5d0fe;
+  font-weight: 500;
+}
+.hours-table .time {
+  text-align: right;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Harshal's Launch Pitch Banner */
+.launch-banner {
+  background: linear-gradient(135deg, #2b0e0c 0%, #431b18 50%, #1c0a09 100%);
+  color: #fff;
+  padding: 56px 24px;
+  text-align: center;
+  border-top: 1px solid var(--border);
+}
+.launch-inner {
+  max-width: 740px;
+  margin: 0 auto;
+}
+.launch-pill {
+  display: inline-block;
+  background: rgba(207, 168, 95, 0.2);
+  color: var(--accent-gold);
+  border: 1px solid rgba(207, 168, 95, 0.4);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 16px;
+}
+.launch-inner h3 {
+  font-family: var(--font-display);
+  font-size: 36px;
+  margin-bottom: 14px;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+.launch-inner p {
+  font-size: 14px;
+  color: #f2ede4;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+.btn-hire-harshal {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--wa);
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
+  transition: all 0.2s;
+}
+.btn-hire-harshal:hover {
+  background: #1ea952;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer.site-footer {
+  background: #141110;
+  color: #a8a29e;
+  padding: 40px 24px 30px;
+  text-align: center;
+  font-size: 12px;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.footer-links a {
+  color: #e7e5e4;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+.footer-links a:hover {
+  color: var(--accent-gold);
+}
+
+/* Floating WhatsApp Button */
+.floating-wa-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #25D366;
+  color: #ffffff;
+  padding: 14px 22px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
+  transition: all 0.25s ease;
+}
+.floating-wa-btn:hover {
+  background: #1ea952;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 12px 36px rgba(37, 211, 102, 0.5);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 900px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .hero-title {
+    font-size: 42px;
+  }
+  .hero-main-card img {
+    height: 400px;
+  }
+  .trust-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .services-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+  .visit-container {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .nav-links {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-section {
+    padding: 36px 16px 50px;
+  }
+  .hero-title {
+    font-size: 34px;
+  }
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+  .trust-container {
+    grid-template-columns: 1fr;
+  }
+  .hero-main-card img {
+    height: 320px;
+  }
+  .floating-quote-card {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    margin-top: 16px;
+  }
+  .floating-wa-btn span {
+    display: none;
+  }
+  .floating-wa-btn {
+    padding: 14px;
+    border-radius: 50%;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Concept Demo Banner for Owner -->
+<div class="concept-header">
+  <span>💡 <strong>Concept Website Demo</strong> crafted for <strong>COCOONS Boutique</strong> (DP Road, Aundh, Pune)</span>
+  <span>•</span>
+  <a href="https://wa.me/918459461141?text=Hi%20Harshal,%20I%20saw%20the%20COCOONS%20website%20preview.%20Let's%20talk!" target="_blank" rel="noopener">Claim & Launch this Official Site in 48 Hours →</a>
+</div>
+
+<!-- Top Announcement Bar -->
+<div class="announcement-bar">
+  <span>✨ Festive & Contemporary Indo-Western Collection</span> • Now In-Store on DP Road, Aundh • Custom Tailoring Available
+</div>
+
+<!-- Site Header -->
+<header class="site-header">
+  <div class="nav-container">
+    <div class="logo-box">
+      <span class="logo-title">COCOONS</span>
+      <span class="logo-subtitle">Designer Studio &bull; Aundh</span>
+    </div>
+    
+    <ul class="nav-links">
+      <li><a href="#collections">Collections</a></li>
+      <li><a href="#styling">Personal Styling</a></li>
+      <li><a href="#reviews">Client Love</a></li>
+      <li><a href="#visit">Visit Studio</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="tel:+917507245454" class="btn-phone">
+        <i data-lucide="phone" style="width:15px;height:15px;"></i>
+        <span style="display:none;@media(min-width:768px){display:inline;}">075072 45454</span>
+      </a>
+      <a href="https://wa.me/917507245454?text=Hi%20COCOONS,%20I'd%20like%20to%20enquire%20about%20your%20new%20arrivals" class="btn-nav-wa" target="_blank" rel="noopener">
+        <i data-lucide="message-circle" style="width:16px;height:16px;"></i>
+        <span>WhatsApp Store</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i data-lucide="sparkles" style="width:14px;height:14px;"></i>
+          <span>Curated Designer Boutique &bull; Aundh, Pune</span>
+        </div>
+        <h1 class="hero-title">
+          Contemporary Grace, <em>Handcrafted Silhouettes.</em>
+        </h1>
+        <p class="hero-subtitle">
+          From ethereal festive kurtis and breathable luxury linens to contemporary Indo-Western ensembles and bespoke custom tailoring. Discover your signature silhouette at COCOONS on DP Road.
+        </p>
+
+        <div class="hero-actions">
+          <a href="https://wa.me/917507245454?text=Hi%20COCOONS,%20I'm%20looking%20for%20a%20designer%20outfit%20for%20an%20upcoming%20event.%20Can%20you%20share%20current%20in-store%20options?" class="btn-hero-primary" target="_blank" rel="noopener">
+            <i data-lucide="message-circle" style="width:18px;height:18px;"></i>
+            <span>Enquire on WhatsApp</span>
+          </a>
+          <a href="#collections" class="btn-hero-secondary">
+            <span>Explore Lookbook</span>
+            <i data-lucide="arrow-down" style="width:16px;height:16px;"></i>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h3>4.8★</h3>
+            <p>Google Customer Rating</p>
+          </div>
+          <div class="stat-item">
+            <h3>100%</h3>
+            <p>Handpicked Premium Fabrics</p>
+          </div>
+          <div class="stat-item">
+            <h3>DP Road</h3>
+            <p>Prime Aundh Location</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Showcase -->
+      <div class="hero-visual">
+        <div class="hero-main-card">
+          <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=1000&q=80" alt="COCOONS Designer Boutique Pune">
+          <div class="hero-overlay-pill">
+            <div class="overlay-info">
+              <h4>Spring & Festive Edit 2026</h4>
+              <p>Handcrafted Chanderi, Organza & Raw Silk</p>
+            </div>
+            <span class="pill-badge">New In Store</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Strip -->
+  <section class="trust-strip">
+    <div class="trust-container">
+      <div class="trust-card">
+        <div class="trust-icon"><i data-lucide="sparkles"></i></div>
+        <div class="trust-text">
+          <h4>Exclusive Designs</h4>
+          <p>Limited-edition silhouettes</p>
+        </div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon"><i data-lucide="scissors"></i></div>
+        <div class="trust-text">
+          <h4>Custom Alterations</h4>
+          <p>Tailored for your perfect fit</p>
+        </div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon"><i data-lucide="gem"></i></div>
+        <div class="trust-text">
+          <h4>Artisanal Fabrics</h4>
+          <p>Pure silk, linens & mulmul</p>
+        </div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon"><i data-lucide="map-pin"></i></div>
+        <div class="trust-text">
+          <h4>Sanghvi Nagar, Aundh</h4>
+          <p>Trade field Building, DP Rd</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lookbook / Collections -->
+  <section class="collections-section" id="collections">
+    <div class="section-header">
+      <span class="section-tag">Curated Collections</span>
+      <h2 class="section-title">The COCOONS Lookbook</h2>
+      <p class="section-desc">Each piece is hand-selected for the discerning Pune woman who appreciates timeless craftsmanship paired with modern wearability.</p>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="filter-tabs">
+      <button class="tab-btn active" onclick="filterCategory('all', this)">All Ensembles</button>
+      <button class="tab-btn" onclick="filterCategory('indowestern', this)">Indo-Western Fusion</button>
+      <button class="tab-btn" onclick="filterCategory('festive', this)">Festive Kurtis & Sets</button>
+      <button class="tab-btn" onclick="filterCategory('dresses', this)">Contemporary Dresses</button>
+      <button class="tab-btn" onclick="filterCategory('tailoring', this)">Custom Tailored Fits</button>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="products-grid">
+      <!-- Item 1 -->
+      <div class="product-card" data-category="indowestern">
+        <div class="product-img-box">
+          <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=80" alt="Embroidered Indo-Western Cape Set">
+          <span class="product-badge">Trending</span>
+        </div>
+        <div class="product-details">
+          <div>
+            <span class="product-cat">Indo-Western Fusion</span>
+            <h3 class="product-title">Embroidered Silk Cape & Dhoti Set</h3>
+            <p class="product-desc">Contemporary fusion ensemble featuring delicate zardozi detailing over a structured raw silk cape paired with fluid tulip trousers.</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">Sizes S to XXL</span>
+            <a href="https://wa.me/917507245454?text=Hi%20COCOONS,%20I'm%20interested%20in%20the%20Embroidered%20Silk%20Cape%20%26%20Dhoti%20Set.%20Is%20it%20available%20in-store?" class="btn-wa-card" target="_blank" rel="noopener">
+              <i data-lucide="message-circle" style="width:14px;height:14px;"></i> Enquire
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="product-card" data-category="festive">
+        <div class="product-img-box">
+          <img src="https://images.unsplash.com/photo-1596783074918-c84cb06531ca?auto=format&fit=crop&w=800&q=80" alt="Hand-painted Organza Kurta Set">
+          <span class="product-badge">Handcrafted</span>
+        </div>
+        <div class="product-details">
+          <div>
+            <span class="product-cat">Festive Wear</span>
+            <h3 class="product-title">Floral Hand-Painted Organza Kurta</h3>
+            <p class="product-desc">Pure lightweight organza with bespoke floral brush strokes, hand-cut scallop borders, and fine gota patti accents for summer celebrations.</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">Pastel Palette</span>
+            <a href="https://wa.me/917507245454?text=Hi%20COCOONS,%20I'd%20like%20to%20know%20more%20about%20the%20Floral%20Hand-Painted%20Organza%20Kurta%20Set" class="btn-wa-card" target="_blank" rel="noopener">
+              <i data-lucide="message-circle" style="width:14px;height:14px;"></i> Enquire
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="product-card" data-category="dresses">
+        <div class="product-img-box">
+          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80" alt="Boho Tiered Linen Maxi Dress">
+          <span class="product-badge">Boutique Exclusive</span>
+        </div>
+        <div class="product-details">
+          <div>
+            <span class="product-cat">Contemporary Dresses</span>
+            <h3 class="product-title">Tiered Breathable Linen Maxi</h3>
+            <p class="product-desc">Effortless luxury in 100% natural European linen. Features relaxed side pockets, flattering gathers, and handcrafted wooden button details.</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">Natural Dyes</span>
+            <a href="https://wa.me/917507245454?text=Hi%20COCOONS,%20I'd%20like%20to%20enquire%20about%20the%20Tiered%20Linen%20Maxi%20Dress" class="btn-wa-card" target="_blank" rel="noopener">
+              <i data-lucide="message-circle" style="width:14px;height:14px;"></i> Enquire
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="product-card" data-category="festive">
+        <div class="product-img-box">
+          <img src="https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80" alt="Chanderi Silk Anarkali">
+          <span class="product-badge">Festive Edit</span>
+        </div>
+        <div class="product-details">
+          <div>
+            <span class="product-cat">Festive Wear</span>
+            <h3 class="product-title">Royal Chanderi Kalidar Anarkali</h3>
+            <p class="product-desc">Rich woven gold zari motifs on lustrous Chanderi silk, paired with a matching tissue dupatta and hand-finished cigarette pants.</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">Custom Colors</span>
+            <a href="https://wa.me/917507245454?text=Hi%20COCOONS,%20is%20the%20Chanderi%20Anarkali%20available%20in-store%20for%20trial?" class="btn-wa-card" target="_blank" rel="noopener">
+              <i data-lucide="message-circle" style="width:14px;height:14px;"></i> Enquire
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="product-card" data-category="indowestern">
+        <div class="product-img-box">
+          <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80" alt="Monochrome Co-ord Ensemble">
+          <span class="product-badge">Designer Pick</span>
+        </div>
+        <div class="product-details">
+          <div>
+            <span class="product-cat">Indo-Western Fusion</span>
+            <h3 class="product-title">Pleated High-Low Co-ord Set</h3>
+            <p class="product-desc">A sharp, fluid silhouette crafted for cocktail soirees and art openings. Minimalist lines with subtle thread embroidery on lapels.</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">Modern Cut</span>
+            <a href="https://wa.me/917507245454?text=Hi%20COCOONS,%20can%20you%20share%20pricing%20and%20sizes%20for%20the%20Pleated%20Co-ord%20Set?" class="btn-wa-card" target="_blank" rel="noopener">
+              <i data-lucide="message-circle" style="width:14px;height:14px;"></i> Enquire
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 6 -->
+      <div class="product-card" data-category="tailoring">
+        <div class="product-img-box">
+          <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80" alt="Bespoke Tailoring & Blouse Artistry">
+          <span class="product-badge">In-House Master</span>
+        </div>
+        <div class="product-details">
+          <div>
+            <span class="product-cat">Custom Tailoring</span>
+            <h3 class="product-title">Bespoke Fit & Designer Blouse Stitching</h3>
+            <p class="product-desc">Master pattern cutting, padded princess cuts, intricate back cut-outs, and custom embroidery designed specifically for your body measurements.</p>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">Tailored in 48-72h</span>
+            <a href="https://wa.me/917507245454?text=Hi%20COCOONS,%20I%20would%20like%20to%20book%20a%20fitting%20and%20tailoring%20consultation" class="btn-wa-card" target="_blank" rel="noopener">
+              <i data-lucide="message-circle" style="width:14px;height:14px;"></i> Enquire
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Personal Styling & Services Section -->
+  <section class="services-section" id="styling">
+    <div class="services-container">
+      <div class="service-photo-stack">
+        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1000&q=80" alt="COCOONS Personal Styling Studio">
+        <div class="floating-quote-card">
+          <p>"Fashion fades, but a bespoke silhouette crafted around your personality remains unforgettable."</p>
+          <span>— The COCOONS Philosophy</span>
+        </div>
+      </div>
+
+      <div class="service-text-content">
+        <span class="section-tag">Bespoke Experience</span>
+        <h2 class="section-title">More Than A Store. A Personalized Styling Haven.</h2>
+        <p class="section-desc">At COCOONS, we don't just sell outfits off the rack. Our in-house stylists and master craftspeople guide you to curate looks that mirror your individual flair.</p>
+
+        <div class="services-list">
+          <div class="service-item">
+            <div class="service-icon"><i data-lucide="user-check"></i></div>
+            <div class="service-content">
+              <h4>1-on-1 In-Studio Styling</h4>
+              <p>Book a dedicated session to try curated ensembles for family weddings, festive poojas, or cocktail dinners with expert advice.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="service-icon"><i data-lucide="scissors"></i></div>
+            <div class="service-content">
+              <h4>Precision In-House Alterations</h4>
+              <p>Every piece bought can be altered by our master tailor on-site so you step out with a custom-fitted masterpiece.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="service-icon"><i data-lucide="package"></i></div>
+            <div class="service-content">
+              <h4>Direct Home Dispatch across Pune</h4>
+              <p>Select your favorite designs over WhatsApp video call or in-store, and have finished garments delivered safely to your doorstep.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Reviews -->
+  <section class="reviews-section" id="reviews">
+    <div class="reviews-container">
+      <div class="section-header">
+        <span class="section-tag">Client Love</span>
+        <h2 class="section-title">Trusted by Women Across Aundh & Baner</h2>
+        <p class="section-desc">Here is what local Pune shoppers say about their experience at COCOONS.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"COCOONS on DP Road has been my go-to boutique for 2 years. Their fusion kurtis and linen dresses are super comfortable yet very stylish. You don't see repetitive mass-market prints here."</p>
+          </div>
+          <div class="reviewer">
+            <div class="reviewer-avatar">PS</div>
+            <div class="reviewer-info">
+              <h5>Pooja Shirke</h5>
+              <span>Sindh Society, Aundh</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"Got my Diwali outfits and custom blouses stitched here. The fitting was spot on on the very first trial! Extremely warm owners who genuinely understand styling and proportions."</p>
+          </div>
+          <div class="reviewer">
+            <div class="reviewer-avatar">AD</div>
+            <div class="reviewer-info">
+              <h5>Ananya Deshmukh</h5>
+              <span>Baner, Pune</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div>
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"A hidden gem on Sanghvi Keshri Road. Very reasonable pricing for the level of fabric quality and tailoring finish they provide. WhatsApp enquiries are answered promptly too!"</p>
+          </div>
+          <div class="reviewer">
+            <div class="reviewer-avatar">RK</div>
+            <div class="reviewer-info">
+              <h5>Radhika Kulkarni</h5>
+              <span>Aundh Gaon, Pune</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visit Section -->
+  <section class="visit-section" id="visit">
+    <div class="visit-container">
+      <div class="visit-info">
+        <h2>Visit Our Boutique in Aundh</h2>
+        <p class="lead">Conveniently situated in Trade field Building along Sanghvi Keshri Road (DP Road), Sanghvi Nagar. Easy accessibility and ample parking.</p>
+
+        <div class="location-cards">
+          <div class="loc-item">
+            <div class="loc-item-icon"><i data-lucide="map-pin" style="width:20px;height:20px;"></i></div>
+            <div class="loc-item-text">
+              <h4>Boutique Address</h4>
+              <p>Trade field Building, Sanghvi Keshri Road, DP Rd, Sanghvi Nagar, Ward No. 8, Aundh Gaon, Aundh, Pune, Maharashtra 411067</p>
+            </div>
+          </div>
+
+          <div class="loc-item">
+            <div class="loc-item-icon"><i data-lucide="phone" style="width:20px;height:20px;"></i></div>
+            <div class="loc-item-text">
+              <h4>Direct Telephone & WhatsApp</h4>
+              <p>+91 75072 45454 &bull; Customer enquiries active daily</p>
+            </div>
+          </div>
+
+          <div class="loc-item">
+            <div class="loc-item-icon"><i data-lucide="compass" style="width:20px;height:20px;"></i></div>
+            <div class="loc-item-text">
+              <h4>Landmark</h4>
+              <p>Opposite Sanghvi Nagar entrance, off Aundh DP Road</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="visit-cta-group">
+          <a href="https://maps.google.com/?cid=1650138340596717103" class="btn-maps" target="_blank" rel="noopener">
+            <i data-lucide="navigation" style="width:16px;height:16px;"></i>
+            <span>Open in Google Maps</span>
+          </a>
+          <a href="tel:+917507245454" class="btn-call-outline">
+            <i data-lucide="phone-call" style="width:16px;height:16px;"></i>
+            <span>Call 075072 45454</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hours Card -->
+      <div class="hours-box">
+        <h3>Store Timings</h3>
+        <p class="hours-sub">Welcoming walk-ins and appointments 7 days a week.</p>
+        <table class="hours-table">
+          <tr><td class="day">Monday</td><td class="time">10:30 AM – 9:00 PM</td></tr>
+          <tr><td class="day">Tuesday</td><td class="time">10:30 AM – 9:00 PM</td></tr>
+          <tr><td class="day">Wednesday</td><td class="time">10:30 AM – 9:00 PM</td></tr>
+          <tr><td class="day">Thursday</td><td class="time">10:30 AM – 9:00 PM</td></tr>
+          <tr><td class="day">Friday</td><td class="time">10:30 AM – 9:00 PM</td></tr>
+          <tr><td class="day">Saturday</td><td class="time">10:30 AM – 9:30 PM</td></tr>
+          <tr><td class="day">Sunday</td><td class="time">11:00 AM – 9:30 PM</td></tr>
+        </table>
+        <div style="font-size:12px;color:#fce7e7;display:flex;align-items:center;gap:8px;">
+          <i data-lucide="check-circle" style="color:var(--accent-gold);width:16px;height:16px;"></i>
+          <span>Personal fitting room & trial mirrors available</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pitch Banner for Harshal -->
+  <div class="launch-banner">
+    <div class="launch-inner">
+      <span class="launch-pill">PROPOSED CLIENT WEBSITE CONCEPT</span>
+      <h3>Love this website layout for COCOONS Boutique?</h3>
+      <p>We can launch this as the official website (e.g. <b>cocoonsboutique.in</b> or <b>cocoonsaundh.com</b>) with custom Google Maps SEO, professional business email, and high-speed hosting in just <b>48 hours for ₹5,999</b>.</p>
+      <a href="https://wa.me/918459461141?text=Hi%20Harshal,%20I%20saw%20the%20landing%20page%20concept%20for%20COCOONS%20Boutique.%20Let's%20talk%20about%20launching%20our%20website!" class="btn-hire-harshal" target="_blank" rel="noopener">
+        <i data-lucide="message-circle" style="width:16px;height:16px;"></i>
+        <span>Chat with Harshal to Launch This</span>
+      </a>
+    </div>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="#collections">Collections</a>
+    <a href="#styling">Personal Styling</a>
+    <a href="#reviews">Client Love</a>
+    <a href="#visit">Visit Studio</a>
+  </div>
+  <p>&copy; 2026 COCOONS Boutique &bull; Trade field Building, Sanghvi Keshri Road, DP Rd, Aundh, Pune 411067</p>
+  <p style="font-size:11px;color:#fca5a5;margin-top:8px;">Designed & Built by Harshal Baviskar &bull; Pune Local Web Studio</p>
+</footer>
+
+<!-- Floating WhatsApp CTA to COCOONS -->
+<a href="https://wa.me/917507245454?text=Hi%20COCOONS,%20I'm%20viewing%20your%20website%20and%20would%20like%20to%20enquire%20about%20your%20boutique%20collections" class="floating-wa-btn" target="_blank" rel="noopener">
+  <i data-lucide="message-circle" style="width:20px;height:20px;"></i>
+  <span>Chat with Store</span>
+</a>
+
+<script>
+// Initialize Lucide Icons
+lucide.createIcons();
+
+// Category Filter
+function filterCategory(category, btn) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+
+  const cards = document.querySelectorAll('.product-card');
+  cards.forEach(card => {
+    if (category === 'all' || card.dataset.category === category) {
+      card.style.display = 'flex';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+</script>
+</body>
+</html>
