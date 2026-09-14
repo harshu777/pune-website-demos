@@ -101,6 +101,25 @@ tailwind.config = {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+/* Header & Ribbon Full Stretch with 100px padding */
+.header-stretched, .ribbon-stretched {
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+@media (max-width: 1200px) {
+  .header-stretched, .ribbon-stretched {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+@media (max-width: 768px) {
+  .header-stretched, .ribbon-stretched {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 </style>
 </head>
 
@@ -109,8 +128,8 @@ tailwind.config = {
 <!-- =========================================================================
      TASTEFUL NOTIFICATION RIBBON (HARSHAL BAVISKAR PERSONALIZED CONCEPT)
 ========================================================================= -->
-<aside class="relative z-50 bg-[#2D0B12] text-champagne border-b border-gold/30 px-4 py-3 text-xs md:text-sm">
-  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3 text-center md:text-left">
+<aside class="relative z-50 bg-[#2D0B12] text-champagne border-b border-gold/30 py-3 text-xs md:text-sm">
+  <div class="ribbon-stretched flex flex-col md:flex-row items-center justify-between gap-3 text-center md:text-left">
     <div class="flex items-center gap-2 justify-center md:justify-start">
       <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-gold/20 text-gold text-xs">✨</span>
       <p class="font-medium tracking-wide">
@@ -147,10 +166,10 @@ tailwind.config = {
 </div>
 
 <!-- =========================================================================
-     STICKY NAVIGATION
+     STICKY NAVIGATION (FULL STRETCH WITH 100PX PADDING)
 ========================================================================= -->
 <header id="siteNav" class="sticky top-0 z-40 w-full transition-all duration-300 glass-nav border-b border-transparent">
-  <div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 md:h-24 flex items-center justify-between">
+  <div class="header-stretched h-20 md:h-24 flex items-center justify-between">
     
     <!-- Regal Logo -->
     <a href="#home" class="flex items-center gap-3.5 group">

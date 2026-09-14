@@ -33,8 +33,8 @@ export default function BanthiaLandingPage() {
     <div className="min-h-screen bg-[#FFF8F3] text-[#1F1A1C] font-sans antialiased selection:bg-[#6B1E2B] selection:text-[#FFF8F3]">
       
       {/* 1. TASTEFUL NOTIFICATION RIBBON (Bespoke Concept Header) */}
-      <aside className="relative z-50 bg-[#2D0B12] text-[#F7EFE5] border-b border-[#C8A45C]/30 px-4 py-3 text-xs md:text-sm">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3 text-center md:text-left">
+      <aside className="relative z-50 bg-[#2D0B12] text-[#F7EFE5] border-b border-[#C8A45C]/30 py-3 text-xs md:text-sm">
+        <div className="w-full px-6 md:px-12 lg:px-[100px] flex flex-col md:flex-row items-center justify-between gap-3 text-center md:text-left">
           <div className="flex items-center gap-2 justify-center md:justify-start">
             <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-[#C8A45C]/20 text-[#C8A45C] text-xs">✨</span>
             <p className="font-medium tracking-wide">
@@ -72,9 +72,9 @@ export default function BanthiaLandingPage() {
         <span>Beside Hanuman Temple, Aundhgaon</span>
       </div>
 
-      {/* 3. STICKY NAVIGATION */}
+      {/* 3. STICKY NAVIGATION (FULL STRETCH WITH 100PX PADDING) */}
       <header className={`sticky top-0 z-40 w-full transition-all duration-300 border-b ${isScrolled ? 'bg-[#FFF8F3]/95 backdrop-blur-md shadow-md border-[#C8A45C]/20' : 'bg-[#FFF8F3]/80 backdrop-blur-sm border-transparent'}`}>
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 md:h-24 flex items-center justify-between">
+        <div className="w-full px-6 md:px-12 lg:px-[100px] h-20 md:h-24 flex items-center justify-between">
           
           <a href="#home" className="flex items-center gap-3.5 group">
             <div className="w-10 h-10 md:w-12 md:h-12 rounded-full border border-[#C8A45C]/60 flex items-center justify-center bg-gradient-to-br from-[#FFF8F3] to-[#F4ECE4] shadow-sm">
