@@ -1,1543 +1,759 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>COCOONS Boutique — Designer Ethnic & Contemporary Wear | DP Road, Aundh, Pune</title>
-<meta name="description" content="Step into COCOONS on DP Road, Aundh, Pune. Explore designer Indo-Western fusion, pure handwoven silks, custom festive kurtis, and bespoke tailoring.">
+<title>Cocoons Fashions — Kids & Family Designer Wear | DP Road, Aundh, Pune</title>
+<meta name="description" content="Welcome to Cocoons Fashions Pvt Ltd on DP Road, Aundh, Pune. Celebrated destination for designer kids wear, princess gowns, prince sherwanis & family ethnic couture since 2006.">
 
 <!-- Open Graph / WhatsApp Rich Link Preview -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://harshu777.github.io/pune-website-demos/cocoons/">
-<meta property="og:title" content="COCOONS Boutique — Designer Studio on DP Road, Aundh">
-<meta property="og:description" content="Contemporary Indo-Western fusion, handpicked pure silks & bespoke tailoring in Aundh, Pune. Tap to explore our preview.">
-<meta property="og:image" content="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=1200&q=80">
+<meta property="og:title" content="Cocoons Fashions — Premier Kids & Family Boutique in Aundh, Pune">
+<meta property="og:description" content="Celebration wear for little royalty! Explore designer princess gowns, royal sherwanis & festive family couture. Established 2006 on DP Road.">
+<meta property="og:image" content="https://harshu777.github.io/pune-website-demos/cocoons/assets/hero.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="675">
 
-<!-- Google Fonts: Italiana for high-fashion editorial elegance + Plus Jakarta Sans for clean modern readability -->
+<!-- Google Fonts: Plus Jakarta Sans for crisp modern typography + Cormorant Garamond for elegant accents -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
 
 <!-- Lucide Icons -->
 <script src="https://unpkg.com/lucide@latest"></script>
 
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        periwinkle: '#5D5FEF',
+        periwinkleDark: '#4446D6',
+        lavender: '#A586E8',
+        lavenderLight: '#F3EEFF',
+        limeStar: '#A3C93A',
+        sunsetOrange: '#F97415',
+        sunsetLight: '#FFF1E8',
+        slateNavy: '#2C3E50',
+        charcoal: '#1E293B',
+        cloudBg: '#FAF8FF',
+        wa: '#25D366',
+        waDark: '#128C7E',
+      },
+      fontFamily: {
+        sans: ['"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+      },
+      boxShadow: {
+        'card-soft': '0 8px 24px rgba(93, 95, 239, 0.08)',
+        'card-hover': '0 16px 40px rgba(93, 95, 239, 0.16)',
+      }
+    }
+  }
+}
+</script>
+
 <style>
-:root {
-  --primary-deep: #431b18;      /* Rich Espresso Plum */
-  --primary: #85332c;           /* Warm Terracotta Crimson */
-  --primary-light: #a84b43;
-  --accent-gold: #cfa85f;       /* Warm Champagne Gold */
-  --accent-soft: #f4e8d3;       /* Silk Ecru */
-  --cream: #fbf9f6;             /* Warm Pearl Linen */
-  --cream-dark: #f2ede4;
-  --surface: #ffffff;
-  --border: #e8e2d8;
-  --text-dark: #211c19;
-  --text-muted: #746c66;
-  --wa: #25D366;
-  --wa-dark: #128C7E;
-  --font-display: 'Italiana', serif;
-  --font-serif: 'Playfair Display', Georgia, serif;
-  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  --shadow-sm: 0 2px 10px rgba(67, 27, 24, 0.04);
-  --shadow-md: 0 10px 30px rgba(67, 27, 24, 0.07);
-  --shadow-lg: 0 20px 50px rgba(67, 27, 24, 0.12);
+::selection {
+  background-color: #5D5FEF;
+  color: #ffffff;
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
-
-body {
-  font-family: var(--font-sans);
-  background-color: var(--cream);
-  color: var(--text-dark);
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
-}
-
-/* Concept Demo Banner */
-.concept-header {
-  background: #1c1917;
-  color: #e7e5e4;
-  font-size: 12px;
-  padding: 8px 16px;
-  text-align: center;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-.concept-header a {
-  color: #facc15;
-  font-weight: 700;
-  text-decoration: underline;
-}
-
-/* Announcement Bar */
-.announcement-bar {
-  background: var(--primary-deep);
-  color: #fce7e7;
-  padding: 8px 16px;
-  text-align: center;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-.announcement-bar span {
-  color: var(--accent-gold);
-}
-
-/* Site Navigation */
-header.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  background: rgba(251, 249, 246, 0.94);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border);
-  transition: all 0.2s ease;
+/* Header Full Stretch with 100px padding */
+.header-stretched, .ribbon-stretched {
   width: 100%;
-}
-.nav-container {
-  width: 100%;
-  padding: 16px 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 @media (max-width: 1200px) {
-  .nav-container {
-    padding: 16px 48px;
+  .header-stretched, .ribbon-stretched {
+    padding-left: 48px;
+    padding-right: 48px;
   }
 }
 @media (max-width: 768px) {
-  .nav-container {
-    padding: 14px 20px;
+  .header-stretched, .ribbon-stretched {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
-.logo-box {
-  display: flex;
-  flex-direction: column;
+
+/* Glass Header */
+.glass-header {
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
 }
-.logo-title {
-  font-family: var(--font-display);
-  font-size: 32px;
-  letter-spacing: 0.12em;
-  color: var(--primary-deep);
-  line-height: 1;
-  font-weight: 400;
-}
-.logo-subtitle {
-  font-size: 9px;
-  text-transform: uppercase;
-  letter-spacing: 0.25em;
-  color: var(--primary);
-  font-weight: 700;
-  margin-top: 4px;
-}
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-  list-style: none;
-}
-.nav-links a {
-  text-decoration: none;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: var(--text-dark);
-  transition: color 0.2s;
-}
-.nav-links a:hover {
-  color: var(--primary);
-}
-.nav-actions {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-.btn-phone {
-  text-decoration: none;
-  color: var(--primary-deep);
-  font-weight: 700;
-  font-size: 13px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-.btn-nav-wa {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: #25D366;
-  color: #fff;
-  padding: 9px 18px;
-  border-radius: 999px;
-  font-size: 13px;
-  font-weight: 700;
-  text-decoration: none;
-  transition: all 0.2s;
-  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.25);
-}
-.btn-nav-wa:hover {
-  background: #1ea952;
-  transform: translateY(-1px);
+.glass-header.scrolled {
+  box-shadow: 0 4px 25px rgba(44, 62, 80, 0.08);
+  border-bottom: 1px solid rgba(93, 95, 239, 0.15);
 }
 
-/* Hero Section */
-.hero-section {
-  position: relative;
-  padding: 60px 24px 80px;
-  background: radial-gradient(circle at 80% 20%, rgba(207, 168, 95, 0.12) 0%, transparent 60%),
-              radial-gradient(circle at 10% 80%, rgba(133, 51, 44, 0.07) 0%, transparent 50%),
-              var(--cream);
-  border-bottom: 1px solid var(--border);
+/* Smooth zoom */
+.zoom-img {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
-.hero-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 48px;
-  align-items: center;
-}
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(133, 51, 44, 0.08);
-  color: var(--primary);
-  border: 1px solid rgba(133, 51, 44, 0.18);
-  padding: 6px 14px;
-  border-radius: 999px;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-.hero-title {
-  font-family: var(--font-display);
-  font-size: 58px;
-  line-height: 1.12;
-  color: var(--primary-deep);
-  letter-spacing: 0.02em;
-  margin-bottom: 20px;
-  font-weight: 400;
-}
-.hero-title em {
-  font-family: var(--font-serif);
-  font-style: italic;
-  color: var(--primary);
-  font-weight: 500;
-}
-.hero-subtitle {
-  font-size: 16px;
-  color: var(--text-muted);
-  line-height: 1.7;
-  margin-bottom: 32px;
-  max-width: 540px;
-}
-.hero-actions {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  flex-wrap: wrap;
-  margin-bottom: 36px;
-}
-.btn-hero-primary {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  background: var(--primary);
-  color: #fff;
-  padding: 14px 28px;
-  border-radius: 999px;
-  font-size: 14px;
-  font-weight: 700;
-  text-decoration: none;
-  box-shadow: 0 8px 24px rgba(133, 51, 44, 0.28);
-  transition: all 0.2s;
-}
-.btn-hero-primary:hover {
-  background: var(--primary-deep);
-  transform: translateY(-2px);
-}
-.btn-hero-secondary {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: #fff;
-  color: var(--primary-deep);
-  border: 1px solid var(--border);
-  padding: 14px 24px;
-  border-radius: 999px;
-  font-size: 14px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.2s;
-}
-.btn-hero-secondary:hover {
-  border-color: var(--primary);
-  color: var(--primary);
-}
-
-.hero-stats {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-  padding-top: 24px;
-  border-top: 1px solid var(--border);
-}
-.stat-item h3 {
-  font-family: var(--font-display);
-  font-size: 32px;
-  color: var(--primary-deep);
-  font-weight: 400;
-  line-height: 1;
-}
-.stat-item p {
-  font-size: 12px;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-top: 4px;
-}
-
-/* Hero Visual Showcase */
-.hero-visual {
-  position: relative;
-}
-.hero-main-card {
-  position: relative;
-  border-radius: 24px;
-  overflow: hidden;
-  box-shadow: var(--shadow-lg);
-  border: 1px solid rgba(207, 168, 95, 0.3);
-}
-.hero-main-card img {
-  width: 100%;
-  height: 520px;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.6s ease;
-}
-.hero-overlay-pill {
-  position: absolute;
-  bottom: 24px;
-  left: 24px;
-  right: 24px;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  padding: 16px 20px;
-  border-radius: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: 1px solid var(--border);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-}
-.overlay-info h4 {
-  font-family: var(--font-serif);
-  font-size: 16px;
-  color: var(--primary-deep);
-  font-weight: 600;
-}
-.overlay-info p {
-  font-size: 12px;
-  color: var(--text-muted);
-}
-.pill-badge {
-  background: var(--accent-soft);
-  color: var(--primary-deep);
-  padding: 6px 12px;
-  border-radius: 999px;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-/* Trust Bar */
-.trust-strip {
-  background: var(--surface);
-  border-bottom: 1px solid var(--border);
-  padding: 24px;
-}
-.trust-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-}
-.trust-card {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-.trust-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: var(--cream-dark);
-  color: var(--primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-.trust-text h4 {
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--primary-deep);
-}
-.trust-text p {
-  font-size: 12px;
-  color: var(--text-muted);
-}
-
-/* Collections Lookbook Section */
-.collections-section {
-  padding: 80px 24px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.section-header {
-  text-align: center;
-  margin-bottom: 48px;
-}
-.section-tag {
-  display: inline-block;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--primary);
-  margin-bottom: 8px;
-}
-.section-title {
-  font-family: var(--font-display);
-  font-size: 42px;
-  color: var(--primary-deep);
-  letter-spacing: 0.03em;
-  margin-bottom: 12px;
-}
-.section-desc {
-  font-size: 15px;
-  color: var(--text-muted);
-  max-width: 620px;
-  margin: 0 auto;
-}
-
-/* Filter Tabs */
-.filter-tabs {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
-}
-.tab-btn {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  color: var(--text-dark);
-  padding: 10px 20px;
-  border-radius: 999px;
-  font-size: 13px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-.tab-btn:hover {
-  border-color: var(--primary);
-  color: var(--primary);
-}
-.tab-btn.active {
-  background: var(--primary);
-  color: #fff;
-  border-color: var(--primary);
-  box-shadow: 0 4px 14px rgba(133, 51, 44, 0.25);
-}
-
-/* Lookbook Grid */
-.products-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
-}
-.product-card {
-  background: var(--surface);
-  border-radius: 20px;
-  overflow: hidden;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow-sm);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
-}
-.product-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-lg);
-}
-.product-img-box {
-  position: relative;
-  width: 100%;
-  height: 380px;
-  overflow: hidden;
-  background: #f5f5f5;
-}
-.product-img-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
-}
-.product-card:hover .product-img-box img {
+.group:hover .zoom-img {
   transform: scale(1.05);
-}
-.product-badge {
-  position: absolute;
-  top: 14px;
-  left: 14px;
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(6px);
-  color: var(--primary-deep);
-  font-size: 11px;
-  font-weight: 700;
-  padding: 5px 12px;
-  border-radius: 999px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-.product-details {
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  justify-content: space-between;
-}
-.product-cat {
-  font-size: 11px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--primary);
-  margin-bottom: 6px;
-}
-.product-title {
-  font-family: var(--font-serif);
-  font-size: 20px;
-  color: var(--primary-deep);
-  font-weight: 600;
-  margin-bottom: 8px;
-  line-height: 1.3;
-}
-.product-desc {
-  font-size: 13px;
-  color: var(--text-muted);
-  line-height: 1.5;
-  margin-bottom: 18px;
-}
-.product-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 14px;
-  border-top: 1px solid var(--border);
-}
-.product-price {
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--primary-deep);
-}
-.btn-wa-card {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: #25D366;
-  color: #fff;
-  padding: 8px 14px;
-  border-radius: 999px;
-  font-size: 12px;
-  font-weight: 700;
-  text-decoration: none;
-  transition: all 0.2s;
-}
-.btn-wa-card:hover {
-  background: #1ea952;
-  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35);
-}
-
-/* Tailoring & Custom Styling Section */
-.services-section {
-  background: var(--surface);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  padding: 80px 24px;
-}
-.services-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  gap: 56px;
-  align-items: center;
-}
-.service-photo-stack {
-  position: relative;
-}
-.service-photo-stack img {
-  width: 100%;
-  height: 480px;
-  object-fit: cover;
-  border-radius: 20px;
-  box-shadow: var(--shadow-lg);
-}
-.floating-quote-card {
-  position: absolute;
-  bottom: -24px;
-  right: -20px;
-  background: var(--primary-deep);
-  color: #fff;
-  padding: 20px 24px;
-  border-radius: 16px;
-  max-width: 280px;
-  box-shadow: var(--shadow-lg);
-  border: 1px solid rgba(207, 168, 95, 0.3);
-}
-.floating-quote-card p {
-  font-family: var(--font-serif);
-  font-style: italic;
-  font-size: 14px;
-  line-height: 1.5;
-  color: #fce7e7;
-}
-.floating-quote-card span {
-  display: block;
-  margin-top: 8px;
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--accent-gold);
-  font-weight: 700;
-}
-.services-list {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  margin-top: 28px;
-}
-.service-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 18px;
-  padding: 16px;
-  background: var(--cream);
-  border-radius: 16px;
-  border: 1px solid var(--border);
-}
-.service-icon {
-  width: 44px;
-  height: 44px;
-  background: var(--accent-soft);
-  color: var(--primary-deep);
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-.service-content h4 {
-  font-family: var(--font-serif);
-  font-size: 18px;
-  color: var(--primary-deep);
-  margin-bottom: 4px;
-}
-.service-content p {
-  font-size: 13px;
-  color: var(--text-muted);
-  line-height: 1.5;
-}
-
-/* Reviews Section */
-.reviews-section {
-  padding: 80px 24px;
-  background: var(--cream);
-}
-.reviews-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.reviews-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-  margin-top: 40px;
-}
-.review-card {
-  background: var(--surface);
-  border-radius: 20px;
-  padding: 28px;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow-sm);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.stars {
-  color: #f59e0b;
-  display: flex;
-  gap: 4px;
-  margin-bottom: 14px;
-}
-.review-text {
-  font-size: 14px;
-  color: #374151;
-  line-height: 1.6;
-  margin-bottom: 20px;
-  font-style: italic;
-}
-.reviewer {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-.reviewer-avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: var(--cream-dark);
-  color: var(--primary-deep);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 14px;
-}
-.reviewer-info h5 {
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--primary-deep);
-}
-.reviewer-info span {
-  font-size: 11px;
-  color: var(--text-muted);
-}
-
-/* Location & Studio Details */
-.visit-section {
-  padding: 80px 24px;
-  background: var(--surface);
-  border-top: 1px solid var(--border);
-}
-.visit-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 52px;
-  align-items: center;
-}
-.visit-info h2 {
-  font-family: var(--font-display);
-  font-size: 38px;
-  color: var(--primary-deep);
-  margin-bottom: 16px;
-}
-.visit-info p.lead {
-  font-size: 15px;
-  color: var(--text-muted);
-  margin-bottom: 28px;
-  line-height: 1.6;
-}
-.location-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  margin-bottom: 32px;
-}
-.loc-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  padding: 16px 20px;
-  background: var(--cream);
-  border-radius: 14px;
-  border: 1px solid var(--border);
-}
-.loc-item-icon {
-  color: var(--primary);
-  margin-top: 2px;
-}
-.loc-item-text h4 {
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--primary-deep);
-  margin-bottom: 3px;
-}
-.loc-item-text p {
-  font-size: 13px;
-  color: var(--text-muted);
-}
-.visit-cta-group {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  flex-wrap: wrap;
-}
-.btn-maps {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: var(--primary);
-  color: #fff;
-  padding: 13px 24px;
-  border-radius: 999px;
-  font-size: 13px;
-  font-weight: 700;
-  text-decoration: none;
-  transition: all 0.2s;
-}
-.btn-maps:hover {
-  background: var(--primary-deep);
-}
-.btn-call-outline {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: #fff;
-  color: var(--primary-deep);
-  border: 1px solid var(--border);
-  padding: 13px 22px;
-  border-radius: 999px;
-  font-size: 13px;
-  font-weight: 700;
-  text-decoration: none;
-  transition: all 0.2s;
-}
-.btn-call-outline:hover {
-  border-color: var(--primary);
-  color: var(--primary);
-}
-
-.hours-box {
-  background: var(--primary-deep);
-  color: #fff;
-  padding: 36px;
-  border-radius: 24px;
-  box-shadow: var(--shadow-md);
-  border: 1px solid rgba(207, 168, 95, 0.25);
-}
-.hours-box h3 {
-  font-family: var(--font-display);
-  font-size: 28px;
-  margin-bottom: 6px;
-  color: #fff;
-}
-.hours-box p.hours-sub {
-  font-size: 13px;
-  color: #fca5a5;
-  margin-bottom: 24px;
-}
-.hours-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 24px;
-}
-.hours-table tr {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-.hours-table td {
-  padding: 10px 0;
-  font-size: 13px;
-}
-.hours-table .day {
-  color: #f5d0fe;
-  font-weight: 500;
-}
-.hours-table .time {
-  text-align: right;
-  font-weight: 700;
-  color: #fff;
-}
-
-/* Harshal's Launch Pitch Banner */
-.launch-banner {
-  background: linear-gradient(135deg, #2b0e0c 0%, #431b18 50%, #1c0a09 100%);
-  color: #fff;
-  padding: 56px 24px;
-  text-align: center;
-  border-top: 1px solid var(--border);
-}
-.launch-inner {
-  max-width: 740px;
-  margin: 0 auto;
-}
-.launch-pill {
-  display: inline-block;
-  background: rgba(207, 168, 95, 0.2);
-  color: var(--accent-gold);
-  border: 1px solid rgba(207, 168, 95, 0.4);
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  padding: 6px 14px;
-  border-radius: 999px;
-  margin-bottom: 16px;
-}
-.launch-inner h3 {
-  font-family: var(--font-display);
-  font-size: 36px;
-  margin-bottom: 14px;
-  color: #fff;
-  letter-spacing: 0.02em;
-}
-.launch-inner p {
-  font-size: 14px;
-  color: #f2ede4;
-  line-height: 1.7;
-  margin-bottom: 28px;
-}
-.btn-hire-harshal {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  background: var(--wa);
-  color: #fff;
-  padding: 14px 28px;
-  border-radius: 999px;
-  font-size: 14px;
-  font-weight: 700;
-  text-decoration: none;
-  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
-  transition: all 0.2s;
-}
-.btn-hire-harshal:hover {
-  background: #1ea952;
-  transform: translateY(-2px);
-}
-
-/* Footer */
-footer.site-footer {
-  background: #141110;
-  color: #a8a29e;
-  padding: 40px 24px 30px;
-  text-align: center;
-  font-size: 12px;
-}
-.footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin-bottom: 20px;
-  flex-wrap: wrap;
-}
-.footer-links a {
-  color: #e7e5e4;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.2s;
-}
-.footer-links a:hover {
-  color: var(--accent-gold);
-}
-
-/* Floating WhatsApp Button */
-.floating-wa-btn {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  z-index: 999;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  background: #25D366;
-  color: #ffffff;
-  padding: 14px 22px;
-  border-radius: 999px;
-  font-size: 14px;
-  font-weight: 700;
-  text-decoration: none;
-  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
-  transition: all 0.25s ease;
-}
-.floating-wa-btn:hover {
-  background: #1ea952;
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 12px 36px rgba(37, 211, 102, 0.5);
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 900px) {
-  .hero-container {
-    grid-template-columns: 1fr;
-    gap: 36px;
-  }
-  .hero-title {
-    font-size: 42px;
-  }
-  .hero-main-card img {
-    height: 400px;
-  }
-  .trust-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .products-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .services-container {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-  .reviews-grid {
-    grid-template-columns: 1fr;
-  }
-  .visit-container {
-    grid-template-columns: 1fr;
-    gap: 36px;
-  }
-  .nav-links {
-    display: none;
-  }
-}
-
-@media (max-width: 600px) {
-  .hero-section {
-    padding: 36px 16px 50px;
-  }
-  .hero-title {
-    font-size: 34px;
-  }
-  .products-grid {
-    grid-template-columns: 1fr;
-  }
-  .trust-container {
-    grid-template-columns: 1fr;
-  }
-  .hero-main-card img {
-    height: 320px;
-  }
-  .floating-quote-card {
-    position: relative;
-    right: 0;
-    bottom: 0;
-    max-width: 100%;
-    margin-top: 16px;
-  }
-  .floating-wa-btn span {
-    display: none;
-  }
-  .floating-wa-btn {
-    padding: 14px;
-    border-radius: 50%;
-  }
 }
 </style>
 </head>
-<body>
 
-<!-- Concept Demo Banner for Owner -->
-<div class="concept-header">
-  <span>💡 <strong>Concept Website Demo</strong> crafted for <strong>COCOONS Boutique</strong> (DP Road, Aundh, Pune)</span>
-  <span>•</span>
-  <a href="https://wa.me/918459461141?text=Hi%20Harshal,%20I%20saw%20the%20COCOONS%20website%20preview.%20Let's%20talk!" target="_blank" rel="noopener">Claim & Launch this Official Site in 48 Hours →</a>
-</div>
+<body class="font-sans bg-cloudBg text-charcoal antialiased overflow-x-hidden selection:bg-periwinkle selection:text-white">
 
-<!-- Top Announcement Bar -->
-<div class="announcement-bar">
-  <span>✨ Festive & Contemporary Indo-Western Collection</span> • Now In-Store on DP Road, Aundh • Custom Tailoring Available
-</div>
-
-<!-- Site Header -->
-<header class="site-header">
-  <div class="nav-container">
-    <div class="logo-box">
-      <span class="logo-title">COCOONS</span>
-      <span class="logo-subtitle">Designer Studio &bull; Aundh</span>
+<!-- =========================================================================
+     TOP NOTIFICATION RIBBON (HARSHAL BAVISKAR PERSONALIZED CONCEPT)
+========================================================================= -->
+<aside class="relative z-50 bg-[#1E1B4B] text-white border-b border-periwinkle/30 py-3 text-xs md:text-sm">
+  <div class="ribbon-stretched flex flex-col md:flex-row items-center justify-between gap-3 text-center md:text-left">
+    <div class="flex items-center gap-2 justify-center md:justify-start">
+      <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-periwinkle/30 text-lavender text-xs">✨</span>
+      <p class="font-medium tracking-wide">
+        <span class="text-lavender font-semibold">Concept Website Prepared Exclusively for Cocoons Fashions Pvt Ltd.</span>
+        <span class="text-white/80 hidden lg:inline ml-1">Tailored for your Trade Field Building showroom on DP Road, Aundh. Crafted by Harshal Baviskar.</span>
+      </p>
     </div>
-    
-    <ul class="nav-links">
-      <li><a href="#collections">Collections</a></li>
-      <li><a href="#styling">Personal Styling</a></li>
-      <li><a href="#reviews">Client Love</a></li>
-      <li><a href="#visit">Visit Studio</a></li>
-    </ul>
-
-    <div class="nav-actions">
-      <a href="tel:+917507245454" class="btn-phone">
-        <i data-lucide="phone" style="width:15px;height:15px;"></i>
-        <span style="display:none;@media(min-width:768px){display:inline;}">075072 45454</span>
+    <div class="flex items-center gap-2.5 flex-wrap justify-center">
+      <a href="https://wa.me/918459461141?text=Hi%20Harshal,%20I'm%20viewing%20the%20Cocoons%20Fashions%20website%20concept!%20Let's%20talk%20about%20launching%20our%20official%20site." 
+         target="_blank" rel="noopener"
+         class="inline-flex items-center gap-1.5 bg-gradient-to-r from-sunsetOrange to-[#ff8c3a] text-white px-4 py-1.5 rounded-full font-semibold text-xs shadow-md hover:brightness-105 transition-all">
+        <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+        <span>Launch My Website</span>
       </a>
-      <a href="https://wa.me/917507245454?text=Hi%20COCOONS,%20I'd%20like%20to%20enquire%20about%20your%20new%20arrivals" class="btn-nav-wa" target="_blank" rel="noopener">
-        <i data-lucide="message-circle" style="width:16px;height:16px;"></i>
+      <a href="https://wa.me/918459461141?text=Hi%20Harshal,%20I%20have%20questions%20about%20the%20Cocoons%20Fashions%20website%20preview." 
+         target="_blank" rel="noopener"
+         class="inline-flex items-center gap-1.5 border border-lavender/50 text-lavender px-3.5 py-1.5 rounded-full font-medium text-xs hover:bg-lavender/10 transition-colors">
+        <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+        <span>Chat with Harshal</span>
+      </a>
+    </div>
+  </div>
+</aside>
+
+<!-- =========================================================================
+     ANNOUNCEMENT BAR (FEATURING AUTHENTIC BRAND VALUES)
+========================================================================= -->
+<div class="bg-gradient-to-r from-periwinkle to-lavender text-white py-2 text-[11px] md:text-xs tracking-wider uppercase text-center font-semibold">
+  <span>🌟 Pune's Favorite Kids & Family Fashion Boutique</span>
+  <span class="mx-3 text-limeStar">•</span>
+  <span>Opposite Blackberrys, DP Road, Aundh</span>
+  <span class="mx-3 text-limeStar">•</span>
+  <span>Trusted Since 2006</span>
+</div>
+
+<!-- =========================================================================
+     STICKY NAVIGATION WITH AUTHENTIC COCOONS LOGO
+========================================================================= -->
+<header id="siteNav" class="sticky top-0 z-40 w-full transition-all duration-300 glass-header border-b border-periwinkle/10">
+  <div class="header-stretched h-20 md:h-24 flex items-center justify-between">
+    
+    <!-- Authentic Logo -->
+    <a href="#home" class="flex items-center gap-3">
+      <img src="assets/logo.png" alt="Cocoons Fashions Pvt Ltd Logo" class="h-10 md:h-12 w-auto object-contain">
+      <div class="hidden sm:flex flex-col pl-2 border-l border-periwinkle/20">
+        <span class="text-[10px] uppercase font-bold tracking-widest text-periwinkle">Fashions Pvt Ltd</span>
+        <span class="text-[9px] text-slateNavy/60 font-medium">Aundh &bull; Est. 2006</span>
+      </div>
+    </a>
+
+    <!-- Navigation Links -->
+    <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold tracking-wide text-slateNavy">
+      <a href="#home" class="hover:text-periwinkle transition-colors">Home</a>
+      <a href="#collections" class="hover:text-periwinkle transition-colors">Kids Collections</a>
+      <a href="#girls" class="hover:text-periwinkle transition-colors">Girls Couture</a>
+      <a href="#boys" class="hover:text-periwinkle transition-colors">Boys Royalty</a>
+      <a href="#family" class="hover:text-periwinkle transition-colors">Family Wear</a>
+      <a href="#about" class="hover:text-periwinkle transition-colors">Why Cocoons</a>
+      <a href="#location" class="hover:text-periwinkle transition-colors">Store Directions</a>
+    </nav>
+
+    <!-- Nav Actions -->
+    <div class="flex items-center gap-4">
+      <a href="tel:+917507245454" class="hidden sm:inline-flex items-center gap-2 text-xs font-bold text-slateNavy hover:text-periwinkle">
+        <i data-lucide="phone" class="w-4 h-4 text-sunsetOrange"></i>
+        <span>075072 45454</span>
+      </a>
+
+      <!-- WhatsApp Action -->
+      <a href="https://wa.me/917507245454?text=Hi%20Cocoons%20Fashions,%20I'm%20viewing%20your%20website%20and%20would%20like%20to%20enquire%20about%20your%20latest%20kids%20%26%20family%20collections" 
+         target="_blank" rel="noopener"
+         class="inline-flex items-center gap-2 bg-periwinkle hover:bg-periwinkleDark text-white px-5 py-2.5 rounded-full text-xs md:text-sm font-bold tracking-wide shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5">
+        <i data-lucide="message-circle" class="w-4 h-4 text-limeStar"></i>
         <span>WhatsApp Store</span>
       </a>
+
+      <!-- Mobile Hamburger -->
+      <button id="mobileMenuBtn" class="lg:hidden p-2 text-slateNavy focus:outline-none" aria-label="Toggle Navigation">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Dropdown -->
+  <div id="mobileMenu" class="hidden lg:hidden bg-white border-t border-periwinkle/10 px-6 py-6 space-y-4 shadow-xl">
+    <a href="#home" class="block text-base font-semibold text-slateNavy hover:text-periwinkle">Home</a>
+    <a href="#collections" class="block text-base font-semibold text-slateNavy hover:text-periwinkle">Kids Collections</a>
+    <a href="#girls" class="block text-base font-semibold text-slateNavy hover:text-periwinkle">Girls Couture</a>
+    <a href="#boys" class="block text-base font-semibold text-slateNavy hover:text-periwinkle">Boys Royalty</a>
+    <a href="#family" class="block text-base font-semibold text-slateNavy hover:text-periwinkle">Family Festive</a>
+    <a href="#about" class="block text-base font-semibold text-slateNavy hover:text-periwinkle">About Cocoons (Est. 2006)</a>
+    <a href="#location" class="block text-base font-semibold text-slateNavy hover:text-periwinkle">Showroom Location</a>
+    <div class="pt-4 border-t border-periwinkle/10 flex flex-col gap-2 text-sm text-slateNavy/80">
+      <p class="flex items-center gap-2 font-bold text-periwinkle">
+        <i data-lucide="phone" class="w-4 h-4"></i> +91 75072 45454
+      </p>
+      <p class="flex items-center gap-2 text-xs">
+        <i data-lucide="map-pin" class="w-4 h-4 text-sunsetOrange"></i> Trade Field Bldg, DP Rd, Aundh
+      </p>
     </div>
   </div>
 </header>
 
 <main>
-  <!-- Hero Section -->
-  <section class="hero-section">
-    <div class="hero-container">
-      <div class="hero-content">
-        <div class="hero-badge">
-          <i data-lucide="sparkles" style="width:14px;height:14px;"></i>
-          <span>Curated Designer Boutique &bull; Aundh, Pune</span>
+  <!-- =========================================================================
+       HERO SECTION
+  ========================================================================= -->
+  <section id="home" class="relative min-h-[85vh] lg:min-h-[90vh] flex items-center bg-gradient-to-b from-cloudBg via-lavenderLight/30 to-cloudBg overflow-hidden py-16 lg:py-24">
+    
+    <!-- Playful Star & Heart Decors from Cocoons Branding -->
+    <div class="absolute top-10 right-20 w-72 h-72 bg-periwinkle/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-10 left-10 w-80 h-80 bg-sunsetOrange/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Content (7 Cols) -->
+        <div class="lg:col-span-7">
+          
+          <div class="inline-flex items-center gap-2 bg-white border border-periwinkle/30 px-4 py-1.5 rounded-full mb-6 shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-sunsetOrange animate-pulse"></span>
+            <span class="text-xs font-bold uppercase tracking-wider text-periwinkle">
+              Aundh's Iconic Kids & Family Boutique • Est. 2006
+            </span>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-[70px] font-extrabold text-slateNavy tracking-tight leading-[1.1] mb-6">
+            Celebration Wear for <span class="text-transparent bg-clip-text bg-gradient-to-r from-periwinkle via-lavender to-sunsetOrange">Little Royalty.</span>
+          </h1>
+
+          <p class="text-base md:text-lg text-slateNavy/80 leading-relaxed font-medium max-w-xl mb-10">
+            From fairytale princess party gowns and twinkling ruffle lehengas to royal groom sherwanis, Jodhpuris, and coordinated family ensembles. Make every birthday, wedding, and festival unforgettable at Cocoons on DP Road.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-12">
+            <a href="#collections" class="inline-flex items-center justify-center gap-2.5 bg-periwinkle hover:bg-periwinkleDark text-white px-8 py-4 rounded-full text-sm font-bold tracking-wide uppercase transition-all shadow-card-soft hover:shadow-card-hover transform hover:-translate-y-0.5">
+              <span>Explore Kids Lookbook</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 text-limeStar"></i>
+            </a>
+
+            <a href="https://wa.me/917507245454?text=Hi%20Cocoons%20Fashions,%20can%20you%20share%20latest%20festive%20options%20for%20kids?" 
+               target="_blank" rel="noopener"
+               class="inline-flex items-center justify-center gap-2.5 bg-white border border-slateNavy/20 hover:border-periwinkle text-slateNavy px-8 py-4 rounded-full text-sm font-bold tracking-wide uppercase transition-all hover:bg-periwinkle/5">
+              <i data-lucide="message-circle" class="w-4 h-4 text-sunsetOrange"></i>
+              <span>Enquire on WhatsApp</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="pt-8 border-t border-periwinkle/20 grid grid-cols-3 gap-6 max-w-lg">
+            <div>
+              <span class="text-2xl md:text-3xl font-extrabold text-periwinkle block">18+ Yrs</span>
+              <span class="text-xs text-slateNavy/70 uppercase tracking-wider font-semibold">Serving Pune Families</span>
+            </div>
+            <div>
+              <span class="text-2xl md:text-3xl font-extrabold text-sunsetOrange block">0 to 14</span>
+              <span class="text-xs text-slateNavy/70 uppercase tracking-wider font-semibold">Infants to Teens</span>
+            </div>
+            <div>
+              <span class="text-2xl md:text-3xl font-extrabold text-limeStar block">DP Road</span>
+              <span class="text-xs text-slateNavy/70 uppercase tracking-wider font-semibold">Near Parihar Chowk</span>
+            </div>
+          </div>
+
         </div>
-        <h1 class="hero-title">
-          Contemporary Grace, <em>Handcrafted Silhouettes.</em>
-        </h1>
-        <p class="hero-subtitle">
-          From ethereal festive kurtis and breathable luxury linens to contemporary Indo-Western ensembles and bespoke custom tailoring. Discover your signature silhouette at COCOONS on DP Road.
+
+        <!-- Right Visual Showcase (5 Cols) -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-[480px] lg:max-w-none">
+            
+            <div class="absolute -inset-3 rounded-[32px] bg-gradient-to-tr from-periwinkle/20 via-lavender/20 to-sunsetOrange/20 blur-lg pointer-events-none"></div>
+
+            <div class="relative rounded-[28px] overflow-hidden shadow-2xl bg-white border-2 border-white">
+              <img src="assets/hero.jpg" 
+                   alt="Cute boy in royal sherwani and girl in lavender princess gown at Cocoons Fashions Aundh" 
+                   class="w-full h-[520px] md:h-[600px] object-cover object-top zoom-img">
+
+              <div class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/95 backdrop-blur-md border border-periwinkle/20 shadow-lg flex items-center justify-between">
+                <div>
+                  <span class="text-[10px] uppercase font-bold tracking-widest text-sunsetOrange block">Wedding & Festive Edit</span>
+                  <h4 class="font-bold text-slateNavy text-base">Royal Kids Ensemble</h4>
+                  <p class="text-xs text-slateNavy/60">Ages 2 to 14 Years</p>
+                </div>
+                <a href="https://wa.me/917507245454?text=Hi%20Cocoons,%20I'd%20like%20to%20see%20pricing%20for%20the%20kids%20festive%20wear%20shown%20on%20your%20website" 
+                   target="_blank" rel="noopener"
+                   class="w-10 h-10 rounded-full bg-periwinkle text-white flex items-center justify-center hover:bg-periwinkleDark transition-colors">
+                  <i data-lucide="message-circle" class="w-4 h-4"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4 PILLARS OF COCOONS EXCELLENCE
+  ========================================================================= -->
+  <section class="bg-white border-y border-periwinkle/10 py-12">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-2xl bg-lavenderLight text-periwinkle flex items-center justify-center shrink-0">
+            <i data-lucide="crown" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-slateNavy text-base">Kids Royalty</h4>
+            <p class="text-xs text-slateNavy/70">Princess gowns & sherwanis</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-2xl bg-sunsetLight text-sunsetOrange flex items-center justify-center shrink-0">
+            <i data-lucide="heart" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-slateNavy text-base">Comfort First</h4>
+            <p class="text-xs text-slateNavy/70">Pure cotton lining & soft tulle</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-2xl bg-[#ecfccb] text-limeStar flex items-center justify-center shrink-0">
+            <i data-lucide="users" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-slateNavy text-base">Family Ensembles</h4>
+            <p class="text-xs text-slateNavy/70">Coordinated festive sets</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-2xl bg-lavenderLight text-periwinkle flex items-center justify-center shrink-0">
+            <i data-lucide="shield-check" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-slateNavy text-base">Aundh Landmark</h4>
+            <p class="text-xs text-slateNavy/70">Opposite Blackberrys showroom</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SIGNATURE COLLECTIONS SHOWCASE
+  ========================================================================= -->
+  <section id="collections" class="py-24 bg-cloudBg">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold tracking-widest uppercase text-sunsetOrange block mb-2">Curated With Love</span>
+        <h2 class="text-3xl md:text-5xl font-extrabold text-slateNavy mb-4">
+          The Cocoons Collection
+        </h2>
+        <div class="w-16 h-1 bg-periwinkle mx-auto rounded-full mb-6"></div>
+        <p class="text-sm md:text-base text-slateNavy/75 leading-relaxed font-medium">
+          Handcrafted designs made with non-scratchy luxury fabrics so your children stay comfortable, joyful, and radiant all celebration long.
         </p>
-
-        <div class="hero-actions">
-          <a href="https://wa.me/917507245454?text=Hi%20COCOONS,%20I'm%20looking%20for%20a%20designer%20outfit%20for%20an%20upcoming%20event.%20Can%20you%20share%20current%20in-store%20options?" class="btn-hero-primary" target="_blank" rel="noopener">
-            <i data-lucide="message-circle" style="width:18px;height:18px;"></i>
-            <span>Enquire on WhatsApp</span>
-          </a>
-          <a href="#collections" class="btn-hero-secondary">
-            <span>Explore Lookbook</span>
-            <i data-lucide="arrow-down" style="width:16px;height:16px;"></i>
-          </a>
-        </div>
-
-        <div class="hero-stats">
-          <div class="stat-item">
-            <h3>4.8★</h3>
-            <p>Google Customer Rating</p>
-          </div>
-          <div class="stat-item">
-            <h3>100%</h3>
-            <p>Handpicked Premium Fabrics</p>
-          </div>
-          <div class="stat-item">
-            <h3>DP Road</h3>
-            <p>Prime Aundh Location</p>
-          </div>
-        </div>
       </div>
 
-      <!-- Hero Visual Showcase -->
-      <div class="hero-visual">
-        <div class="hero-main-card">
-          <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=1000&q=80" alt="COCOONS Designer Boutique Pune">
-          <div class="hero-overlay-pill">
-            <div class="overlay-info">
-              <h4>Spring & Festive Edit 2026</h4>
-              <p>Handcrafted Chanderi, Organza & Raw Silk</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Card 1: Girls Couture -->
+        <div id="girls" class="group rounded-[24px] overflow-hidden bg-white border border-periwinkle/15 shadow-card-soft hover:shadow-card-hover transition-all duration-300 flex flex-col">
+          <div class="relative h-[380px] overflow-hidden">
+            <img src="assets/girls.jpg" alt="Girls Lavender & Pink Twirling Lehenga at Cocoons Aundh" class="w-full h-full object-cover zoom-img">
+            <div class="absolute inset-0 bg-gradient-to-t from-slateNavy/80 via-transparent to-transparent"></div>
+            <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-extrabold tracking-widest uppercase text-periwinkle border border-periwinkle/20">
+              Girls Couture
             </div>
-            <span class="pill-badge">New In Store</span>
+          </div>
+          <div class="p-8 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-2xl font-bold text-slateNavy mb-2">Princess Lehengas & Gowns</h3>
+              <p class="text-xs md:text-sm text-slateNavy/70 leading-relaxed mb-6">
+                Tiered tulle ruffle lehengas, mirror-work cholis, floral organza frocks, and bespoke birthday party dresses with soft cotton lining.
+              </p>
+            </div>
+            <a href="https://wa.me/917507245454?text=Hi%20Cocoons,%20I'm%20looking%20for%20a%20Girls%20Lehenga%20or%20Gown.%20Can%20you%20share%20designs?" 
+               target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 text-xs font-bold tracking-wider uppercase text-periwinkle group-hover:text-sunsetOrange transition-colors">
+              <span>View Girls Collection</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1.5 transition-transform"></i>
+            </a>
           </div>
         </div>
+
+        <!-- Card 2: Boys Royalty -->
+        <div id="boys" class="group rounded-[24px] overflow-hidden bg-white border border-periwinkle/15 shadow-card-soft hover:shadow-card-hover transition-all duration-300 flex flex-col">
+          <div class="relative h-[380px] overflow-hidden">
+            <img src="assets/boys.jpg" alt="Boys Royal Sherwani and Jodhpuri Suit at Cocoons Aundh" class="w-full h-full object-cover zoom-img">
+            <div class="absolute inset-0 bg-gradient-to-t from-slateNavy/80 via-transparent to-transparent"></div>
+            <div class="absolute top-4 left-4 bg-sunsetOrange text-white px-3 py-1 rounded-full text-[10px] font-extrabold tracking-widest uppercase shadow">
+              Boys Royalty
+            </div>
+          </div>
+          <div class="p-8 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-2xl font-bold text-slateNavy mb-2">Prince Sherwanis & Jodhpuris</h3>
+              <p class="text-xs md:text-sm text-slateNavy/70 leading-relaxed mb-6">
+                Regal ivory and gold embroidered sherwanis, bandhgala suits, Modi kurta-jackets, dhoti kurtas, and dapper tuxedo blazers.
+              </p>
+            </div>
+            <a href="https://wa.me/917507245454?text=Hi%20Cocoons,%20please%20share%20Boys%20Sherwani%20and%20Kurta-Jacket%20options" 
+               target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 text-xs font-bold tracking-wider uppercase text-periwinkle group-hover:text-sunsetOrange transition-colors">
+              <span>View Boys Collection</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1.5 transition-transform"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3: Family Coordinated -->
+        <div id="family" class="group rounded-[24px] overflow-hidden bg-white border border-periwinkle/15 shadow-card-soft hover:shadow-card-hover transition-all duration-300 flex flex-col">
+          <div class="relative h-[380px] overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80" alt="Family Coordinated Festive Wear at Cocoons" class="w-full h-full object-cover zoom-img">
+            <div class="absolute inset-0 bg-gradient-to-t from-slateNavy/80 via-transparent to-transparent"></div>
+            <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-extrabold tracking-widest uppercase text-limeStar border border-limeStar/30">
+              Family Festive
+            </div>
+          </div>
+          <div class="p-8 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-2xl font-bold text-slateNavy mb-2">Coordinated Family Sets</h3>
+              <p class="text-xs md:text-sm text-slateNavy/70 leading-relaxed mb-6">
+                Mother-daughter matching Anarkalis, father-son coordinated silk kurtas, and themed family ensembles tailored for weddings and Diwali.
+              </p>
+            </div>
+            <a href="https://wa.me/917507245454?text=Hi%20Cocoons,%20we%20are%20looking%20for%20Coordinated%20Family%20Festive%20sets" 
+               target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 text-xs font-bold tracking-wider uppercase text-periwinkle group-hover:text-sunsetOrange transition-colors">
+              <span>Enquire Family Sets</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1.5 transition-transform"></i>
+            </a>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Trust Strip -->
-  <section class="trust-strip">
-    <div class="trust-container">
-      <div class="trust-card">
-        <div class="trust-icon"><i data-lucide="sparkles"></i></div>
-        <div class="trust-text">
-          <h4>Exclusive Designs</h4>
-          <p>Limited-edition silhouettes</p>
+  <!-- =========================================================================
+       ABOUT COCOONS SECTION (ESTABLISHED 2006 IN AUNDH)
+  ========================================================================= -->
+  <section id="about" class="py-24 bg-white border-y border-periwinkle/15">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6">
+          <span class="text-xs font-bold tracking-widest uppercase text-sunsetOrange block mb-3">18+ Years of Trust</span>
+          <h2 class="text-3xl md:text-5xl font-extrabold text-slateNavy mb-6 leading-tight">
+            The Story Behind Cocoons Fashions
+          </h2>
+          <div class="w-16 h-1 bg-periwinkle mb-8 rounded-full"></div>
+          
+          <p class="text-base text-slateNavy/80 leading-relaxed mb-6">
+            Established in <strong>2006</strong> in Aundh, <strong>Cocoons Fashions Private Limited</strong> was founded with a singular mission: to make shopping for kids and family celebrations delightful, high-quality, and stress-free.
+          </p>
+
+          <p class="text-sm md:text-base text-slateNavy/75 leading-relaxed mb-8">
+            Located in <strong>Showroom No. 1, Trade Field Building</strong> (opposite Blackberrys on DP Road), Cocoons has dressed thousands of Pune children for their first birthdays, school annual functions, family weddings, and festive pujas. We ensure every garment is made with breathable lining, safe non-scratchy embroidery, and custom fit adjustments on-site.
+          </p>
+
+          <div class="grid grid-cols-2 gap-6 pt-6 border-t border-periwinkle/15">
+            <div>
+              <h4 class="text-xl font-bold text-periwinkle">In-Store Trials</h4>
+              <p class="text-xs text-slateNavy/70 mt-1">Dedicated trial rooms for kids and parents</p>
+            </div>
+            <div>
+              <h4 class="text-xl font-bold text-sunsetOrange">Quick Alterations</h4>
+              <p class="text-xs text-slateNavy/70 mt-1">In-house tailoring for custom length & waist adjustments</p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="trust-card">
-        <div class="trust-icon"><i data-lucide="scissors"></i></div>
-        <div class="trust-text">
-          <h4>Custom Alterations</h4>
-          <p>Tailored for your perfect fit</p>
+
+        <div class="lg:col-span-6">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="rounded-2xl overflow-hidden shadow-md h-52 md:h-64 border border-periwinkle/20">
+              <img src="assets/hero.jpg" alt="Showroom Display" class="w-full h-full object-cover">
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-md h-52 md:h-64 border border-periwinkle/20 mt-6">
+              <img src="assets/girls.jpg" alt="Girls Festive Couture" class="w-full h-full object-cover">
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-md h-52 md:h-64 border border-periwinkle/20">
+              <img src="assets/boys.jpg" alt="Boys Sherwanis" class="w-full h-full object-cover">
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-md h-52 md:h-64 border border-periwinkle/20 mt-6 bg-lavenderLight flex flex-col items-center justify-center p-6 text-center">
+              <img src="assets/logo.png" alt="Cocoons Logo" class="w-36 h-auto mb-3">
+              <span class="text-xs font-bold text-periwinkle">Trade Field Building &bull; Aundh</span>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="trust-card">
-        <div class="trust-icon"><i data-lucide="gem"></i></div>
-        <div class="trust-text">
-          <h4>Artisanal Fabrics</h4>
-          <p>Pure silk, linens & mulmul</p>
-        </div>
-      </div>
-      <div class="trust-card">
-        <div class="trust-icon"><i data-lucide="map-pin"></i></div>
-        <div class="trust-text">
-          <h4>Sanghvi Nagar, Aundh</h4>
-          <p>Trade field Building, DP Rd</p>
-        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Lookbook / Collections -->
-  <section class="collections-section" id="collections">
-    <div class="section-header">
-      <span class="section-tag">Curated Collections</span>
-      <h2 class="section-title">The COCOONS Lookbook</h2>
-      <p class="section-desc">Each piece is hand-selected for the discerning Pune woman who appreciates timeless craftsmanship paired with modern wearability.</p>
-    </div>
-
-    <!-- Filter Tabs -->
-    <div class="filter-tabs">
-      <button class="tab-btn active" onclick="filterCategory('all', this)">All Ensembles</button>
-      <button class="tab-btn" onclick="filterCategory('indowestern', this)">Indo-Western Fusion</button>
-      <button class="tab-btn" onclick="filterCategory('festive', this)">Festive Kurtis & Sets</button>
-      <button class="tab-btn" onclick="filterCategory('dresses', this)">Contemporary Dresses</button>
-      <button class="tab-btn" onclick="filterCategory('tailoring', this)">Custom Tailored Fits</button>
-    </div>
-
-    <!-- Product Grid -->
-    <div class="products-grid">
-      <!-- Item 1 -->
-      <div class="product-card" data-category="indowestern">
-        <div class="product-img-box">
-          <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=80" alt="Embroidered Indo-Western Cape Set">
-          <span class="product-badge">Trending</span>
-        </div>
-        <div class="product-details">
-          <div>
-            <span class="product-cat">Indo-Western Fusion</span>
-            <h3 class="product-title">Embroidered Silk Cape & Dhoti Set</h3>
-            <p class="product-desc">Contemporary fusion ensemble featuring delicate zardozi detailing over a structured raw silk cape paired with fluid tulip trousers.</p>
-          </div>
-          <div class="product-footer">
-            <span class="product-price">Sizes S to XXL</span>
-            <a href="https://wa.me/917507245454?text=Hi%20COCOONS,%20I'm%20interested%20in%20the%20Embroidered%20Silk%20Cape%20%26%20Dhoti%20Set.%20Is%20it%20available%20in-store?" class="btn-wa-card" target="_blank" rel="noopener">
-              <i data-lucide="message-circle" style="width:14px;height:14px;"></i> Enquire
-            </a>
-          </div>
-        </div>
+  <!-- =========================================================================
+       CUSTOMER TESTIMONIALS (AUNDH PARENTS)
+  ========================================================================= -->
+  <section class="py-24 bg-cloudBg">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold tracking-widest uppercase text-sunsetOrange block mb-2">Loved by Pune Parents</span>
+        <h2 class="text-3xl md:text-5xl font-extrabold text-slateNavy mb-4">
+          What Aundh Families Say
+        </h2>
+        <div class="w-16 h-1 bg-periwinkle mx-auto rounded-full mb-6"></div>
       </div>
 
-      <!-- Item 2 -->
-      <div class="product-card" data-category="festive">
-        <div class="product-img-box">
-          <img src="https://images.unsplash.com/photo-1596783074918-c84cb06531ca?auto=format&fit=crop&w=800&q=80" alt="Hand-painted Organza Kurta Set">
-          <span class="product-badge">Handcrafted</span>
-        </div>
-        <div class="product-details">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="bg-white rounded-2xl p-8 border border-periwinkle/15 shadow-card-soft flex flex-col justify-between">
           <div>
-            <span class="product-cat">Festive Wear</span>
-            <h3 class="product-title">Floral Hand-Painted Organza Kurta</h3>
-            <p class="product-desc">Pure lightweight organza with bespoke floral brush strokes, hand-cut scallop borders, and fine gota patti accents for summer celebrations.</p>
+            <div class="flex text-amber-400 mb-4 text-sm">★★★★★</div>
+            <p class="text-sm md:text-base text-slateNavy/80 italic mb-6">
+              "Best shop in Aundh for kids' ethnic wear! We bought a sherwani for my 5-year-old son for his uncle's wedding. The cloth was super soft inside and didn't itch him at all."
+            </p>
           </div>
-          <div class="product-footer">
-            <span class="product-price">Pastel Palette</span>
-            <a href="https://wa.me/917507245454?text=Hi%20COCOONS,%20I'd%20like%20to%20know%20more%20about%20the%20Floral%20Hand-Painted%20Organza%20Kurta%20Set" class="btn-wa-card" target="_blank" rel="noopener">
-              <i data-lucide="message-circle" style="width:14px;height:14px;"></i> Enquire
-            </a>
+          <div class="pt-4 border-t border-periwinkle/10">
+            <h5 class="font-bold text-slateNavy text-sm">Meghna Kulkarni</h5>
+            <span class="text-xs text-slateNavy/60">Sindh Society, Aundh</span>
           </div>
         </div>
-      </div>
 
-      <!-- Item 3 -->
-      <div class="product-card" data-category="dresses">
-        <div class="product-img-box">
-          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80" alt="Boho Tiered Linen Maxi Dress">
-          <span class="product-badge">Boutique Exclusive</span>
-        </div>
-        <div class="product-details">
+        <div class="bg-white rounded-2xl p-8 border border-periwinkle/15 shadow-card-soft flex flex-col justify-between">
           <div>
-            <span class="product-cat">Contemporary Dresses</span>
-            <h3 class="product-title">Tiered Breathable Linen Maxi</h3>
-            <p class="product-desc">Effortless luxury in 100% natural European linen. Features relaxed side pockets, flattering gathers, and handcrafted wooden button details.</p>
+            <div class="flex text-amber-400 mb-4 text-sm">★★★★★</div>
+            <p class="text-sm md:text-base text-slateNavy/80 italic mb-6">
+              "Cocoons on DP Road has been our trusted store for 8 years. Their gown collection for girls is like a fairytale. Excellent staff who patiently help children try on outfits."
+            </p>
           </div>
-          <div class="product-footer">
-            <span class="product-price">Natural Dyes</span>
-            <a href="https://wa.me/917507245454?text=Hi%20COCOONS,%20I'd%20like%20to%20enquire%20about%20the%20Tiered%20Linen%20Maxi%20Dress" class="btn-wa-card" target="_blank" rel="noopener">
-              <i data-lucide="message-circle" style="width:14px;height:14px;"></i> Enquire
-            </a>
+          <div class="pt-4 border-t border-periwinkle/10">
+            <h5 class="font-bold text-slateNavy text-sm">Ritu Agrawal</h5>
+            <span class="text-xs text-slateNavy/60">Baner, Pune</span>
           </div>
         </div>
-      </div>
 
-      <!-- Item 4 -->
-      <div class="product-card" data-category="festive">
-        <div class="product-img-box">
-          <img src="https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80" alt="Chanderi Silk Anarkali">
-          <span class="product-badge">Festive Edit</span>
-        </div>
-        <div class="product-details">
+        <div class="bg-white rounded-2xl p-8 border border-periwinkle/15 shadow-card-soft flex flex-col justify-between">
           <div>
-            <span class="product-cat">Festive Wear</span>
-            <h3 class="product-title">Royal Chanderi Kalidar Anarkali</h3>
-            <p class="product-desc">Rich woven gold zari motifs on lustrous Chanderi silk, paired with a matching tissue dupatta and hand-finished cigarette pants.</p>
+            <div class="flex text-amber-400 mb-4 text-sm">★★★★★</div>
+            <p class="text-sm md:text-base text-slateNavy/80 italic mb-6">
+              "Great location right opposite Blackberrys near Parihar Chowk. Parking is convenient and the range of Indo-Western styles for teens and kids is unmatched in west Pune."
+            </p>
           </div>
-          <div class="product-footer">
-            <span class="product-price">Custom Colors</span>
-            <a href="https://wa.me/917507245454?text=Hi%20COCOONS,%20is%20the%20Chanderi%20Anarkali%20available%20in-store%20for%20trial?" class="btn-wa-card" target="_blank" rel="noopener">
-              <i data-lucide="message-circle" style="width:14px;height:14px;"></i> Enquire
-            </a>
+          <div class="pt-4 border-t border-periwinkle/10">
+            <h5 class="font-bold text-slateNavy text-sm">Sachin Deshpande</h5>
+            <span class="text-xs text-slateNavy/60">Aundh Gaon, Pune</span>
           </div>
         </div>
-      </div>
 
-      <!-- Item 5 -->
-      <div class="product-card" data-category="indowestern">
-        <div class="product-img-box">
-          <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80" alt="Monochrome Co-ord Ensemble">
-          <span class="product-badge">Designer Pick</span>
-        </div>
-        <div class="product-details">
-          <div>
-            <span class="product-cat">Indo-Western Fusion</span>
-            <h3 class="product-title">Pleated High-Low Co-ord Set</h3>
-            <p class="product-desc">A sharp, fluid silhouette crafted for cocktail soirees and art openings. Minimalist lines with subtle thread embroidery on lapels.</p>
-          </div>
-          <div class="product-footer">
-            <span class="product-price">Modern Cut</span>
-            <a href="https://wa.me/917507245454?text=Hi%20COCOONS,%20can%20you%20share%20pricing%20and%20sizes%20for%20the%20Pleated%20Co-ord%20Set?" class="btn-wa-card" target="_blank" rel="noopener">
-              <i data-lucide="message-circle" style="width:14px;height:14px;"></i> Enquire
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Item 6 -->
-      <div class="product-card" data-category="tailoring">
-        <div class="product-img-box">
-          <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80" alt="Bespoke Tailoring & Blouse Artistry">
-          <span class="product-badge">In-House Master</span>
-        </div>
-        <div class="product-details">
-          <div>
-            <span class="product-cat">Custom Tailoring</span>
-            <h3 class="product-title">Bespoke Fit & Designer Blouse Stitching</h3>
-            <p class="product-desc">Master pattern cutting, padded princess cuts, intricate back cut-outs, and custom embroidery designed specifically for your body measurements.</p>
-          </div>
-          <div class="product-footer">
-            <span class="product-price">Tailored in 48-72h</span>
-            <a href="https://wa.me/917507245454?text=Hi%20COCOONS,%20I%20would%20like%20to%20book%20a%20fitting%20and%20tailoring%20consultation" class="btn-wa-card" target="_blank" rel="noopener">
-              <i data-lucide="message-circle" style="width:14px;height:14px;"></i> Enquire
-            </a>
-          </div>
-        </div>
       </div>
     </div>
   </section>
 
-  <!-- Personal Styling & Services Section -->
-  <section class="services-section" id="styling">
-    <div class="services-container">
-      <div class="service-photo-stack">
-        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1000&q=80" alt="COCOONS Personal Styling Studio">
-        <div class="floating-quote-card">
-          <p>"Fashion fades, but a bespoke silhouette crafted around your personality remains unforgettable."</p>
-          <span>— The COCOONS Philosophy</span>
-        </div>
-      </div>
+  <!-- =========================================================================
+       LOCATION & SHOWROOM SECTION
+  ========================================================================= -->
+  <section id="location" class="py-24 bg-white border-t border-periwinkle/15">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7">
+          <span class="text-xs font-bold tracking-widest uppercase text-sunsetOrange block mb-2">Visit Our Showroom</span>
+          <h2 class="text-3xl md:text-5xl font-extrabold text-slateNavy mb-6">
+            Showroom No. 1, Trade Field Building
+          </h2>
 
-      <div class="service-text-content">
-        <span class="section-tag">Bespoke Experience</span>
-        <h2 class="section-title">More Than A Store. A Personalized Styling Haven.</h2>
-        <p class="section-desc">At COCOONS, we don't just sell outfits off the rack. Our in-house stylists and master craftspeople guide you to curate looks that mirror your individual flair.</p>
+          <div class="space-y-6 mb-10">
+            <div class="flex items-start gap-4 p-5 rounded-2xl bg-cloudBg border border-periwinkle/15">
+              <div class="w-11 h-11 rounded-xl bg-periwinkle text-white flex items-center justify-center shrink-0">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="text-lg font-bold text-slateNavy">Address</h4>
+                <p class="text-sm text-slateNavy/80 mt-1">
+                  Showroom No. 1, Trade Field Building, Sanghvi Keshri Nagar, DP Road, near Parihar Chowk, Aundh, Pune – 411007
+                </p>
+              </div>
+            </div>
 
-        <div class="services-list">
-          <div class="service-item">
-            <div class="service-icon"><i data-lucide="user-check"></i></div>
-            <div class="service-content">
-              <h4>1-on-1 In-Studio Styling</h4>
-              <p>Book a dedicated session to try curated ensembles for family weddings, festive poojas, or cocktail dinners with expert advice.</p>
+            <div class="flex items-start gap-4 p-5 rounded-2xl bg-cloudBg border border-periwinkle/15">
+              <div class="w-11 h-11 rounded-xl bg-sunsetOrange text-white flex items-center justify-center shrink-0">
+                <i data-lucide="navigation" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="text-lg font-bold text-slateNavy">Prominent Landmark</h4>
+                <p class="text-sm text-slateNavy/80 mt-1">
+                  Directly opposite the Blackberrys Showroom, DP Road
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-5 rounded-2xl bg-cloudBg border border-periwinkle/15">
+              <div class="w-11 h-11 rounded-xl bg-limeStar text-slateNavy flex items-center justify-center shrink-0">
+                <i data-lucide="phone" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="text-lg font-bold text-slateNavy">Contact Numbers</h4>
+                <p class="text-sm text-slateNavy/80 mt-1">
+                  +91 75072 45454 / 020 2589 6353 &bull; Open 10:00 AM – 9:30 PM (All 7 Days)
+                </p>
+              </div>
             </div>
           </div>
-          <div class="service-item">
-            <div class="service-icon"><i data-lucide="scissors"></i></div>
-            <div class="service-content">
-              <h4>Precision In-House Alterations</h4>
-              <p>Every piece bought can be altered by our master tailor on-site so you step out with a custom-fitted masterpiece.</p>
-            </div>
-          </div>
-          <div class="service-item">
-            <div class="service-icon"><i data-lucide="package"></i></div>
-            <div class="service-content">
-              <h4>Direct Home Dispatch across Pune</h4>
-              <p>Select your favorite designs over WhatsApp video call or in-store, and have finished garments delivered safely to your doorstep.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Client Reviews -->
-  <section class="reviews-section" id="reviews">
-    <div class="reviews-container">
-      <div class="section-header">
-        <span class="section-tag">Client Love</span>
-        <h2 class="section-title">Trusted by Women Across Aundh & Baner</h2>
-        <p class="section-desc">Here is what local Pune shoppers say about their experience at COCOONS.</p>
-      </div>
-
-      <div class="reviews-grid">
-        <div class="review-card">
-          <div>
-            <div class="stars">★★★★★</div>
-            <p class="review-text">"COCOONS on DP Road has been my go-to boutique for 2 years. Their fusion kurtis and linen dresses are super comfortable yet very stylish. You don't see repetitive mass-market prints here."</p>
-          </div>
-          <div class="reviewer">
-            <div class="reviewer-avatar">PS</div>
-            <div class="reviewer-info">
-              <h5>Pooja Shirke</h5>
-              <span>Sindh Society, Aundh</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="review-card">
-          <div>
-            <div class="stars">★★★★★</div>
-            <p class="review-text">"Got my Diwali outfits and custom blouses stitched here. The fitting was spot on on the very first trial! Extremely warm owners who genuinely understand styling and proportions."</p>
-          </div>
-          <div class="reviewer">
-            <div class="reviewer-avatar">AD</div>
-            <div class="reviewer-info">
-              <h5>Ananya Deshmukh</h5>
-              <span>Baner, Pune</span>
-            </div>
+          <div class="flex flex-wrap gap-4">
+            <a href="https://maps.google.com/?cid=1650138340596717103" target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2.5 bg-periwinkle hover:bg-periwinkleDark text-white px-8 py-4 rounded-full text-sm font-bold tracking-wide uppercase transition-all shadow-md">
+              <i data-lucide="navigation" class="w-4 h-4 text-limeStar"></i>
+              <span>Open in Google Maps</span>
+            </a>
+            
+            <a href="tel:+917507245454" 
+               class="inline-flex items-center gap-2.5 border border-slateNavy/20 hover:border-periwinkle text-slateNavy px-8 py-4 rounded-full text-sm font-bold tracking-wide uppercase transition-all hover:bg-periwinkle/5">
+              <i data-lucide="phone" class="w-4 h-4 text-sunsetOrange"></i>
+              <span>Call 075072 45454</span>
+            </a>
           </div>
         </div>
 
-        <div class="review-card">
-          <div>
-            <div class="stars">★★★★★</div>
-            <p class="review-text">"A hidden gem on Sanghvi Keshri Road. Very reasonable pricing for the level of fabric quality and tailoring finish they provide. WhatsApp enquiries are answered promptly too!"</p>
-          </div>
-          <div class="reviewer">
-            <div class="reviewer-avatar">RK</div>
-            <div class="reviewer-info">
-              <h5>Radhika Kulkarni</h5>
-              <span>Aundh Gaon, Pune</span>
+        <div class="lg:col-span-5">
+          <div class="rounded-3xl overflow-hidden border border-periwinkle/20 shadow-xl bg-slateNavy text-white p-8">
+            <div class="flex items-center justify-between mb-6 pb-6 border-b border-white/10">
+              <div>
+                <span class="text-[10px] uppercase font-bold tracking-widest text-limeStar block">Aundh DP Road</span>
+                <h3 class="text-2xl font-bold">Cocoons Fashions</h3>
+              </div>
+              <img src="assets/logo.png" alt="Cocoons" class="h-8 w-auto bg-white/90 p-1 rounded">
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Visit Section -->
-  <section class="visit-section" id="visit">
-    <div class="visit-container">
-      <div class="visit-info">
-        <h2>Visit Our Boutique in Aundh</h2>
-        <p class="lead">Conveniently situated in Trade field Building along Sanghvi Keshri Road (DP Road), Sanghvi Nagar. Easy accessibility and ample parking.</p>
-
-        <div class="location-cards">
-          <div class="loc-item">
-            <div class="loc-item-icon"><i data-lucide="map-pin" style="width:20px;height:20px;"></i></div>
-            <div class="loc-item-text">
-              <h4>Boutique Address</h4>
-              <p>Trade field Building, Sanghvi Keshri Road, DP Rd, Sanghvi Nagar, Ward No. 8, Aundh Gaon, Aundh, Pune, Maharashtra 411067</p>
+            <div class="space-y-3 text-sm text-white/80 mb-8">
+              <div class="flex justify-between py-1.5 border-b border-white/10">
+                <span>Working Days</span>
+                <span class="font-bold text-limeStar">Open All 7 Days</span>
+              </div>
+              <div class="flex justify-between py-1.5 border-b border-white/10">
+                <span>Store Hours</span>
+                <span class="font-bold text-white">10:00 AM – 9:30 PM</span>
+              </div>
+              <div class="flex justify-between py-1.5 border-b border-white/10">
+                <span>Landmark</span>
+                <span>Opp. Blackberrys Showroom</span>
+              </div>
+              <div class="flex justify-between py-1.5">
+                <span>Parking</span>
+                <span>Customer parking available</span>
+              </div>
             </div>
-          </div>
 
-          <div class="loc-item">
-            <div class="loc-item-icon"><i data-lucide="phone" style="width:20px;height:20px;"></i></div>
-            <div class="loc-item-text">
-              <h4>Direct Telephone & WhatsApp</h4>
-              <p>+91 75072 45454 &bull; Customer enquiries active daily</p>
-            </div>
-          </div>
-
-          <div class="loc-item">
-            <div class="loc-item-icon"><i data-lucide="compass" style="width:20px;height:20px;"></i></div>
-            <div class="loc-item-text">
-              <h4>Landmark</h4>
-              <p>Opposite Sanghvi Nagar entrance, off Aundh DP Road</p>
-            </div>
+            <a href="https://maps.google.com/?cid=1650138340596717103" target="_blank" rel="noopener"
+               class="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-sunsetOrange to-[#ff8c3a] text-white py-3.5 rounded-full font-bold text-xs uppercase tracking-wider shadow">
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+              <span>Get Showroom Directions</span>
+            </a>
           </div>
         </div>
 
-        <div class="visit-cta-group">
-          <a href="https://maps.google.com/?cid=1650138340596717103" class="btn-maps" target="_blank" rel="noopener">
-            <i data-lucide="navigation" style="width:16px;height:16px;"></i>
-            <span>Open in Google Maps</span>
-          </a>
-          <a href="tel:+917507245454" class="btn-call-outline">
-            <i data-lucide="phone-call" style="width:16px;height:16px;"></i>
-            <span>Call 075072 45454</span>
-          </a>
-        </div>
-      </div>
-
-      <!-- Hours Card -->
-      <div class="hours-box">
-        <h3>Store Timings</h3>
-        <p class="hours-sub">Welcoming walk-ins and appointments 7 days a week.</p>
-        <table class="hours-table">
-          <tr><td class="day">Monday</td><td class="time">10:30 AM – 9:00 PM</td></tr>
-          <tr><td class="day">Tuesday</td><td class="time">10:30 AM – 9:00 PM</td></tr>
-          <tr><td class="day">Wednesday</td><td class="time">10:30 AM – 9:00 PM</td></tr>
-          <tr><td class="day">Thursday</td><td class="time">10:30 AM – 9:00 PM</td></tr>
-          <tr><td class="day">Friday</td><td class="time">10:30 AM – 9:00 PM</td></tr>
-          <tr><td class="day">Saturday</td><td class="time">10:30 AM – 9:30 PM</td></tr>
-          <tr><td class="day">Sunday</td><td class="time">11:00 AM – 9:30 PM</td></tr>
-        </table>
-        <div style="font-size:12px;color:#fce7e7;display:flex;align-items:center;gap:8px;">
-          <i data-lucide="check-circle" style="color:var(--accent-gold);width:16px;height:16px;"></i>
-          <span>Personal fitting room & trial mirrors available</span>
-        </div>
       </div>
     </div>
   </section>
-
-  <!-- Pitch Banner for Harshal -->
-  <div class="launch-banner">
-    <div class="launch-inner">
-      <span class="launch-pill">PROPOSED CLIENT WEBSITE CONCEPT</span>
-      <h3>Love this website layout for COCOONS Boutique?</h3>
-      <p>We can launch this as the official website (e.g. <b>cocoonsboutique.in</b> or <b>cocoonsaundh.com</b>) with custom Google Maps SEO, professional business email, and high-speed hosting in just <b>48 hours for ₹5,999</b>.</p>
-      <a href="https://wa.me/918459461141?text=Hi%20Harshal,%20I%20saw%20the%20landing%20page%20concept%20for%20COCOONS%20Boutique.%20Let's%20talk%20about%20launching%20our%20website!" class="btn-hire-harshal" target="_blank" rel="noopener">
-        <i data-lucide="message-circle" style="width:16px;height:16px;"></i>
-        <span>Chat with Harshal to Launch This</span>
-      </a>
-    </div>
-  </div>
 </main>
 
-<!-- Footer -->
-<footer class="site-footer">
-  <div class="footer-links">
-    <a href="#collections">Collections</a>
-    <a href="#styling">Personal Styling</a>
-    <a href="#reviews">Client Love</a>
-    <a href="#visit">Visit Studio</a>
+<!-- =========================================================================
+     FOOTER
+========================================================================= -->
+<footer class="bg-slateNavy text-white pt-20 pb-12 border-t border-periwinkle/20">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-16 border-b border-white/10">
+      
+      <div class="md:col-span-5">
+        <img src="assets/logo.png" alt="Cocoons Fashions Pvt Ltd" class="h-10 w-auto bg-white/95 p-1 rounded mb-4">
+        <p class="text-xs md:text-sm text-white/70 leading-relaxed max-w-sm">
+          Cocoons Fashions Private Limited — Pune's premier destination for kids', teens', and family festive fashion since 2006.
+        </p>
+        <p class="text-xs text-limeStar font-semibold mt-4">
+          Showroom No. 1, Trade Field Building, DP Road, Aundh, Pune – 411007
+        </p>
+      </div>
+
+      <div class="md:col-span-3">
+        <h4 class="text-base font-bold text-white mb-4">Quick Links</h4>
+        <ul class="space-y-2 text-xs md:text-sm text-white/70">
+          <li><a href="#home" class="hover:text-limeStar transition-colors">Home</a></li>
+          <li><a href="#collections" class="hover:text-limeStar transition-colors">Kids Collections</a></li>
+          <li><a href="#girls" class="hover:text-limeStar transition-colors">Girls Party Gowns</a></li>
+          <li><a href="#boys" class="hover:text-limeStar transition-colors">Boys Sherwanis</a></li>
+          <li><a href="#location" class="hover:text-limeStar transition-colors">Store Location</a></li>
+        </ul>
+      </div>
+
+      <div class="md:col-span-4">
+        <h4 class="text-base font-bold text-white mb-4">Store Inquiry</h4>
+        <p class="text-xs md:text-sm text-white/70 mb-2 flex items-center gap-2">
+          <i data-lucide="phone" class="w-4 h-4 text-sunsetOrange"></i> +91 75072 45454 / 020 2589 6353
+        </p>
+        <p class="text-xs md:text-sm text-white/70 flex items-center gap-2">
+          <i data-lucide="clock" class="w-4 h-4 text-limeStar"></i> 10:00 AM – 9:30 PM (Daily)
+        </p>
+      </div>
+
+    </div>
+
+    <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-white/50 gap-4">
+      <p>&copy; 2026 Cocoons Fashions Pvt. Ltd. All rights reserved.</p>
+      <p class="text-lavender font-medium">Bespoke Concept & Web Architecture by Harshal Baviskar &bull; Pune</p>
+    </div>
   </div>
-  <p>&copy; 2026 COCOONS Boutique &bull; Trade field Building, Sanghvi Keshri Road, DP Rd, Aundh, Pune 411067</p>
-  <p style="font-size:11px;color:#fca5a5;margin-top:8px;">Designed & Built by Harshal Baviskar &bull; Pune Local Web Studio</p>
 </footer>
 
-<!-- Floating WhatsApp CTA to COCOONS -->
-<a href="https://wa.me/917507245454?text=Hi%20COCOONS,%20I'm%20viewing%20your%20website%20and%20would%20like%20to%20enquire%20about%20your%20boutique%20collections" class="floating-wa-btn" target="_blank" rel="noopener">
-  <i data-lucide="message-circle" style="width:20px;height:20px;"></i>
-  <span>Chat with Store</span>
+<!-- FLOATING WHATSAPP CTA -->
+<a href="https://wa.me/917507245454?text=Hi%20Cocoons%20Fashions,%20I'm%20viewing%20your%20website%20and%20would%20like%20to%20enquire%20about%20your%20collections" 
+   target="_blank" rel="noopener"
+   class="fixed bottom-6 right-6 z-50 inline-flex items-center gap-3 bg-wa hover:bg-waDark text-white px-5 py-3.5 rounded-full shadow-2xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-105">
+  <i data-lucide="message-circle" class="w-5 h-5 text-white"></i>
+  <span class="text-xs md:text-sm font-bold tracking-wide">WhatsApp Store</span>
 </a>
 
 <script>
-// Initialize Lucide Icons
 lucide.createIcons();
 
-// Category Filter
-function filterCategory(category, btn) {
-  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
+// Sticky header blur on scroll
+window.addEventListener('scroll', function() {
+  const nav = document.getElementById('siteNav');
+  if (window.scrollY > 30) {
+    nav.classList.add('scrolled');
+  } else {
+    nav.classList.remove('scrolled');
+  }
+});
 
-  const cards = document.querySelectorAll('.product-card');
-  cards.forEach(card => {
-    if (category === 'all' || card.dataset.category === category) {
-      card.style.display = 'flex';
-    } else {
-      card.style.display = 'none';
-    }
+// Mobile menu toggle
+const btn = document.getElementById('mobileMenuBtn');
+const menu = document.getElementById('mobileMenu');
+if (btn && menu) {
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
   });
 }
 </script>
