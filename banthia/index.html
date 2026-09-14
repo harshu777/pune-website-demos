@@ -1,1299 +1,1071 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Banthia's Siddharth Collection — Exclusive Ethnic & Bridal Wear in Aundh, Pune</title>
-<meta name="description" content="Discover pure handloom sarees, designer bridal lehengas, festive kurtis, and bespoke tailoring at Banthia's Siddharth Collection in Aundh Gaon, Pune.">
+<title>Banthia's Siddharth Collection — Premium Ethnic Wear & Bridal Boutique | Aundh, Pune</title>
+<meta name="description" content="Discover timeless ethnic fashion crafted for weddings, festivals and special occasions at Banthia's Siddharth Collection, beside Hanuman Temple, Aundhgaon Main Road, Aundh, Pune.">
 
-<!-- Google Fonts: Cormorant Garamond for regal Indian luxury, Plus Jakarta Sans for crisp modern readability -->
+<!-- Google Fonts: Cormorant Garamond for Headings + Manrope for Body & Buttons -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
 
 <!-- Lucide Icons -->
 <script src="https://unpkg.com/lucide@latest"></script>
 
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        burgundy: '#6B1E2B',
+        wine: '#521622',
+        wineDark: '#360b13',
+        champagne: '#F7EFE5',
+        cream: '#FFF8F3',
+        creamDark: '#F4ECE4',
+        gold: '#C8A45C',
+        goldLight: '#E5C98B',
+        charcoal: '#1F1A1C',
+        wa: '#25D366',
+        waDark: '#128C7E',
+      },
+      fontFamily: {
+        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+        sans: ['"Manrope"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+      },
+      boxShadow: {
+        'luxury-sm': '0 4px 20px rgba(82, 22, 34, 0.05)',
+        'luxury-md': '0 12px 36px rgba(82, 22, 34, 0.08)',
+        'luxury-lg': '0 24px 60px rgba(82, 22, 34, 0.12)',
+        'luxury-gold': '0 10px 30px rgba(200, 164, 92, 0.25)',
+      }
+    }
+  }
+}
+</script>
+
 <style>
-:root {
-  --primary-deep: #4c0519; /* Royal Crimson / Maroon */
-  --primary: #881337;
-  --primary-light: #9f1239;
-  --gold: #d4af37;        /* Antique Gold */
-  --gold-light: #fef08a;
-  --gold-gradient: linear-gradient(135deg, #d4af37 0%, #fef08a 50%, #b45309 100%);
-  --cream: #faf7f2;       /* Warm Silk Ivory */
-  --cream-dark: #f3ece2;
-  --surface: #ffffff;
-  --card-bg: #ffffff;
-  --border: #e7ded0;
-  --text-dark: #1c1917;
-  --text-muted: #78716c;
-  --wa: #25D366;
-  --wa-dark: #128C7E;
-  --font-serif: 'Cormorant Garamond', Georgia, serif;
-  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  --shadow-sm: 0 2px 8px rgba(76, 5, 25, 0.04);
-  --shadow-md: 0 8px 24px rgba(76, 5, 25, 0.08);
-  --shadow-lg: 0 16px 40px rgba(76, 5, 25, 0.12);
+/* Custom Luxury Enhancements */
+::selection {
+  background-color: #6B1E2B;
+  color: #FFF8F3;
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
-
-body {
-  font-family: var(--font-sans);
-  background-color: var(--cream);
-  color: var(--text-dark);
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
+/* Glassmorphism subtle utilities */
+.glass-nav {
+  background: rgba(255, 248, 243, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 
-/* Concept Demo Banner for Harshal */
-.concept-header {
-  background: #1e1b4b;
-  color: #e0e7ff;
-  font-size: 12px;
-  padding: 8px 16px;
-  text-align: center;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-.concept-header a {
-  color: #a5b4fc;
-  font-weight: 700;
-  text-decoration: underline;
+.glass-nav.scrolled {
+  background: rgba(255, 248, 243, 0.98);
+  box-shadow: 0 4px 30px rgba(82, 22, 34, 0.06);
+  border-bottom: 1px solid rgba(200, 164, 92, 0.2);
 }
 
-/* Top Announcement Bar */
-.announcement-bar {
-  background: var(--primary-deep);
-  color: #fce7f3;
-  padding: 8px 16px;
-  text-align: center;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
-}
-.announcement-bar span {
-  color: var(--gold);
+/* Smooth Fade Up & Micro-interactions */
+.fade-in-up {
+  animation: fadeInUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-/* Main Navigation */
-header.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  background: rgba(250, 247, 242, 0.95);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border);
-  transition: all 0.2s ease;
-}
-.nav-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 14px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.logo-box {
-  display: flex;
-  flex-direction: column;
-}
-.logo-title {
-  font-family: var(--font-serif);
-  font-size: 24px;
-  font-weight: 700;
-  color: var(--primary-deep);
-  letter-spacing: -0.01em;
-  line-height: 1.1;
-}
-.logo-subtitle {
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: #9f1239;
-  font-weight: 700;
-}
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-  list-style: none;
-}
-.nav-links a {
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--text-dark);
-  transition: color 0.2s;
-}
-.nav-links a:hover {
-  color: var(--primary);
-}
-.nav-actions {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-.btn-phone {
-  text-decoration: none;
-  color: var(--primary-deep);
-  font-weight: 700;
-  font-size: 13px;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 8px 14px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: #fff;
-  transition: all 0.2s;
-}
-.btn-phone:hover {
-  border-color: var(--primary);
-  color: var(--primary);
-}
-.btn-wa-header {
-  text-decoration: none;
-  background: var(--wa);
-  color: #032d14;
-  font-weight: 700;
-  font-size: 13px;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 8px 16px;
-  border-radius: 999px;
-  box-shadow: 0 2px 10px rgba(37, 211, 102, 0.2);
-  transition: transform 0.15s, background 0.15s;
-}
-.btn-wa-header:hover {
-  background: #22c55e;
-  transform: translateY(-1px);
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* Mobile Nav Toggle */
-.mobile-nav-btn {
+/* Luxury Card Image Zoom */
+.luxury-card-img {
+  transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.group:hover .luxury-card-img {
+  transform: scale(1.06);
+}
+
+/* Horizontal Scroll Bar Styling */
+.no-scrollbar::-webkit-scrollbar {
   display: none;
-  background: none;
-  border: none;
-  color: var(--primary-deep);
-  cursor: pointer;
 }
-
-/* Hero Section */
-.hero {
-  position: relative;
-  padding: 60px 24px 70px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 48px;
-  align-items: center;
-}
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: #fff;
-  padding: 6px 14px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow-sm);
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--primary);
-  margin-bottom: 20px;
-}
-.hero-badge .star-pill {
-  background: #fef3c7;
-  color: #b45309;
-  padding: 2px 8px;
-  border-radius: 999px;
-  font-weight: 700;
-}
-.hero h1 {
-  font-family: var(--font-serif);
-  font-size: 52px;
-  line-height: 1.12;
-  font-weight: 700;
-  color: var(--primary-deep);
-  margin-bottom: 18px;
-  letter-spacing: -0.02em;
-}
-.hero h1 em {
-  font-style: italic;
-  color: var(--primary);
-}
-.hero p.lead {
-  font-size: 17px;
-  color: var(--text-muted);
-  margin-bottom: 28px;
-  max-width: 540px;
-  line-height: 1.65;
-}
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-bottom: 36px;
-}
-.btn-primary-wa {
-  background: var(--primary-deep);
-  color: #fff;
-  font-weight: 700;
-  font-size: 15px;
-  padding: 14px 26px;
-  border-radius: 999px;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  box-shadow: 0 4px 18px rgba(76, 5, 25, 0.25);
-  transition: all 0.2s;
-}
-.btn-primary-wa:hover {
-  background: var(--primary);
-  transform: translateY(-2px);
-}
-.btn-directions {
-  background: #fff;
-  color: var(--text-dark);
-  font-weight: 600;
-  font-size: 15px;
-  padding: 14px 24px;
-  border-radius: 999px;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow-sm);
-  transition: all 0.2s;
-}
-.btn-directions:hover {
-  border-color: var(--primary);
-  color: var(--primary);
-}
-.hero-highlights {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  border-top: 1px solid var(--border);
-  padding-top: 24px;
-}
-.highlight-item h4 {
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--primary-deep);
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-bottom: 3px;
-}
-.highlight-item p {
-  font-size: 12px;
-  color: var(--text-muted);
-  line-height: 1.4;
-}
-
-/* Hero Media Showcase */
-.hero-media-stack {
-  position: relative;
-}
-.main-hero-img {
-  width: 100%;
-  height: 480px;
-  object-fit: cover;
-  border-radius: 20px;
-  box-shadow: var(--shadow-lg);
-  border: 4px solid #fff;
-}
-.floating-overlay-card {
-  position: absolute;
-  bottom: -20px;
-  left: -20px;
-  background: #fff;
-  padding: 16px 20px;
-  border-radius: 14px;
-  box-shadow: var(--shadow-md);
-  border: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  max-width: 280px;
-}
-.floating-overlay-card .icon-circ {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  background: #fdf2f8;
-  color: var(--primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-.floating-overlay-card h5 {
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--primary-deep);
-  margin-bottom: 2px;
-}
-.floating-overlay-card p {
-  font-size: 11px;
-  color: var(--text-muted);
-}
-
-/* Section Header */
-.section-head {
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto 40px;
-}
-.section-tag {
-  text-transform: uppercase;
-  font-size: 11px;
-  letter-spacing: 0.18em;
-  font-weight: 800;
-  color: var(--primary);
-  display: block;
-  margin-bottom: 8px;
-}
-.section-title {
-  font-family: var(--font-serif);
-  font-size: 38px;
-  font-weight: 700;
-  color: var(--primary-deep);
-  line-height: 1.2;
-}
-.section-desc {
-  font-size: 15px;
-  color: var(--text-muted);
-  margin-top: 10px;
-}
-
-/* Curated Collections Section */
-.collections-section {
-  padding: 80px 24px;
-  background: #fff;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-}
-.collections-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Filter Chips */
-.filter-bar {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 36px;
-  flex-wrap: wrap;
-}
-.filter-btn {
-  background: var(--cream);
-  border: 1px solid var(--border);
-  color: var(--text-dark);
-  font-weight: 600;
-  font-size: 13px;
-  padding: 8px 18px;
-  border-radius: 999px;
-  cursor: pointer;
-  transition: all 0.15s;
-}
-.filter-btn:hover {
-  background: #fff;
-  border-color: var(--primary);
-}
-.filter-btn.active {
-  background: var(--primary-deep);
-  color: #fff;
-  border-color: var(--primary-deep);
-}
-
-/* Collections Grid */
-.products-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-  gap: 24px;
-}
-.product-card {
-  background: var(--cream);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  overflow: hidden;
-  transition: transform 0.2s, box-shadow 0.2s;
-  display: flex;
-  flex-direction: column;
-}
-.product-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
-  border-color: rgba(136, 19, 55, 0.2);
-}
-.product-img-box {
-  position: relative;
-  height: 290px;
-  overflow: hidden;
-}
-.product-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-.product-card:hover .product-img {
-  transform: scale(1.04);
-}
-.tag-badge {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  background: rgba(76, 5, 25, 0.85);
-  backdrop-filter: blur(4px);
-  color: #fff;
-  font-size: 11px;
-  font-weight: 700;
-  padding: 4px 10px;
-  border-radius: 6px;
-  letter-spacing: 0.03em;
-}
-.product-details {
-  padding: 18px;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-.product-category {
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-weight: 700;
-  color: var(--primary);
-  margin-bottom: 4px;
-}
-.product-title {
-  font-family: var(--font-serif);
-  font-size: 19px;
-  font-weight: 700;
-  color: var(--text-dark);
-  margin-bottom: 6px;
-  line-height: 1.25;
-}
-.product-desc {
-  font-size: 13px;
-  color: var(--text-muted);
-  line-height: 1.5;
-  margin-bottom: 14px;
-  flex: 1;
-}
-.product-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 12px;
-  border-top: 1px solid rgba(0,0,0,0.05);
-}
-.product-pricing {
-  display: flex;
-  flex-direction: column;
-}
-.product-price {
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--primary-deep);
-}
-.product-note {
-  font-size: 10px;
-  color: var(--text-muted);
-}
-.btn-enquire-item {
-  background: var(--wa);
-  color: #032d14;
-  font-size: 12px;
-  font-weight: 700;
-  padding: 8px 14px;
-  border-radius: 999px;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  box-shadow: 0 2px 6px rgba(37, 211, 102, 0.2);
-  transition: background 0.15s;
-}
-.btn-enquire-item:hover {
-  background: #22c55e;
-}
-
-/* Boutique Features / Craftsmanship */
-.features-section {
-  padding: 80px 24px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-}
-.feature-box {
-  background: #fff;
-  border: 1px solid var(--border);
-  padding: 32px 24px;
-  border-radius: 16px;
-  text-align: left;
-  box-shadow: var(--shadow-sm);
-}
-.feature-icon-box {
-  width: 52px;
-  height: 52px;
-  border-radius: 12px;
-  background: #fdf2f8;
-  color: var(--primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-.feature-box h3 {
-  font-family: var(--font-serif);
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--primary-deep);
-  margin-bottom: 10px;
-}
-.feature-box p {
-  font-size: 14px;
-  color: var(--text-muted);
-  line-height: 1.6;
-}
-
-/* Location & Store Visit Section */
-.visit-section {
-  padding: 80px 24px;
-  background: var(--primary-deep);
-  color: #fff;
-}
-.visit-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  align-items: center;
-}
-.visit-content h2 {
-  font-family: var(--font-serif);
-  font-size: 40px;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 16px;
-  line-height: 1.2;
-}
-.visit-content p.desc {
-  font-size: 16px;
-  color: #fce7f3;
-  margin-bottom: 28px;
-  line-height: 1.6;
-}
-.info-list {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  margin-bottom: 32px;
-}
-.info-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 14px;
-}
-.info-item-icon {
-  width: 36px;
-  height: 36px;
-  border-radius: 8px;
-  background: rgba(255,255,255,0.1);
-  color: var(--gold);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-.info-item-text h4 {
-  font-size: 15px;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 2px;
-}
-.info-item-text p {
-  font-size: 13px;
-  color: #fbcfe8;
-}
-.visit-actions {
-  display: flex;
-  gap: 14px;
-  flex-wrap: wrap;
-}
-.btn-maps-large {
-  background: #fff;
-  color: var(--primary-deep);
-  font-weight: 700;
-  font-size: 14px;
-  padding: 14px 24px;
-  border-radius: 999px;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  transition: transform 0.15s;
-}
-.btn-maps-large:hover {
-  transform: translateY(-2px);
-}
-.btn-call-large {
-  background: transparent;
-  color: #fff;
-  border: 1px solid rgba(255,255,255,0.4);
-  font-weight: 600;
-  font-size: 14px;
-  padding: 14px 24px;
-  border-radius: 999px;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-.visit-card-box {
-  background: rgba(255,255,255,0.06);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 20px;
-  padding: 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.visit-card-box h3 {
-  font-family: var(--font-serif);
-  font-size: 26px;
-  color: var(--gold-light);
-}
-.hours-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-.hours-table tr {
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-.hours-table td {
-  padding: 10px 0;
-  font-size: 13px;
-  color: #fdf2f8;
-}
-.hours-table td.day {
-  font-weight: 600;
-}
-.hours-table td.time {
-  text-align: right;
-  color: var(--gold-light);
-}
-
-/* Reviews Strip */
-.reviews-strip {
-  padding: 60px 24px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.reviews-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-.review-card {
-  background: #fff;
-  border: 1px solid var(--border);
-  padding: 24px;
-  border-radius: 14px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  box-shadow: var(--shadow-sm);
-}
-.review-stars {
-  color: #f59e0b;
-  display: flex;
-  gap: 3px;
-}
-.review-text {
-  font-size: 14px;
-  color: var(--text-dark);
-  line-height: 1.55;
-  font-style: italic;
-  flex: 1;
-}
-.reviewer-meta h5 {
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--primary-deep);
-}
-.reviewer-meta span {
-  font-size: 11px;
-  color: var(--text-muted);
-}
-
-/* Harshal Conversion Banner */
-.launch-banner {
-  background: #111827;
-  color: #fff;
-  padding: 36px 24px;
-  text-align: center;
-  border-top: 1px solid #1f2937;
-}
-.launch-inner {
-  max-width: 680px;
-  margin: 0 auto;
-}
-.launch-pill {
-  background: #374151;
-  color: #fbbf24;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding: 4px 12px;
-  border-radius: 999px;
-  display: inline-block;
-  margin-bottom: 12px;
-}
-.launch-inner h3 {
-  font-family: var(--font-serif);
-  font-size: 28px;
-  margin-bottom: 10px;
-  color: #fff;
-}
-.launch-inner p {
-  font-size: 14px;
-  color: #9ca3af;
-  margin-bottom: 20px;
-  line-height: 1.6;
-}
-.btn-hire-harshal {
-  background: #6366f1;
-  color: #fff;
-  font-weight: 700;
-  font-size: 14px;
-  padding: 12px 24px;
-  border-radius: 999px;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.4);
-  transition: background 0.15s;
-}
-.btn-hire-harshal:hover {
-  background: #4f46e5;
-}
-
-/* Footer */
-footer.site-footer {
-  background: var(--primary-deep);
-  color: #fbcfe8;
-  padding: 30px 24px;
-  text-align: center;
-  font-size: 13px;
-  border-top: 1px solid rgba(255,255,255,0.1);
-}
-.footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-bottom: 14px;
-}
-.footer-links a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-/* Floating WhatsApp Button */
-.floating-wa-btn {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  z-index: 100;
-  background: var(--wa);
-  color: #032d14;
-  font-weight: 800;
-  font-size: 14px;
-  padding: 14px 22px;
-  border-radius: 999px;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  box-shadow: 0 6px 25px rgba(37, 211, 102, 0.5);
-  transition: transform 0.15s, background 0.15s;
-}
-.floating-wa-btn:hover {
-  background: #22c55e;
-  transform: translateY(-3px);
-}
-
-/* Responsive Breakpoints */
-@media (max-width: 900px) {
-  .hero-grid { grid-template-columns: 1fr; gap: 36px; }
-  .main-hero-img { height: 380px; }
-  .features-grid { grid-template-columns: 1fr; gap: 16px; }
-  .visit-container { grid-template-columns: 1fr; gap: 32px; }
-  .reviews-grid { grid-template-columns: 1fr; gap: 16px; }
-  .hero h1 { font-size: 40px; }
-}
-@media (max-width: 640px) {
-  .nav-links { display: none; }
-  .hero { padding: 36px 18px 40px; }
-  .hero h1 { font-size: 32px; }
-  .hero-highlights { grid-template-columns: 1fr; gap: 12px; }
-  .floating-overlay-card { position: static; margin-top: 14px; max-width: 100%; }
-  .products-grid { grid-template-columns: 1fr; }
-  .floating-wa-btn { bottom: 16px; right: 16px; padding: 12px 18px; font-size: 13px; }
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 </style>
 </head>
-<body>
 
-<!-- Concept Banner -->
-<div class="concept-header">
-  <span>✨ <b>Concept Design</b> prepared for <b>Banthia's Siddharth Collection</b> by <b>Harshal Baviskar</b></span>
-  <a href="https://wa.me/918459461141?text=Hi%20Harshal,%20I%20saw%20the%20landing%20page%20for%20Banthia's%20Siddharth%20Collection.%20Let's%20talk!" target="_blank" rel="noopener">Want this launched as your official website? Chat with Harshal &rarr;</a>
-</div>
+<body class="font-sans bg-cream text-charcoal antialiased overflow-x-hidden selection:bg-burgundy selection:text-cream">
 
-<!-- Top Festive Offer Bar -->
-<div class="announcement-bar">
-  ✨ Wedding & Festive Season 2026 Collection Now In Store &bull; <span>Special Bridal Trouseau Packages</span> &bull; Visit Aundh Gaon
-</div>
-
-<!-- Main Navigation -->
-<header class="site-header">
-  <div class="nav-container">
-    <div class="logo-box">
-      <span class="logo-title">Banthia's Siddharth Collection</span>
-      <span class="logo-subtitle">Ethnic &bull; Bridal &bull; Couture &bull; Aundh, Pune</span>
+<!-- =========================================================================
+     TASTEFUL NOTIFICATION RIBBON (HARSHAL BAVISKAR PERSONALIZED CONCEPT)
+========================================================================= -->
+<aside class="relative z-50 bg-[#2D0B12] text-champagne border-b border-gold/30 px-4 py-3 text-xs md:text-sm">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3 text-center md:text-left">
+    <div class="flex items-center gap-2 justify-center md:justify-start">
+      <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-gold/20 text-gold text-xs">✨</span>
+      <p class="font-medium tracking-wide">
+        <span class="text-gold font-semibold">Concept Website Prepared Exclusively for Banthia's Siddharth Collection.</span>
+        <span class="text-champagne/80 hidden lg:inline ml-1">This preview demonstrates how your official website could look. Crafted by Harshal Baviskar.</span>
+      </p>
     </div>
-    <ul class="nav-links">
-      <li><a href="#collections">Collections</a></li>
-      <li><a href="#craftsmanship">Bespoke Stitching</a></li>
-      <li><a href="#reviews">Reviews</a></li>
-      <li><a href="#visit">Store Location</a></li>
-    </ul>
-    <div class="nav-actions">
-      <a href="tel:+919420132081" class="btn-phone">
-        <i data-lucide="phone" style="width:14px;height:14px;"></i> Call Store
+    <div class="flex items-center gap-2.5 flex-wrap justify-center">
+      <a href="https://wa.me/918459461141?text=Hi%20Harshal,%20I'm%20impressed%20by%20the%20Banthia's%20Siddharth%20Collection%20website%20concept!%20Let's%20launch%20our%20official%20website." 
+         target="_blank" rel="noopener"
+         class="inline-flex items-center gap-1.5 bg-gradient-to-r from-gold to-goldLight text-wineDark px-4 py-1.5 rounded-full font-semibold text-xs shadow-luxury-sm hover:brightness-105 transition-all">
+        <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+        <span>Launch My Website</span>
       </a>
-      <a href="https://wa.me/919420132081?text=Hi%20Banthia's%20Siddharth%20Collection,%20I'm%20interested%20in%20your%20ethnic%20wear%20collections" class="btn-wa-header" target="_blank" rel="noopener">
-        <i data-lucide="message-circle" style="width:14px;height:14px;"></i> WhatsApp
+      <a href="https://wa.me/918459461141?text=Hi%20Harshal,%20I%20have%20a%20few%20questions%20regarding%20the%20website%20concept%20for%20Banthia's%20Siddharth%20Collection." 
+         target="_blank" rel="noopener"
+         class="inline-flex items-center gap-1.5 border border-gold/40 text-gold px-3.5 py-1.5 rounded-full font-medium text-xs hover:bg-gold/10 transition-colors">
+        <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+        <span>Chat with Harshal</span>
+      </a>
+    </div>
+  </div>
+</aside>
+
+<!-- =========================================================================
+     TOP MARQUEE ANNOUNCEMENT
+========================================================================= -->
+<div class="bg-wine text-champagne/90 py-2 text-[11px] md:text-xs tracking-widest uppercase text-center font-medium border-b border-burgundy">
+  <span>Handcrafted Banarasi, Kanjivaram & Paithani Silks</span>
+  <span class="mx-3 text-gold">•</span>
+  <span>Groom Sherwanis & Bundis</span>
+  <span class="mx-3 text-gold">•</span>
+  <span>Beside Hanuman Temple, Aundhgaon</span>
+</div>
+
+<!-- =========================================================================
+     STICKY NAVIGATION
+========================================================================= -->
+<header id="siteNav" class="sticky top-0 z-40 w-full transition-all duration-300 glass-nav border-b border-transparent">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 md:h-24 flex items-center justify-between">
+    
+    <!-- Regal Logo -->
+    <a href="#home" class="flex items-center gap-3.5 group">
+      <div class="w-10 h-10 md:w-12 md:h-12 rounded-full border border-gold/60 flex items-center justify-center bg-gradient-to-br from-cream to-creamDark shadow-sm group-hover:border-gold transition-colors">
+        <span class="font-serif text-xl md:text-2xl text-burgundy font-bold">B</span>
+      </div>
+      <div class="flex flex-col">
+        <span class="font-serif text-xl md:text-2xl font-bold tracking-tight text-burgundy leading-none">
+          Banthia's
+        </span>
+        <span class="text-[9px] md:text-[10px] tracking-[0.25em] uppercase text-gold font-semibold mt-1">
+          Siddharth Collection
+        </span>
+      </div>
+    </a>
+
+    <!-- Desktop Navigation Links -->
+    <nav class="hidden lg:flex items-center gap-8 text-sm font-medium tracking-wide">
+      <a href="#home" class="text-charcoal hover:text-burgundy transition-colors">Home</a>
+      <a href="#collections" class="text-charcoal hover:text-burgundy transition-colors">Collections</a>
+      <a href="#mens" class="text-charcoal hover:text-burgundy transition-colors">Men's Wear</a>
+      <a href="#materials" class="text-charcoal hover:text-burgundy transition-colors">Dress Materials</a>
+      <a href="#stitching" class="text-charcoal hover:text-burgundy transition-colors">Stitching</a>
+      <a href="#about" class="text-charcoal hover:text-burgundy transition-colors">About</a>
+      <a href="#location" class="text-charcoal hover:text-burgundy transition-colors">Visit Boutique</a>
+    </nav>
+
+    <!-- Nav Actions -->
+    <div class="flex items-center gap-4">
+      <a href="tel:+919420132081" class="hidden sm:inline-flex items-center gap-2 text-xs font-semibold text-burgundy hover:text-wine tracking-wide">
+        <i data-lucide="phone" class="w-4 h-4 text-gold"></i>
+        <span>+91 94201 32081</span>
+      </a>
+
+      <!-- WhatsApp Button -->
+      <a href="https://wa.me/919420132081?text=Hi%20Banthia's%20Siddharth%20Collection,%20I'm%20viewing%20your%20website%20and%20would%20like%20to%20enquire%20about%20your%20ethnic%20wear%20collections" 
+         target="_blank" rel="noopener"
+         class="inline-flex items-center gap-2 bg-burgundy hover:bg-wine text-cream px-5 py-2.5 rounded-full text-xs md:text-sm font-semibold tracking-wider uppercase transition-all shadow-luxury-sm hover:shadow-luxury-md transform hover:-translate-y-0.5">
+        <i data-lucide="message-circle" class="w-4 h-4 text-gold"></i>
+        <span>WhatsApp</span>
+      </a>
+
+      <!-- Mobile Hamburger Menu Button -->
+      <button id="mobileMenuBtn" class="lg:hidden p-2 text-burgundy hover:text-wine focus:outline-none" aria-label="Toggle Navigation">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobileMenu" class="hidden lg:hidden bg-cream border-t border-gold/20 px-6 py-6 space-y-4 shadow-xl">
+    <a href="#home" class="block text-base font-medium text-charcoal hover:text-burgundy">Home</a>
+    <a href="#collections" class="block text-base font-medium text-charcoal hover:text-burgundy">Collections</a>
+    <a href="#mens" class="block text-base font-medium text-charcoal hover:text-burgundy">Men's Wear</a>
+    <a href="#materials" class="block text-base font-medium text-charcoal hover:text-burgundy">Dress Materials</a>
+    <a href="#stitching" class="block text-base font-medium text-charcoal hover:text-burgundy">Custom Stitching</a>
+    <a href="#about" class="block text-base font-medium text-charcoal hover:text-burgundy">About Banthia's</a>
+    <a href="#location" class="block text-base font-medium text-charcoal hover:text-burgundy">Store Location</a>
+    <div class="pt-4 border-t border-gold/20 flex flex-col gap-3">
+      <a href="tel:+919420132081" class="flex items-center gap-2 text-sm font-semibold text-burgundy">
+        <i data-lucide="phone" class="w-4 h-4 text-gold"></i> +91 94201 32081
+      </a>
+      <a href="https://maps.google.com/?cid=9988389822388524741" target="_blank" rel="noopener" class="flex items-center gap-2 text-sm text-charcoal/70">
+        <i data-lucide="map-pin" class="w-4 h-4 text-gold"></i> Beside Hanuman Temple, Aundhgaon
       </a>
     </div>
   </div>
 </header>
 
-<!-- Hero Section -->
-<main>
-  <section class="hero">
-    <div class="hero-grid">
-      <div>
-        <div class="hero-badge">
-          <span class="star-pill">★ 4.9</span>
-          <span>Aundh Gaon's Favorite Ethnic Studio</span>
-        </div>
-        <h1>The Splendor of Pure Handlooms & <em>Timeless Bridal Couture</em>.</h1>
-        <p class="lead">From regal Paithanis and Banarasis to hand-embroidered bridal lehengas and designer blouse tailoring, celebrate every celebration in bespoke elegance.</p>
+<!-- =========================================================================
+     HERO SECTION (LOUIS VUITTON MEETS SABYASACHI)
+========================================================================= -->
+<section id="home" class="relative min-h-[88vh] lg:min-h-[92vh] flex items-center bg-cream overflow-hidden py-16 lg:py-24">
+  
+  <!-- Subtle Ambient Glows -->
+  <div class="absolute top-0 right-1/4 w-[500px] h-[500px] bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+  <div class="absolute bottom-0 left-10 w-[400px] h-[400px] bg-burgundy/5 rounded-full blur-3xl pointer-events-none"></div>
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 w-full">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+      
+      <!-- Content Left (7 Columns) -->
+      <div class="lg:col-span-7 flex flex-col justify-center text-left fade-in-up">
         
-        <div class="hero-actions">
-          <a href="https://wa.me/919420132081?text=Hi%20Banthia's%20Siddharth%20Collection,%20I'd%20like%20to%20enquire%20about%20your%20bridal%20and%20saree%20collections" class="btn-primary-wa" target="_blank" rel="noopener">
-            <i data-lucide="message-circle" style="width:18px;height:18px;"></i> Enquire on WhatsApp
+        <!-- Heritage Badge -->
+        <div class="inline-flex items-center gap-2.5 self-start bg-champagne border border-gold/40 px-4 py-1.5 rounded-full mb-6">
+          <span class="w-1.5 h-1.5 rounded-full bg-burgundy"></span>
+          <span class="text-[11px] md:text-xs font-semibold uppercase tracking-[0.2em] text-burgundy">
+            Aundh's Premier Ethnic Wear Destination
+          </span>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[84px] leading-[1.05] text-wine font-semibold tracking-tight mb-6">
+          Tradition Meets <span class="italic font-normal text-burgundy">Style.</span>
+        </h1>
+
+        <!-- Subheadline -->
+        <p class="text-sm md:text-base font-semibold tracking-widest uppercase text-gold mb-5">
+          Premium Sarees &bull; Designer Wear &bull; Men's Ethnic Collection &bull; Custom Stitching
+        </p>
+
+        <!-- Description -->
+        <p class="text-base md:text-lg text-charcoal/80 leading-relaxed font-normal max-w-xl mb-10">
+          Discover timeless ethnic fashion crafted for weddings, festivals, and every special occasion. From handloom Paithani silks to opulent bridal lehengas and royal groom sherwanis, experience couture elegance in the heart of Aundh.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-12">
+          <a href="#collections" class="inline-flex items-center justify-center gap-2.5 bg-burgundy hover:bg-wine text-cream px-8 py-4 rounded-full text-sm font-semibold tracking-wider uppercase transition-all shadow-luxury-md hover:shadow-luxury-lg transform hover:-translate-y-0.5">
+            <span>Explore Collections</span>
+            <i data-lucide="arrow-right" class="w-4 h-4 text-gold"></i>
           </a>
-          <a href="https://maps.google.com/?cid=9988389822388524741" class="btn-directions" target="_blank" rel="noopener">
-            <i data-lucide="navigation" style="width:18px;height:18px;"></i> Locate on Maps
+
+          <a href="#location" class="inline-flex items-center justify-center gap-2.5 bg-transparent border border-burgundy/30 hover:border-burgundy text-burgundy px-8 py-4 rounded-full text-sm font-semibold tracking-wider uppercase transition-all hover:bg-burgundy/5">
+            <i data-lucide="map-pin" class="w-4 h-4 text-gold"></i>
+            <span>Visit Store</span>
           </a>
         </div>
 
-        <div class="hero-highlights">
-          <div class="highlight-item">
-            <h4><i data-lucide="sparkles" style="color:var(--primary);width:16px;height:16px;"></i> Pure Handlooms</h4>
-            <p>Authentic Yeola Paithanis, Kanjivaram & Pure Silk.</p>
-          </div>
-          <div class="highlight-item">
-            <h4><i data-lucide="scissors" style="color:var(--primary);width:16px;height:16px;"></i> Custom Stitching</h4>
-            <p>Master blouse design, maggam work & bridal fits.</p>
-          </div>
-          <div class="highlight-item">
-            <h4><i data-lucide="heart-handshake" style="color:var(--primary);width:16px;height:16px;"></i> Trusted in Aundh</h4>
-            <p>30+ years serving Pune families with honest pricing.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Hero Imagery -->
-      <div class="hero-media-stack">
-        <img class="main-hero-img" src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=900&q=85" alt="Indian Bridal Saree Collection">
-        <div class="floating-overlay-card">
-          <div class="icon-circ"><i data-lucide="map-pin" style="width:20px;height:20px;"></i></div>
+        <!-- Trust Signals Micro Row -->
+        <div class="pt-8 border-t border-gold/30 grid grid-cols-3 gap-6 max-w-lg">
           <div>
-            <h5>Visit Us in Aundh Gaon</h5>
-            <p>Beside Hanuman Mandir, Main Road, Aundh, Pune</p>
+            <span class="font-serif text-2xl md:text-3xl font-bold text-burgundy block">4.2★</span>
+            <span class="text-xs text-charcoal/60 uppercase tracking-wider font-medium">100+ Google Reviews</span>
+          </div>
+          <div>
+            <span class="font-serif text-2xl md:text-3xl font-bold text-burgundy block">100%</span>
+            <span class="text-xs text-charcoal/60 uppercase tracking-wider font-medium">Pure Silk & Zari</span>
+          </div>
+          <div>
+            <span class="font-serif text-2xl md:text-3xl font-bold text-burgundy block">Aundh</span>
+            <span class="text-xs text-charcoal/60 uppercase tracking-wider font-medium">Beside Hanuman Mandir</span>
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Curated Collections Section -->
-  <section class="collections-section" id="collections">
-    <div class="collections-container">
-      <div class="section-head">
-        <span class="section-tag">Handpicked for You</span>
-        <h2 class="section-title">Signature Collections</h2>
-        <p class="section-desc">Tap any collection to check in-store availability, pricing, or request a video walkthrough on WhatsApp.</p>
-      </div>
+      <!-- Model & Boutique Visual Right (5 Columns) -->
+      <div class="lg:col-span-5 relative">
+        <div class="relative mx-auto max-w-[480px] lg:max-w-none">
+          
+          <!-- Ornate Gold Backdrop Frame -->
+          <div class="absolute -inset-3 rounded-[32px] border border-gold/40 transform rotate-1 pointer-events-none"></div>
+          <div class="absolute -inset-1 rounded-[30px] bg-gradient-to-tr from-gold/30 via-transparent to-burgundy/20 blur-sm pointer-events-none"></div>
 
-      <!-- Filter Tabs -->
-      <div class="filter-bar">
-        <button class="filter-btn active" onclick="filterItems('all', this)">All Outfits</button>
-        <button class="filter-btn" onclick="filterItems('bridal', this)">Bridal Lehengas</button>
-        <button class="filter-btn" onclick="filterItems('saree', this)">Paithani & Silk Sarees</button>
-        <button class="filter-btn" onclick="filterItems('kurti', this)">Kurtis & Co-ords</button>
-        <button class="filter-btn" onclick="filterItems('blouse', this)">Designer Blouses</button>
-      </div>
+          <!-- Main Hero Image Container -->
+          <div class="relative rounded-[28px] overflow-hidden shadow-luxury-lg bg-creamDark border border-gold/40">
+            <img src="assets/hero.jpg" 
+                 alt="Beautiful Indian model in maroon embroidered saree at Banthia's Siddharth Collection boutique Pune" 
+                 class="w-full h-[540px] md:h-[620px] object-cover object-top luxury-card-img"
+                 loading="eager">
 
-      <!-- Products Grid -->
-      <div class="products-grid" id="products-grid">
-        
-        <!-- Item 1 -->
-        <div class="product-card" data-cat="bridal">
-          <div class="product-img-box">
-            <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=600&q=80" alt="Royal Crimson Velvet Bridal Lehenga" class="product-img">
-            <span class="tag-badge">Bridal Couture</span>
-          </div>
-          <div class="product-details">
-            <span class="product-category">Bridal Wear</span>
-            <h3 class="product-title">Royal Crimson Velvet Lehenga</h3>
-            <p class="product-desc">Zardozi and dori hand-embroidery with dual dupattas. Designed for the unforgettable bride.</p>
-            <div class="product-footer">
-              <div class="product-pricing">
-                <span class="product-price">Bespoke Order</span>
-                <span class="product-note">Custom fitting included</span>
+            <!-- Elegant Overlay Vignette -->
+            <div class="absolute inset-0 bg-gradient-to-t from-wineDark/80 via-transparent to-transparent"></div>
+
+            <!-- Floating Luxury Pill -->
+            <div class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-cream/95 backdrop-blur-md border border-gold/40 shadow-luxury-md flex items-center justify-between">
+              <div>
+                <span class="text-[10px] tracking-[0.2em] uppercase font-bold text-gold block">Handcrafted Excellence</span>
+                <h4 class="font-serif text-base font-semibold text-wine">Pure Zari Banarasi Silk</h4>
               </div>
-              <a href="https://wa.me/919420132081?text=Hi%20Banthia's%20Siddharth%20Collection,%20I'm%20enquiring%20about%20the%20Royal%20Crimson%20Velvet%20Lehenga" class="btn-enquire-item" target="_blank" rel="noopener">
-                <i data-lucide="message-circle" style="width:13px;height:13px;"></i> Enquire
+              <a href="https://wa.me/919420132081?text=Hi%20Banthia's%20Siddharth%20Collection,%20I'm%20interested%20in%20the%20Bridal%20Maroon%20Saree%20shown%20on%20your%20website" 
+                 target="_blank" rel="noopener"
+                 class="w-10 h-10 rounded-full bg-burgundy text-gold flex items-center justify-center shadow hover:bg-wine transition-colors">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
               </a>
             </div>
           </div>
-        </div>
 
-        <!-- Item 2 -->
-        <div class="product-card" data-cat="saree">
-          <div class="product-img-box">
-            <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=600&q=80" alt="Authentic Pure Yeola Paithani" class="product-img">
-            <span class="tag-badge">Heritage Handloom</span>
-          </div>
-          <div class="product-details">
-            <span class="product-category">Pure Silk Sarees</span>
-            <h3 class="product-title">Yeola Pure Silk Paithani</h3>
-            <p class="product-desc">Rich peacock (mor) pallu in pure zari with contrasting tissue borders. The pride of Maharashtra.</p>
-            <div class="product-footer">
-              <div class="product-pricing">
-                <span class="product-price">From ₹8,500</span>
-                <span class="product-note">Pure silk certified</span>
-              </div>
-              <a href="https://wa.me/919420132081?text=Hi%20Banthia's%20Siddharth%20Collection,%20I'd%20like%20to%20see%20your%20Yeola%20Paithani%20Saree%20collection" class="btn-enquire-item" target="_blank" rel="noopener">
-                <i data-lucide="message-circle" style="width:13px;height:13px;"></i> Enquire
-              </a>
-            </div>
-          </div>
         </div>
-
-        <!-- Item 3 -->
-        <div class="product-card" data-cat="kurti">
-          <div class="product-img-box">
-            <img src="https://images.unsplash.com/photo-1596783074918-c84cb06531ca?w=600&q=80" alt="Festive Chanderi Kurti & Palazzo Set" class="product-img">
-            <span class="tag-badge">New Arrival</span>
-          </div>
-          <div class="product-details">
-            <span class="product-category">Festive Ready-To-Wear</span>
-            <h3 class="product-title">Chanderi Silk Kurti & Palazzo</h3>
-            <p class="product-desc">Subtle mirror work detailing with airy organza dupatta. Perfect for festive pujas and family gatherings.</p>
-            <div class="product-footer">
-              <div class="product-pricing">
-                <span class="product-price">From ₹2,499</span>
-                <span class="product-note">Sizes S to XXL</span>
-              </div>
-              <a href="https://wa.me/919420132081?text=Hi%20Banthia's%20Siddharth%20Collection,%20please%20share%20details%20for%20Chanderi%20Kurti%20sets" class="btn-enquire-item" target="_blank" rel="noopener">
-                <i data-lucide="message-circle" style="width:13px;height:13px;"></i> Enquire
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 4 -->
-        <div class="product-card" data-cat="blouse">
-          <div class="product-img-box">
-            <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=600&q=80" alt="Custom Embroidered Maggam Blouse" class="product-img">
-            <span class="tag-badge">Bespoke Tailoring</span>
-          </div>
-          <div class="product-details">
-            <span class="product-category">Tailoring Studio</span>
-            <h3 class="product-title">Maggam & Aari Work Blouse</h3>
-            <p class="product-desc">Bespoke neck patterns, cutwork sleeves, and hand embroidery customized to your saree pallu.</p>
-            <div class="product-footer">
-              <div class="product-pricing">
-                <span class="product-price">Custom Stitching</span>
-                <span class="product-note">48-hour express option</span>
-              </div>
-              <a href="https://wa.me/919420132081?text=Hi%20Banthia's%20Siddharth%20Collection,%20I%20want%20to%20get%20a%20designer%20blouse%20stitched" class="btn-enquire-item" target="_blank" rel="noopener">
-                <i data-lucide="message-circle" style="width:13px;height:13px;"></i> Enquire
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 5 -->
-        <div class="product-card" data-cat="saree">
-          <div class="product-img-box">
-            <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600&q=80" alt="Kanjivaram Silk Saree in Emerald & Gold" class="product-img">
-            <span class="tag-badge">Pure Handloom</span>
-          </div>
-          <div class="product-details">
-            <span class="product-category">South Indian Silks</span>
-            <h3 class="product-title">Kanjivaram Temple Silk Saree</h3>
-            <p class="product-desc">Rich korvai borders woven with pure gold zari. A majestic heirloom drape for weddings and receptions.</p>
-            <div class="product-footer">
-              <div class="product-pricing">
-                <span class="product-price">From ₹12,000</span>
-                <span class="product-note">With Silk Mark</span>
-              </div>
-              <a href="https://wa.me/919420132081?text=Hi%20Banthia's%20Siddharth%20Collection,%20please%20share%20your%20Kanjivaram%20saree%20options" class="btn-enquire-item" target="_blank" rel="noopener">
-                <i data-lucide="message-circle" style="width:13px;height:13px;"></i> Enquire
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 6 -->
-        <div class="product-card" data-cat="bridal">
-          <div class="product-img-box">
-            <img src="https://images.unsplash.com/photo-1546804784-896d0dca3805?w=600&q=80" alt="Pastel Peach Sabyasachi Style Bridal Lehenga" class="product-img">
-            <span class="tag-badge">Modern Bride</span>
-          </div>
-          <div class="product-details">
-            <span class="product-category">Contemporary Bridal</span>
-            <h3 class="product-title">Pastel Rosegold Silk Lehenga</h3>
-            <p class="product-desc">Lightweight shimmer silk with intricate resham florals. Perfect for sangeet, mehendi, and reception.</p>
-            <div class="product-footer">
-              <div class="product-pricing">
-                <span class="product-price">From ₹18,500</span>
-                <span class="product-note">Semi-stitched / Custom</span>
-              </div>
-              <a href="https://wa.me/919420132081?text=Hi%20Banthia's%20Siddharth%20Collection,%20I'm%20interested%20in%20pastel%20bridal%20lehengas" class="btn-enquire-item" target="_blank" rel="noopener">
-                <i data-lucide="message-circle" style="width:13px;height:13px;"></i> Enquire
-              </a>
-            </div>
-          </div>
-        </div>
-
       </div>
-    </div>
-  </section>
 
-  <!-- Craftsmanship & Boutique Services -->
-  <section class="features-section" id="craftsmanship">
-    <div class="section-head">
-      <span class="section-tag">Personal Attention</span>
-      <h2 class="section-title">The Banthia Experience</h2>
-      <p class="section-desc">Why brides and families across Aundh and Pune choose us generation after generation.</p>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================================
+     FEATURE ICONS STRIP (4 PILLARS OF EXCELLENCE)
+========================================================================= -->
+<section class="bg-champagne/60 border-y border-gold/25 py-12">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10">
+      
+      <div class="flex items-center gap-4 group">
+        <div class="w-12 h-12 rounded-2xl bg-cream border border-gold/40 flex items-center justify-center text-burgundy shadow-luxury-sm group-hover:bg-burgundy group-hover:text-gold transition-colors duration-300 shrink-0">
+          <i data-lucide="gem" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h4 class="font-serif text-lg font-semibold text-wine">Premium Collection</h4>
+          <p class="text-xs text-charcoal/70">Exclusive handpicked weavings</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4 group">
+        <div class="w-12 h-12 rounded-2xl bg-cream border border-gold/40 flex items-center justify-center text-burgundy shadow-luxury-sm group-hover:bg-burgundy group-hover:text-gold transition-colors duration-300 shrink-0">
+          <i data-lucide="scissors" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h4 class="font-serif text-lg font-semibold text-wine">Custom Stitching</h4>
+          <p class="text-xs text-charcoal/70">Master tailoring & blouse artistry</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4 group">
+        <div class="w-12 h-12 rounded-2xl bg-cream border border-gold/40 flex items-center justify-center text-burgundy shadow-luxury-sm group-hover:bg-burgundy group-hover:text-gold transition-colors duration-300 shrink-0">
+          <i data-lucide="sparkles" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h4 class="font-serif text-lg font-semibold text-wine">Designer Wear</h4>
+          <p class="text-xs text-charcoal/70">Bridal lehengas & festive edits</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4 group">
+        <div class="w-12 h-12 rounded-2xl bg-cream border border-gold/40 flex items-center justify-center text-burgundy shadow-luxury-sm group-hover:bg-burgundy group-hover:text-gold transition-colors duration-300 shrink-0">
+          <i data-lucide="shield-check" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h4 class="font-serif text-lg font-semibold text-wine">Trusted Since Years</h4>
+          <p class="text-xs text-charcoal/70">Aundh's beloved family boutique</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================================
+     6 LUXURY CATEGORY CARDS SECTION
+========================================================================= -->
+<section id="collections" class="py-24 bg-cream">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    
+    <!-- Section Header -->
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <span class="text-xs font-bold tracking-[0.25em] uppercase text-gold block mb-2">Curated Elegance</span>
+      <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-wine mb-4">
+        Our Signature Categories
+      </h2>
+      <div class="w-16 h-0.5 bg-gold mx-auto mb-6"></div>
+      <p class="text-sm md:text-base text-charcoal/75 leading-relaxed">
+        Every ensemble at Banthia's Siddharth Collection is hand-selected to honor Indian heritage while embracing modern silhouette precision.
+      </p>
     </div>
 
-    <div class="features-grid">
-      <div class="feature-box">
-        <div class="feature-icon-box"><i data-lucide="gem" style="width:24px;height:24px;"></i></div>
-        <h3>Authentic Handloom Sourcing</h3>
-        <p>Every handloom saree is personally curated from master weavers in Paithan, Yeola, Kanchipuram, and Varanasi with verified purity.</p>
-      </div>
-      <div class="feature-box">
-        <div class="feature-icon-box"><i data-lucide="scissors" style="width:24px;height:24px;"></i></div>
-        <h3>In-House Master Tailoring</h3>
-        <p>Our experienced tailors ensure flawless blouse fittings, designer cutwork, Nauvari saree stitching, and custom lehenga alteration.</p>
-      </div>
-      <div class="feature-box">
-        <div class="feature-icon-box"><i data-lucide="sparkles" style="width:24px;height:24px;"></i></div>
-        <h3>Private Bridal Trials</h3>
-        <p>Bring your family for a comfortable, unhurried trial session with personalized styling advice from our boutique consultants.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Reviews Section -->
-  <section class="reviews-strip" id="reviews">
-    <div class="section-head">
-      <span class="section-tag">Word of Mouth</span>
-      <h2 class="section-title">Loved by Pune Families</h2>
-      <p class="section-desc">Real experiences from customers in Aundh, Baner, and across Pune.</p>
-    </div>
-
-    <div class="reviews-grid">
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">"Got my wedding reception Paithani and blouse stitching done from Siddharth Collection in Aundh Gaon. The color combination and fitting were praised by everyone! Best boutique in Aundh."</p>
-        <div class="reviewer-meta">
-          <h5>Pooja Kulkarni</h5>
-          <span>Aundh, Pune</span>
-        </div>
-      </div>
-
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">"The Banthia family gives so much personal attention. You don't feel rushed like big mall showrooms. Fabric quality is 10/10 and prices are very reasonable. Highly recommended!"</p>
-        <div class="reviewer-meta">
-          <h5>Sneha Deshmukh</h5>
-          <span>Baner, Pune</span>
-        </div>
-      </div>
-
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">"Bought festive kurtis and dress materials for Diwali. Great variety and pure cotton/silk fabrics that last for years without fading. Glad to have this hidden gem right beside Hanuman Mandir."</p>
-        <div class="reviewer-meta">
-          <h5>Ananya Joshi</h5>
-          <span>Aundh Gaon, Pune</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Location & Visit Section -->
-  <section class="visit-section" id="visit">
-    <div class="visit-container">
-      <div class="visit-content">
-        <h2>Visit Our Boutique in Aundh Gaon</h2>
-        <p class="desc">Conveniently located on Aundhgaon Main Road, right beside the landmark Hanuman Temple. Ample parking nearby.</p>
-        
-        <div class="info-list">
-          <div class="info-item">
-            <div class="info-item-icon"><i data-lucide="map-pin" style="width:18px;height:18px;"></i></div>
-            <div class="info-item-text">
-              <h4>Store Address</h4>
-              <p>Ward No. 8, Aundhgaon Main Road, Beside Hanuman Temple, Aundh Gaon, Aundh, Pune, Maharashtra 411067</p>
-            </div>
-          </div>
-          <div class="info-item">
-            <div class="info-item-icon"><i data-lucide="phone" style="width:18px;height:18px;"></i></div>
-            <div class="info-item-text">
-              <h4>Phone & WhatsApp</h4>
-              <p>+91 94201 32081 / Available 10am – 9pm</p>
-            </div>
-          </div>
-          <div class="info-item">
-            <div class="info-item-icon"><i data-lucide="compass" style="width:18px;height:18px;"></i></div>
-            <div class="info-item-text">
-              <h4>Landmark</h4>
-              <p>Directly beside the historic Hanuman Mandir, Aundh Gaon</p>
-            </div>
+    <!-- 6 Cards Grid (12-Column Layout) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Card 1: Sarees -->
+      <div class="group relative rounded-[24px] overflow-hidden bg-creamDark border border-gold/30 shadow-luxury-sm hover:shadow-luxury-lg transition-all duration-500">
+        <div class="relative h-[380px] overflow-hidden">
+          <img src="assets/saree.jpg" 
+               alt="Pure Silk Sarees & Paithani Weaves at Banthia's Siddharth Collection" 
+               class="w-full h-full object-cover luxury-card-img"
+               loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-wineDark/90 via-wineDark/30 to-transparent"></div>
+          
+          <div class="absolute top-4 left-4 bg-cream/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase text-burgundy border border-gold/40">
+            Pure Handloom
           </div>
         </div>
-
-        <div class="visit-actions">
-          <a href="https://maps.google.com/?cid=9988389822388524741" class="btn-maps-large" target="_blank" rel="noopener">
-            <i data-lucide="navigation" style="width:16px;height:16px;"></i> Open in Google Maps
-          </a>
-          <a href="tel:+919420132081" class="btn-call-large">
-            <i data-lucide="phone" style="width:16px;height:16px;"></i> Call +91 94201 32081
+        <div class="p-8 relative bg-gradient-to-b from-transparent to-cream">
+          <h3 class="font-serif text-2xl md:text-3xl font-semibold text-wine mb-2">Sarees</h3>
+          <p class="text-xs md:text-sm text-charcoal/70 leading-relaxed mb-6">
+            Yeola Paithani, Kanjivaram silks, Banarasi brocades, and lightweight Chanderi drapes woven with authentic zari.
+          </p>
+          <a href="https://wa.me/919420132081?text=Hi%20Banthia's%20Siddharth%20Collection,%20I'd%20like%20to%20see%20your%20Saree%20collection" 
+             target="_blank" rel="noopener"
+             class="inline-flex items-center gap-2 text-xs font-bold tracking-wider uppercase text-burgundy group-hover:text-gold transition-colors">
+            <span>Enquire on WhatsApp</span>
+            <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1.5 transition-transform"></i>
           </a>
         </div>
       </div>
 
-      <!-- Working Hours Card -->
-      <div class="visit-card-box">
-        <h3>Boutique Timings</h3>
-        <p style="font-size:13px;color:#fbcfe8;">Open all 7 days for your shopping convenience.</p>
-        <table class="hours-table">
-          <tr><td class="day">Monday</td><td class="time">10:00 AM – 9:00 PM</td></tr>
-          <tr><td class="day">Tuesday</td><td class="time">10:00 AM – 9:00 PM</td></tr>
-          <tr><td class="day">Wednesday</td><td class="time">10:00 AM – 9:00 PM</td></tr>
-          <tr><td class="day">Thursday</td><td class="time">10:00 AM – 9:00 PM</td></tr>
-          <tr><td class="day">Friday</td><td class="time">10:00 AM – 9:00 PM</td></tr>
-          <tr><td class="day">Saturday</td><td class="time">10:00 AM – 9:30 PM</td></tr>
-          <tr><td class="day">Sunday</td><td class="time">10:00 AM – 9:30 PM</td></tr>
-        </table>
-        <div style="font-size:12px;color:#fdf2f8;display:flex;align-items:center;gap:6px;">
-          <i data-lucide="check-circle-2" style="color:var(--gold);width:14px;height:14px;"></i>
-          <span>Walk-ins and family visits always welcome</span>
+      <!-- Card 2: Bridal Collection -->
+      <div class="group relative rounded-[24px] overflow-hidden bg-creamDark border border-gold/30 shadow-luxury-sm hover:shadow-luxury-lg transition-all duration-500">
+        <div class="relative h-[380px] overflow-hidden">
+          <img src="assets/bridal.jpg" 
+               alt="Bridal Lehengas and Wedding Trousseau at Banthia's Pune" 
+               class="w-full h-full object-cover luxury-card-img"
+               loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-wineDark/90 via-wineDark/30 to-transparent"></div>
+          
+          <div class="absolute top-4 left-4 bg-gold text-wineDark px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase shadow">
+            Signature Bridal
+          </div>
+        </div>
+        <div class="p-8 relative bg-gradient-to-b from-transparent to-cream">
+          <h3 class="font-serif text-2xl md:text-3xl font-semibold text-wine mb-2">Bridal Collection</h3>
+          <p class="text-xs md:text-sm text-charcoal/70 leading-relaxed mb-6">
+            Opulent crimson velvet lehengas, zardozi embroidery, raw silk bridal wear, and coordinated wedding trousseau.
+          </p>
+          <a href="https://wa.me/919420132081?text=Hi%20Banthia's%20Siddharth%20Collection,%20I'm%20planning%20my%20bridal%20shopping%20and%20would%20like%20to%20visit%20your%20boutique" 
+             target="_blank" rel="noopener"
+             class="inline-flex items-center gap-2 text-xs font-bold tracking-wider uppercase text-burgundy group-hover:text-gold transition-colors">
+            <span>Book Bridal Consultation</span>
+            <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1.5 transition-transform"></i>
+          </a>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Harshal's Launch Pitch Banner -->
-  <div class="launch-banner">
-    <div class="launch-inner">
-      <span class="launch-pill">PROPOSED CLIENT WEBSITE CONCEPT</span>
-      <h3>Love this website layout for Banthia's Siddharth Collection?</h3>
-      <p>We can launch this as the official website (e.g. <b>banthiasiddharth.in</b> or <b>banthias.com</b>) with custom Google Maps SEO, professional business email, and high-speed hosting in just <b>48 hours for ₹5,999</b>.</p>
-      <a href="https://wa.me/918459461141?text=Hi%20Harshal,%20I%20saw%20the%20landing%20page%20concept%20for%20Banthia's%20Siddharth%20Collection.%20Let's%20talk%20about%20launching%20our%20website!" class="btn-hire-harshal" target="_blank" rel="noopener">
-        <i data-lucide="message-circle" style="width:16px;height:16px;"></i> Chat with Harshal to Launch This
-      </a>
+      <!-- Card 3: Men's Wear -->
+      <div class="group relative rounded-[24px] overflow-hidden bg-creamDark border border-gold/30 shadow-luxury-sm hover:shadow-luxury-lg transition-all duration-500">
+        <div class="relative h-[380px] overflow-hidden">
+          <img src="assets/mens.jpg" 
+               alt="Men's Ethnic Wear, Kurtas, Sherwanis and Bundis at Banthia's Aundh" 
+               class="w-full h-full object-cover luxury-card-img"
+               loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-wineDark/90 via-wineDark/30 to-transparent"></div>
+          
+          <div class="absolute top-4 left-4 bg-cream/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase text-burgundy border border-gold/40">
+            Royal Groom & Festive
+          </div>
+        </div>
+        <div class="p-8 relative bg-gradient-to-b from-transparent to-cream">
+          <h3 class="font-serif text-2xl md:text-3xl font-semibold text-wine mb-2">Men's Ethnic Wear</h3>
+          <p class="text-xs md:text-sm text-charcoal/70 leading-relaxed mb-6">
+            Regal groom sherwanis, woven jacquard bundis, raw silk kurtas, and handcrafted accessories tailored for royalty.
+          </p>
+          <a href="https://wa.me/919420132081?text=Hi%20Banthia's%20Siddharth%20Collection,%20I'd%20like%20to%20enquire%20about%20Men's%20Ethnic%20Wear" 
+             target="_blank" rel="noopener"
+             class="inline-flex items-center gap-2 text-xs font-bold tracking-wider uppercase text-burgundy group-hover:text-gold transition-colors">
+            <span>Explore Men's Styles</span>
+            <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1.5 transition-transform"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 4: Dress Materials -->
+      <div class="group relative rounded-[24px] overflow-hidden bg-creamDark border border-gold/30 shadow-luxury-sm hover:shadow-luxury-lg transition-all duration-500">
+        <div class="relative h-[380px] overflow-hidden">
+          <img src="assets/dress_materials.jpg" 
+               alt="Unstitched Dress Materials in Chanderi and Organza at Banthia's Pune" 
+               class="w-full h-full object-cover luxury-card-img"
+               loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-wineDark/90 via-wineDark/30 to-transparent"></div>
+          
+          <div class="absolute top-4 left-4 bg-cream/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase text-burgundy border border-gold/40">
+            Unstitched Luxury
+          </div>
+        </div>
+        <div class="p-8 relative bg-gradient-to-b from-transparent to-cream">
+          <h3 class="font-serif text-2xl md:text-3xl font-semibold text-wine mb-2">Dress Materials</h3>
+          <p class="text-xs md:text-sm text-charcoal/70 leading-relaxed mb-6">
+            Unstitched suit fabrics in pure Chanderi, modal silk, Kota Doria, and Lucknowi Chikankari with matching silk dupattas.
+          </p>
+          <a href="https://wa.me/919420132081?text=Hi%20Banthia's%20Siddharth%20Collection,%20please%20share%20latest%20Dress%20Materials" 
+             target="_blank" rel="noopener"
+             class="inline-flex items-center gap-2 text-xs font-bold tracking-wider uppercase text-burgundy group-hover:text-gold transition-colors">
+            <span>View Suit Sets</span>
+            <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1.5 transition-transform"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 5: Designer Wear -->
+      <div class="group relative rounded-[24px] overflow-hidden bg-creamDark border border-gold/30 shadow-luxury-sm hover:shadow-luxury-lg transition-all duration-500">
+        <div class="relative h-[380px] overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=80" 
+               alt="Designer Festive Wear and Indo-Western at Banthia's Siddharth Collection" 
+               class="w-full h-full object-cover luxury-card-img"
+               loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-wineDark/90 via-wineDark/30 to-transparent"></div>
+          
+          <div class="absolute top-4 left-4 bg-cream/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase text-burgundy border border-gold/40">
+            Contemporary Edit
+          </div>
+        </div>
+        <div class="p-8 relative bg-gradient-to-b from-transparent to-cream">
+          <h3 class="font-serif text-2xl md:text-3xl font-semibold text-wine mb-2">Designer Wear</h3>
+          <p class="text-xs md:text-sm text-charcoal/70 leading-relaxed mb-6">
+            Pre-stitched concept sarees, Indo-Western fusion capes, reception evening gowns, and ready-to-wear festive ensembles.
+          </p>
+          <a href="https://wa.me/919420132081?text=Hi%20Banthia's%20Siddharth%20Collection,%20I'm%20interested%20in%20Designer%20Wear%20and%20Gowns" 
+             target="_blank" rel="noopener"
+             class="inline-flex items-center gap-2 text-xs font-bold tracking-wider uppercase text-burgundy group-hover:text-gold transition-colors">
+            <span>Discover Designer Wear</span>
+            <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1.5 transition-transform"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 6: Custom Stitching -->
+      <div class="group relative rounded-[24px] overflow-hidden bg-creamDark border border-gold/30 shadow-luxury-sm hover:shadow-luxury-lg transition-all duration-500">
+        <div class="relative h-[380px] overflow-hidden">
+          <img src="assets/tailoring.jpg" 
+               alt="Master Custom Stitching, Maggam and Blouse Artistry at Banthia's Pune" 
+               class="w-full h-full object-cover luxury-card-img"
+               loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-wineDark/90 via-wineDark/30 to-transparent"></div>
+          
+          <div class="absolute top-4 left-4 bg-cream/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase text-burgundy border border-gold/40">
+            In-House Atelier
+          </div>
+        </div>
+        <div class="p-8 relative bg-gradient-to-b from-transparent to-cream">
+          <h3 class="font-serif text-2xl md:text-3xl font-semibold text-wine mb-2">Custom Stitching</h3>
+          <p class="text-xs md:text-sm text-charcoal/70 leading-relaxed mb-6">
+            Bespoke blouse stitching, handcrafted Maggam and Aari beadwork, Fall/Pico finishing, and tailored bridal fittings.
+          </p>
+          <a href="https://wa.me/919420132081?text=Hi%20Banthia's%20Siddharth%20Collection,%20I%20would%20like%20to%20book%20a%20blouse%20and%20tailoring%20session" 
+             target="_blank" rel="noopener"
+             class="inline-flex items-center gap-2 text-xs font-bold tracking-wider uppercase text-burgundy group-hover:text-gold transition-colors">
+            <span>Book Tailoring Session</span>
+            <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1.5 transition-transform"></i>
+          </a>
+        </div>
+      </div>
+
     </div>
   </div>
-</main>
+</section>
 
-<!-- Footer -->
-<footer class="site-footer">
-  <div class="footer-links">
-    <a href="#collections">Collections</a>
-    <a href="#craftsmanship">Tailoring</a>
-    <a href="#reviews">Reviews</a>
-    <a href="#visit">Directions</a>
+<!-- =========================================================================
+     ABOUT SECTION (WITH 2x2 IMAGE COLLAGE)
+========================================================================= -->
+<section id="about" class="py-24 bg-champagne/40 border-y border-gold/30">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      
+      <!-- Left Content (6 Columns) -->
+      <div class="lg:col-span-6">
+        <span class="text-xs font-bold tracking-[0.25em] uppercase text-gold block mb-3">Our Heritage & Craft</span>
+        <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-wine mb-6 leading-tight">
+          Where Heritage Weaves Meet Modern Elegance
+        </h2>
+        <div class="w-16 h-0.5 bg-gold mb-8"></div>
+        
+        <p class="text-base md:text-lg text-charcoal/85 leading-relaxed font-serif italic mb-6">
+          "Banthia's Siddharth Collection has become a trusted destination for premium ethnic fashion in Aundh. Our carefully curated collections blend traditional craftsmanship with modern elegance."
+        </p>
+
+        <p class="text-sm md:text-base text-charcoal/75 leading-relaxed mb-6">
+          Nestled beside the historic Hanuman Temple on Aundhgaon Main Road, our boutique was founded on an unwavering commitment to pure fabrics, authentic Indian handlooms, and personalized family service.
+        </p>
+
+        <p class="text-sm md:text-base text-charcoal/75 leading-relaxed mb-8">
+          Whether you are seeking the royal drape of an authentic Yeola Paithani for a Maharashtrian wedding, a show-stopping bridal lehenga, or custom-tailored designer blouses with bespoke Maggam embroidery, our stylists ensure every family leaves with smiles and unforgettable memories.
+        </p>
+
+        <div class="grid grid-cols-2 gap-6 pt-6 border-t border-gold/30">
+          <div>
+            <h4 class="font-serif text-2xl font-bold text-burgundy">100% Authentic</h4>
+            <p class="text-xs text-charcoal/70 mt-1">Direct artisan silk sourcing from Paithan, Varanasi & Kanchipuram</p>
+          </div>
+          <div>
+            <h4 class="font-serif text-2xl font-bold text-burgundy">In-Store Master Tailors</h4>
+            <p class="text-xs text-charcoal/70 mt-1">Perfect fit guarantee with dedicated trial rooms</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right 2x2 Collage (6 Columns) -->
+      <div class="lg:col-span-6">
+        <div class="grid grid-cols-2 gap-4 md:gap-6">
+          
+          <div class="rounded-2xl overflow-hidden shadow-luxury-md border border-gold/30 h-52 md:h-64">
+            <img src="assets/hero.jpg" alt="Banthia's Boutique Interior Display" class="w-full h-full object-cover luxury-card-img" loading="lazy">
+          </div>
+
+          <div class="rounded-2xl overflow-hidden shadow-luxury-md border border-gold/30 h-52 md:h-64 mt-6">
+            <img src="assets/saree.jpg" alt="Pure Silk Weaving & Fabric Shelves" class="w-full h-full object-cover luxury-card-img" loading="lazy">
+          </div>
+
+          <div class="rounded-2xl overflow-hidden shadow-luxury-md border border-gold/30 h-52 md:h-64">
+            <img src="assets/bridal.jpg" alt="Bridal Lehengas & Showroom" class="w-full h-full object-cover luxury-card-img" loading="lazy">
+          </div>
+
+          <div class="rounded-2xl overflow-hidden shadow-luxury-md border border-gold/30 h-52 md:h-64 mt-6">
+            <img src="assets/tailoring.jpg" alt="Handcrafted Maggam Stitching" class="w-full h-full object-cover luxury-card-img" loading="lazy">
+          </div>
+
+        </div>
+      </div>
+
+    </div>
   </div>
-  <p>&copy; 2026 Banthia's Siddharth Collection &bull; Ward No. 8, Aundhgaon Main Road, Aundh, Pune 411067</p>
-  <p style="font-size:11px;color:#f472b6;margin-top:6px;">Designed & Built by Harshal Baviskar &bull; Pune Local Web Studio</p>
+</section>
+
+<!-- =========================================================================
+     FEATURED COLLECTIONS (HORIZONTAL LUXURY SHOWCASE)
+========================================================================= -->
+<section class="py-24 bg-cream overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
+      <div>
+        <span class="text-xs font-bold tracking-[0.25em] uppercase text-gold block mb-2">Exclusive Showcase</span>
+        <h2 class="font-serif text-4xl md:text-5xl font-semibold text-wine">
+          Featured Collections
+        </h2>
+      </div>
+      <p class="text-sm text-charcoal/70 max-w-md">
+        Scroll through our featured seasonal edits. Each piece is crafted in limited numbers to preserve individuality.
+      </p>
+    </div>
+
+    <!-- Horizontal Scrolling Luxury Cards -->
+    <div class="flex gap-6 overflow-x-auto pb-8 pt-2 no-scrollbar scroll-smooth">
+      
+      <!-- Item 1: Bridal -->
+      <div class="w-[300px] sm:w-[340px] shrink-0 group rounded-2xl overflow-hidden bg-creamDark border border-gold/30 shadow-luxury-sm hover:shadow-luxury-lg transition-all duration-300">
+        <div class="h-[420px] overflow-hidden relative">
+          <img src="assets/bridal.jpg" alt="Bridal Collection" class="w-full h-full object-cover luxury-card-img" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-wineDark/80 via-transparent to-transparent"></div>
+          <div class="absolute bottom-6 left-6 right-6 text-cream">
+            <span class="text-[10px] uppercase font-bold tracking-widest text-gold block mb-1">Couture Bridal</span>
+            <h3 class="font-serif text-2xl font-semibold">Bridal Lehengas</h3>
+            <p class="text-xs text-champagne/80 mt-1">Heavy Zardozi Velvet & Raw Silk</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2: Festival Sarees -->
+      <div class="w-[300px] sm:w-[340px] shrink-0 group rounded-2xl overflow-hidden bg-creamDark border border-gold/30 shadow-luxury-sm hover:shadow-luxury-lg transition-all duration-300">
+        <div class="h-[420px] overflow-hidden relative">
+          <img src="assets/hero.jpg" alt="Festival Sarees" class="w-full h-full object-cover luxury-card-img" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-wineDark/80 via-transparent to-transparent"></div>
+          <div class="absolute bottom-6 left-6 right-6 text-cream">
+            <span class="text-[10px] uppercase font-bold tracking-widest text-gold block mb-1">Festive Edit</span>
+            <h3 class="font-serif text-2xl font-semibold">Festival Sarees</h3>
+            <p class="text-xs text-champagne/80 mt-1">Rich Banarasi & Chanderi Silks</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 3: Silk Sarees -->
+      <div class="w-[300px] sm:w-[340px] shrink-0 group rounded-2xl overflow-hidden bg-creamDark border border-gold/30 shadow-luxury-sm hover:shadow-luxury-lg transition-all duration-300">
+        <div class="h-[420px] overflow-hidden relative">
+          <img src="assets/saree.jpg" alt="Silk Sarees" class="w-full h-full object-cover luxury-card-img" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-wineDark/80 via-transparent to-transparent"></div>
+          <div class="absolute bottom-6 left-6 right-6 text-cream">
+            <span class="text-[10px] uppercase font-bold tracking-widest text-gold block mb-1">Pure Handloom</span>
+            <h3 class="font-serif text-2xl font-semibold">Yeola Paithani</h3>
+            <p class="text-xs text-champagne/80 mt-1">Peacock & Parrot Zari Borders</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 4: Sherwanis -->
+      <div class="w-[300px] sm:w-[340px] shrink-0 group rounded-2xl overflow-hidden bg-creamDark border border-gold/30 shadow-luxury-sm hover:shadow-luxury-lg transition-all duration-300">
+        <div class="h-[420px] overflow-hidden relative">
+          <img src="assets/mens.jpg" alt="Sherwanis & Groom Wear" class="w-full h-full object-cover luxury-card-img" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-wineDark/80 via-transparent to-transparent"></div>
+          <div class="absolute bottom-6 left-6 right-6 text-cream">
+            <span class="text-[10px] uppercase font-bold tracking-widest text-gold block mb-1">Men's Royalty</span>
+            <h3 class="font-serif text-2xl font-semibold">Groom Sherwanis</h3>
+            <p class="text-xs text-champagne/80 mt-1">Ivory & Gold Embroidered Silks</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 5: Dress Materials -->
+      <div class="w-[300px] sm:w-[340px] shrink-0 group rounded-2xl overflow-hidden bg-creamDark border border-gold/30 shadow-luxury-sm hover:shadow-luxury-lg transition-all duration-300">
+        <div class="h-[420px] overflow-hidden relative">
+          <img src="assets/dress_materials.jpg" alt="Dress Materials" class="w-full h-full object-cover luxury-card-img" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-wineDark/80 via-transparent to-transparent"></div>
+          <div class="absolute bottom-6 left-6 right-6 text-cream">
+            <span class="text-[10px] uppercase font-bold tracking-widest text-gold block mb-1">Bespoke Fabric</span>
+            <h3 class="font-serif text-2xl font-semibold">Dress Materials</h3>
+            <p class="text-xs text-champagne/80 mt-1">Chanderi, Modal & Organza Suits</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 6: Daily Wear -->
+      <div class="w-[300px] sm:w-[340px] shrink-0 group rounded-2xl overflow-hidden bg-creamDark border border-gold/30 shadow-luxury-sm hover:shadow-luxury-lg transition-all duration-300">
+        <div class="h-[420px] overflow-hidden relative">
+          <img src="assets/tailoring.jpg" alt="Daily Wear and Tailoring" class="w-full h-full object-cover luxury-card-img" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-wineDark/80 via-transparent to-transparent"></div>
+          <div class="absolute bottom-6 left-6 right-6 text-cream">
+            <span class="text-[10px] uppercase font-bold tracking-widest text-gold block mb-1">Comfort Elegance</span>
+            <h3 class="font-serif text-2xl font-semibold">Daily Wear & Kurtis</h3>
+            <p class="text-xs text-champagne/80 mt-1">Breathable Linens & Pure Mulmul</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================================
+     CUSTOMER REVIEWS (GOOGLE RATING 4.2★ WITH 100+ REVIEWS)
+========================================================================= -->
+<section id="reviews" class="py-24 bg-champagne/50 border-t border-gold/30">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <div class="inline-flex items-center gap-2 bg-cream border border-gold/40 px-4 py-1.5 rounded-full mb-3 shadow-sm">
+        <span class="text-amber-500 font-bold text-sm">★★★★★</span>
+        <span class="text-xs font-bold text-burgundy tracking-wide">4.2★ on Google Maps &bull; 100+ Verified Reviews</span>
+      </div>
+      <h2 class="font-serif text-4xl md:text-5xl font-semibold text-wine mb-4">
+        Loved by Pune's Discerning Families
+      </h2>
+      <div class="w-16 h-0.5 bg-gold mx-auto mb-6"></div>
+      <p class="text-sm text-charcoal/70">
+        Genuine feedback from Pune residents who trust Banthia's Siddharth Collection for their weddings and festivities.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Review 1 -->
+      <div class="bg-cream rounded-2xl p-8 border border-gold/30 shadow-luxury-sm hover:shadow-luxury-md transition-shadow flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-1 text-amber-500 mb-4 text-sm">
+            ★★★★★
+          </div>
+          <p class="text-sm md:text-base text-charcoal/80 leading-relaxed font-serif italic mb-6">
+            "Purchased our bridal lehenga and authentic Yeola Paithani sarees for my daughter's wedding here. The fabric quality and embroidery work are unmatched. The owners are extremely respectful and patient."
+          </p>
+        </div>
+        <div class="flex items-center gap-3 pt-4 border-t border-gold/20">
+          <div class="w-10 h-10 rounded-full bg-burgundy/10 text-burgundy font-bold flex items-center justify-center font-serif text-sm">
+            SM
+          </div>
+          <div>
+            <h5 class="text-sm font-bold text-wine">Sunita More</h5>
+            <span class="text-xs text-charcoal/60">Aundh Gaon, Pune</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="bg-cream rounded-2xl p-8 border border-gold/30 shadow-luxury-sm hover:shadow-luxury-md transition-shadow flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-1 text-amber-500 mb-4 text-sm">
+            ★★★★★
+          </div>
+          <p class="text-sm md:text-base text-charcoal/80 leading-relaxed font-serif italic mb-6">
+            "Best place in Aundh for wedding shopping! We bought kurtas and a groom sherwani for my brother, plus matching silk sarees. Custom stitching of the designer blouse was delivered on time and fit like a glove."
+          </p>
+        </div>
+        <div class="flex items-center gap-3 pt-4 border-t border-gold/20">
+          <div class="w-10 h-10 rounded-full bg-burgundy/10 text-burgundy font-bold flex items-center justify-center font-serif text-sm">
+            RK
+          </div>
+          <div>
+            <h5 class="text-sm font-bold text-wine">Rohit Kulkarni</h5>
+            <span class="text-xs text-charcoal/60">Baner Road, Pune</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="bg-cream rounded-2xl p-8 border border-gold/30 shadow-luxury-sm hover:shadow-luxury-md transition-shadow flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-1 text-amber-500 mb-4 text-sm">
+            ★★★★★
+          </div>
+          <p class="text-sm md:text-base text-charcoal/80 leading-relaxed font-serif italic mb-6">
+            "Extremely satisfied with the dress materials and pure silk selection. Unlike big crowded malls, Banthia's offers personal attention and genuine prices. Highly recommended for festive shopping!"
+          </p>
+        </div>
+        <div class="flex items-center gap-3 pt-4 border-t border-gold/20">
+          <div class="w-10 h-10 rounded-full bg-burgundy/10 text-burgundy font-bold flex items-center justify-center font-serif text-sm">
+            PJ
+          </div>
+          <div>
+            <h5 class="text-sm font-bold text-wine">Priyanka Joshi</h5>
+            <span class="text-xs text-charcoal/60">Sindh Society, Aundh</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================================
+     LOCATION SECTION (GOOGLE MAPS STYLE CARD & STORE HOURS)
+========================================================================= -->
+<section id="location" class="py-24 bg-cream border-t border-gold/30">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <!-- Left: Boutique Details & Google Maps Direction Card (7 Cols) -->
+      <div class="lg:col-span-7">
+        <span class="text-xs font-bold tracking-[0.25em] uppercase text-gold block mb-2">Visit In Person</span>
+        <h2 class="font-serif text-4xl md:text-5xl font-semibold text-wine mb-6">
+          Our Boutique in Aundh
+        </h2>
+        <div class="w-16 h-0.5 bg-gold mb-8"></div>
+
+        <div class="space-y-6 mb-10">
+          
+          <div class="flex items-start gap-4 p-5 rounded-2xl bg-creamDark border border-gold/30">
+            <div class="w-11 h-11 rounded-xl bg-burgundy text-gold flex items-center justify-center shrink-0">
+              <i data-lucide="map-pin" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <h4 class="font-serif text-xl font-bold text-wine">Store Address</h4>
+              <p class="text-sm text-charcoal/80 mt-1 leading-relaxed">
+                Beside Hanuman Temple, Aundhgaon Main Road, Ward No. 8, Aundh Gaon, Aundh, Pune – 411007
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 p-5 rounded-2xl bg-creamDark border border-gold/30">
+            <div class="w-11 h-11 rounded-xl bg-burgundy text-gold flex items-center justify-center shrink-0">
+              <i data-lucide="phone-call" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <h4 class="font-serif text-xl font-bold text-wine">Telephone & Direct Inquiries</h4>
+              <p class="text-sm text-charcoal/80 mt-1">
+                +91 94201 32081 &bull; Store customer support active 7 days a week
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4 p-5 rounded-2xl bg-creamDark border border-gold/30">
+            <div class="w-11 h-11 rounded-xl bg-burgundy text-gold flex items-center justify-center shrink-0">
+              <i data-lucide="clock" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <h4 class="font-serif text-xl font-bold text-wine">Store Hours</h4>
+              <p class="text-sm text-charcoal/80 mt-1">
+                Open Daily: 10:00 AM – 9:00 PM &bull; Family visits & walk-ins always welcome
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="flex flex-wrap gap-4">
+          <a href="https://maps.google.com/?cid=9988389822388524741" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-2.5 bg-burgundy hover:bg-wine text-cream px-8 py-4 rounded-full text-sm font-semibold tracking-wider uppercase transition-all shadow-luxury-md hover:shadow-luxury-lg">
+            <i data-lucide="navigation" class="w-4 h-4 text-gold"></i>
+            <span>Get Directions</span>
+          </a>
+          
+          <a href="tel:+919420132081" 
+             class="inline-flex items-center gap-2.5 bg-cream border border-burgundy/30 hover:border-burgundy text-burgundy px-8 py-4 rounded-full text-sm font-semibold tracking-wider uppercase transition-all hover:bg-burgundy/5">
+            <i data-lucide="phone" class="w-4 h-4 text-gold"></i>
+            <span>Call +91 94201 32081</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Interactive Google Maps Interactive Card (5 Cols) -->
+      <div class="lg:col-span-5">
+        <div class="rounded-3xl overflow-hidden border border-gold/40 shadow-luxury-lg bg-wineDark text-cream p-8 relative">
+          
+          <div class="flex items-center justify-between mb-6 pb-6 border-b border-white/10">
+            <div>
+              <span class="text-[10px] uppercase font-bold tracking-widest text-gold block">Aundh Landmark</span>
+              <h3 class="font-serif text-2xl font-semibold">Banthia's Siddharth Collection</h3>
+            </div>
+            <div class="w-12 h-12 rounded-full bg-gold/20 border border-gold flex items-center justify-center text-gold">
+              <i data-lucide="map" class="w-6 h-6"></i>
+            </div>
+          </div>
+
+          <div class="space-y-3 text-sm text-champagne/90 mb-8">
+            <div class="flex justify-between py-1.5 border-b border-white/10">
+              <span class="text-champagne/60">Monday – Sunday</span>
+              <span class="font-bold text-gold">10:00 AM – 9:00 PM</span>
+            </div>
+            <div class="flex justify-between py-1.5 border-b border-white/10">
+              <span class="text-champagne/60">Parking</span>
+              <span class="font-medium">Easy parking available</span>
+            </div>
+            <div class="flex justify-between py-1.5 border-b border-white/10">
+              <span class="text-champagne/60">Landmark</span>
+              <span class="font-medium">Beside Hanuman Mandir</span>
+            </div>
+            <div class="flex justify-between py-1.5">
+              <span class="text-champagne/60">Rating</span>
+              <span class="font-bold text-gold">4.2★ (100+ Reviews)</span>
+            </div>
+          </div>
+
+          <a href="https://maps.google.com/?cid=9988389822388524741" target="_blank" rel="noopener"
+             class="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-gold to-goldLight text-wineDark py-3.5 rounded-full font-bold text-xs uppercase tracking-wider shadow hover:brightness-105 transition-all">
+            <i data-lucide="external-link" class="w-4 h-4"></i>
+            <span>Open in Google Maps Application</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================================
+     LUXURY DARK FOOTER
+========================================================================= -->
+<footer class="bg-wineDark text-champagne pt-20 pb-12 border-t border-gold/30">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-16 border-b border-white/10">
+      
+      <!-- Brand & Mission (5 Cols) -->
+      <div class="lg:col-span-5">
+        <div class="flex items-center gap-3.5 mb-6">
+          <div class="w-12 h-12 rounded-full border border-gold/70 flex items-center justify-center bg-burgundy text-gold">
+            <span class="font-serif text-2xl font-bold">B</span>
+          </div>
+          <div>
+            <span class="font-serif text-2xl font-bold tracking-tight text-champagne block leading-none">
+              Banthia's
+            </span>
+            <span class="text-[10px] tracking-[0.25em] uppercase text-gold font-semibold mt-1 block">
+              Siddharth Collection
+            </span>
+          </div>
+        </div>
+        <p class="text-xs md:text-sm text-champagne/70 leading-relaxed max-w-sm mb-6">
+          Aundh's beloved boutique for pure handloom sarees, designer bridal lehengas, men's ethnic sherwanis, and precision custom stitching.
+        </p>
+        <p class="text-xs text-gold/90 font-medium">
+          Beside Hanuman Temple, Aundhgaon Main Road, Aundh, Pune – 411007
+        </p>
+      </div>
+
+      <!-- Quick Links (2 Cols) -->
+      <div class="lg:col-span-2">
+        <h4 class="font-serif text-lg font-semibold text-gold mb-5">Quick Links</h4>
+        <ul class="space-y-3 text-xs md:text-sm text-champagne/80">
+          <li><a href="#home" class="hover:text-gold transition-colors">Home</a></li>
+          <li><a href="#collections" class="hover:text-gold transition-colors">Collections</a></li>
+          <li><a href="#mens" class="hover:text-gold transition-colors">Men's Wear</a></li>
+          <li><a href="#materials" class="hover:text-gold transition-colors">Dress Materials</a></li>
+          <li><a href="#stitching" class="hover:text-gold transition-colors">Custom Stitching</a></li>
+          <li><a href="#about" class="hover:text-gold transition-colors">About Boutique</a></li>
+        </ul>
+      </div>
+
+      <!-- Collections (2 Cols) -->
+      <div class="lg:col-span-2">
+        <h4 class="font-serif text-lg font-semibold text-gold mb-5">Collections</h4>
+        <ul class="space-y-3 text-xs md:text-sm text-champagne/80">
+          <li><a href="#collections" class="hover:text-gold transition-colors">Yeola Paithani</a></li>
+          <li><a href="#collections" class="hover:text-gold transition-colors">Kanjivaram Silk</a></li>
+          <li><a href="#collections" class="hover:text-gold transition-colors">Bridal Lehengas</a></li>
+          <li><a href="#collections" class="hover:text-gold transition-colors">Groom Sherwanis</a></li>
+          <li><a href="#collections" class="hover:text-gold transition-colors">Chanderi Suits</a></li>
+          <li><a href="#collections" class="hover:text-gold transition-colors">Maggam Blouses</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact & Social (3 Cols) -->
+      <div class="lg:col-span-3">
+        <h4 class="font-serif text-lg font-semibold text-gold mb-5">Store Contact</h4>
+        <div class="space-y-3 text-xs md:text-sm text-champagne/80 mb-6">
+          <p class="flex items-center gap-2">
+            <i data-lucide="phone" class="w-4 h-4 text-gold"></i> +91 94201 32081
+          </p>
+          <p class="flex items-center gap-2">
+            <i data-lucide="clock" class="w-4 h-4 text-gold"></i> 10:00 AM – 9:00 PM Daily
+          </p>
+          <p class="flex items-center gap-2">
+            <i data-lucide="map-pin" class="w-4 h-4 text-gold"></i> Aundh, Pune 411007
+          </p>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <a href="https://wa.me/919420132081" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-white/10 hover:bg-gold text-champagne hover:text-wineDark flex items-center justify-center transition-colors" aria-label="WhatsApp">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+          </a>
+          <a href="https://maps.google.com/?cid=9988389822388524741" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-white/10 hover:bg-gold text-champagne hover:text-wineDark flex items-center justify-center transition-colors" aria-label="Google Maps">
+            <i data-lucide="map-pin" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright -->
+    <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-champagne/60 gap-4">
+      <p>&copy; 2026 Banthia's Siddharth Collection. All rights reserved.</p>
+      <p class="text-gold/80 font-medium">Bespoke Concept & Web Architecture by Harshal Baviskar &bull; Pune</p>
+    </div>
+
+  </div>
 </footer>
 
-<!-- Floating WhatsApp CTA Button linking to Banthia's Siddharth Collection -->
-<a href="https://wa.me/919420132081?text=Hi%20Banthia's%20Siddharth%20Collection,%20I'm%20viewing%20your%20website%20and%20would%20like%20to%20enquire%20about%20your%20collections" class="floating-wa-btn" target="_blank" rel="noopener">
-  <i data-lucide="message-circle" style="width:20px;height:20px;"></i>
-  <span>Chat with Store</span>
+<!-- =========================================================================
+     FLOATING WHATSAPP BUTTON (ALWAYS ACCESSIBLE)
+========================================================================= -->
+<a href="https://wa.me/919420132081?text=Hi%20Banthia's%20Siddharth%20Collection,%20I'm%20viewing%20your%20website%20and%20would%20like%20to%20enquire%20about%20your%20ethnic%20wear%20collections" 
+   target="_blank" rel="noopener"
+   class="fixed bottom-6 right-6 z-50 inline-flex items-center gap-3 bg-wa hover:bg-waDark text-white px-5 py-3.5 rounded-full shadow-2xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 group"
+   aria-label="Chat on WhatsApp">
+  <i data-lucide="message-circle" class="w-5 h-5 text-white"></i>
+  <span class="text-xs md:text-sm font-bold tracking-wide">WhatsApp Us</span>
 </a>
 
 <script>
 // Initialize Lucide Icons
 lucide.createIcons();
 
-// Collection Filter Functionality
-function filterItems(category, btn) {
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
+// Sticky Navigation Blur on Scroll
+window.addEventListener('scroll', function() {
+  const nav = document.getElementById('siteNav');
+  if (window.scrollY > 40) {
+    nav.classList.add('scrolled');
+  } else {
+    nav.classList.remove('scrolled');
+  }
+});
 
-  const cards = document.querySelectorAll('.product-card');
-  cards.forEach(card => {
-    if (category === 'all' || card.dataset.cat === category) {
-      card.style.display = 'flex';
-    } else {
-      card.style.display = 'none';
-    }
+// Mobile Hamburger Toggle
+const mobileBtn = document.getElementById('mobileMenuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+if (mobileBtn && mobileMenu) {
+  mobileBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
   });
 }
 </script>
+
 </body>
 </html>
