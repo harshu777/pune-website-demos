@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title id="page-title">Business Website Preview</title>
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+<!-- Lucide Icons -->
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<style>
+:root {
+  --primary: #2563eb;
+  --primary-rgb: 37, 99, 235;
+  --accent: #f59e0b;
+  --bg: #090d16;
+  --surface: #111827;
+  --card: #1a2234;
+  --border: rgba(255, 255, 255, 0.08);
+  --text: #f8fafc;
+  --text-muted: #94a3b8;
+  --wa: #25D366;
+  --wa-hover: #20bd5a;
+  --font-main: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: 90px;
+}
+
+/* Concept Bar */
+.concept-bar {
+  background: linear-gradient(90deg, #1e1b4b, #312e81);
+  color: #c7d2fe;
+  font-size: 12px;
+  padding: 8px 16px;
+  text-align: center;
+  border-bottom: 1px solid rgba(199, 210, 254, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.concept-bar a {
+  color: #a5b4fc;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* Container */
+.container {
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+/* Navigation Header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  backdrop-filter: blur(12px);
+  background: rgba(9, 13, 22, 0.85);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 18px;
+}
+.nav-inner {
+  max-width: 540px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand-title {
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.badge-verified {
+  background: rgba(34, 197, 94, 0.15);
+  color: #4ade80;
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+.btn-nav-call {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Hero Section */
+.hero {
+  padding: 28px 0 20px;
+  text-align: left;
+}
+.rating-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  color: #fcd34d;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+}
+.hero h1 {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+.hero p.tagline {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+.pill-feature {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  font-size: 12px;
+  color: #cbd5e1;
+  padding: 5px 10px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.hero-cta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.btn-cta-primary {
+  background: var(--wa);
+  color: #032d14;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.25);
+  transition: transform 0.15s, background 0.15s;
+}
+.btn-cta-primary:active {
+  transform: scale(0.98);
+}
+.btn-cta-secondary {
+  background: var(--card);
+  color: #fff;
+  border: 1px solid var(--border);
+  font-weight: 600;
+  font-size: 13px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+/* Category Banners */
+.hero-image-box {
+  margin: 22px 0 28px;
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+  height: 200px;
+  border: 1px solid var(--border);
+}
+.hero-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-image-box .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 30%, rgba(9, 13, 22, 0.9) 100%);
+  display: flex;
+  align-items: flex-end;
+  padding: 14px;
+}
+.overlay-text {
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Section Styling */
+.section {
+  padding: 24px 0;
+  border-top: 1px solid var(--border);
+}
+.section-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 4px;
+}
+.section-sub {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+/* Service / Product Cards Grid */
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.item-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.item-img {
+  height: 110px;
+  width: 100%;
+  object-fit: cover;
+}
+.item-body {
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.item-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 3px;
+}
+.item-desc {
+  font-size: 11px;
+  color: var(--text-muted);
+  line-height: 1.4;
+  margin-bottom: 8px;
+  flex: 1;
+}
+.item-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.item-price {
+  font-size: 12px;
+  font-weight: 700;
+  color: #38bdf8;
+}
+.item-btn {
+  background: rgba(37, 99, 235, 0.15);
+  color: #60a5fa;
+  border: 1px solid rgba(37, 99, 235, 0.3);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* Trust / Highlights */
+.trust-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.trust-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 14px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.trust-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background: rgba(56, 189, 248, 0.1);
+  color: #38bdf8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2px;
+}
+.trust-card h4 {
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+}
+.trust-card p {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+/* Location Card */
+.loc-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.loc-row {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.loc-icon {
+  color: #f87171;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.loc-info h4 {
+  font-size: 14px;
+  color: #fff;
+}
+.loc-info p {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* Harshal Conversion Banner */
+.hire-banner {
+  margin: 32px 0 20px;
+  background: linear-gradient(135deg, #1e1b4b, #0f172a);
+  border: 1px solid #4338ca;
+  border-radius: 14px;
+  padding: 20px 18px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(67, 56, 202, 0.25);
+}
+.hire-pill {
+  background: #312e81;
+  color: #a5b4fc;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 999px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.hire-banner h3 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+.hire-banner p {
+  font-size: 13px;
+  color: #cbd5e1;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+.btn-hire {
+  background: #6366f1;
+  color: #fff;
+  font-weight: 700;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+}
+
+/* Floating WhatsApp Button */
+.float-wa {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 50;
+  background: var(--wa);
+  color: #042710;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 12px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.15s, background 0.15s;
+}
+.float-wa:hover {
+  background: var(--wa-hover);
+  transform: translateY(-2px);
+}
+</style>
+</head>
+<body>
+
+<!-- Concept Preview Banner -->
+<div class="concept-bar">
+  <span>✨ <b>Concept Demo</b> prepared for <span id="bar-name">Business</span> by <b>Harshal Baviskar</b></span>
+  <a href="https://wa.me/918459461141?text=Hi%20Harshal,%20I%20saw%20the%20website%20preview%20concept" target="_blank" rel="noopener">Want this live? Chat with Harshal &rarr;</a>
+</div>
+
+<!-- Navigation -->
+<header>
+  <div class="nav-inner">
+    <div class="brand-title">
+      <span id="nav-brand">Business Name</span>
+      <span class="badge-verified"><i data-lucide="check" style="width:10px;height:10px;"></i> Verified</span>
+    </div>
+    <a href="#" class="btn-nav-call" id="btn-call">
+      <i data-lucide="phone" style="width:12px;height:12px;"></i> Call
+    </a>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="rating-pill">
+      <span>★ 4.8</span>
+      <span>&bull;</span>
+      <span id="pill-loc">Aundh, Pune</span>
+      <span>&bull;</span>
+      <span>Top Rated on Google</span>
+    </div>
+    <h1 id="hero-title">Exclusive Collections & Studio</h1>
+    <p class="tagline" id="hero-tagline">Serving clients in Aundh with premium quality and friendly service. Tap below to chat with us directly on WhatsApp.</p>
+
+    <div class="hero-badges" id="hero-badges">
+      <span class="pill-feature"><i data-lucide="map-pin" style="width:12px;height:12px;"></i> <span id="badge-loc">Aundh</span></span>
+      <span class="pill-feature"><i data-lucide="clock" style="width:12px;height:12px;"></i> Open Today 10am – 9pm</span>
+      <span class="pill-feature"><i data-lucide="shield-check" style="width:12px;height:12px;"></i> Verified Local Studio</span>
+    </div>
+
+    <div class="hero-cta">
+      <a href="#" class="btn-cta-primary" id="btn-hero-wa">
+        <i data-lucide="message-circle" style="width:16px;height:16px;"></i> WhatsApp Us
+      </a>
+      <a href="#" class="btn-cta-secondary" id="btn-hero-maps">
+        <i data-lucide="navigation" style="width:16px;height:16px;"></i> Get Directions
+      </a>
+    </div>
+
+    <!-- Hero Image Banner -->
+    <div class="hero-image-box">
+      <img id="hero-img" src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80" alt="Hero banner">
+      <div class="overlay">
+        <span class="overlay-text" id="overlay-caption">Visit our studio in Aundh, Pune</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showcase / Menu / Lookbook Section -->
+  <section class="section">
+    <h2 class="section-title" id="sec-title">Featured Highlights</h2>
+    <p class="section-sub" id="sec-sub">Browse our popular selections and enquire directly on WhatsApp.</p>
+    <div class="cards-grid" id="cards-grid">
+      <!-- Injected by JavaScript based on category -->
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="section">
+    <h2 class="section-title">Why Customers Love Us</h2>
+    <p class="section-sub">Proudly serving our neighbourhood with care and quality.</p>
+    <div class="trust-grid">
+      <div class="trust-card">
+        <div class="trust-icon"><i data-lucide="star" style="width:16px;height:16px;"></i></div>
+        <h4>Top Google Rating</h4>
+        <p>Over 150+ happy customer reviews and recommendations.</p>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon"><i data-lucide="zap" style="width:16px;height:16px;"></i></div>
+        <h4>Instant WhatsApp Chat</h4>
+        <p>Message us directly for rates, bookings, or queries.</p>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon"><i data-lucide="award" style="width:16px;height:16px;"></i></div>
+        <h4>Quality Guaranteed</h4>
+        <p>Every customer is treated with high personal attention.</p>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon"><i data-lucide="map-pin" style="width:16px;height:16px;"></i></div>
+        <h4>Convenient Location</h4>
+        <p>Easily accessible in <span id="trust-loc">Pune</span> with parking nearby.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Hours -->
+  <section class="section">
+    <h2 class="section-title">Store & Visit Info</h2>
+    <p class="section-sub">Drop by or schedule your visit today.</p>
+    <div class="loc-card">
+      <div class="loc-row">
+        <i data-lucide="map-pin" class="loc-icon" style="width:18px;height:18px;"></i>
+        <div class="loc-info">
+          <h4 id="loc-name">Business Name</h4>
+          <p id="loc-addr">Main Road, Aundh, Pune, Maharashtra 411067</p>
+        </div>
+      </div>
+      <div class="loc-row">
+        <i data-lucide="clock" class="loc-icon" style="color:#38bdf8;width:18px;height:18px;"></i>
+        <div class="loc-info">
+          <h4>Working Hours</h4>
+          <p>Mon – Sun: 10:00 AM – 9:00 PM</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Harshal Baviskar Pitch / Launch Banner -->
+  <div class="hire-banner">
+    <span class="hire-pill">✨ READY FOR YOUR BUSINESS</span>
+    <h3>Love this layout for <span id="hire-biz">Your Business</span>?</h3>
+    <p>We can launch this as your <b>official website (.com / .in)</b> with Google Maps SEO, WhatsApp booking button, and high-speed hosting in just <b>48 hours for ₹5,999</b>.</p>
+    <a href="#" class="btn-hire" id="btn-hire-wa" target="_blank" rel="noopener">
+      <i data-lucide="message-circle" style="width:16px;height:16px;"></i> Chat with Harshal to Launch This
+    </a>
+  </div>
+
+</div>
+
+<!-- Floating Action Button -->
+<a href="#" class="float-wa" id="btn-float-wa">
+  <i data-lucide="message-circle" style="width:18px;height:18px;"></i>
+  <span>Chat on WhatsApp</span>
+</a>
+
+<script>
+// Category Specific Mock Data Engine
+const NICHE_DATA = {
+  boutique: {
+    heroTitle: "Designer Ethnic, Bridal & Festive Wear",
+    heroTagline: "Explore handpicked bridal lehengas, festive sarees, and customized boutique designer wear in {loc}.",
+    heroImg: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=800&q=80",
+    caption: "Latest Designer Collection in {loc}",
+    secTitle: "Featured Collections",
+    secSub: "Browse top styles & send a screenshot on WhatsApp for rates and sizing.",
+    items: [
+      { title: "Bridal Lehengas", desc: "Intricate zardozi & silk bridal wear crafted for your big day.", price: "Custom Order", img: "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=400&q=80" },
+      { title: "Designer Sarees", desc: "Pure silk, organza, and festive party-wear sarees.", price: "From ₹3,500", img: "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=400&q=80" },
+      { title: "Kurti & Co-ord Sets", desc: "Contemporary everyday ethnic outfits and casual wear.", price: "From ₹1,800", img: "https://images.unsplash.com/photo-1596783074918-c84cb06531ca?w=400&q=80" },
+      { title: "Custom Tailoring", desc: "Perfect blouse stitching, fitting, and personal design consultation.", price: "Enquire", img: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=400&q=80" }
+    ]
+  },
+  clinic: {
+    heroTitle: "Comprehensive Medical Care & Consultations",
+    heroTagline: "Trusted healthcare and consultations for families in {loc}. Book your appointment directly on WhatsApp.",
+    heroImg: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80",
+    caption: "Safe, Sanitized & Modern Healthcare in {loc}",
+    secTitle: "Our Services & Treatments",
+    secSub: "Qualified specialists dedicated to patient well-being.",
+    items: [
+      { title: "Doctor Consultation", desc: "Personalized medical diagnosis and health management.", price: "OPD Available", img: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=400&q=80" },
+      { title: "Preventive Health Checkup", desc: "Full routine diagnostics, blood pressure, and sugar tests.", price: "Comprehensive", img: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=400&q=80" },
+      { title: "Pediatric & Family Care", desc: "Child health, vaccinations, and seasonal infection care.", price: "Daily OPD", img: "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=400&q=80" },
+      { title: "Emergency & Chronic Care", desc: "BP, Diabetes, and long-term health consultations.", price: "Walk-ins Welcome", img: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=400&q=80" }
+    ]
+  },
+  "dental clinic": {
+    heroTitle: "Advanced Dental Care & Smile Studio",
+    heroTagline: "Painless root canals, dental implants, teeth whitening, and general dental health in {loc}.",
+    heroImg: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&q=80",
+    caption: "State-of-the-Art Dental Clinic in {loc}",
+    secTitle: "Dental Treatments",
+    secSub: "Gentle, modern dentistry for kids and adults.",
+    items: [
+      { title: "Teeth Cleaning & Polishing", desc: "Remove plaque, tartar, and coffee stains for a brighter smile.", price: "From ₹800", img: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&q=80" },
+      { title: "Root Canal Treatment (RCT)", desc: "Microscope-guided painless single-sitting root canals.", price: "Painless RCT", img: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400&q=80" },
+      { title: "Invisalign & Braces", desc: "Straighten crooked teeth with invisible aligners or metallic braces.", price: "Free Consult", img: "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=400&q=80" },
+      { title: "Dental Implants & Crowns", desc: "Permanent tooth replacement with natural ceramic crowns.", price: "Long-lasting", img: "https://images.unsplash.com/photo-1579684453423-f84349ef60b0?w=400&q=80" }
+    ]
+  },
+  cafe: {
+    heroTitle: "Artisanal Coffee & Fresh Gourmet Bites",
+    heroTagline: "Your favorite cozy hangout in {loc}. Browse our digital menu and order direct without third-party commissions.",
+    heroImg: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=800&q=80",
+    caption: "Cozy Ambiance & Work-Friendly Vibes in {loc}",
+    secTitle: "Our Signature Menu",
+    secSub: "Handcrafted coffee, crispy snacks, and fresh desserts.",
+    items: [
+      { title: "Specialty Espresso & Latte", desc: "100% Arabica beans freshly roasted and brewed with creamy milk.", price: "From ₹140", img: "https://images.unsplash.com/photo-1541167760496-1628856ab772?w=400&q=80" },
+      { title: "Wood-Fired Pizza & Paninis", desc: "Fresh mozzarella, artisanal sourdough, and gourmet toppings.", price: "From ₹280", img: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&q=80" },
+      { title: "Loaded Burgers & Fries", desc: "Crispy patties, house secret sauce, and golden french fries.", price: "From ₹190", img: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=80" },
+      { title: "Desserts & Shakes", desc: "Warm chocolate brownies, cheesecakes, and thick milkshakes.", price: "From ₹160", img: "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&q=80" }
+    ]
+  },
+  restaurant: {
+    heroTitle: "Authentic Flavors & Dine-In Experience",
+    heroTagline: "Delicious local and multi-cuisine dining in {loc}. Reserve tables or place takeaway orders on WhatsApp.",
+    heroImg: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80",
+    caption: "Fine Family Dining & Celebrations in {loc}",
+    secTitle: "Chef's Specials",
+    secSub: "Prepared fresh with authentic spices and recipes.",
+    items: [
+      { title: "Signature Biryanis", desc: "Fragrant basmati rice cooked dum-style with rich spices.", price: "From ₹299", img: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=400&q=80" },
+      { title: "North Indian Curries", desc: "Butter Paneer, Dal Makhani, and tandoori garlic naans.", price: "From ₹240", img: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&q=80" },
+      { title: "Tandoor & Kebab Starters", desc: "Smoky paneer tikka, chicken kebabs, and mint chutney.", price: "From ₹220", img: "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?w=400&q=80" },
+      { title: "Family Platters", desc: "Generous combos perfect for family dinners and party celebrations.", price: "From ₹650", img: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&q=80" }
+    ]
+  },
+  salon: {
+    heroTitle: "Premium Hair, Skin & Bridal Salon",
+    heroTagline: "Look your absolute best with expert styling and rejuvenating treatments in {loc}. Book your slot via WhatsApp.",
+    heroImg: "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&q=80",
+    caption: "Modern Salon Studio in {loc}",
+    secTitle: "Our Services & Packages",
+    secSub: "Transparent rates. No hidden costs.",
+    items: [
+      { title: "Hair Styling & Color", desc: "Trendy haircuts, balayage, keratin, and botox hair treatments.", price: "From ₹500", img: "https://images.unsplash.com/photo-1562322140-8baeececf3df?w=400&q=80" },
+      { title: "Hydra & Glow Facials", desc: "Deep pore cleansing, fruit facials, and anti-aging treatments.", price: "From ₹1,200", img: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400&q=80" },
+      { title: "Bridal & Party Makeup", desc: "HD airbrush makeup, saree draping, and hairstyle for your special day.", price: "Packages Available", img: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&q=80" },
+      { title: "Mani-Pedi & Nails", desc: "Gel extensions, nail art, and relaxing foot spa therapies.", price: "From ₹800", img: "https://images.unsplash.com/photo-1519014816548-bf785179c836?w=400&q=80" }
+    ]
+  },
+  gym: {
+    heroTitle: "State-of-the-Art Fitness & Strength Gym",
+    heroTagline: "Crush your health goals with modern gym equipment, certified trainers, and CrossFit in {loc}.",
+    heroImg: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=80",
+    caption: "Premium Workout Space in {loc}",
+    secTitle: "Membership & Training",
+    secSub: "Flexible plans with free workout trials.",
+    items: [
+      { title: "Strength & Weight Area", desc: "Olympic barbells, dumbbell racks up to 50kg, and power cages.", price: "All Access", img: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=400&q=80" },
+      { title: "Cardio & HIIT Zone", desc: "Commercial treadmills, spin bikes, rowers, and functional turf.", price: "Included", img: "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=400&q=80" },
+      { title: "Personal Training", desc: "1-on-1 coaching, tailored diet plans, and body transformation tracking.", price: "Custom Plans", img: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&q=80" },
+      { title: "1-Day Free Trial Pass", desc: "Try our gym for free before committing to any membership.", price: "FREE PASS", img: "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=400&q=80" }
+    ]
+  },
+  default: {
+    heroTitle: "Professional Local Services & Consultation",
+    heroTagline: "Trusted local business in {loc} providing top-tier service. Contact us on WhatsApp for fast inquiries.",
+    heroImg: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
+    caption: "Reliable Quality & Service in {loc}",
+    secTitle: "Our Core Services",
+    secSub: "Quality service built on local trust and customer satisfaction.",
+    items: [
+      { title: "Service Consultation", desc: "Direct consultation and expert guidance tailored to your needs.", price: "Fast Response", img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&q=80" },
+      { title: "Custom Solutions", desc: "High standard execution customized for individual customer requests.", price: "Enquire", img: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=400&q=80" },
+      { title: "Quality Guarantee", desc: "Transparent quotes, friendly support, and complete peace of mind.", price: "Verified", img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&q=80" },
+      { title: "Customer Support", desc: "Chat with our support team on WhatsApp for fast updates.", price: "Direct WhatsApp", img: "https://images.unsplash.com/photo-1534536281715-e28d76689b4d?w=400&q=80" }
+    ]
+  }
+};
+
+// URL Parameter Parser
+function getQueryParams() {
+  const params = new URLSearchParams(window.location.search);
+  const name = params.get('name') || "Banthia's Siddharth Collection";
+  const catRaw = (params.get('cat') || "boutique").toLowerCase();
+  const loc = params.get('loc') || "Aundh";
+  const phone = params.get('phone') || "919420132081";
+  return { name, catRaw, loc, phone };
+}
+
+function initPage() {
+  const { name, catRaw, loc, phone } = getQueryParams();
+
+  // Pick niche data
+  let key = 'default';
+  for (const k in NICHE_DATA) {
+    if (catRaw.includes(k)) {
+      key = k;
+      break;
+    }
+  }
+  const niche = NICHE_DATA[key];
+
+  // Document title
+  document.title = `${name} — ${loc}, Pune | Official Mobile Website`;
+  document.getElementById('page-title').textContent = `${name} | ${loc}`;
+
+  // Banner & Nav
+  document.getElementById('bar-name').textContent = name;
+  document.getElementById('nav-brand').textContent = name;
+  document.getElementById('pill-loc').textContent = `${loc}, Pune`;
+  document.getElementById('badge-loc').textContent = loc;
+  document.getElementById('trust-loc').textContent = loc;
+  document.getElementById('loc-name').textContent = name;
+  document.getElementById('loc-addr').textContent = `Shop in ${loc}, Pune, Maharashtra`;
+  document.getElementById('hire-biz').textContent = name;
+
+  // Hero Section
+  document.getElementById('hero-title').textContent = niche.heroTitle.replace('{loc}', loc);
+  document.getElementById('hero-tagline').textContent = niche.heroTagline.replace('{loc}', loc);
+  document.getElementById('hero-img').src = niche.heroImg;
+  document.getElementById('overlay-caption').textContent = niche.caption.replace('{loc}', loc);
+
+  // Section titles
+  document.getElementById('sec-title').textContent = niche.secTitle;
+  document.getElementById('sec-sub').textContent = niche.secSub;
+
+  // Populate Items Grid
+  const grid = document.getElementById('cards-grid');
+  grid.innerHTML = '';
+  niche.items.forEach(item => {
+    const card = document.createElement('div');
+    card.className = 'item-card';
+    card.innerHTML = `
+      <img src="${item.img}" alt="${item.title}" class="item-img" loading="lazy">
+      <div class="item-body">
+        <div class="item-title">${item.title}</div>
+        <div class="item-desc">${item.desc}</div>
+        <div class="item-footer">
+          <span class="item-price">${item.price}</span>
+          <a href="https://wa.me/${phone}?text=${encodeURIComponent(`Hi ${name}, I saw ${item.title} on your website and would like to enquire.`)}" class="item-btn" target="_blank" rel="noopener">Enquire</a>
+        </div>
+      </div>
+    `;
+    grid.appendChild(card);
+  });
+
+  // Wire WhatsApp & Phone Links (Targeting client's own phone)
+  const waMsg = encodeURIComponent(`Hi ${name}, I saw your website and would like to get in touch!`);
+  const waLink = `https://wa.me/${phone}?text=${waMsg}`;
+
+  document.getElementById('btn-call').href = `tel:+${phone}`;
+  document.getElementById('btn-hero-wa').href = waLink;
+  document.getElementById('btn-float-wa').href = waLink;
+  document.getElementById('btn-hero-maps').href = `https://maps.google.com/?q=${encodeURIComponent(name + ' ' + loc + ' Pune')}`;
+
+  // Harshal Pitch Link (Targeting Harshal's WhatsApp: 918459461141)
+  const harshalPitch = encodeURIComponent(`Hi Harshal, I saw the concept website preview you made for ${name} in ${loc}. Let's talk about launching our official website.`);
+  document.getElementById('btn-hire-wa').href = `https://wa.me/918459461141?text=${harshalPitch}`;
+
+  // Refresh Lucide icons
+  lucide.createIcons();
+}
+
+window.addEventListener('DOMContentLoaded', initPage);
+</script>
+</body>
+</html>
