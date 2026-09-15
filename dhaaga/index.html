@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Dhaaga The Blouse Hub — Designer Blouses & Bridal Tailoring | Aundh, Pune</title>
+<meta name="description" content="Welcome to Dhaaga The Blouse Hub on Ambedkar Chowk, opposite DAV School, Aundh, Pune. Explore 500+ readymade designer blouses, handcrafted Maggam embroidery, and custom 24-hour bridal stitching.">
+
+<!-- Open Graph / WhatsApp Rich Link Preview -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://harshu777.github.io/pune-website-demos/dhaaga/">
+<meta property="og:title" content="Dhaaga The Blouse Hub — Pune's #1 Designer Blouse Studio (5.0★)">
+<meta property="og:description" content="The perfect fit for every saree! 500+ readymade blouses, royal Maggam work & express 24h custom stitching opposite DAV School, Aundh.">
+<meta property="og:image" content="https://harshu777.github.io/pune-website-demos/dhaaga/assets/hero.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+
+<!-- Google Fonts: Cormorant Garamond for regal craftsmanship + Plus Jakarta Sans for crisp modern readability -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Lucide Icons -->
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        crimsonThread: '#9E1B32',
+        crimsonDark: '#751022',
+        crimsonDeep: '#420610',
+        zariGold: '#D4AF37',
+        zariLight: '#F5E7B2',
+        parchment: '#FFFDF9',
+        parchmentDark: '#F7F2EA',
+        emeraldZari: '#0E6251',
+        charcoal: '#1A1819',
+        mutedText: '#6B6567',
+        wa: '#25D366',
+        waDark: '#128C7E',
+      },
+      fontFamily: {
+        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+        sans: ['"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+      },
+      boxShadow: {
+        'luxury-sm': '0 4px 20px rgba(158, 27, 50, 0.06)',
+        'luxury-md': '0 12px 36px rgba(158, 27, 50, 0.10)',
+        'luxury-lg': '0 24px 60px rgba(158, 27, 50, 0.16)',
+      }
+    }
+  }
+}
+</script>
+
+<style>
+::selection {
+  background-color: #9E1B32;
+  color: #FFFDF9;
+}
+
+/* Header & Ribbon Full Stretch with 100px padding */
+.header-stretched, .ribbon-stretched {
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+@media (max-width: 1200px) {
+  .header-stretched, .ribbon-stretched {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+@media (max-width: 768px) {
+  .header-stretched, .ribbon-stretched {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* Glass Header */
+.glass-header {
+  background: rgba(255, 253, 249, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+.glass-header.scrolled {
+  box-shadow: 0 4px 30px rgba(66, 6, 16, 0.08);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+}
+
+/* Smooth zoom */
+.zoom-img {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.group:hover .zoom-img {
+  transform: scale(1.05);
+}
+</style>
+</head>
+
+<body class="font-sans bg-parchment text-charcoal antialiased overflow-x-hidden selection:bg-crimsonThread selection:text-white">
+
+<!-- =========================================================================
+     TOP NOTIFICATION RIBBON (HARSHAL BAVISKAR PERSONALIZED CONCEPT)
+========================================================================= -->
+<aside class="relative z-50 bg-[#30050C] text-[#F7F2EA] border-b border-zariGold/30 py-3 text-xs md:text-sm">
+  <div class="ribbon-stretched flex flex-col md:flex-row items-center justify-between gap-3 text-center md:text-left">
+    <div class="flex items-center gap-2 justify-center md:justify-start">
+      <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-zariGold/20 text-zariGold text-xs">✨</span>
+      <p class="font-medium tracking-wide">
+        <span class="text-zariGold font-semibold">Concept Website Prepared Exclusively for Dhaaga The Blouse Hub.</span>
+        <span class="text-[#F7F2EA]/80 hidden lg:inline ml-1">Tailored for your Ambedkar Chowk studio opposite DAV School, Aundh. Crafted by Harshal Baviskar.</span>
+      </p>
+    </div>
+    <div class="flex items-center gap-2.5 flex-wrap justify-center">
+      <a href="https://wa.me/918459461141?text=Hi%20Harshal,%20I'm%20viewing%20the%20Dhaaga%20The%20Blouse%20Hub%20website%20concept!%20Let's%20talk%20about%20launching%20our%20official%20site." 
+         target="_blank" rel="noopener"
+         class="inline-flex items-center gap-1.5 bg-gradient-to-r from-zariGold to-zariLight text-crimsonDeep px-4 py-1.5 rounded-full font-bold text-xs shadow-md hover:brightness-105 transition-all">
+        <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+        <span>Launch My Website</span>
+      </a>
+      <a href="https://wa.me/918459461141?text=Hi%20Harshal,%20I%20have%20questions%20about%20the%20Dhaaga%20website%20preview." 
+         target="_blank" rel="noopener"
+         class="inline-flex items-center gap-1.5 border border-zariGold/40 text-zariGold px-3.5 py-1.5 rounded-full font-medium text-xs hover:bg-zariGold/10 transition-colors">
+        <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+        <span>Chat with Harshal</span>
+      </a>
+    </div>
+  </div>
+</aside>
+
+<!-- =========================================================================
+     TOP MARQUEE ANNOUNCEMENT
+========================================================================= -->
+<div class="bg-crimsonDark text-[#F7F2EA]/95 py-2 text-[11px] md:text-xs tracking-widest uppercase text-center font-semibold border-b border-crimsonThread">
+  <span>500+ Readymade Designer Blouses</span>
+  <span class="mx-3 text-zariGold">•</span>
+  <span>Handcrafted Bridal Maggam & Aari Artistry</span>
+  <span class="mx-3 text-zariGold">•</span>
+  <span>Opposite DAV School, Ambedkar Chowk, Aundh</span>
+</div>
+
+<!-- =========================================================================
+     STICKY NAVIGATION (FULL STRETCH WITH 100PX PADDING)
+========================================================================= -->
+<header id="siteNav" class="sticky top-0 z-40 w-full transition-all duration-300 glass-header border-b border-zariGold/20">
+  <div class="header-stretched h-20 md:h-24 flex items-center justify-between">
+    
+    <!-- Regal Logo -->
+    <a href="#home" class="flex items-center gap-3.5 group">
+      <div class="w-11 h-11 md:w-12 md:h-12 rounded-full border border-zariGold flex items-center justify-center bg-gradient-to-br from-parchment to-parchmentDark shadow-sm group-hover:border-crimsonThread transition-colors">
+        <span class="font-serif text-2xl md:text-3xl text-crimsonThread font-bold leading-none">धा</span>
+      </div>
+      <div class="flex flex-col">
+        <span class="font-serif text-2xl md:text-3xl font-bold tracking-tight text-crimsonDark leading-none">
+          Dhaaga
+        </span>
+        <span class="text-[9px] md:text-[10px] tracking-[0.25em] uppercase text-zariGold font-bold mt-1">
+          The Blouse Hub &bull; Aundh
+        </span>
+      </div>
+    </a>
+
+    <!-- Navigation Links -->
+    <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold tracking-wide text-charcoal">
+      <a href="#home" class="hover:text-crimsonThread transition-colors">Home</a>
+      <a href="#designs" class="hover:text-crimsonThread transition-colors">Blouse Catalog</a>
+      <a href="#maggam" class="hover:text-crimsonThread transition-colors">Maggam Work</a>
+      <a href="#necklines" class="hover:text-crimsonThread transition-colors">Neckline Guide</a>
+      <a href="#about" class="hover:text-crimsonThread transition-colors">About Atelier</a>
+      <a href="#reviews" class="hover:text-crimsonThread transition-colors">5.0★ Reviews</a>
+      <a href="#location" class="hover:text-crimsonThread transition-colors">Visit Studio</a>
+    </nav>
+
+    <!-- Nav Actions -->
+    <div class="flex items-center gap-4">
+      <a href="tel:+917410102816" class="hidden sm:inline-flex items-center gap-2 text-xs font-bold text-crimsonDark hover:text-crimsonThread">
+        <i data-lucide="phone" class="w-4 h-4 text-zariGold"></i>
+        <span>+91 74101 02816</span>
+      </a>
+
+      <!-- WhatsApp Button -->
+      <a href="https://wa.me/917410102816?text=Hi%20Dhaaga%20The%20Blouse%20Hub,%20I'm%20viewing%20your%20website%20and%20would%20like%20to%20enquire%20about%20designer%20blouses" 
+         target="_blank" rel="noopener"
+         class="inline-flex items-center gap-2 bg-crimsonThread hover:bg-crimsonDark text-white px-5 py-2.5 rounded-full text-xs md:text-sm font-bold tracking-wide shadow-luxury-sm hover:shadow-luxury-md transition-all transform hover:-translate-y-0.5">
+        <i data-lucide="message-circle" class="w-4 h-4 text-zariLight"></i>
+        <span>WhatsApp Studio</span>
+      </a>
+
+      <!-- Mobile Hamburger -->
+      <button id="mobileMenuBtn" class="lg:hidden p-2 text-crimsonDark focus:outline-none" aria-label="Toggle Menu">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Dropdown -->
+  <div id="mobileMenu" class="hidden lg:hidden bg-parchment border-t border-zariGold/20 px-6 py-6 space-y-4 shadow-xl">
+    <a href="#home" class="block text-base font-semibold text-charcoal hover:text-crimsonThread">Home</a>
+    <a href="#designs" class="block text-base font-semibold text-charcoal hover:text-crimsonThread">Blouse Catalog</a>
+    <a href="#maggam" class="block text-base font-semibold text-charcoal hover:text-crimsonThread">Maggam & Aari Artistry</a>
+    <a href="#necklines" class="block text-base font-semibold text-charcoal hover:text-crimsonThread">Neckline Styling</a>
+    <a href="#about" class="block text-base font-semibold text-charcoal hover:text-crimsonThread">About Dhaaga Studio</a>
+    <a href="#reviews" class="block text-base font-semibold text-charcoal hover:text-crimsonThread">5.0★ Customer Reviews</a>
+    <a href="#location" class="block text-base font-semibold text-charcoal hover:text-crimsonThread">Studio Directions</a>
+    <div class="pt-4 border-t border-zariGold/20 flex flex-col gap-2 text-sm">
+      <p class="flex items-center gap-2 font-bold text-crimsonDark">
+        <i data-lucide="phone" class="w-4 h-4 text-zariGold"></i> +91 74101 02816
+      </p>
+      <p class="flex items-center gap-2 text-xs text-mutedText">
+        <i data-lucide="map-pin" class="w-4 h-4 text-zariGold"></i> Opp. DAV School, Ambedkar Chowk, Aundh
+      </p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- =========================================================================
+       HERO SECTION
+  ========================================================================= -->
+  <section id="home" class="relative min-h-[88vh] lg:min-h-[92vh] flex items-center bg-parchment overflow-hidden py-16 lg:py-24">
+    
+    <div class="absolute top-10 right-20 w-80 h-80 bg-zariGold/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-10 left-10 w-96 h-96 bg-crimsonThread/5 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Content (7 Cols) -->
+        <div class="lg:col-span-7">
+          
+          <div class="inline-flex items-center gap-2.5 bg-parchmentDark border border-zariGold/40 px-4 py-1.5 rounded-full mb-6">
+            <span class="w-2 h-2 rounded-full bg-crimsonThread"></span>
+            <span class="text-xs font-bold uppercase tracking-[0.2em] text-crimsonDark">
+              Pune's 5.0★ Rated Designer Blouse Studio
+            </span>
+          </div>
+
+          <h1 class="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[76px] leading-[1.06] text-crimsonDeep font-semibold tracking-tight mb-6">
+            The Perfect Fit for <span class="italic font-normal text-crimsonThread">Every Saree.</span>
+          </h1>
+
+          <p class="text-xs md:text-sm font-bold tracking-widest uppercase text-zariGold mb-5">
+            500+ Readymade Blouses • Bridal Maggam Artistry • 24-Hour Express Stitching
+          </p>
+
+          <p class="text-base md:text-lg text-charcoal/85 leading-relaxed font-normal max-w-xl mb-10">
+            Say goodbye to 2-week tailor delays and ill-fitting blouse cuts. Step into Dhaaga on Ambedkar Chowk for ready-to-wear padded designer blouses in sizes 32 to 44, or commission bespoke bridal zardozi embroidery tailored with precision.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-12">
+            <a href="#designs" class="inline-flex items-center justify-center gap-2.5 bg-crimsonThread hover:bg-crimsonDark text-white px-8 py-4 rounded-full text-sm font-bold tracking-wider uppercase transition-all shadow-luxury-md hover:shadow-luxury-lg transform hover:-translate-y-0.5">
+              <span>Explore 500+ Blouse Styles</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 text-zariLight"></i>
+            </a>
+
+            <a href="https://wa.me/917410102816?text=Hi%20Dhaaga,%20I%20need%20a%20designer%20blouse%20for%20an%20upcoming%20saree.%20Can%20you%20share%20options?" 
+               target="_blank" rel="noopener"
+               class="inline-flex items-center justify-center gap-2.5 bg-white border border-crimsonDark/30 hover:border-crimsonDark text-crimsonDark px-8 py-4 rounded-full text-sm font-bold tracking-wider uppercase transition-all hover:bg-crimsonDark/5">
+              <i data-lucide="message-circle" class="w-4 h-4 text-zariGold"></i>
+              <span>Enquire on WhatsApp</span>
+            </a>
+          </div>
+
+          <!-- Trust Signals -->
+          <div class="pt-8 border-t border-zariGold/30 grid grid-cols-3 gap-6 max-w-lg">
+            <div>
+              <span class="font-serif text-2xl md:text-3xl font-bold text-crimsonDark block">5.0★</span>
+              <span class="text-xs text-charcoal/60 uppercase tracking-wider font-semibold">Perfect Google Rating</span>
+            </div>
+            <div>
+              <span class="font-serif text-2xl md:text-3xl font-bold text-crimsonDark block">500+</span>
+              <span class="text-xs text-charcoal/60 uppercase tracking-wider font-semibold">Readymade Designs</span>
+            </div>
+            <div>
+              <span class="font-serif text-2xl md:text-3xl font-bold text-crimsonDark block">32–44</span>
+              <span class="text-xs text-charcoal/60 uppercase tracking-wider font-semibold">Sizes with Margins</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Visual Showcase (5 Cols) -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-[480px] lg:max-w-none">
+            
+            <div class="absolute -inset-3 rounded-[32px] border border-zariGold/40 transform rotate-1 pointer-events-none"></div>
+
+            <div class="relative rounded-[28px] overflow-hidden shadow-luxury-lg bg-parchmentDark border border-zariGold/30">
+              <img src="assets/hero.jpg" 
+                   alt="Designer Blouses on display at Dhaaga The Blouse Hub Aundh Pune" 
+                   class="w-full h-[520px] md:h-[600px] object-cover object-top zoom-img">
+
+              <div class="absolute inset-0 bg-gradient-to-t from-crimsonDeep/80 via-transparent to-transparent"></div>
+
+              <div class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/95 backdrop-blur-md border border-zariGold/30 shadow-luxury-md flex items-center justify-between">
+                <div>
+                  <span class="text-[10px] tracking-[0.2em] uppercase font-bold text-zariGold block">Signature Sweetheart Cut</span>
+                  <h4 class="font-serif text-base font-bold text-crimsonDark">Bridal Zardozi Blouse</h4>
+                  <p class="text-xs text-mutedText">Sizes 32 to 44 Available</p>
+                </div>
+                <a href="https://wa.me/917410102816?text=Hi%20Dhaaga,%20I'd%20like%20to%20know%20availability%20and%20pricing%20for%20the%20Bridal%20Sweetheart%20Blouse" 
+                   target="_blank" rel="noopener"
+                   class="w-10 h-10 rounded-full bg-crimsonThread text-zariLight flex items-center justify-center hover:bg-crimsonDark transition-colors">
+                  <i data-lucide="message-circle" class="w-4 h-4"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4 PILLARS OF DHAAGA ARTISTRY
+  ========================================================================= -->
+  <section class="bg-parchmentDark/80 border-y border-zariGold/25 py-12">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-2xl bg-white border border-zariGold/40 text-crimsonThread flex items-center justify-center shrink-0 shadow-sm">
+            <i data-lucide="sparkles" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="font-serif text-lg font-bold text-crimsonDark">500+ Readymade</h4>
+            <p class="text-xs text-charcoal/70">Instant try & buy in-store</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-2xl bg-white border border-zariGold/40 text-crimsonThread flex items-center justify-center shrink-0 shadow-sm">
+            <i data-lucide="gem" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="font-serif text-lg font-bold text-crimsonDark">Royal Maggam Work</h4>
+            <p class="text-xs text-charcoal/70">Kundan, pearls & zardozi</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-2xl bg-white border border-zariGold/40 text-crimsonThread flex items-center justify-center shrink-0 shadow-sm">
+            <i data-lucide="scissors" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="font-serif text-lg font-bold text-crimsonDark">24h Express Stitching</h4>
+            <p class="text-xs text-charcoal/70">Emergency wedding fittings</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-2xl bg-white border border-zariGold/40 text-crimsonThread flex items-center justify-center shrink-0 shadow-sm">
+            <i data-lucide="award" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="font-serif text-lg font-bold text-crimsonDark">5.0★ Rating</h4>
+            <p class="text-xs text-charcoal/70">Highest rated in Aundh</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       BLOUSE COLLECTIONS & CATALOG
+  ========================================================================= -->
+  <section id="designs" class="py-24 bg-parchment">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold tracking-[0.25em] uppercase text-zariGold block mb-2">Curated Blouse Gallery</span>
+        <h2 class="font-serif text-4xl md:text-5xl font-semibold text-crimsonDark mb-4">
+          Signature Blouse Styles
+        </h2>
+        <div class="w-16 h-0.5 bg-zariGold mx-auto mb-6"></div>
+        <p class="text-sm md:text-base text-charcoal/75 leading-relaxed">
+          From heavy zardozi bridal masterpieces to stretchable cotton daily wear, browse our bestselling collections available for immediate trial.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Card 1: Maggam Work -->
+        <div id="maggam" class="group rounded-[24px] overflow-hidden bg-white border border-zariGold/30 shadow-luxury-sm hover:shadow-luxury-lg transition-all duration-300 flex flex-col">
+          <div class="relative h-[380px] overflow-hidden">
+            <img src="assets/maggam.jpg" alt="Artisan hand-stitching Maggam Peacock Blouse at Dhaaga" class="w-full h-full object-cover zoom-img">
+            <div class="absolute inset-0 bg-gradient-to-t from-crimsonDeep/80 via-transparent to-transparent"></div>
+            <div class="absolute top-4 left-4 bg-zariGold text-crimsonDeep px-3 py-1 rounded-full text-[10px] font-extrabold tracking-widest uppercase shadow">
+              Handcrafted Atelier
+            </div>
+          </div>
+          <div class="p-8 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-serif text-2xl font-bold text-crimsonDark mb-2">Bridal Maggam & Aari Artistry</h3>
+              <p class="text-xs md:text-sm text-charcoal/70 leading-relaxed mb-6">
+                Hand-embroidered gold peacock borders, kundan stone borders, heavy pearl latkans, and cut-work sleeves designed for wedding lehengas and Paithanis.
+              </p>
+            </div>
+            <a href="https://wa.me/917410102816?text=Hi%20Dhaaga,%20I'm%20interested%20in%20custom%20Bridal%20Maggam%20blouse%20embroidery" 
+               target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 text-xs font-bold tracking-wider uppercase text-crimsonThread group-hover:text-zariGold transition-colors">
+              <span>Enquire Bridal Embroidery</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1.5 transition-transform"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2: Readymade Padded Blouses -->
+        <div class="group rounded-[24px] overflow-hidden bg-white border border-zariGold/30 shadow-luxury-sm hover:shadow-luxury-lg transition-all duration-300 flex flex-col">
+          <div class="relative h-[380px] overflow-hidden">
+            <img src="assets/readymade.jpg" alt="Readymade Designer Blouse Collection at Dhaaga Aundh" class="w-full h-full object-cover zoom-img">
+            <div class="absolute inset-0 bg-gradient-to-t from-crimsonDeep/80 via-transparent to-transparent"></div>
+            <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-md text-crimsonDark px-3 py-1 rounded-full text-[10px] font-extrabold tracking-widest uppercase border border-zariGold/30">
+              Instant Fit (32–44)
+            </div>
+          </div>
+          <div class="p-8 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-serif text-2xl font-bold text-crimsonDark mb-2">Readymade Padded Blouses</h3>
+              <p class="text-xs md:text-sm text-charcoal/70 leading-relaxed mb-6">
+                Velvet, raw silk, jacquard brocade, and shimmer blouses with built-in bust cups and 2-inch side margin alterations for the flawless silhouette.
+              </p>
+            </div>
+            <a href="https://wa.me/917410102816?text=Hi%20Dhaaga,%20please%20share%20readymade%20padded%20blouse%20colors%20and%20sizes" 
+               target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 text-xs font-bold tracking-wider uppercase text-crimsonThread group-hover:text-zariGold transition-colors">
+              <span>View Readymade Styles</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1.5 transition-transform"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3: Contemporary & Designer Cuts -->
+        <div class="group rounded-[24px] overflow-hidden bg-white border border-zariGold/30 shadow-luxury-sm hover:shadow-luxury-lg transition-all duration-300 flex flex-col">
+          <div class="relative h-[380px] overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=800&q=80" alt="Contemporary Designer Blouses at Dhaaga" class="w-full h-full object-cover zoom-img">
+            <div class="absolute inset-0 bg-gradient-to-t from-crimsonDeep/80 via-transparent to-transparent"></div>
+            <div class="absolute top-4 left-4 bg-emeraldZari text-white px-3 py-1 rounded-full text-[10px] font-extrabold tracking-widest uppercase shadow">
+              Modern Fusion
+            </div>
+          </div>
+          <div class="p-8 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-serif text-2xl font-bold text-crimsonDark mb-2">Contemporary Designer Cuts</h3>
+              <p class="text-xs md:text-sm text-charcoal/70 leading-relaxed mb-6">
+                Deep-V necks, halter necks, sheer organza puff sleeves, boat necks, back cutouts with handcrafted dori latkans, and jacket-style blouses.
+              </p>
+            </div>
+            <a href="https://wa.me/917410102816?text=Hi%20Dhaaga,%20I'm%20looking%20for%20contemporary%20designer%20blouses" 
+               target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 text-xs font-bold tracking-wider uppercase text-crimsonThread group-hover:text-zariGold transition-colors">
+              <span>Enquire Designer Cuts</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1.5 transition-transform"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       POPULAR NECKLINE STYLING GUIDE
+  ========================================================================= -->
+  <section id="necklines" class="py-24 bg-parchmentDark/50 border-y border-zariGold/30">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold tracking-[0.25em] uppercase text-zariGold block mb-2">Custom Pattern Cutting</span>
+        <h2 class="font-serif text-4xl md:text-5xl font-semibold text-crimsonDark mb-4">
+          Bespoke Neckline Guide
+        </h2>
+        <div class="w-16 h-0.5 bg-zariGold mx-auto mb-6"></div>
+        <p class="text-sm text-charcoal/70">
+          Our master pattern-makers ensure your blouse flatters your neckline and pairs effortlessly with your jewellery.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        
+        <div class="bg-white p-6 rounded-2xl border border-zariGold/30 shadow-sm text-center">
+          <div class="w-12 h-12 mx-auto rounded-full bg-crimsonThread/10 text-crimsonThread flex items-center justify-center mb-4">
+            <i data-lucide="heart" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-serif text-xl font-bold text-crimsonDark mb-1">Sweetheart Cut</h4>
+          <p class="text-xs text-charcoal/70">Best for bridal chokers & heavy necklaces</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-zariGold/30 shadow-sm text-center">
+          <div class="w-12 h-12 mx-auto rounded-full bg-crimsonThread/10 text-crimsonThread flex items-center justify-center mb-4">
+            <i data-lucide="compass" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-serif text-xl font-bold text-crimsonDark mb-1">Royal Boat Neck</h4>
+          <p class="text-xs text-charcoal/70">Sophisticated, modest & elegant for pure Paithanis</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-zariGold/30 shadow-sm text-center">
+          <div class="w-12 h-12 mx-auto rounded-full bg-crimsonThread/10 text-crimsonThread flex items-center justify-center mb-4">
+            <i data-lucide="chevron-down" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-serif text-xl font-bold text-crimsonDark mb-1">Deep Plunge V</h4>
+          <p class="text-xs text-charcoal/70">Modern Sabyasachi-inspired cocktail silhouette</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-zariGold/30 shadow-sm text-center">
+          <div class="w-12 h-12 mx-auto rounded-full bg-crimsonThread/10 text-crimsonThread flex items-center justify-center mb-4">
+            <i data-lucide="sparkles" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-serif text-xl font-bold text-crimsonDark mb-1">Backless & Latkans</h4>
+          <p class="text-xs text-charcoal/70">Handmade matching fabric tassels & tie-ups</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       ABOUT DHAAGA THE BLOUSE HUB
+  ========================================================================= -->
+  <section id="about" class="py-24 bg-parchment">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6">
+          <span class="text-xs font-bold tracking-[0.25em] uppercase text-zariGold block mb-3">Craftsmanship & Mission</span>
+          <h2 class="font-serif text-4xl md:text-5xl font-semibold text-crimsonDark mb-6 leading-tight">
+            Why Pune Women Trust Dhaaga
+          </h2>
+          <div class="w-16 h-0.5 bg-zariGold mb-8"></div>
+          
+          <p class="text-base text-charcoal/85 leading-relaxed font-serif italic mb-6">
+            "A saree is only as stunning as the blouse that accompanies it. At Dhaaga, we treat every blouse as an independent piece of wearable couture."
+          </p>
+
+          <p class="text-sm md:text-base text-charcoal/75 leading-relaxed mb-6">
+            Located in <strong>Shop No. 3, Sharda Park at Ambedkar Chowk (opposite DAV School)</strong>, Dhaaga The Blouse Hub was created to eliminate the stressful guesswork of blouse stitching. 
+          </p>
+
+          <p class="text-sm md:text-base text-charcoal/75 leading-relaxed mb-8">
+            Whether you need a readymade velvet blouse for a wedding tonight, or want custom Maggam embroidery featuring royal peacocks and pearls for your big day, our in-house master tailors guarantee a zero-crease, comfortable fit on your very first trial.
+          </p>
+
+          <div class="grid grid-cols-2 gap-6 pt-6 border-t border-zariGold/30">
+            <div>
+              <h4 class="font-serif text-2xl font-bold text-crimsonThread">Wholesale & Retail</h4>
+              <p class="text-xs text-charcoal/70 mt-1">Direct boutique pricing without middleman markup</p>
+            </div>
+            <div>
+              <h4 class="font-serif text-2xl font-bold text-crimsonThread">On-Spot Trials</h4>
+              <p class="text-xs text-charcoal/70 mt-1">Comfortable trial rooms with 3-way mirrors</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="rounded-2xl overflow-hidden shadow-md h-52 md:h-64 border border-zariGold/30">
+              <img src="assets/hero.jpg" alt="Showroom View" class="w-full h-full object-cover">
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-md h-52 md:h-64 border border-zariGold/30 mt-6">
+              <img src="assets/maggam.jpg" alt="Maggam Peacock Embroidery" class="w-full h-full object-cover">
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-md h-52 md:h-64 border border-zariGold/30">
+              <img src="assets/readymade.jpg" alt="Readymade Racks" class="w-full h-full object-cover">
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-md h-52 md:h-64 border border-zariGold/30 mt-6 bg-parchmentDark flex flex-col items-center justify-center p-6 text-center">
+              <span class="font-serif text-4xl font-bold text-crimsonDark">5.0★</span>
+              <span class="text-xs font-bold text-zariGold uppercase tracking-wider mt-2">Verified Customer Reviews</span>
+              <span class="text-[11px] text-charcoal/60 mt-1">Ambedkar Chowk &bull; Aundh</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5.0★ CUSTOMER REVIEWS
+  ========================================================================= -->
+  <section id="reviews" class="py-24 bg-parchmentDark/40 border-t border-zariGold/30">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 bg-white border border-zariGold/40 px-4 py-1.5 rounded-full mb-3 shadow-sm">
+          <span class="text-amber-500 font-bold text-sm">★★★★★</span>
+          <span class="text-xs font-bold text-crimsonDark tracking-wide">5.0 Star Rating &bull; Aundh's Highest-Rated Blouse Store</span>
+        </div>
+        <h2 class="font-serif text-4xl md:text-5xl font-semibold text-crimsonDark mb-4">
+          Praised by Women Across Aundh & Baner
+        </h2>
+        <div class="w-16 h-0.5 bg-zariGold mx-auto mb-6"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="bg-white rounded-2xl p-8 border border-zariGold/30 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-500 mb-4 text-sm">★★★★★</div>
+            <p class="text-sm md:text-base text-charcoal/80 font-serif italic mb-6">
+              "Saved my sister's reception! The local tailor ruined her blouse 2 days before the wedding. Walked into Dhaaga opposite DAV School, found a gorgeous ready-to-wear brocade blouse in size 36, and they altered it on the spot in 20 minutes!"
+            </p>
+          </div>
+          <div class="pt-4 border-t border-zariGold/20">
+            <h5 class="font-bold text-crimsonDark text-sm">Neha Kadam</h5>
+            <span class="text-xs text-charcoal/60">Aundh, Pune</span>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 border border-zariGold/30 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-500 mb-4 text-sm">★★★★★</div>
+            <p class="text-sm md:text-base text-charcoal/80 font-serif italic mb-6">
+              "Their Maggam work and peacock embroidery finish is on par with ₹25,000 designer boutiques, but at very fair prices. The sweetheart neckline fitting was 100% accurate."
+            </p>
+          </div>
+          <div class="pt-4 border-t border-zariGold/20">
+            <h5 class="font-bold text-crimsonDark text-sm">Ashwini Deshmukh</h5>
+            <span class="text-xs text-charcoal/60">Baner Road, Pune</span>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 border border-zariGold/30 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-500 mb-4 text-sm">★★★★★</div>
+            <p class="text-sm md:text-base text-charcoal/80 font-serif italic mb-6">
+              "Huge collection of padded blouses with extra inner margins! Even if your weight fluctuates, you can easily open up the margins. Best blouse shop in west Pune."
+            </p>
+          </div>
+          <div class="pt-4 border-t border-zariGold/20">
+            <h5 class="font-bold text-crimsonDark text-sm">Dr. Pooja Sharma</h5>
+            <span class="text-xs text-charcoal/60">Parihar Chowk, Aundh</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       LOCATION & ATELIER INFO
+  ========================================================================= -->
+  <section id="location" class="py-24 bg-parchment border-t border-zariGold/30">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7">
+          <span class="text-xs font-bold tracking-[0.25em] uppercase text-zariGold block mb-2">Visit Our Studio</span>
+          <h2 class="font-serif text-4xl md:text-5xl font-semibold text-crimsonDark mb-6">
+            Shop No. 3, Sharda Park, Aundh
+          </h2>
+
+          <div class="space-y-6 mb-10">
+            <div class="flex items-start gap-4 p-5 rounded-2xl bg-parchmentDark border border-zariGold/30">
+              <div class="w-11 h-11 rounded-xl bg-crimsonThread text-zariLight flex items-center justify-center shrink-0">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-serif text-xl font-bold text-crimsonDark">Studio Address</h4>
+                <p class="text-sm text-charcoal/80 mt-1">
+                  Shop No. 3, Sharda Park, Ambedkar Chowk, opposite DAV School, Raagdari Society, Aundh, Pune, Maharashtra 411067
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-5 rounded-2xl bg-parchmentDark border border-zariGold/30">
+              <div class="w-11 h-11 rounded-xl bg-crimsonThread text-zariLight flex items-center justify-center shrink-0">
+                <i data-lucide="compass" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-serif text-xl font-bold text-crimsonDark">Key Landmark</h4>
+                <p class="text-sm text-charcoal/80 mt-1">
+                  Directly opposite the DAV Public School entrance at Ambedkar Chowk
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-5 rounded-2xl bg-parchmentDark border border-zariGold/30">
+              <div class="w-11 h-11 rounded-xl bg-crimsonThread text-zariLight flex items-center justify-center shrink-0">
+                <i data-lucide="phone" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-serif text-xl font-bold text-crimsonDark">Phone & WhatsApp Inquiries</h4>
+                <p class="text-sm text-charcoal/80 mt-1">
+                  +91 74101 02816 &bull; Open 10:30 AM – 9:00 PM (Daily)
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-4">
+            <a href="https://maps.google.com/?cid=2255808999006839565" target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2.5 bg-crimsonThread hover:bg-crimsonDark text-white px-8 py-4 rounded-full text-sm font-bold tracking-wider uppercase transition-all shadow-md">
+              <i data-lucide="navigation" class="w-4 h-4 text-zariGold"></i>
+              <span>Get Directions on Google Maps</span>
+            </a>
+            
+            <a href="tel:+917410102816" 
+               class="inline-flex items-center gap-2.5 border border-crimsonDark/30 hover:border-crimsonDark text-crimsonDark px-8 py-4 rounded-full text-sm font-bold tracking-wider uppercase transition-all hover:bg-crimsonDark/5">
+              <i data-lucide="phone" class="w-4 h-4 text-zariGold"></i>
+              <span>Call +91 74101 02816</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="rounded-3xl overflow-hidden border border-zariGold/40 shadow-xl bg-crimsonDeep text-white p-8">
+            <div class="flex items-center justify-between mb-6 pb-6 border-b border-white/10">
+              <div>
+                <span class="text-[10px] uppercase font-bold tracking-widest text-zariGold block">Ambedkar Chowk, Aundh</span>
+                <h3 class="font-serif text-2xl font-bold text-white">Dhaaga The Blouse Hub</h3>
+              </div>
+              <div class="w-12 h-12 rounded-full bg-zariGold/20 border border-zariGold flex items-center justify-center text-zariGold font-serif text-xl font-bold">
+                धा
+              </div>
+            </div>
+
+            <div class="space-y-3 text-sm text-[#F7F2EA]/90 mb-8">
+              <div class="flex justify-between py-1.5 border-b border-white/10">
+                <span class="text-white/60">Opening Days</span>
+                <span class="font-bold text-zariGold">Open All 7 Days</span>
+              </div>
+              <div class="flex justify-between py-1.5 border-b border-white/10">
+                <span class="text-white/60">Store Hours</span>
+                <span class="font-bold text-white">10:30 AM – 9:00 PM</span>
+              </div>
+              <div class="flex justify-between py-1.5 border-b border-white/10">
+                <span class="text-white/60">Landmark</span>
+                <span>Opposite DAV School</span>
+              </div>
+              <div class="flex justify-between py-1.5">
+                <span class="text-white/60">Customer Rating</span>
+                <span class="font-bold text-zariGold">5.0★ (Top Rated)</span>
+              </div>
+            </div>
+
+            <a href="https://maps.google.com/?cid=2255808999006839565" target="_blank" rel="noopener"
+               class="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-zariGold to-zariLight text-crimsonDeep py-3.5 rounded-full font-bold text-xs uppercase tracking-wider shadow hover:brightness-105 transition-all">
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+              <span>Open Studio in Google Maps</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- =========================================================================
+     FOOTER
+========================================================================= -->
+<footer class="bg-crimsonDeep text-[#F7F2EA] pt-20 pb-12 border-t border-zariGold/30">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-16 border-b border-white/10">
+      
+      <div class="md:col-span-5">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-full border border-zariGold flex items-center justify-center bg-crimsonThread text-zariLight font-serif text-lg font-bold">
+            धा
+          </div>
+          <span class="font-serif text-2xl font-bold tracking-tight text-white block leading-none">
+            Dhaaga The Blouse Hub
+          </span>
+        </div>
+        <p class="text-xs md:text-sm text-white/70 leading-relaxed max-w-sm">
+          Aundh's favorite designer blouse studio for readymade padded blouses, handcrafted bridal Maggam zardozi embroidery, and precision 24-hour alterations.
+        </p>
+        <p class="text-xs text-zariGold font-medium mt-4">
+          Shop No. 3, Sharda Park, Ambedkar Chowk, Opp. DAV School, Aundh, Pune 411067
+        </p>
+      </div>
+
+      <div class="md:col-span-3">
+        <h4 class="font-serif text-base font-bold text-zariGold mb-4">Blouse Styles</h4>
+        <ul class="space-y-2 text-xs md:text-sm text-white/70">
+          <li><a href="#designs" class="hover:text-zariGold transition-colors">Bridal Maggam Work</a></li>
+          <li><a href="#designs" class="hover:text-zariGold transition-colors">Padded Readymade</a></li>
+          <li><a href="#designs" class="hover:text-zariGold transition-colors">Silk & Brocade Blouses</a></li>
+          <li><a href="#designs" class="hover:text-zariGold transition-colors">Princess Cut Blouses</a></li>
+          <li><a href="#necklines" class="hover:text-zariGold transition-colors">Sweetheart Necklines</a></li>
+        </ul>
+      </div>
+
+      <div class="md:col-span-4">
+        <h4 class="font-serif text-base font-bold text-zariGold mb-4">Store Hours & Contact</h4>
+        <p class="text-xs md:text-sm text-white/70 mb-2 flex items-center gap-2">
+          <i data-lucide="phone" class="w-4 h-4 text-zariGold"></i> +91 74101 02816
+        </p>
+        <p class="text-xs md:text-sm text-white/70 flex items-center gap-2">
+          <i data-lucide="clock" class="w-4 h-4 text-zariGold"></i> 10:30 AM – 9:00 PM (Daily)
+        </p>
+      </div>
+
+    </div>
+
+    <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-white/50 gap-4">
+      <p>&copy; 2026 Dhaaga The Blouse Hub. All rights reserved.</p>
+      <p class="text-zariGold/80 font-medium">Bespoke Concept & Web Architecture by Harshal Baviskar &bull; Pune</p>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP CTA -->
+<a href="https://wa.me/917410102816?text=Hi%20Dhaaga%20The%20Blouse%20Hub,%20I'm%20viewing%20your%20website%20and%20would%20like%20to%20enquire%20about%20designer%20blouses" 
+   target="_blank" rel="noopener"
+   class="fixed bottom-6 right-6 z-50 inline-flex items-center gap-3 bg-wa hover:bg-waDark text-white px-5 py-3.5 rounded-full shadow-2xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-105">
+  <i data-lucide="message-circle" class="w-5 h-5 text-white"></i>
+  <span class="text-xs md:text-sm font-bold tracking-wide">WhatsApp Studio</span>
+</a>
+
+<script>
+lucide.createIcons();
+
+// Sticky header blur on scroll
+window.addEventListener('scroll', function() {
+  const nav = document.getElementById('siteNav');
+  if (window.scrollY > 30) {
+    nav.classList.add('scrolled');
+  } else {
+    nav.classList.remove('scrolled');
+  }
+});
+
+// Mobile menu toggle
+const btn = document.getElementById('mobileMenuBtn');
+const menu = document.getElementById('mobileMenu');
+if (btn && menu) {
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+}
+</script>
+</body>
+</html>
