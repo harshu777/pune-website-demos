@@ -1,0 +1,1506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayurveda Clinic | Authentic Classical Ayurveda & Panchakarma — DP Road Aundh Pune</title>
+  
+  <!-- Open Graph / Meta -->
+  <meta name="description" content="Ayurveda Clinic (Karwa Ayurveda) — Authentic Classical Ayurveda, Nadi Pariksha, Panchakarma therapies, and lifestyle disease management by Dr. Adesh Karwa & Dr. Deepa Karwa on DP Road, Aundh, Pune.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ayurveda Clinic | Classical Panchakarma & Holistic Care — Aundh, Pune">
+  <meta property="og:description" content="Holistic Ayurvedic healing, pulse diagnosis (Nadi Pariksha), Shirodhara, PCOS/Thyroid management, and joint pain care on DP Road, Aundh. Book appointment on WhatsApp.">
+  <meta property="og:image" content="https://harshu777.github.io/pune-website-demos/ayurvedaclinic/assets/hero.jpg">
+  <meta property="og:url" content="https://harshu777.github.io/pune-website-demos/ayurvedaclinic/">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    :root {
+      --primary: #065f46;        /* Deep Ayurvedic Emerald */
+      --primary-dark: #044e39;
+      --primary-light: #ecfdf5;
+      --primary-glow: rgba(6, 95, 70, 0.16);
+      --gold: #b45309;           /* Ayurvedic Herbal Gold */
+      --gold-light: #fef3c7;
+      --accent: #d97706;
+      --dark: #132a1e;
+      --text: #2d3748;
+      --text-muted: #5a6a60;
+      --bg: #fcfbf7;            /* Organic Warm Parchment */
+      --surface: #ffffff;
+      --border: #e6e4dc;
+      --radius: 16px;
+      --shadow: 0 10px 30px -8px rgba(19, 42, 30, 0.07);
+      --shadow-lg: 0 20px 42px -12px rgba(6, 95, 70, 0.15);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4, .brand-title {
+      font-family: 'Playfair Display', serif;
+      color: var(--dark);
+      font-weight: 700;
+    }
+
+    /* CONCEPT PREVIEW BAR - 100px DESKTOP PADDING */
+    .concept-bar {
+      background: linear-gradient(90deg, #132a1e 0%, #1c3d2c 100%);
+      color: #a3b899;
+      font-size: 13px;
+      padding: 10px 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .concept-badge {
+      background: #059669;
+      color: #fff;
+      padding: 3px 10px;
+      border-radius: 9999px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-right: 10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .concept-link {
+      color: #6ee7b7;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    .concept-link:hover {
+      color: #a7f3d0;
+      text-decoration: underline;
+    }
+
+    /* HEADER & NAVIGATION - 100px DESKTOP PADDING */
+    header {
+      background: rgba(252, 251, 247, 0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 41px;
+      z-index: 999;
+    }
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 100px;
+      max-width: 100%;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+    }
+    .brand-logo {
+      width: 46px;
+      height: 46px;
+      background: linear-gradient(135deg, var(--primary) 0%, #059669 100%);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      box-shadow: 0 4px 12px var(--primary-glow);
+    }
+    .brand-info .brand-title {
+      font-size: 21px;
+      line-height: 1.2;
+      color: var(--dark);
+      letter-spacing: -0.3px;
+    }
+    .brand-info .brand-sub {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 500;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+    .nav-link {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+      font-size: 15px;
+      transition: color 0.2s;
+    }
+    .nav-link:hover {
+      color: var(--primary);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 11px 22px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      cursor: pointer;
+      border: none;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+      box-shadow: 0 4px 14px var(--primary-glow);
+    }
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 18px rgba(6, 95, 70, 0.25);
+    }
+    .btn-whatsapp {
+      background: #25D366;
+      color: white;
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+    }
+    .btn-whatsapp:hover {
+      background: #1eb956;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 18px rgba(37, 211, 102, 0.4);
+    }
+    .btn-outline {
+      background: transparent;
+      border: 1.5px solid var(--border);
+      color: var(--dark);
+    }
+    .btn-outline:hover {
+      background: #f4f2e9;
+      border-color: #d3cfc2;
+    }
+
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* HERO SECTION */
+    .hero-section {
+      padding: 72px 0 60px;
+      background: radial-gradient(circle at top right, rgba(6, 95, 70, 0.07) 0%, rgba(252, 251, 247, 0) 60%),
+                  radial-gradient(circle at bottom left, rgba(180, 83, 9, 0.05) 0%, rgba(252, 251, 247, 0) 50%);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 50px;
+      align-items: center;
+    }
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 7px 16px;
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      border: 1px solid rgba(6, 95, 70, 0.2);
+    }
+    .hero-title {
+      font-size: 48px;
+      line-height: 1.18;
+      letter-spacing: -1px;
+      margin-bottom: 20px;
+      color: var(--dark);
+    }
+    .hero-title span {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--gold) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-desc {
+      font-size: 17px;
+      color: var(--text-muted);
+      margin-bottom: 30px;
+      line-height: 1.7;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 36px;
+    }
+
+    .hero-trust-bar {
+      display: flex;
+      gap: 28px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .trust-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: #eef2eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+    }
+    .trust-meta .trust-value {
+      font-weight: 700;
+      color: var(--dark);
+      font-size: 15px;
+      line-height: 1.2;
+    }
+    .trust-meta .trust-label {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    /* HERO IMAGE COMPOSITE */
+    .hero-visual {
+      position: relative;
+    }
+    .hero-main-card {
+      position: relative;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      border: 4px solid white;
+    }
+    .hero-main-card img {
+      width: 100%;
+      height: 430px;
+      object-fit: cover;
+      display: block;
+    }
+    .hero-overlay-badge {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: rgba(19, 42, 30, 0.88);
+      backdrop-filter: blur(8px);
+      padding: 12px 18px;
+      border-radius: 12px;
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .hero-floating-stat {
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      background: white;
+      padding: 14px 20px;
+      border-radius: 14px;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    /* STATUS BANNER */
+    .status-banner {
+      background: white;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+    }
+    .status-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .status-indicator {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .status-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #059669;
+      box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.2);
+    }
+    .status-timings {
+      font-size: 14px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .status-timings strong {
+      color: var(--dark);
+    }
+
+    /* SECTION BASICS */
+    .section {
+      padding: 80px 0;
+    }
+    .section-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 50px;
+    }
+    .section-badge {
+      display: inline-block;
+      color: var(--primary);
+      background: var(--primary-light);
+      padding: 5px 14px;
+      border-radius: 9999px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-size: 36px;
+      line-height: 1.25;
+      margin-bottom: 14px;
+      letter-spacing: -0.5px;
+    }
+    .section-subtitle {
+      font-size: 16px;
+      color: var(--text-muted);
+    }
+
+    /* SERVICES GRID */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .service-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px 28px;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+      border-color: #a7f3d0;
+    }
+    .service-icon-wrap {
+      width: 54px;
+      height: 54px;
+      border-radius: 14px;
+      background: var(--primary-light);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 22px;
+      transition: all 0.3s ease;
+    }
+    .service-card:hover .service-icon-wrap {
+      background: var(--primary);
+      color: white;
+    }
+    .service-title {
+      font-size: 21px;
+      margin-bottom: 12px;
+      color: var(--dark);
+    }
+    .service-desc {
+      font-size: 14.5px;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+    .service-features {
+      list-style: none;
+      border-top: 1px solid #f1efe7;
+      padding-top: 16px;
+      margin-bottom: 20px;
+    }
+    .service-features li {
+      font-size: 13.5px;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    .service-features li i {
+      color: var(--gold);
+      flex-shrink: 0;
+    }
+    .service-cta {
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 13.5px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .service-cta:hover {
+      text-decoration: underline;
+    }
+
+    /* DOCTORS SECTION */
+    .doctors-section {
+      background: white;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .doctors-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+    .doctor-card {
+      background: #faf8f2;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 36px;
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+    .doctor-avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 16px;
+      object-fit: cover;
+      flex-shrink: 0;
+      border: 3px solid white;
+      box-shadow: var(--shadow);
+    }
+    .doctor-info h3 {
+      font-size: 22px;
+      margin-bottom: 4px;
+      color: var(--dark);
+    }
+    .doctor-qual {
+      color: var(--gold);
+      font-weight: 600;
+      font-size: 13.5px;
+      margin-bottom: 10px;
+    }
+    .doctor-bio {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 14px;
+    }
+
+    /* TIMINGS & APPOINTMENT SCHEDULING CARD */
+    .schedule-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 36px;
+      align-items: stretch;
+    }
+    .timings-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 36px;
+      box-shadow: var(--shadow);
+    }
+    .timings-card h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .timing-slot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px;
+      background: #f9f8f3;
+      border-radius: 12px;
+      margin-bottom: 14px;
+      border: 1px solid #eeebe0;
+    }
+    .timing-slot.highlight {
+      background: #ecfdf5;
+      border-color: #a7f3d0;
+    }
+    .timing-day {
+      font-weight: 600;
+      color: var(--dark);
+      font-size: 15px;
+    }
+    .timing-hours {
+      font-weight: 700;
+      color: var(--primary);
+      font-size: 14px;
+      text-align: right;
+    }
+
+    /* WHATSAPP APPOINTMENT BUILDER FORM */
+    .appointment-card {
+      background: linear-gradient(135deg, #065f46 0%, #044e39 100%);
+      color: white;
+      border-radius: var(--radius);
+      padding: 36px;
+      box-shadow: var(--shadow-lg);
+    }
+    .appointment-card h3 {
+      color: white;
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+    .appointment-card p {
+      color: #d1fae5;
+      font-size: 14px;
+      margin-bottom: 22px;
+    }
+    .form-group {
+      margin-bottom: 16px;
+    }
+    .form-label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: #d1fae5;
+      margin-bottom: 6px;
+    }
+    .form-control {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      background: rgba(255, 255, 255, 0.96);
+      color: var(--dark);
+      font-family: inherit;
+      font-size: 14px;
+    }
+    .form-control:focus {
+      outline: none;
+      border-color: white;
+      box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    /* REVIEWS SECTION */
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .review-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+    .review-rating {
+      color: var(--gold);
+      margin-bottom: 12px;
+      display: flex;
+      gap: 3px;
+    }
+    .review-text {
+      font-size: 14px;
+      color: #4a5568;
+      line-height: 1.65;
+      margin-bottom: 18px;
+      font-style: italic;
+    }
+    .review-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .author-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #ecfdf5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .author-name {
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--dark);
+    }
+    .author-sub {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    /* LOCATION & CONTACT */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 36px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .contact-info {
+      padding: 44px;
+    }
+    .contact-title {
+      font-size: 28px;
+      margin-bottom: 14px;
+    }
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .contact-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--primary-light);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .contact-detail h4 {
+      font-size: 16px;
+      margin-bottom: 4px;
+      color: var(--dark);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .contact-detail p {
+      color: var(--text-muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .contact-map {
+      background: #e2e8f0;
+      min-height: 380px;
+      position: relative;
+    }
+    .contact-map iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #132a1e;
+      color: #94a89a;
+      padding: 60px 0 30px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .footer-brand .brand-title {
+      color: white;
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+    .footer-brand p {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .footer-col h4 {
+      color: white;
+      font-size: 16px;
+      margin-bottom: 16px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .footer-links {
+      list-style: none;
+    }
+    .footer-links li {
+      margin-bottom: 10px;
+    }
+    .footer-links a {
+      color: #94a89a;
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover {
+      color: white;
+    }
+    .footer-bottom {
+      text-align: center;
+      font-size: 13px;
+      color: #617968;
+    }
+
+    /* FLOATING WHATSAPP BUTTON */
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #25D366;
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
+      z-index: 1000;
+      text-decoration: none;
+      transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .floating-whatsapp:hover {
+      transform: scale(1.1);
+    }
+    .whatsapp-tooltip {
+      position: absolute;
+      right: 70px;
+      background: #132a1e;
+      color: white;
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      white-space: nowrap;
+      pointer-events: none;
+      opacity: 0;
+      transform: translateX(10px);
+      transition: all 0.2s;
+    }
+    .floating-whatsapp:hover .whatsapp-tooltip {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 1024px) {
+      .concept-bar, .nav-container {
+        padding-left: 48px;
+        padding-right: 48px;
+      }
+      .services-grid, .reviews-grid, .doctors-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .concept-bar, .nav-container {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .concept-bar {
+        flex-direction: column;
+        gap: 6px;
+        text-align: center;
+      }
+      .nav-menu {
+        display: none;
+      }
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+      .hero-title {
+        font-size: 34px;
+      }
+      .hero-trust-bar {
+        flex-direction: column;
+        gap: 14px;
+      }
+      .services-grid, .reviews-grid, .doctors-grid, .schedule-grid, .contact-grid, .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .doctor-card {
+        flex-direction: column;
+        text-align: center;
+      }
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 100px DESKTOP CONCEPT PREVIEW BAR -->
+  <div class="concept-bar">
+    <div style="display: flex; align-items: center;">
+      <span class="concept-badge"><i data-lucide="sparkles" style="width:12px;height:12px;"></i> Mobile Preview</span>
+      <span>Concept Prepared for <strong>Ayurveda Clinic (Karwa Ayurveda)</strong> · DP Road, Aundh</span>
+    </div>
+    <div>
+      <span>Complete Ayurvedic Clinic Portal launch for <strong>₹5,999</strong> | <a href="https://wa.me/919405661998?text=Hi%20Harshal,%20I%20saw%20the%20Ayurveda%20Clinic%20demo." class="concept-link">Contact Harshal (+91 94056 61998)</a></span>
+    </div>
+  </div>
+
+  <!-- 100px DESKTOP NAVIGATION -->
+  <header>
+    <div class="nav-container">
+      <a href="#" class="brand">
+        <div class="brand-logo">
+          <i data-lucide="leaf" style="width: 24px; height: 24px; stroke-width: 2.2;"></i>
+        </div>
+        <div class="brand-info">
+          <div class="brand-title">Ayurveda Clinic</div>
+          <div class="brand-sub">Authentic Classical Panchakarma & Healing · Aundh</div>
+        </div>
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="#overview" class="nav-link">Overview</a></li>
+        <li><a href="#therapies" class="nav-link">Panchakarma</a></li>
+        <li><a href="#specialties" class="nav-link">Specialties</a></li>
+        <li><a href="#doctors" class="nav-link">Vaidyas</a></li>
+        <li><a href="#timings" class="nav-link">Timings</a></li>
+        <li><a href="#contact" class="nav-link">Location</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="tel:+919359109922" class="btn btn-outline" style="display: none; @media(min-width: 600px){display:inline-flex;}">
+          <i data-lucide="phone" style="width: 16px; height: 16px;"></i>
+          <span>Call Clinic</span>
+        </a>
+        <a href="#book" class="btn btn-primary">
+          <i data-lucide="calendar" style="width: 16px; height: 16px;"></i>
+          <span>Book Consultation</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- LIVE STATUS BAR -->
+  <div class="status-banner">
+    <div class="container">
+      <div class="status-flex">
+        <div class="status-indicator">
+          <div class="status-dot"></div>
+          <span>Ayurvedic Consultations & Panchakarma Available Today (Mon–Sat)</span>
+        </div>
+        <div class="status-timings">
+          <i data-lucide="clock" style="width: 16px; height: 16px; color: var(--primary);"></i>
+          <span>Morning: <strong>10:15 AM – 1:30 PM</strong> &nbsp;|&nbsp; Evening: <strong>5:15 PM – 8:30 PM</strong></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section" id="overview">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-pill">
+            <i data-lucide="sparkles" style="width: 16px; height: 16px;"></i>
+            <span>Classical Ayurvedic Science & Kerala Panchakarma in Aundh</span>
+          </div>
+          <h1 class="hero-title">
+            Root-Cause Healing Through <span>Authentic Ayurveda & Panchakarma</span>
+          </h1>
+          <p class="hero-desc">
+            Guided by Dr. Adesh Karwa and Dr. Deepa Karwa, Ayurveda Clinic offers individualized Nadi Pariksha (Pulse Diagnosis), traditional Panchakarma detoxification, and holistic healing for chronic lifestyle, hormonal, and spine disorders.
+          </p>
+
+          <div class="hero-actions">
+            <a href="https://wa.me/919359109922?text=Hi%20Ayurveda%20Clinic,%20I%20would%20like%20to%20book%20an%20Ayurvedic%20consultation.%20Please%20let%20me%20know%20available%20slots." class="btn btn-whatsapp" target="_blank">
+              <i data-lucide="message-circle" style="width: 18px; height: 18px;"></i>
+              <span>Book via WhatsApp (+91 93591 09922)</span>
+            </a>
+            <a href="tel:+919359109922" class="btn btn-outline">
+              <i data-lucide="phone-call" style="width: 18px; height: 18px;"></i>
+              <span>Call +91 93591 09922</span>
+            </a>
+          </div>
+
+          <div class="hero-trust-bar">
+            <div class="trust-item">
+              <div class="trust-icon">
+                <i data-lucide="star" style="width: 20px; height: 20px; fill: #d97706; stroke: #d97706;"></i>
+              </div>
+              <div class="trust-meta">
+                <div class="trust-value">4.8 / 5.0</div>
+                <div class="trust-label">Patient Feedback</div>
+              </div>
+            </div>
+
+            <div class="trust-item">
+              <div class="trust-icon">
+                <i data-lucide="award" style="width: 20px; height: 20px;"></i>
+              </div>
+              <div class="trust-meta">
+                <div class="trust-value">15+ Years</div>
+                <div class="trust-label">Ayurvedic Practice</div>
+              </div>
+            </div>
+
+            <div class="trust-item">
+              <div class="trust-icon">
+                <i data-lucide="activity" style="width: 20px; height: 20px;"></i>
+              </div>
+              <div class="trust-meta">
+                <div class="trust-value">Nadi Pariksha</div>
+                <div class="trust-label">Root Diagnosis</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-main-card">
+            <img src="assets/hero.jpg" alt="Ayurveda Clinic Aundh Healing Environment">
+            <div class="hero-overlay-badge">
+              <i data-lucide="map-pin" style="width: 18px; height: 18px; color: #6ee7b7;"></i>
+              <div>
+                <strong style="display:block; font-size: 13px;">Behind Subway, DP Road</strong>
+                <span style="font-size: 11px; opacity: 0.85;">Samar Paradise, Parihar Chowk, Aundh</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-floating-stat">
+            <div style="background: #ecfdf5; width: 42px; height: 42px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #065f46;">
+              <i data-lucide="flower-2" style="width: 22px; height: 22px;"></i>
+            </div>
+            <div>
+              <div style="font-weight: 700; font-size: 15px; color: var(--dark);">100% Herbal</div>
+              <div style="font-size: 12px; color: var(--text-muted);">Zero chemical side-effects</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECIALIZED AYURVEDIC SERVICES -->
+  <section class="section" id="specialties">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Holistic Healing</span>
+        <h2 class="section-title">Specialized Ayurvedic Treatments & Care</h2>
+        <p class="section-subtitle">Treating the root cause rather than suppressing symptoms with classical Vedic protocols.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- 1 -->
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <i data-lucide="activity" style="width: 28px; height: 28px;"></i>
+          </div>
+          <h3 class="service-title">Nadi Pariksha (Pulse Diagnosis)</h3>
+          <p class="service-desc">Ancient non-invasive diagnostic science that detects subtle bio-energy (Vata, Pitta, Kapha) imbalances, organ stress, and toxin accumulation before physical symptoms escalate.</p>
+          <ul class="service-features">
+            <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Dosha constitution identification</li>
+            <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Early disease detection</li>
+            <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Personalized diet & lifestyle blueprint</li>
+          </ul>
+          <a href="#book" class="service-cta">Book Pulse Reading <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i></a>
+        </div>
+
+        <!-- 2 -->
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <i data-lucide="droplet" style="width: 28px; height: 28px;"></i>
+          </div>
+          <h3 class="service-title">Classical Panchakarma Detox</h3>
+          <p class="service-desc">Authentic five-fold purification therapies: Shirodhara, Abhyanga, Basti, Nasya, and Vamana. Eliminates deep cellular toxins (Ama) and restores natural immunity.</p>
+          <ul class="service-features">
+            <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Medicated oil Shirodhara for stress</li>
+            <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Herbal steam (Swedana) detox</li>
+            <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Medicated Basti therapies</li>
+          </ul>
+          <a href="#book" class="service-cta">Explore Panchakarma <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i></a>
+        </div>
+
+        <!-- 3 -->
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <i data-lucide="heart" style="width: 28px; height: 28px;"></i>
+          </div>
+          <h3 class="service-title">Women's Health & PCOS/PCOD</h3>
+          <p class="service-desc">Natural hormonal balance therapy for irregular cycles, PCOS, follicular health, fertility optimization, menopausal symptoms, and post-natal care.</p>
+          <ul class="service-features">
+            <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Hormonal cycle regularization</li>
+            <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Natural ovulation support</li>
+            <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Utar Basti & herbal formulations</li>
+          </ul>
+          <a href="#book" class="service-cta">Women's Care Consult <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i></a>
+        </div>
+
+        <!-- 4 -->
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <i data-lucide="shield-alert" style="width: 28px; height: 28px;"></i>
+          </div>
+          <h3 class="service-title">Spine, Joint & Arthritis Care</h3>
+          <p class="service-desc">Non-surgical relief for sciatica, lumbar spondylosis, cervical pain, slip disc, osteoarthritis, and chronic inflammation using herbal Kati Basti and Janu Basti.</p>
+          <ul class="service-features">
+            <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Kati Basti for lower back & disc pain</li>
+            <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Janu Basti for knee joint lubrication</li>
+            <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Anti-inflammatory herbal formulations</li>
+          </ul>
+          <a href="#book" class="service-cta">Relieve Joint Pain <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i></a>
+        </div>
+
+        <!-- 5 -->
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <i data-lucide="sparkle" style="width: 28px; height: 28px;"></i>
+          </div>
+          <h3 class="service-title">Skin, Hair & Chronic Allergies</h3>
+          <p class="service-desc">Blood-purifying (Raktamokshana and herbal detox) therapies for persistent skin problems like psoriasis, eczema, acne, dermatitis, and chronic alopecia hair thinning.</p>
+          <ul class="service-features">
+            <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Psoriasis & eczema natural protocol</li>
+            <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Scalp Shirodhara & herbal hair oils</li>
+            <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Pure blood purification herbs</li>
+          </ul>
+          <a href="#book" class="service-cta">Skin & Hair Consult <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i></a>
+        </div>
+
+        <!-- 6 -->
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <i data-lucide="pie-chart" style="width: 28px; height: 28px;"></i>
+          </div>
+          <h3 class="service-title">Lifestyle Disorders & Metabolism</h3>
+          <p class="service-desc">Effective herbal regimens to manage Type-2 diabetes, thyroid fluctuations, obesity, hyperacidity, fatty liver, and chronic digestive disorders (IBS, constipation).</p>
+          <ul class="service-features">
+            <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Deep gut microbiota restoration</li>
+            <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Herbal insulin sensitivity support</li>
+            <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Long-term metabolic equilibrium</li>
+          </ul>
+          <a href="#book" class="service-cta">Metabolic Consult <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOCTORS PROFILE SECTION -->
+  <section class="section doctors-section" id="doctors">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Experienced Vaidyas</span>
+        <h2 class="section-title">Meet Our Ayurvedic Physicians</h2>
+        <p class="section-subtitle">Dedicated practitioners with deep classical knowledge and compassionate patient care.</p>
+      </div>
+
+      <div class="doctors-grid">
+        <div class="doctor-card">
+          <img src="assets/consultation.jpg" alt="Dr. Adesh Karwa" class="doctor-avatar">
+          <div class="doctor-info">
+            <h3>Dr. Adesh Karwa</h3>
+            <div class="doctor-qual">BAMS, MD (Ayurveda) · Senior Ayurvedic Physician</div>
+            <p class="doctor-bio">
+              Specializes in Nadi Pariksha, classical Panchakarma management, spine & joint disorders, and chronic lifestyle diseases with over 15 years of clinical excellence in Pune.
+            </p>
+            <a href="https://wa.me/919359109922?text=Hello%20Dr.%20Adesh%20Karwa,%20I%20would%20like%20to%20consult%20with%20you." class="btn btn-outline" style="padding: 6px 14px; font-size: 13px;" target="_blank">
+              <i data-lucide="message-circle" style="width: 14px; height: 14px;"></i>
+              <span>Consult Dr. Adesh</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="doctor-card">
+          <img src="assets/panchakarma.jpg" alt="Dr. Deepa Karwa" class="doctor-avatar">
+          <div class="doctor-info">
+            <h3>Dr. Deepa Karwa</h3>
+            <div class="doctor-qual">BAMS, MD (Ayurveda) · Women's Health & Skin Specialist</div>
+            <p class="doctor-bio">
+              Specializes in women's hormonal balance (PCOS, infertility), classical herbal dermatology, chronic skin care (psoriasis/eczema), and holistic wellness counseling.
+            </p>
+            <a href="https://wa.me/919359109922?text=Hello%20Dr.%20Deepa%20Karwa,%20I%20would%20like%20to%20consult%20with%20you." class="btn btn-outline" style="padding: 6px 14px; font-size: 13px;" target="_blank">
+              <i data-lucide="message-circle" style="width: 14px; height: 14px;"></i>
+              <span>Consult Dr. Deepa</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMINGS & APPOINTMENT CARD -->
+  <section class="section" id="timings">
+    <div class="container">
+      <div class="schedule-grid" id="book">
+        <!-- Timings Card -->
+        <div class="timings-card">
+          <span class="section-badge">OPD Timings</span>
+          <h3><i data-lucide="clock" style="color: var(--primary);"></i> Consultation Schedule</h3>
+          
+          <div class="timing-slot highlight">
+            <div>
+              <div class="timing-day">Morning Session</div>
+              <div style="font-size: 13px; color: var(--text-muted);">Monday to Saturday</div>
+            </div>
+            <div class="timing-hours">10:15 AM – 1:30 PM</div>
+          </div>
+
+          <div class="timing-slot highlight">
+            <div>
+              <div class="timing-day">Evening Session</div>
+              <div style="font-size: 13px; color: var(--text-muted);">Monday to Saturday</div>
+            </div>
+            <div class="timing-hours">5:15 PM – 8:30 PM</div>
+          </div>
+
+          <div class="timing-slot" style="opacity: 0.8; background: #fffbf0; border-color: #fde68a;">
+            <div>
+              <div class="timing-day" style="color: #92400e;">Sunday</div>
+              <div style="font-size: 13px; color: #b45309;">Prior Appointment Only</div>
+            </div>
+            <div class="timing-hours" style="color: #92400e;">By Pre-Booking</div>
+          </div>
+
+          <div style="margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border);">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+              <span style="font-size: 14px; font-weight: 600; color: var(--dark);">Direct Clinic Line:</span>
+              <a href="tel:+919359109922" style="font-weight: 700; color: var(--primary); text-decoration: none; font-size: 16px;">
+                +91 93591 09922
+              </a>
+            </div>
+            <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">
+              Landline: 020-25886455
+            </div>
+          </div>
+        </div>
+
+        <!-- Appointment Form -->
+        <div class="appointment-card">
+          <span style="background: rgba(255,255,255,0.2); padding: 4px 12px; border-radius: 999px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">1-Tap Direct Booking</span>
+          <h3 style="margin-top: 10px;">Book Ayurvedic Consultation</h3>
+          <p>Fill out the quick form to send your appointment or Panchakarma query straight to our clinic team on WhatsApp.</p>
+
+          <form id="appointment-form" onsubmit="handleAppointmentSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Your Full Name *</label>
+                <input type="text" id="patient-name" class="form-control" placeholder="e.g. Radhika Joshi" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Phone Number *</label>
+                <input type="tel" id="patient-phone" class="form-control" placeholder="e.g. 98220XXXXX" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Preferred Date *</label>
+                <input type="date" id="pref-date" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Preferred Slot *</label>
+                <select id="pref-slot" class="form-control" required>
+                  <option value="Morning (10:15 AM - 1:30 PM)">Morning: 10:15 AM – 1:30 PM</option>
+                  <option value="Evening (5:15 PM - 8:30 PM)">Evening: 5:15 PM – 8:30 PM</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Consultation / Therapy Topic *</label>
+              <select id="visit-reason" class="form-control" required>
+                <option value="Nadi Pariksha & Health Check">Nadi Pariksha (Pulse Diagnosis)</option>
+                <option value="Panchakarma Detox / Shirodhara">Panchakarma Detox / Shirodhara</option>
+                <option value="PCOS / Women Hormonal Care">Women's Health / PCOS / Infertility</option>
+                <option value="Joint Pain / Sciatica / Spondylitis">Joint Pain / Spine / Sciatica</option>
+                <option value="Skin Disorder / Hair Loss">Skin Allergy / Psoriasis / Hair Fall</option>
+                <option value="Digestive Issues / Lifestyle Disease">Diabetes / Thyroid / Digestion</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-whatsapp" style="width: 100%; padding: 14px; font-size: 15px; margin-top: 8px;">
+              <i data-lucide="send" style="width: 18px; height: 18px;"></i>
+              <span>Send Request on WhatsApp</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VERIFIED REVIEWS -->
+  <section class="section" id="reviews" style="background: #f4f2e9;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Patient Experiences</span>
+        <h2 class="section-title">Verified Reviews from Our Patients</h2>
+        <p class="section-subtitle">Real recovery stories from individuals treated at Ayurveda Clinic, Aundh.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-rating">
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: var(--gold);"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: var(--gold);"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: var(--gold);"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: var(--gold);"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: var(--gold);"></i>
+          </div>
+          <p class="review-text">
+            "I suffered from severe sciatica pain for almost two years. After a course of Kati Basti and Ayurvedic medicines prescribed by Dr. Adesh Karwa, my back pain reduced by 90%. Exceptional doctor!"
+          </p>
+          <div class="review-author">
+            <div class="author-avatar">SK</div>
+            <div>
+              <div class="author-name">Suresh Khandelwal</div>
+              <div class="author-sub">DP Road, Aundh</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-rating">
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: var(--gold);"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: var(--gold);"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: var(--gold);"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: var(--gold);"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: var(--gold);"></i>
+          </div>
+          <p class="review-text">
+            "Dr. Deepa Karwa is amazing with PCOS and hormonal issues. She explained how dietary habits were worsening my condition and her herbal treatment brought my cycles back naturally."
+          </p>
+          <div class="review-author">
+            <div class="author-avatar">AP</div>
+            <div>
+              <div class="author-name">Ananya Patil</div>
+              <div class="author-sub">Parihar Chowk, Aundh</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-rating">
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: var(--gold);"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: var(--gold);"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: var(--gold);"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: var(--gold);"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: var(--gold);"></i>
+          </div>
+          <p class="review-text">
+            "The Shirodhara therapy here is deeply authentic. Peaceful environment right behind Subway on DP Road. The doctors genuinely listen to you without rushing."
+          </p>
+          <div class="review-author">
+            <div class="author-avatar">VG</div>
+            <div>
+              <div class="author-name">Vikas Gokhale</div>
+              <div class="author-sub">Sanewadi, Aundh</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION & CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="section-badge">Clinic Location</span>
+          <h2 class="contact-title">Visit Ayurveda Clinic</h2>
+          <p style="color: var(--text-muted); margin-bottom: 28px; font-size: 15px;">Located in central Aundh on DP Road with peaceful clinic premises.</p>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i data-lucide="map-pin"></i>
+            </div>
+            <div class="contact-detail">
+              <h4>Address</h4>
+              <p>3, Samar Paradise, Kubera Gulshan Lane,<br>Behind Subway Restaurant, Opp. Hotel Shivsagar,<br>Near Parihar Chowk, DP Road, Aundh, Pune - 411007</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i data-lucide="phone"></i>
+            </div>
+            <div class="contact-detail">
+              <h4>Mobile & WhatsApp</h4>
+              <p><a href="tel:+919359109922" style="color: var(--primary); text-decoration: none; font-weight: 600;">+91 93591 09922</a> &nbsp;|&nbsp; 020-25886455</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i data-lucide="clock"></i>
+            </div>
+            <div class="contact-detail">
+              <h4>Consultation Slots</h4>
+              <p>Mon – Sat: 10:15 AM – 1:30 PM & 5:15 PM – 8:30 PM<br><span style="color: var(--gold); font-weight: 500;">Sunday: By Appointment Only</span></p>
+            </div>
+          </div>
+
+          <div style="margin-top: 32px; display: flex; gap: 14px;">
+            <a href="https://maps.google.com/?q=Ayurveda+Clinic+Samar+Paradise+DP+Road+Aundh+Pune" target="_blank" class="btn btn-outline">
+              <i data-lucide="navigation" style="width: 16px; height: 16px;"></i>
+              <span>Get Directions</span>
+            </a>
+            <a href="https://wa.me/919359109922" target="_blank" class="btn btn-whatsapp">
+              <i data-lucide="message-circle" style="width: 16px; height: 16px;"></i>
+              <span>WhatsApp Us</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-map">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.2346761109927!2d73.8055788!3d18.5634622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf3835698b67%3A0x2897ec76241b777a!2sD.P.%20Road%2C%20Aundh%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1710400000000!5m2!1sen!2sin" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-title">Ayurveda Clinic</div>
+          <p>
+            Center for Authentic Classical Ayurveda, Nadi Pariksha, Panchakarma Detoxification, and Lifestyle Disease Care in Aundh, Pune.
+          </p>
+          <div style="margin-top: 16px; font-size: 13px; color: #617968;">
+            3, Samar Paradise, Kubera Gulshan Lane, DP Road, Aundh, Pune — 411007
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Key Treatments</h4>
+          <ul class="footer-links">
+            <li><a href="#specialties">Nadi Pariksha (Pulse Reading)</a></li>
+            <li><a href="#specialties">Panchakarma Detox & Shirodhara</a></li>
+            <li><a href="#specialties">PCOS & Women's Hormonal Care</a></li>
+            <li><a href="#specialties">Spine & Joint Arthritis (Kati Basti)</a></li>
+            <li><a href="#specialties">Psoriasis & Skin Detoxification</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Clinic Contact</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+919359109922">Mobile: +91 93591 09922</a></li>
+            <li><a href="tel:02025886455">Clinic: 020-25886455</a></li>
+            <li><a href="https://wa.me/919359109922">WhatsApp: +91 93591 09922</a></li>
+            <li><a href="#timings">Morning: 10:15 AM – 1:30 PM</a></li>
+            <li><a href="#timings">Evening: 5:15 PM – 8:30 PM</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Ayurveda Clinic (Karwa Ayurveda), Aundh. All rights reserved.</p>
+        <p style="margin-top: 8px; font-size: 12px; color: #617968;">
+          Mobile Website Concept engineered by <a href="https://harshu777.github.io/pune-website-demos/" style="color: #6ee7b7; text-decoration: none;">Pune Web Ventures</a>. Verified local business preview.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/919359109922?text=Hi%20Ayurveda%20Clinic,%20I%20would%20like%20to%20inquire%20about%20a%20consultation%20appointment." class="floating-whatsapp" target="_blank" aria-label="Book on WhatsApp">
+    <span class="whatsapp-tooltip">Chat on WhatsApp</span>
+    <i data-lucide="message-circle" style="width: 32px; height: 32px;"></i>
+  </a>
+
+  <!-- SCRIPTS -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Set today's date in appointment form
+    document.addEventListener('DOMContentLoaded', () => {
+      const dateInput = document.getElementById('pref-date');
+      if (dateInput) {
+        const today = new Date().toISOString().split('T')[0];
+        dateInput.min = today;
+        dateInput.value = today;
+      }
+    });
+
+    // Form submission handler
+    function handleAppointmentSubmit(event) {
+      event.preventDefault();
+      const name = document.getElementById('patient-name').value;
+      const phone = document.getElementById('patient-phone').value;
+      const date = document.getElementById('pref-date').value;
+      const slot = document.getElementById('pref-slot').value;
+      const reason = document.getElementById('visit-reason').value;
+
+      const message = `Hello Ayurveda Clinic,\n\nI would like to book an Ayurvedic consultation:\n• Patient Name: ${name}\n• Phone: ${phone}\n• Preferred Date: ${date}\n• Preferred Slot: ${slot}\n• Consultation / Condition: ${reason}\n\nPlease confirm appointment availability. Thank you!`;
+
+      const whatsappUrl = `https://wa.me/919359109922?text=${encodeURIComponent(message)}`;
+      window.open(whatsappUrl, '_blank');
+    }
+  </script>
+</body>
+</html>
