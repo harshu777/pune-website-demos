@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enrich Boutique | Contemporary Western Wear, Indo-Western & Handcrafted Juttis | Kumar Classic, Aundh</title>
+
+  <!-- Open Graph Tags for WhatsApp previews -->
+  <meta property="og:title" content="Enrich Boutique | Western & Indo-Western Couture | DP Road, Aundh">
+  <meta property="og:description" content="Chic western dresses, festive Indo-Western kurti ensembles & artisan embroidered juttis at Kumar Classic, DP Road, Aundh.">
+  <meta property="og:image" content="https://harshu777.github.io/pune-website-demos/enrich/assets/hero.jpg">
+  <meta property="og:url" content="https://harshu777.github.io/pune-website-demos/enrich/">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary-emerald: #0F3E2E;
+      --deep-forest: #08241A;
+      --accent-ochre: #C89B3C;
+      --accent-terracotta: #D87A63;
+      --sand-cream: #FAF7F2;
+      --light-sage: #EDF3EE;
+      --card-bg: #FFFFFF;
+      --text-dark: #1A2822;
+      --text-muted: #5C6E66;
+      --border-subtle: rgba(15, 62, 46, 0.12);
+      --border-ochre: rgba(200, 155, 60, 0.4);
+      --font-display: "Italiana", serif;
+      --font-sans: "Plus Jakarta Sans", sans-serif;
+      --shadow-sm: 0 4px 20px rgba(15, 62, 46, 0.05);
+      --shadow-md: 0 12px 36px rgba(15, 62, 46, 0.09);
+      --shadow-lg: 0 24px 60px rgba(15, 62, 46, 0.13);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--sand-cream);
+      color: var(--text-dark);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* Top Concept Ribbon - FULL STRETCH 100px */
+    .concept-ribbon {
+      background: linear-gradient(135deg, #08241A 0%, #0F3E2E 100%);
+      color: #FFF;
+      width: 100%;
+      padding: 12px 100px;
+      font-size: 13px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      border-bottom: 1px solid rgba(200, 155, 60, 0.3);
+      position: relative;
+      z-index: 1001;
+    }
+
+    .concept-ribbon-content {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .concept-badge {
+      background: rgba(200, 155, 60, 0.25);
+      color: #EBD094;
+      border: 1px solid var(--accent-ochre);
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .concept-ribbon a.ribbon-cta {
+      background: var(--accent-ochre);
+      color: #08241A;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 12px;
+      padding: 6px 16px;
+      border-radius: 4px;
+      white-space: nowrap;
+      transition: all 0.2s ease;
+    }
+
+    .concept-ribbon a.ribbon-cta:hover {
+      background: #FFF;
+      box-shadow: 0 0 16px rgba(255, 255, 255, 0.4);
+    }
+
+    /* Navigation Bar - FULL STRETCH 100px */
+    header.site-header {
+      width: 100%;
+      background: rgba(250, 247, 242, 0.94);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-subtle);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+
+    .nav-container {
+      width: 100%;
+      padding-left: 100px;
+      padding-right: 100px;
+      height: 86px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand-logo {
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-title {
+      font-family: var(--font-display);
+      font-size: 34px;
+      font-weight: 400;
+      color: var(--primary-emerald);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+
+    .brand-subtitle {
+      font-size: 10px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--accent-ochre);
+      font-weight: 600;
+      margin-top: 3px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-dark);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      transition: color 0.2s ease;
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0%;
+      height: 1.5px;
+      background: var(--primary-emerald);
+      transition: width 0.25s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary-emerald);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .btn-outline-forest {
+      border: 1px solid var(--primary-emerald);
+      color: var(--primary-emerald);
+      background: transparent;
+      padding: 10px 22px;
+      font-size: 13px;
+      font-weight: 600;
+      border-radius: 4px;
+      text-decoration: none;
+      letter-spacing: 0.04em;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-outline-forest:hover {
+      background: var(--primary-emerald);
+      color: #FFF;
+    }
+
+    .btn-primary-wa {
+      background: #25D366;
+      color: #052611;
+      padding: 10px 22px;
+      font-size: 13px;
+      font-weight: 700;
+      border-radius: 4px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.25);
+      transition: all 0.2s ease;
+    }
+
+    .btn-primary-wa:hover {
+      background: #1eb956;
+      transform: translateY(-1px);
+    }
+
+    /* Hero Section */
+    .hero-section {
+      width: 100%;
+      min-height: 88vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(to right, rgba(8, 36, 26, 0.88) 0%, rgba(8, 36, 26, 0.55) 50%, rgba(8, 36, 26, 0.2) 100%),
+                  url('assets/hero.jpg') center/cover no-repeat;
+      padding: 60px 100px;
+      color: #FFF;
+    }
+
+    .hero-content {
+      max-width: 700px;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(200, 155, 60, 0.25);
+      border: 1px solid var(--accent-ochre);
+      color: #EBD094;
+      padding: 6px 14px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: 58px;
+      font-weight: 400;
+      line-height: 1.15;
+      color: #FFF;
+      margin-bottom: 20px;
+      letter-spacing: 0.02em;
+    }
+
+    .hero-title em {
+      font-style: italic;
+      color: #EBD094;
+    }
+
+    .hero-desc {
+      font-size: 17px;
+      color: rgba(255, 255, 255, 0.9);
+      max-width: 560px;
+      margin-bottom: 36px;
+      font-weight: 300;
+      line-height: 1.7;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .btn-hero-ochre {
+      background: var(--accent-ochre);
+      color: #08241A;
+      padding: 16px 36px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 4px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.25s ease;
+      box-shadow: 0 10px 30px rgba(200, 155, 60, 0.35);
+    }
+
+    .btn-hero-ochre:hover {
+      background: #FFF;
+      color: var(--primary-emerald);
+      transform: translateY(-2px);
+    }
+
+    .btn-hero-ghost {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      color: #FFF;
+      padding: 16px 30px;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      border-radius: 4px;
+      backdrop-filter: blur(8px);
+      transition: all 0.25s ease;
+    }
+
+    .btn-hero-ghost:hover {
+      background: rgba(255, 255, 255, 0.25);
+    }
+
+    .hero-stats {
+      margin-top: 48px;
+      display: flex;
+      gap: 36px;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      padding-top: 24px;
+      flex-wrap: wrap;
+    }
+
+    .hero-stat-item strong {
+      font-family: var(--font-display);
+      font-size: 24px;
+      color: #EBD094;
+      display: block;
+      line-height: 1.1;
+    }
+
+    .hero-stat-item span {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.75);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Global Section Blocks */
+    section.section-block {
+      width: 100%;
+      padding: 90px 100px;
+    }
+
+    .section-head {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 60px auto;
+    }
+
+    .section-label {
+      font-size: 12px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--accent-ochre);
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .section-heading {
+      font-family: var(--font-display);
+      font-size: 44px;
+      font-weight: 400;
+      color: var(--primary-emerald);
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    .section-subtext {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    /* Pillars / Value Proposition */
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .pillar-card {
+      background: #FFF;
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 32px 24px;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .pillar-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--border-ochre);
+    }
+
+    .pillar-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--light-sage);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      color: var(--primary-emerald);
+      margin-bottom: 20px;
+    }
+
+    .pillar-card h4 {
+      font-family: var(--font-display);
+      font-size: 22px;
+      color: var(--primary-emerald);
+      margin-bottom: 8px;
+    }
+
+    .pillar-card p {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* Collections Section */
+    .collections-section {
+      background: #F4EFEA;
+    }
+
+    .collections-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    .collection-item {
+      background: #FFF;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid rgba(15, 62, 46, 0.08);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .collection-item:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .collection-image-box {
+      width: 100%;
+      height: 380px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .collection-image-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .collection-item:hover .collection-image-box img {
+      transform: scale(1.06);
+    }
+
+    .collection-badge-tag {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      background: rgba(8, 36, 26, 0.85);
+      color: #FFF;
+      padding: 4px 12px;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border-radius: 4px;
+      backdrop-filter: blur(4px);
+    }
+
+    .collection-details {
+      padding: 28px 24px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .collection-details h3 {
+      font-family: var(--font-display);
+      font-size: 26px;
+      color: var(--primary-emerald);
+      margin-bottom: 8px;
+    }
+
+    .collection-details p {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .collection-foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid rgba(15, 62, 46, 0.08);
+      padding-top: 16px;
+    }
+
+    .collection-foot a {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      color: var(--primary-emerald);
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .collection-foot a:hover {
+      color: var(--accent-ochre);
+    }
+
+    /* Showcase Feature Split */
+    .spotlight-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .spotlight-media {
+      position: relative;
+    }
+
+    .spotlight-img {
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .spotlight-callout {
+      position: absolute;
+      bottom: -24px;
+      right: 32px;
+      background: #FFF;
+      padding: 20px 28px;
+      border-radius: 8px;
+      box-shadow: var(--shadow-md);
+      border-left: 4px solid var(--accent-ochre);
+      max-width: 280px;
+    }
+
+    .spotlight-callout strong {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 20px;
+      color: var(--primary-emerald);
+    }
+
+    .spotlight-callout span {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .spotlight-info .section-label {
+      text-align: left;
+    }
+
+    .spotlight-info .section-heading {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .jutti-features {
+      margin: 28px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .jutti-feature-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+
+    .jutti-feature-icon {
+      width: 32px;
+      height: 32px;
+      background: var(--light-sage);
+      color: var(--primary-emerald);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* Interactive Appointment Block */
+    .booking-wrapper {
+      background: linear-gradient(135deg, #08241A 0%, #0F3E2E 100%);
+      color: #FFF;
+      border-radius: 12px;
+      padding: 50px 60px;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid rgba(200, 155, 60, 0.3);
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .booking-text h3 {
+      font-family: var(--font-display);
+      font-size: 40px;
+      margin-bottom: 16px;
+      color: #FFF;
+    }
+
+    .booking-text p {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.85);
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+
+    .booking-perk-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      font-size: 13px;
+      color: #EBD094;
+    }
+
+    .booking-form-box {
+      background: rgba(255, 255, 255, 0.07);
+      padding: 32px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      backdrop-filter: blur(10px);
+    }
+
+    .field-group {
+      margin-bottom: 16px;
+    }
+
+    .field-group label {
+      display: block;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #EBD094;
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+
+    .form-ctrl {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: #FFF;
+      padding: 12px 14px;
+      border-radius: 4px;
+      font-size: 13px;
+      outline: none;
+      transition: border 0.2s ease;
+    }
+
+    .form-ctrl option {
+      background: #0F3E2E;
+      color: #FFF;
+    }
+
+    .form-ctrl:focus {
+      border-color: var(--accent-ochre);
+    }
+
+    .btn-submit-booking {
+      width: 100%;
+      background: #25D366;
+      color: #052611;
+      border: none;
+      padding: 14px;
+      font-size: 14px;
+      font-weight: 700;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+      margin-top: 10px;
+    }
+
+    .btn-submit-booking:hover {
+      background: #1eb956;
+      transform: translateY(-1px);
+    }
+
+    /* Store Details & Location */
+    .store-section {
+      background: #FFF;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .store-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+    }
+
+    .store-info-col {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .store-info-row {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .store-icon-box {
+      width: 44px;
+      height: 44px;
+      background: var(--light-sage);
+      color: var(--primary-emerald);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+
+    .store-text-box h5 {
+      font-size: 15px;
+      color: var(--primary-emerald);
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .store-text-box p {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .map-frame-box {
+      width: 100%;
+      height: 380px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-subtle);
+    }
+
+    /* Footer */
+    footer.site-footer {
+      width: 100%;
+      background: var(--deep-forest);
+      color: #FFF;
+      padding: 60px 100px 30px 100px;
+      border-top: 1px solid rgba(200, 155, 60, 0.2);
+    }
+
+    .footer-top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      flex-wrap: wrap;
+    }
+
+    .footer-logo-block h4 {
+      font-family: var(--font-display);
+      font-size: 30px;
+      letter-spacing: 0.12em;
+      color: #FFF;
+      margin-bottom: 6px;
+    }
+
+    .footer-logo-block p {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.65);
+      max-width: 320px;
+    }
+
+    .footer-links-group {
+      display: flex;
+      gap: 48px;
+    }
+
+    .footer-col-nav h6 {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #EBD094;
+      margin-bottom: 14px;
+      font-weight: 700;
+    }
+
+    .footer-col-nav ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .footer-base-row {
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.5);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    /* Mobile Fixed Action Bar */
+    .mobile-bar {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(8, 36, 26, 0.96);
+      backdrop-filter: blur(12px);
+      border-top: 1px solid rgba(200, 155, 60, 0.3);
+      padding: 10px 16px;
+      z-index: 2000;
+      box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .mobile-bar-actions {
+      display: flex;
+      gap: 10px;
+      width: 100%;
+    }
+
+    .btn-mobile-call {
+      flex: 1;
+      background: rgba(255, 255, 255, 0.1);
+      color: #FFF;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .btn-mobile-wa {
+      flex: 1.6;
+      background: #25D366;
+      color: #052611;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    /* Responsive Breakpoints */
+    @media (max-width: 1024px) {
+      .concept-ribbon,
+      .nav-container,
+      .hero-section,
+      section.section-block,
+      footer.site-footer {
+        padding-left: 48px;
+        padding-right: 48px;
+      }
+      .pillars-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .collections-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .spotlight-split,
+      .booking-wrapper,
+      .store-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .concept-ribbon,
+      .nav-container,
+      .hero-section,
+      section.section-block,
+      footer.site-footer {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .concept-ribbon {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .nav-links, .btn-outline-forest {
+        display: none;
+      }
+      .brand-title {
+        font-size: 28px;
+      }
+      .hero-title {
+        font-size: 38px;
+      }
+      .pillars-grid,
+      .collections-grid {
+        grid-template-columns: 1fr;
+      }
+      .booking-wrapper {
+        padding: 30px 20px;
+      }
+      .mobile-bar {
+        display: block;
+      }
+      body {
+        padding-bottom: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Harshal Concept Pitch Ribbon - Full Stretch 100px padding -->
+  <div class="concept-ribbon">
+    <div class="concept-ribbon-content">
+      <span class="concept-badge">Concept Preview</span>
+      <span>Specially curated for <strong>Enrich Boutique, DP Road, Aundh</strong> by <strong>Harshal Baviskar</strong></span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <span style="font-size: 12px; color: #EBD094;">Launch this website for ₹5,999</span>
+      <a href="https://wa.me/917385702155?text=Hi%20Enrich%20Boutique%2C%20I%20saw%20your%20official%20website%20preview%20created%20by%20Harshal%20Baviskar." class="ribbon-cta" target="_blank">Connect on WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- Main Sticky Header - Full Stretch 100px padding -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">
+        <span class="brand-title">ENRICH</span>
+        <span class="brand-subtitle">Boutique &middot; Aundh</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#collections">Curation</a></li>
+        <li><a href="#juttis">Handcrafted Juttis</a></li>
+        <li><a href="#appointment">Styling Slot</a></li>
+        <li><a href="#location">Store Location</a></li>
+      </ul>
+
+      <div class="header-actions">
+        <a href="tel:+917385702155" class="btn-outline-forest">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          073857 02155
+        </a>
+        <a href="https://wa.me/917385702155?text=Hello%20Enrich%20Boutique!%20I%20am%20interested%20in%20browsing%20your%20western%20wear%20and%20juttis." target="_blank" class="btn-primary-wa">
+          <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          WhatsApp Studio
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span>★ Curated Fashion &middot; Kumar Classic, DP Road</span>
+      </div>
+      <h1 class="hero-title">
+        Effortless <em>Western</em> Elegance & Festive Fusion
+      </h1>
+      <p class="hero-desc">
+        Discover hand-curated contemporary dresses, flowy Indo-Western silhouettes, and exquisite handcrafted embroidered juttis. Located at Kumar Classic, right opposite Westend Mall, Aundh.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="https://wa.me/917385702155?text=Hi%20Enrich%20Boutique!%20I'd%20like%20to%20inquire%20about%20your%20latest%20Western%20%26%20Indo-Western%20collection." target="_blank" class="btn-hero-ochre">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          Chat on WhatsApp
+        </a>
+        <a href="#collections" class="btn-hero-ghost">
+          Explore Curation
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat-item">
+          <strong>Opp. Westend Mall</strong>
+          <span>Kumar Classic, Aundh</span>
+        </div>
+        <div class="hero-stat-item">
+          <strong>Daily Open</strong>
+          <span>10:00 AM – 8:30 PM</span>
+        </div>
+        <div class="hero-stat-item">
+          <strong>Artisan Juttis</strong>
+          <span>Pure Leather & Zardozi</span>
+        </div>
+        <div class="hero-stat-item">
+          <strong>Exclusive Edits</strong>
+          <span>Limited Boutique Batches</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Enrich Philosophy -->
+  <section class="section-block">
+    <div class="section-head">
+      <span class="section-label">A Refreshing Fashion Perspective</span>
+      <h2 class="section-heading">Designed for Everyday Elegance & Special Moments</h2>
+      <p class="section-subtext">Enrich Boutique curates elevated wardrobes that transition seamlessly from corporate brunches to festive family evenings.</p>
+    </div>
+
+    <div class="pillars-grid">
+      <div class="pillar-card">
+        <div class="pillar-icon">🌿</div>
+        <h4>Breathable Silks & Linens</h4>
+        <p>Premium natural fibers handpicked for Pune's climate, offering effortless drape and long-wearing comfort.</p>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-icon">✨</div>
+        <h4>Modern Bohemian Cuts</h4>
+        <p>Tiered maxi dresses, asymmetric tunics, co-ord pant sets, and smart trench jackets tailored for discerning tastes.</p>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-icon">👡</div>
+        <h4>Handcrafted Footwear</h4>
+        <p>Artisanal mojaries and Punjabi juttis with double-padded insoles and delicate needlework that never bite your feet.</p>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-icon">💎</div>
+        <h4>Styling Accessories</h4>
+        <p>Pair your outfits with handpicked potlis, contemporary brass ear pieces, and statement clutches.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Curated Collection Grid -->
+  <section class="section-block collections-section" id="collections">
+    <div class="section-head">
+      <span class="section-label">Exclusive Showroom Showpieces</span>
+      <h2 class="section-heading">Curated In-Store at DP Road</h2>
+      <p class="section-subtext">Every outfit in our boutique is chosen in limited units to ensure your look remains truly unique and exclusive.</p>
+    </div>
+
+    <div class="collections-grid">
+      <!-- Card 1 -->
+      <div class="collection-item">
+        <div class="collection-image-box">
+          <img src="assets/western.jpg" alt="Western & Resort Wear Collection">
+          <span class="collection-badge-tag">New In Store</span>
+        </div>
+        <div class="collection-details">
+          <h3>Western Dresses & Co-Ords</h3>
+          <p>Flowing linen wrap dresses, contemporary monochrome co-ords, chic jumpsuits, and evening party dresses.</p>
+          <div class="collection-foot">
+            <span style="font-size: 13px; font-weight: 600; color: var(--accent-ochre);">XS to 3XL Available</span>
+            <a href="https://wa.me/917385702155?text=Hi%20Enrich%20Boutique%2C%20I%20am%20interested%20in%20your%20Western%20Dresses%20%26%20Co-Ords." target="_blank">
+              Inquire
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="collection-item">
+        <div class="collection-image-box">
+          <img src="assets/hero.jpg" alt="Festive Indo-Western Ensembles">
+          <span class="collection-badge-tag">Boutique Favorite</span>
+        </div>
+        <div class="collection-details">
+          <h3>Festive Indo-Western Sets</h3>
+          <p>Cape tunics, tailored silk trousers, draped dhoti sets, and short kurtis with delicate golden gotta patti accents.</p>
+          <div class="collection-foot">
+            <span style="font-size: 13px; font-weight: 600; color: var(--accent-ochre);">Custom Alterations Included</span>
+            <a href="https://wa.me/917385702155?text=Hi%20Enrich%20Boutique%2C%20I%20am%20interested%20in%20your%20Indo-Western%20festive%20collection." target="_blank">
+              Inquire
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="collection-item">
+        <div class="collection-image-box">
+          <img src="assets/juttis.jpg" alt="Artisan Embroidered Juttis & Potlis">
+          <span class="collection-badge-tag">Handcrafted</span>
+        </div>
+        <div class="collection-details">
+          <h3>Artisan Juttis & Potli Bags</h3>
+          <p>Hand-embroidered velvet juttis, pearl-encrusted mojaris, and matching designer potlis that complete any festive ensemble.</p>
+          <div class="collection-foot">
+            <span style="font-size: 13px; font-weight: 600; color: var(--accent-ochre);">Padded Bite-Free Insoles</span>
+            <a href="https://wa.me/917385702155?text=Hi%20Enrich%20Boutique%2C%20I%20would%20like%20to%20see%20your%20handcrafted%20juttis%20and%20accessories." target="_blank">
+              Inquire
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Juttis Spotlight -->
+  <section class="section-block" id="juttis">
+    <div class="spotlight-split">
+      <div class="spotlight-media">
+        <img src="assets/juttis.jpg" alt="Handcrafted Juttis Aundh" class="spotlight-img">
+        <div class="spotlight-callout">
+          <strong>Kumar Classic Complex</strong>
+          <span>Shop No. 8, DP Road, Opposite Westend Mall</span>
+        </div>
+      </div>
+
+      <div class="spotlight-info">
+        <span class="section-label">Signature Footwear Atelier</span>
+        <h2 class="section-heading">Pure Leather. Delicate Zardozi. Zero Shoe Bites.</h2>
+        <p class="section-subtext">
+          Our handcrafted juttis are legendary among Aundh shoppers. Crafted with vegetable-tanned genuine leather soles, plush double-layer memory cushioning, and exquisite hand-stitched dabka and pearl work.
+        </p>
+
+        <div class="jutti-features">
+          <div class="jutti-feature-item">
+            <div class="jutti-feature-icon">✓</div>
+            <div>
+              <strong style="color: var(--primary-emerald); font-size: 15px;">Ultra-Comfort Cushioning</strong>
+              <p style="font-size: 13px; color: var(--text-muted);">Dance through wedding sangeets all night without sore heels or blisters.</p>
+            </div>
+          </div>
+
+          <div class="jutti-feature-item">
+            <div class="jutti-feature-icon">✓</div>
+            <div>
+              <strong style="color: var(--primary-emerald); font-size: 15px;">Genuine Leather Craft</strong>
+              <p style="font-size: 13px; color: var(--text-muted);">Soft, supple leather soles that mold naturally to your unique foot arch.</p>
+            </div>
+          </div>
+
+          <div class="jutti-feature-item">
+            <div class="jutti-feature-icon">✓</div>
+            <div>
+              <strong style="color: var(--primary-emerald); font-size: 15px;">Matching Potlis & Clutches</strong>
+              <p style="font-size: 13px; color: var(--text-muted);">Coordinate your footwear with matching hand-embroidered bags for weddings.</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="https://wa.me/917385702155?text=Hello%20Enrich%20Boutique%2C%20please%20send%20me%20your%20latest%20juttis%20catalog%20and%20sizes." target="_blank" class="btn-primary-wa" style="display: inline-flex;">
+          View Juttis on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIP Styling Consultation Box -->
+  <section class="section-block" style="padding-top: 0;" id="appointment">
+    <div class="booking-wrapper">
+      <div class="booking-text">
+        <span style="color: #EBD094; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 700;">Personal Styling Concierge</span>
+        <h3>Reserve Your In-Store Styling Session</h3>
+        <p>Planning for a vacation, wedding event, or wardrobe refresh? Let our boutique stylists pick silhouettes that celebrate your personality.</p>
+        
+        <ul class="booking-perk-list">
+          <li>✨ Pre-selected outfits ready in your size upon arrival</li>
+          <li>✨ Zero pushy sales — honest styling and fit guidance</li>
+          <li>✨ Complimentary on-the-spot sleeve & hem alterations</li>
+        </ul>
+      </div>
+
+      <div class="booking-form-box">
+        <form id="enrichForm" onsubmit="event.preventDefault(); sendEnrichBooking();">
+          <div class="field-group">
+            <label for="enrichStyle">I am exploring:</label>
+            <select id="enrichStyle" class="form-ctrl" required>
+              <option value="Western Dresses & Vacation Outfits">Western Dresses & Resort Outfits</option>
+              <option value="Festive Indo-Western Ensembles">Festive Indo-Western Sets</option>
+              <option value="Handcrafted Juttis & Footwear">Handcrafted Embroidered Juttis</option>
+              <option value="Curated Wardrobe Styling">Complete Wardrobe Styling</option>
+            </select>
+          </div>
+
+          <div class="field-group">
+            <label for="enrichName">Your Name:</label>
+            <input type="text" id="enrichName" class="form-ctrl" placeholder="e.g. Radhika Deshmukh" required>
+          </div>
+
+          <div class="field-group">
+            <label for="enrichDate">Visit Date:</label>
+            <input type="date" id="enrichDate" class="form-ctrl" required>
+          </div>
+
+          <button type="submit" class="btn-submit-booking">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            Send WhatsApp Request to Enrich
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Hours Section -->
+  <section class="section-block store-section" id="location">
+    <div class="store-layout">
+      <div class="store-info-col">
+        <div>
+          <span class="section-label">Visit Our Boutique</span>
+          <h2 class="section-heading">Come Experience The Collection</h2>
+          <p class="section-subtext">Located in Kumar Classic Complex, directly on DP Road opposite Westend Mall in Aundh.</p>
+        </div>
+
+        <div class="store-info-row">
+          <div class="store-icon-box">📍</div>
+          <div class="store-text-box">
+            <h5>Boutique Address</h5>
+            <p>Shop No. 8, Kumar Classic Complex, New DP Road,<br>Parihar Chowk area (Opposite Westend Mall), Aundh, Pune – 411007</p>
+          </div>
+        </div>
+
+        <div class="store-info-row">
+          <div class="store-icon-box">⏰</div>
+          <div class="store-text-box">
+            <h5>Store Hours</h5>
+            <p><strong>Open Daily:</strong> 10:00 AM – 8:30 PM<br><span style="color: var(--accent-ochre); font-weight: 600;">Personal styling assistance available throughout</span></p>
+          </div>
+        </div>
+
+        <div class="store-info-row">
+          <div class="store-icon-box">📞</div>
+          <div class="store-text-box">
+            <h5>Direct Contact</h5>
+            <p>
+              Primary: <a href="tel:+917385702155" style="color: var(--primary-emerald); font-weight: 700; text-decoration: none;">+91 73857 02155</a><br>
+              WhatsApp: <a href="https://wa.me/917385702155" target="_blank" style="color: #25D366; font-weight: 700; text-decoration: none;">+91 73857 02155</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-frame-box">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.3270921471377!2d73.8055678!3d18.5593306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf38d58c8a19%3A0x2a912bb0e7166164!2sWestend%20Mall!5e0!3m2!1sen!2sin!4v1710400000000!5m2!1sen!2sin" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-top-row">
+      <div class="footer-logo-block">
+        <h4>ENRICH BOUTIQUE</h4>
+        <p>Curated western dresses, resort wear, contemporary Indo-Western styles, and handcrafted artisan juttis in Aundh, Pune.</p>
+      </div>
+
+      <div class="footer-links-group">
+        <div class="footer-col-nav">
+          <h6>Collections</h6>
+          <ul>
+            <li>Western Casuals & Party Dresses</li>
+            <li>Indo-Western Cape Sets</li>
+            <li>Embroidered Juttis & Mojaries</li>
+            <li>Statement Potli Bags</li>
+            <li>Custom Alterations</li>
+          </ul>
+        </div>
+
+        <div class="footer-col-nav">
+          <h6>Visit Us</h6>
+          <ul>
+            <li>Shop No. 8, Kumar Classic</li>
+            <li>DP Road, Aundh, Pune 411007</li>
+            <li>Open Daily: 10:00 AM – 8:30 PM</li>
+            <li>Phone: 073857 02155</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-base-row">
+      <div>&copy; 2026 Enrich Boutique. All rights reserved. &middot; Kumar Classic, DP Road, Aundh.</div>
+      <div>Designed & Developed by <a href="https://harshal.cloud" target="_blank" style="color: #EBD094; text-decoration: none;">Harshal Baviskar</a> (Pune Website Solutions)</div>
+    </div>
+  </footer>
+
+  <!-- Mobile Fixed Action Bar -->
+  <div class="mobile-bar">
+    <div class="mobile-bar-actions">
+      <a href="tel:+917385702155" class="btn-mobile-call">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        Call
+      </a>
+      <a href="https://wa.me/917385702155?text=Hi%20Enrich%20Boutique!%20I%20am%20interested%20in%20visiting%20your%20store%20in%20Kumar%20Classic%20to%20see%20your%20western%20wear%20and%20juttis." target="_blank" class="btn-mobile-wa">
+        <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        WhatsApp Us
+      </a>
+    </div>
+  </div>
+
+  <script>
+    function sendEnrichBooking() {
+      const style = document.getElementById('enrichStyle').value;
+      const name = document.getElementById('enrichName').value;
+      const date = document.getElementById('enrichDate').value;
+      
+      const text = `Hello Enrich Boutique! My name is ${name}. I would like to reserve a visit for *${style}* on ${date} at your Kumar Classic studio. Please let me know available slots!`;
+      const waUrl = `https://wa.me/917385702155?text=${encodeURIComponent(text)}`;
+      window.open(waUrl, '_blank');
+    }
+  </script>
+</body>
+</html>

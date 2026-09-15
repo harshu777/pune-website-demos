@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEERI &middot; The Couture Story by Poonam Gurav | Bespoke Bridal & Designer Studio | Aundh, Pune</title>
+
+  <!-- Open Graph Tags for WhatsApp previews -->
+  <meta property="og:title" content="SEERI &middot; The Couture Story by Poonam Gurav | Bridal & Festive Couture | Aundh">
+  <meta property="og:description" content="Bespoke bridal lehengas, designer embroidered blouses & curated dress materials by Poonam Gurav at Chaitraban Residency, Sanewadi, Aundh.">
+  <meta property="og:image" content="https://harshu777.github.io/pune-website-demos/seeri/assets/hero.jpg">
+  <meta property="og:url" content="https://harshu777.github.io/pune-website-demos/seeri/">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary-couture: #360E27;
+      --deep-midnight: #1E0616;
+      --accent-gold: #C59B42;
+      --accent-gold-light: #E8D098;
+      --rose-wine: #7A1D47;
+      --pearl-ivory: #FDFBF7;
+      --card-bg: #FFFFFF;
+      --text-dark: #1E1219;
+      --text-muted: #605159;
+      --border-subtle: rgba(54, 14, 39, 0.12);
+      --border-gold: rgba(197, 155, 66, 0.35);
+      --font-display: "Italiana", serif;
+      --font-sans: "Plus Jakarta Sans", sans-serif;
+      --shadow-sm: 0 4px 20px rgba(54, 14, 39, 0.05);
+      --shadow-md: 0 12px 36px rgba(54, 14, 39, 0.1);
+      --shadow-lg: 0 24px 60px rgba(54, 14, 39, 0.15);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--pearl-ivory);
+      color: var(--text-dark);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* Top Harshal Concept Pitch Ribbon - FULL STRETCH 100px */
+    .concept-ribbon {
+      background: linear-gradient(135deg, #1E0616 0%, #360E27 100%);
+      color: #FFF;
+      width: 100%;
+      padding: 12px 100px;
+      font-size: 13px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      border-bottom: 1px solid var(--border-gold);
+      position: relative;
+      z-index: 1001;
+    }
+
+    .concept-ribbon-content {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .concept-badge {
+      background: rgba(197, 155, 66, 0.25);
+      color: var(--accent-gold-light);
+      border: 1px solid var(--accent-gold);
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .concept-ribbon a.ribbon-cta {
+      background: var(--accent-gold);
+      color: #1E0616;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 12px;
+      padding: 6px 16px;
+      border-radius: 4px;
+      white-space: nowrap;
+      transition: all 0.2s ease;
+    }
+
+    .concept-ribbon a.ribbon-cta:hover {
+      background: #FFF;
+      box-shadow: 0 0 16px rgba(255, 255, 255, 0.4);
+    }
+
+    /* Navigation Bar - FULL STRETCH 100px */
+    header.site-header {
+      width: 100%;
+      background: rgba(253, 251, 247, 0.94);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-subtle);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+
+    .nav-container {
+      width: 100%;
+      padding-left: 100px;
+      padding-right: 100px;
+      height: 86px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand-logo {
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-title {
+      font-family: var(--font-display);
+      font-size: 34px;
+      font-weight: 400;
+      color: var(--primary-couture);
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+
+    .brand-subtitle {
+      font-size: 9px;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--accent-gold);
+      font-weight: 700;
+      margin-top: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-dark);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      transition: color 0.2s ease;
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0%;
+      height: 1.5px;
+      background: var(--accent-gold);
+      transition: width 0.25s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent-gold);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .btn-outline-couture {
+      border: 1px solid var(--primary-couture);
+      color: var(--primary-couture);
+      background: transparent;
+      padding: 10px 22px;
+      font-size: 13px;
+      font-weight: 600;
+      border-radius: 4px;
+      text-decoration: none;
+      letter-spacing: 0.04em;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-outline-couture:hover {
+      background: var(--primary-couture);
+      color: #FFF;
+    }
+
+    .btn-primary-wa {
+      background: #25D366;
+      color: #062611;
+      padding: 10px 22px;
+      font-size: 13px;
+      font-weight: 700;
+      border-radius: 4px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.25);
+      transition: all 0.2s ease;
+    }
+
+    .btn-primary-wa:hover {
+      background: #1eb956;
+      transform: translateY(-1px);
+    }
+
+    /* Hero Section */
+    .hero-section {
+      width: 100%;
+      min-height: 88vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(to right, rgba(30, 6, 22, 0.92) 0%, rgba(30, 6, 22, 0.6) 50%, rgba(30, 6, 22, 0.25) 100%),
+                  url('assets/hero.jpg') center/cover no-repeat;
+      padding: 60px 100px;
+      color: #FFF;
+    }
+
+    .hero-content {
+      max-width: 720px;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(197, 155, 66, 0.2);
+      border: 1px solid var(--accent-gold);
+      color: var(--accent-gold-light);
+      padding: 6px 14px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: 58px;
+      font-weight: 400;
+      line-height: 1.15;
+      color: #FFF;
+      margin-bottom: 20px;
+      letter-spacing: 0.02em;
+    }
+
+    .hero-title span {
+      font-style: italic;
+      color: var(--accent-gold-light);
+    }
+
+    .hero-desc {
+      font-size: 17px;
+      color: rgba(255, 255, 255, 0.88);
+      max-width: 580px;
+      margin-bottom: 36px;
+      font-weight: 300;
+      line-height: 1.7;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .btn-hero-gold {
+      background: var(--accent-gold);
+      color: #1E0616;
+      padding: 16px 36px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 4px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.25s ease;
+      box-shadow: 0 10px 30px rgba(197, 155, 66, 0.35);
+    }
+
+    .btn-hero-gold:hover {
+      background: #FFF;
+      color: var(--primary-couture);
+      transform: translateY(-2px);
+    }
+
+    .btn-hero-ghost {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      color: #FFF;
+      padding: 16px 30px;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      border-radius: 4px;
+      backdrop-filter: blur(8px);
+      transition: all 0.25s ease;
+    }
+
+    .btn-hero-ghost:hover {
+      background: rgba(255, 255, 255, 0.25);
+    }
+
+    .hero-stats {
+      margin-top: 48px;
+      display: flex;
+      gap: 36px;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      padding-top: 24px;
+      flex-wrap: wrap;
+    }
+
+    .hero-stat-item strong {
+      font-family: var(--font-display);
+      font-size: 24px;
+      color: var(--accent-gold-light);
+      display: block;
+      line-height: 1.1;
+    }
+
+    .hero-stat-item span {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.75);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Section Global */
+    section.section-block {
+      width: 100%;
+      padding: 90px 100px;
+    }
+
+    .section-head {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 60px auto;
+    }
+
+    .section-label {
+      font-size: 12px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--accent-gold);
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .section-heading {
+      font-family: var(--font-display);
+      font-size: 42px;
+      font-weight: 400;
+      color: var(--primary-couture);
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    .section-subtext {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    /* Pillars */
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .pillar-card {
+      background: #FFF;
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 32px 24px;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .pillar-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--border-gold);
+    }
+
+    .pillar-icon {
+      width: 48px;
+      height: 48px;
+      background: rgba(54, 14, 39, 0.06);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      color: var(--primary-couture);
+      margin-bottom: 20px;
+    }
+
+    .pillar-card h4 {
+      font-family: var(--font-display);
+      font-size: 20px;
+      color: var(--primary-couture);
+      margin-bottom: 8px;
+    }
+
+    .pillar-card p {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* Curation Showcase */
+    .services-section {
+      background: #F6EFEA;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    .service-item {
+      background: #FFF;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid rgba(54, 14, 39, 0.08);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .service-item:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .service-image-box {
+      width: 100%;
+      height: 380px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .service-image-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .service-item:hover .service-image-box img {
+      transform: scale(1.06);
+    }
+
+    .service-badge-tag {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      background: rgba(30, 6, 22, 0.85);
+      color: #FFF;
+      padding: 4px 12px;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border-radius: 4px;
+      backdrop-filter: blur(4px);
+    }
+
+    .service-details {
+      padding: 28px 24px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .service-details h3 {
+      font-family: var(--font-display);
+      font-size: 24px;
+      color: var(--primary-couture);
+      margin-bottom: 8px;
+    }
+
+    .service-details p {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .service-foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid rgba(54, 14, 39, 0.08);
+      padding-top: 16px;
+    }
+
+    .service-foot a {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      color: var(--primary-couture);
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .service-foot a:hover {
+      color: var(--accent-gold);
+    }
+
+    /* Atelier Feature Split */
+    .atelier-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .atelier-media {
+      position: relative;
+    }
+
+    .atelier-img {
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .atelier-callout {
+      position: absolute;
+      bottom: -24px;
+      right: 32px;
+      background: #FFF;
+      padding: 20px 28px;
+      border-radius: 8px;
+      box-shadow: var(--shadow-md);
+      border-left: 4px solid var(--accent-gold);
+      max-width: 280px;
+    }
+
+    .atelier-callout strong {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 18px;
+      color: var(--primary-couture);
+    }
+
+    .atelier-callout span {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .atelier-info .section-label {
+      text-align: left;
+    }
+
+    .atelier-info .section-heading {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .craft-steps {
+      margin: 28px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .craft-step-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .craft-step-num {
+      width: 32px;
+      height: 32px;
+      background: var(--primary-couture);
+      color: #FFF;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* Booking Block */
+    .booking-wrapper {
+      background: linear-gradient(135deg, #1E0616 0%, #360E27 100%);
+      color: #FFF;
+      border-radius: 12px;
+      padding: 50px 60px;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--border-gold);
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .booking-text h3 {
+      font-family: var(--font-display);
+      font-size: 38px;
+      margin-bottom: 16px;
+      color: #FFF;
+    }
+
+    .booking-text p {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.85);
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+
+    .booking-perk-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      font-size: 13px;
+      color: var(--accent-gold-light);
+    }
+
+    .booking-form-box {
+      background: rgba(255, 255, 255, 0.07);
+      padding: 32px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      backdrop-filter: blur(10px);
+    }
+
+    .field-group {
+      margin-bottom: 16px;
+    }
+
+    .field-group label {
+      display: block;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent-gold-light);
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+
+    .form-ctrl {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: #FFF;
+      padding: 12px 14px;
+      border-radius: 4px;
+      font-size: 13px;
+      outline: none;
+      transition: border 0.2s ease;
+    }
+
+    .form-ctrl option {
+      background: #360E27;
+      color: #FFF;
+    }
+
+    .form-ctrl:focus {
+      border-color: var(--accent-gold);
+    }
+
+    .btn-submit-booking {
+      width: 100%;
+      background: #25D366;
+      color: #062611;
+      border: none;
+      padding: 14px;
+      font-size: 14px;
+      font-weight: 700;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+      margin-top: 10px;
+    }
+
+    .btn-submit-booking:hover {
+      background: #1eb956;
+      transform: translateY(-1px);
+    }
+
+    /* Store Section */
+    .store-section {
+      background: #FFF;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .store-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+    }
+
+    .store-info-col {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .store-info-row {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .store-icon-box {
+      width: 44px;
+      height: 44px;
+      background: rgba(54, 14, 39, 0.06);
+      color: var(--primary-couture);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+
+    .store-text-box h5 {
+      font-size: 15px;
+      color: var(--primary-couture);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .store-text-box p {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .map-frame-box {
+      width: 100%;
+      height: 380px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-subtle);
+    }
+
+    /* Footer */
+    footer.site-footer {
+      width: 100%;
+      background: var(--deep-midnight);
+      color: #FFF;
+      padding: 60px 100px 30px 100px;
+      border-top: 1px solid var(--border-gold);
+    }
+
+    .footer-top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      flex-wrap: wrap;
+    }
+
+    .footer-logo-block h4 {
+      font-family: var(--font-display);
+      font-size: 28px;
+      letter-spacing: 0.14em;
+      color: #FFF;
+      margin-bottom: 6px;
+    }
+
+    .footer-logo-block p {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.65);
+      max-width: 320px;
+    }
+
+    .footer-links-group {
+      display: flex;
+      gap: 48px;
+    }
+
+    .footer-col-nav h6 {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent-gold-light);
+      margin-bottom: 14px;
+      font-weight: 700;
+    }
+
+    .footer-col-nav ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .footer-base-row {
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.5);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    /* Mobile Fixed Action Bar */
+    .mobile-bar {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(30, 6, 22, 0.96);
+      backdrop-filter: blur(12px);
+      border-top: 1px solid var(--border-gold);
+      padding: 10px 16px;
+      z-index: 2000;
+      box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .mobile-bar-actions {
+      display: flex;
+      gap: 10px;
+      width: 100%;
+    }
+
+    .btn-mobile-call {
+      flex: 1;
+      background: rgba(255, 255, 255, 0.1);
+      color: #FFF;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .btn-mobile-wa {
+      flex: 1.6;
+      background: #25D366;
+      color: #062611;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    /* Responsive Breakpoints */
+    @media (max-width: 1024px) {
+      .concept-ribbon,
+      .nav-container,
+      .hero-section,
+      section.section-block,
+      footer.site-footer {
+        padding-left: 48px;
+        padding-right: 48px;
+      }
+      .pillars-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .atelier-split,
+      .booking-wrapper,
+      .store-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .concept-ribbon,
+      .nav-container,
+      .hero-section,
+      section.section-block,
+      footer.site-footer {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .concept-ribbon {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .nav-links, .btn-outline-couture {
+        display: none;
+      }
+      .brand-title {
+        font-size: 26px;
+      }
+      .hero-title {
+        font-size: 36px;
+      }
+      .pillars-grid,
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+      .booking-wrapper {
+        padding: 30px 20px;
+      }
+      .mobile-bar {
+        display: block;
+      }
+      body {
+        padding-bottom: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Harshal Concept Pitch Ribbon - Full Stretch 100px padding -->
+  <div class="concept-ribbon">
+    <div class="concept-ribbon-content">
+      <span class="concept-badge">Concept Preview</span>
+      <span>Specially curated for <strong>SEERI &middot; The Couture Story by Poonam Gurav, Sanewadi, Aundh</strong> by <strong>Harshal Baviskar</strong></span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <span style="font-size: 12px; color: var(--accent-gold-light);">Launch this website for ₹5,999</span>
+      <a href="https://wa.me/917709246505?text=Hi%20SEERI%2C%20I%20saw%20your%20official%20website%20preview%20created%20by%20Harshal%20Baviskar." class="ribbon-cta" target="_blank">Connect on WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- Main Sticky Header - Full Stretch 100px padding -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">
+        <span class="brand-title">SEERI</span>
+        <span class="brand-subtitle">The Couture Story &middot; Poonam Gurav</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#couture">Couture Edits</a></li>
+        <li><a href="#designer">The Designer</a></li>
+        <li><a href="#consultation">Consultation</a></li>
+        <li><a href="#location">Studio Address</a></li>
+      </ul>
+
+      <div class="header-actions">
+        <a href="tel:+917709246505" class="btn-outline-couture">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          077092 46505
+        </a>
+        <a href="https://wa.me/917709246505?text=Hello%20Poonam%20Gurav!%20I%20would%20like%20to%20consult%20for%20a%20bridal%20%2F%20festive%20couture%20order." target="_blank" class="btn-primary-wa">
+          <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          WhatsApp Studio
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span>★ Sanewadi Studio &middot; Near Hotel Sarja, Aundh</span>
+      </div>
+      <h1 class="hero-title">
+        The Couture Story by <span>Poonam Gurav</span>
+      </h1>
+      <p class="hero-desc">
+        Bespoke bridal lehengas, intricately embroidered blouses, and hand-tailored festive ensembles. Every garment is an artistic statement, woven exclusively for your special moments.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="https://wa.me/917709246505?text=Hi%20Poonam%20Gurav!%20I%20would%20like%20to%20book%20a%20couture%20consultation." target="_blank" class="btn-hero-gold">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          Book 1-on-1 Consultation
+        </a>
+        <a href="#couture" class="btn-hero-ghost">
+          View Signature Edits
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat-item">
+          <strong>Chaitraban Residency</strong>
+          <span>Near Hotel Sarja, Aundh</span>
+        </div>
+        <div class="hero-stat-item">
+          <strong>Lead Designer</strong>
+          <span>Poonam Gurav</span>
+        </div>
+        <div class="hero-stat-item">
+          <strong>Bespoke Bridal</strong>
+          <span>Custom Maggam & Zari</span>
+        </div>
+        <div class="hero-stat-item">
+          <strong>100% Unique</strong>
+          <span>Zero Mass Production</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Couture Philosophy -->
+  <section class="section-block">
+    <div class="section-head">
+      <span class="section-label">The Couture Story</span>
+      <h2 class="section-heading">Designed With Passion. Crafted With Precision.</h2>
+      <p class="section-subtext">At SEERI, each garment is viewed as a canvas where personal emotion, heritage needlework, and modern cuts coalesce.</p>
+    </div>
+
+    <div class="pillars-grid">
+      <div class="pillar-card">
+        <div class="pillar-icon">👑</div>
+        <h4>Bridal Masterpieces</h4>
+        <p>Voluminous kalidar flares, bespoke hand embroidery, customized can-can skirts, and heirloom bridal aesthetics.</p>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-icon">🧵</div>
+        <h4>Artisan Blouse Studio</h4>
+        <p>Specialized necklines, Maggam peacock embroidery, sheer back detailing, and padded comfort cuts that stay secure.</p>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-icon">🎨</div>
+        <h4>Personalized Color Palette</h4>
+        <p>Direct styling guidance from Poonam Gurav to match hues that enhance your complexion under wedding lighting.</p>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-icon">✨</div>
+        <h4>Curated Dress Materials</h4>
+        <p>Pure Chanderi, Banarasi tissue, raw silk, and organza fabrics selected for exquisite custom stitching.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="section-block services-section" id="couture">
+    <div class="section-head">
+      <span class="section-label">Signature Creations</span>
+      <h2 class="section-heading">The SEERI Showroom Curation</h2>
+      <p class="section-subtext">Each creation is meticulously crafted at our Sanewadi studio, tailored to ensure you captivate every room.</p>
+    </div>
+
+    <div class="services-grid">
+      <!-- Card 1 -->
+      <div class="service-item">
+        <div class="service-image-box">
+          <img src="assets/hero.jpg" alt="Bridal Couture Lehengas">
+          <span class="service-badge-tag">Bridal Signature</span>
+        </div>
+        <div class="service-details">
+          <h3>Bespoke Bridal Lehengas</h3>
+          <p>Hand-embroidered zardozi, authentic dabka work, rich velvety dupattas, and grand silhouettes tailored for the contemporary Indian bride.</p>
+          <div class="service-foot">
+            <span style="font-size: 13px; font-weight: 700; color: var(--accent-gold);">Custom Made to Measure</span>
+            <a href="https://wa.me/917709246505?text=Hi%20Poonam%20Gurav%2C%20I%20am%20inquiring%20about%20a%20Bespoke%20Bridal%20Lehenga." target="_blank">
+              Inquire
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="service-item">
+        <div class="service-image-box">
+          <img src="assets/blouses.jpg" alt="Artisan Embroidered Blouse Designs">
+          <span class="service-badge-tag">Studio Favorite</span>
+        </div>
+        <div class="service-details">
+          <h3>Designer Blouses & Maggam Work</h3>
+          <p>Detailed temple jewelry motifs, bullion knots, pearl borders, and structural sweetheart necklines with zero back gaping.</p>
+          <div class="service-foot">
+            <span style="font-size: 13px; font-weight: 700; color: var(--accent-gold);">Padded & Comfort Lined</span>
+            <a href="https://wa.me/917709246505?text=Hi%20Poonam%20Gurav%2C%20I%20would%20like%20to%20get%20designer%20blouses%20stitched." target="_blank">
+              Inquire
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="service-item">
+        <div class="service-image-box">
+          <img src="assets/couture.jpg" alt="Silk Sarees & Curated Dress Materials">
+          <span class="service-badge-tag">Textile Treasury</span>
+        </div>
+        <div class="service-details">
+          <h3>Curated Dress Materials & Silks</h3>
+          <p>Unstitched 3-piece sets in pure Chanderi, Katan silk, and tissue organza, ready for tailor-made suit and anarkali crafting.</p>
+          <div class="service-foot">
+            <span style="font-size: 13px; font-weight: 700; color: var(--accent-gold);">Custom Tailoring Included</span>
+            <a href="https://wa.me/917709246505?text=Hi%20Poonam%20Gurav%2C%20I%20want%20to%20view%20your%20dress%20materials%20and%20silks." target="_blank">
+              Inquire
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Designer Section -->
+  <section class="section-block" id="designer">
+    <div class="atelier-split">
+      <div class="atelier-media">
+        <img src="assets/hero.jpg" alt="Poonam Gurav Couture Studio Aundh" class="atelier-img">
+        <div class="atelier-callout">
+          <strong>Poonam Gurav</strong>
+          <span>Founder & Creative Director &middot; SEERI</span>
+        </div>
+      </div>
+
+      <div class="atelier-info">
+        <span class="section-label">Behind The Label</span>
+        <h2 class="section-heading">Every Outfit Tells A Personal Story</h2>
+        <p class="section-subtext">
+          "At SEERI, we don't just stitch clothes; we craft your memories. From selecting the exact sheen of silk to hand-placing each French knot on your bridal blouse, you are part of every creative step."
+        </p>
+
+        <div class="craft-steps">
+          <div class="craft-step-item">
+            <div class="craft-step-num">1</div>
+            <div>
+              <strong style="color: var(--primary-couture); font-size: 15px;">Personal Style Consultation</strong>
+              <p style="font-size: 13px; color: var(--text-muted);">Meet directly with Poonam Gurav to curate silhouettes that celebrate your personality.</p>
+            </div>
+          </div>
+
+          <div class="craft-step-item">
+            <div class="craft-step-num">2</div>
+            <div>
+              <strong style="color: var(--primary-couture); font-size: 15px;">Textile & Embroidery Mapping</strong>
+              <p style="font-size: 13px; color: var(--text-muted);">Handpick fabrics, zari swatches, beadwork patterns, and custom border placements.</p>
+            </div>
+          </div>
+
+          <div class="craft-step-item">
+            <div class="craft-step-num">3</div>
+            <div>
+              <strong style="color: var(--primary-couture); font-size: 15px;">Trial & Master Handover</strong>
+              <p style="font-size: 13px; color: var(--text-muted);">In-studio trial session ensuring complete drape perfection before your big celebration.</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="https://wa.me/917709246505?text=Hello%20Poonam%20Gurav%2C%20I%20would%20like%20to%20schedule%20a%20personal%20styling%20session." target="_blank" class="btn-primary-wa" style="display: inline-flex;">
+          Meet With Poonam Gurav
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Appointment Block -->
+  <section class="section-block" style="padding-top: 0;" id="consultation">
+    <div class="booking-wrapper">
+      <div class="booking-text">
+        <span style="color: var(--accent-gold-light); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 700;">Atelier Reservation</span>
+        <h3>Reserve Your Designer Consultation</h3>
+        <p>Book a dedicated private appointment with Poonam Gurav at our Sanewadi studio for bridal styling, blouse customization, or festive bespoke orders.</p>
+        
+        <ul class="booking-perk-list">
+          <li>✨ Private consultation room reserved for you and family</li>
+          <li>✨ Detailed neckline sketches & fabric sample review</li>
+          <li>✨ Guaranteed delivery schedule for wedding events</li>
+        </ul>
+      </div>
+
+      <div class="booking-form-box">
+        <form id="seeriForm" onsubmit="event.preventDefault(); sendSeeriBooking();">
+          <div class="field-group">
+            <label for="consultType">Consultation For:</label>
+            <select id="consultType" class="form-ctrl" required>
+              <option value="Bridal Lehenga & Sangeet Couture">Bridal Lehenga & Sangeet Couture</option>
+              <option value="Designer Hand-Embroidered Blouses">Designer Hand-Embroidered Blouses</option>
+              <option value="Custom Salwar Suit & Anarkali">Custom Salwar Suit & Anarkali</option>
+              <option value="Dress Materials & Fabric Selection">Dress Materials & Fabric Selection</option>
+            </select>
+          </div>
+
+          <div class="field-group">
+            <label for="clientName">Your Name:</label>
+            <input type="text" id="clientName" class="form-ctrl" placeholder="e.g. Sayali Joshi" required>
+          </div>
+
+          <div class="field-group">
+            <label for="consultDate">Preferred Date:</label>
+            <input type="date" id="consultDate" class="form-ctrl" required>
+          </div>
+
+          <button type="submit" class="btn-submit-booking">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            Send WhatsApp Request to Poonam Gurav
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Store Section -->
+  <section class="section-block store-section" id="location">
+    <div class="store-layout">
+      <div class="store-info-col">
+        <div>
+          <span class="section-label">Visit Our Studio</span>
+          <h2 class="section-heading">Sanewadi, Aundh</h2>
+          <p class="section-subtext">Located in Chaitraban Residency-E, right in the heart of Sanewadi near Hotel Sarja.</p>
+        </div>
+
+        <div class="store-info-row">
+          <div class="store-icon-box">📍</div>
+          <div class="store-text-box">
+            <h5>Studio Address</h5>
+            <p>Shop No. 4, Chaitraban Residency-E, Near Sarja Hotel,<br>Goodwill Society, Sanewadi, Aundh, Pune – 411067</p>
+          </div>
+        </div>
+
+        <div class="store-info-row">
+          <div class="store-icon-box">⏰</div>
+          <div class="store-text-box">
+            <h5>Consultation Timings</h5>
+            <p><strong>Open Daily:</strong> 11:00 AM – 8:30 PM<br><span style="color: var(--accent-gold); font-weight: 700;">Appointments recommended for bridal couture</span></p>
+          </div>
+        </div>
+
+        <div class="store-info-row">
+          <div class="store-icon-box">📞</div>
+          <div class="store-text-box">
+            <h5>Direct Contact</h5>
+            <p>
+              Designer Line: <a href="tel:+917709246505" style="color: var(--primary-couture); font-weight: 700; text-decoration: none;">+91 77092 46505</a><br>
+              WhatsApp: <a href="https://wa.me/917709246505" target="_blank" style="color: #25D366; font-weight: 700; text-decoration: none;">+91 77092 46505</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-frame-box">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.3551523490714!2d73.8052162!3d18.5580665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf38ecbb547d%3A0xe9d68ec5d1bce47b!2sHotel%20Sarja!5e0!3m2!1sen!2sin!4v1710400000000!5m2!1sen!2sin" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-top-row">
+      <div class="footer-logo-block">
+        <h4>SEERI &middot; THE COUTURE STORY</h4>
+        <p>Bespoke bridal lehengas, designer blouse crafting, and curated handloom textiles by Poonam Gurav in Aundh, Pune.</p>
+      </div>
+
+      <div class="footer-links-group">
+        <div class="footer-col-nav">
+          <h6>Specialties</h6>
+          <ul>
+            <li>Bridal & Sangeet Lehengas</li>
+            <li>Maggam & Zardozi Blouses</li>
+            <li>Custom Tailored Anarkalis</li>
+            <li>Pure Silk Dress Materials</li>
+            <li>Private Designer Consultations</li>
+          </ul>
+        </div>
+
+        <div class="footer-col-nav">
+          <h6>Visit Us</h6>
+          <ul>
+            <li>Shop 4, Chaitraban Residency-E</li>
+            <li>Near Hotel Sarja, Aundh, Pune</li>
+            <li>Open Daily: 11:00 AM – 8:30 PM</li>
+            <li>Phone: 077092 46505</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-base-row">
+      <div>&copy; 2026 SEERI (The Couture Story by Poonam Gurav). All rights reserved. &middot; Sanewadi, Aundh.</div>
+      <div>Designed & Developed by <a href="https://harshal.cloud" target="_blank" style="color: var(--accent-gold-light); text-decoration: none;">Harshal Baviskar</a> (Pune Website Solutions)</div>
+    </div>
+  </footer>
+
+  <!-- Mobile Fixed Action Bar -->
+  <div class="mobile-bar">
+    <div class="mobile-bar-actions">
+      <a href="tel:+917709246505" class="btn-mobile-call">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        Call
+      </a>
+      <a href="https://wa.me/917709246505?text=Hi%20Poonam%20Gurav!%20I%20am%20interested%20in%20visiting%20your%20SEERI%20couture%20studio%20in%20Sanewadi." target="_blank" class="btn-mobile-wa">
+        <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        WhatsApp Us
+      </a>
+    </div>
+  </div>
+
+  <script>
+    function sendSeeriBooking() {
+      const type = document.getElementById('consultType').value;
+      const name = document.getElementById('clientName').value;
+      const date = document.getElementById('consultDate').value;
+      
+      const text = `Hello Poonam Gurav! My name is ${name}. I would like to schedule a consultation for *${type}* on ${date} at your SEERI studio in Sanewadi. Please let me know your available slots!`;
+      const waUrl = `https://wa.me/917709246505?text=${encodeURIComponent(text)}`;
+      window.open(waUrl, '_blank');
+    }
+  </script>
+</body>
+</html>

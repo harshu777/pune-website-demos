@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pink Sand Designer Boutique | Contemporary Western Dresses & Festive Wear | Aundh, Pune</title>
+
+  <!-- Open Graph Tags for WhatsApp previews -->
+  <meta property="og:title" content="Pink Sand Designer Boutique | Contemporary Dresses & Festive Wear | Aundh">
+  <meta property="og:description" content="Chic resort wear, western dresses, festive ethnic ensembles & custom tailoring at Sunshine Riviera, Spicer School Road, Aundh.">
+  <meta property="og:image" content="https://harshu777.github.io/pune-website-demos/pinksand/assets/hero.jpg">
+  <meta property="og:url" content="https://harshu777.github.io/pune-website-demos/pinksand/">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary-berry: #5E1432;
+      --soft-blush: #E89CAE;
+      --blush-light: #FBECEF;
+      --sand-ivory: #FAF5F0;
+      --rose-gold: #C98A72;
+      --card-bg: #FFFFFF;
+      --text-dark: #221219;
+      --text-muted: #66555C;
+      --border-subtle: rgba(94, 20, 50, 0.1);
+      --border-rose: rgba(201, 138, 114, 0.35);
+      --font-serif: "Playfair Display", Georgia, serif;
+      --font-sans: "Plus Jakarta Sans", sans-serif;
+      --shadow-sm: 0 4px 20px rgba(94, 20, 50, 0.05);
+      --shadow-md: 0 12px 36px rgba(94, 20, 50, 0.09);
+      --shadow-lg: 0 24px 60px rgba(94, 20, 50, 0.13);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--sand-ivory);
+      color: var(--text-dark);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* Top Harshal Concept Pitch Ribbon - FULL STRETCH 100px */
+    .concept-ribbon {
+      background: linear-gradient(135deg, #38081C 0%, #5E1432 100%);
+      color: #FFF;
+      width: 100%;
+      padding: 12px 100px;
+      font-size: 13px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      border-bottom: 1px solid var(--border-rose);
+      position: relative;
+      z-index: 1001;
+    }
+
+    .concept-ribbon-content {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .concept-badge {
+      background: rgba(232, 156, 174, 0.25);
+      color: #FFD4DF;
+      border: 1px solid var(--soft-blush);
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .concept-ribbon a.ribbon-cta {
+      background: var(--soft-blush);
+      color: #38081C;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 12px;
+      padding: 6px 16px;
+      border-radius: 4px;
+      white-space: nowrap;
+      transition: all 0.2s ease;
+    }
+
+    .concept-ribbon a.ribbon-cta:hover {
+      background: #FFF;
+      box-shadow: 0 0 16px rgba(255, 255, 255, 0.4);
+    }
+
+    /* Navigation Bar - FULL STRETCH 100px */
+    header.site-header {
+      width: 100%;
+      background: rgba(250, 245, 240, 0.94);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-subtle);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+
+    .nav-container {
+      width: 100%;
+      padding-left: 100px;
+      padding-right: 100px;
+      height: 86px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand-logo {
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-title {
+      font-family: var(--font-serif);
+      font-size: 30px;
+      font-weight: 600;
+      color: var(--primary-berry);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      line-height: 1.1;
+    }
+
+    .brand-subtitle {
+      font-size: 10px;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--rose-gold);
+      font-weight: 700;
+      margin-top: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-dark);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      transition: color 0.2s ease;
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0%;
+      height: 1.5px;
+      background: var(--primary-berry);
+      transition: width 0.25s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary-berry);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .btn-outline-berry {
+      border: 1px solid var(--primary-berry);
+      color: var(--primary-berry);
+      background: transparent;
+      padding: 10px 22px;
+      font-size: 13px;
+      font-weight: 600;
+      border-radius: 4px;
+      text-decoration: none;
+      letter-spacing: 0.04em;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-outline-berry:hover {
+      background: var(--primary-berry);
+      color: #FFF;
+    }
+
+    .btn-primary-wa {
+      background: #25D366;
+      color: #042410;
+      padding: 10px 22px;
+      font-size: 13px;
+      font-weight: 700;
+      border-radius: 4px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.25);
+      transition: all 0.2s ease;
+    }
+
+    .btn-primary-wa:hover {
+      background: #1eb956;
+      transform: translateY(-1px);
+    }
+
+    /* Hero Section */
+    .hero-section {
+      width: 100%;
+      min-height: 88vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(to right, rgba(46, 7, 24, 0.9) 0%, rgba(46, 7, 24, 0.58) 50%, rgba(46, 7, 24, 0.25) 100%),
+                  url('assets/hero.jpg') center/cover no-repeat;
+      padding: 60px 100px;
+      color: #FFF;
+    }
+
+    .hero-content {
+      max-width: 720px;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(232, 156, 174, 0.2);
+      border: 1px solid var(--soft-blush);
+      color: #FFD4DF;
+      padding: 6px 14px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    .hero-title {
+      font-family: var(--font-serif);
+      font-size: 56px;
+      font-weight: 600;
+      line-height: 1.15;
+      color: #FFF;
+      margin-bottom: 20px;
+      letter-spacing: -0.01em;
+    }
+
+    .hero-title span {
+      font-style: italic;
+      color: #FFD4DF;
+      font-weight: 400;
+    }
+
+    .hero-desc {
+      font-size: 17px;
+      color: rgba(255, 255, 255, 0.88);
+      max-width: 580px;
+      margin-bottom: 36px;
+      font-weight: 300;
+      line-height: 1.7;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .btn-hero-blush {
+      background: var(--soft-blush);
+      color: #38081C;
+      padding: 16px 36px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 4px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.25s ease;
+      box-shadow: 0 10px 30px rgba(232, 156, 174, 0.35);
+    }
+
+    .btn-hero-blush:hover {
+      background: #FFF;
+      color: var(--primary-berry);
+      transform: translateY(-2px);
+    }
+
+    .btn-hero-ghost {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      color: #FFF;
+      padding: 16px 30px;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      border-radius: 4px;
+      backdrop-filter: blur(8px);
+      transition: all 0.25s ease;
+    }
+
+    .btn-hero-ghost:hover {
+      background: rgba(255, 255, 255, 0.25);
+    }
+
+    .hero-stats {
+      margin-top: 48px;
+      display: flex;
+      gap: 36px;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      padding-top: 24px;
+      flex-wrap: wrap;
+    }
+
+    .hero-stat-item strong {
+      font-family: var(--font-serif);
+      font-size: 22px;
+      color: #FFD4DF;
+      display: block;
+      line-height: 1.1;
+    }
+
+    .hero-stat-item span {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.75);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Section Global */
+    section.section-block {
+      width: 100%;
+      padding: 90px 100px;
+    }
+
+    .section-head {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 60px auto;
+    }
+
+    .section-label {
+      font-size: 12px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--primary-berry);
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .section-heading {
+      font-family: var(--font-serif);
+      font-size: 42px;
+      font-weight: 600;
+      color: var(--primary-berry);
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    .section-subtext {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    /* Pillars */
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .pillar-card {
+      background: #FFF;
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 32px 24px;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .pillar-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--border-rose);
+    }
+
+    .pillar-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--blush-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      color: var(--primary-berry);
+      margin-bottom: 20px;
+    }
+
+    .pillar-card h4 {
+      font-family: var(--font-serif);
+      font-size: 20px;
+      color: var(--primary-berry);
+      margin-bottom: 8px;
+    }
+
+    .pillar-card p {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* Collections Section */
+    .collections-section {
+      background: #F5EAEF;
+    }
+
+    .collections-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    .collection-item {
+      background: #FFF;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid rgba(94, 20, 50, 0.08);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .collection-item:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .collection-image-box {
+      width: 100%;
+      height: 380px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .collection-image-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .collection-item:hover .collection-image-box img {
+      transform: scale(1.06);
+    }
+
+    .collection-badge-tag {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      background: rgba(56, 8, 28, 0.85);
+      color: #FFF;
+      padding: 4px 12px;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border-radius: 4px;
+      backdrop-filter: blur(4px);
+    }
+
+    .collection-details {
+      padding: 28px 24px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .collection-details h3 {
+      font-family: var(--font-serif);
+      font-size: 24px;
+      color: var(--primary-berry);
+      margin-bottom: 8px;
+    }
+
+    .collection-details p {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .collection-foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid rgba(94, 20, 50, 0.08);
+      padding-top: 16px;
+    }
+
+    .collection-foot a {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      color: var(--primary-berry);
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .collection-foot a:hover {
+      color: var(--rose-gold);
+    }
+
+    /* Split Section */
+    .spotlight-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .spotlight-media {
+      position: relative;
+    }
+
+    .spotlight-img {
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .spotlight-callout {
+      position: absolute;
+      bottom: -24px;
+      right: 32px;
+      background: #FFF;
+      padding: 20px 28px;
+      border-radius: 8px;
+      box-shadow: var(--shadow-md);
+      border-left: 4px solid var(--soft-blush);
+      max-width: 280px;
+    }
+
+    .spotlight-callout strong {
+      display: block;
+      font-family: var(--font-serif);
+      font-size: 20px;
+      color: var(--primary-berry);
+    }
+
+    .spotlight-callout span {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .spotlight-info .section-label {
+      text-align: left;
+    }
+
+    .spotlight-info .section-heading {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .feature-list {
+      margin: 28px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .feature-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+
+    .feature-icon {
+      width: 32px;
+      height: 32px;
+      background: var(--blush-light);
+      color: var(--primary-berry);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* Booking Block */
+    .booking-wrapper {
+      background: linear-gradient(135deg, #38081C 0%, #5E1432 100%);
+      color: #FFF;
+      border-radius: 12px;
+      padding: 50px 60px;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--border-rose);
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .booking-text h3 {
+      font-family: var(--font-serif);
+      font-size: 38px;
+      margin-bottom: 16px;
+      color: #FFF;
+    }
+
+    .booking-text p {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.85);
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+
+    .booking-perk-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      font-size: 13px;
+      color: #FFD4DF;
+    }
+
+    .booking-form-box {
+      background: rgba(255, 255, 255, 0.07);
+      padding: 32px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      backdrop-filter: blur(10px);
+    }
+
+    .field-group {
+      margin-bottom: 16px;
+    }
+
+    .field-group label {
+      display: block;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #FFD4DF;
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+
+    .form-ctrl {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: #FFF;
+      padding: 12px 14px;
+      border-radius: 4px;
+      font-size: 13px;
+      outline: none;
+      transition: border 0.2s ease;
+    }
+
+    .form-ctrl option {
+      background: #5E1432;
+      color: #FFF;
+    }
+
+    .form-ctrl:focus {
+      border-color: var(--soft-blush);
+    }
+
+    .btn-submit-booking {
+      width: 100%;
+      background: #25D366;
+      color: #042410;
+      border: none;
+      padding: 14px;
+      font-size: 14px;
+      font-weight: 700;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+      margin-top: 10px;
+    }
+
+    .btn-submit-booking:hover {
+      background: #1eb956;
+      transform: translateY(-1px);
+    }
+
+    /* Store Details */
+    .store-section {
+      background: #FFF;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .store-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+    }
+
+    .store-info-col {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .store-info-row {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .store-icon-box {
+      width: 44px;
+      height: 44px;
+      background: var(--blush-light);
+      color: var(--primary-berry);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+
+    .store-text-box h5 {
+      font-size: 15px;
+      color: var(--primary-berry);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .store-text-box p {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .map-frame-box {
+      width: 100%;
+      height: 380px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-subtle);
+    }
+
+    /* Footer */
+    footer.site-footer {
+      width: 100%;
+      background: #260513;
+      color: #FFF;
+      padding: 60px 100px 30px 100px;
+      border-top: 1px solid var(--border-rose);
+    }
+
+    .footer-top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      flex-wrap: wrap;
+    }
+
+    .footer-logo-block h4 {
+      font-family: var(--font-serif);
+      font-size: 26px;
+      letter-spacing: 0.14em;
+      color: #FFF;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    .footer-logo-block p {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.65);
+      max-width: 320px;
+    }
+
+    .footer-links-group {
+      display: flex;
+      gap: 48px;
+    }
+
+    .footer-col-nav h6 {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #FFD4DF;
+      margin-bottom: 14px;
+      font-weight: 700;
+    }
+
+    .footer-col-nav ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .footer-base-row {
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.5);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    /* Mobile Fixed Action Bar */
+    .mobile-bar {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(38, 5, 19, 0.96);
+      backdrop-filter: blur(12px);
+      border-top: 1px solid var(--border-rose);
+      padding: 10px 16px;
+      z-index: 2000;
+      box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .mobile-bar-actions {
+      display: flex;
+      gap: 10px;
+      width: 100%;
+    }
+
+    .btn-mobile-call {
+      flex: 1;
+      background: rgba(255, 255, 255, 0.1);
+      color: #FFF;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .btn-mobile-wa {
+      flex: 1.6;
+      background: #25D366;
+      color: #042410;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    /* Responsive Breakpoints */
+    @media (max-width: 1024px) {
+      .concept-ribbon,
+      .nav-container,
+      .hero-section,
+      section.section-block,
+      footer.site-footer {
+        padding-left: 48px;
+        padding-right: 48px;
+      }
+      .pillars-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .collections-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .spotlight-split,
+      .booking-wrapper,
+      .store-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .concept-ribbon,
+      .nav-container,
+      .hero-section,
+      section.section-block,
+      footer.site-footer {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .concept-ribbon {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .nav-links, .btn-outline-berry {
+        display: none;
+      }
+      .brand-title {
+        font-size: 24px;
+      }
+      .hero-title {
+        font-size: 36px;
+      }
+      .pillars-grid,
+      .collections-grid {
+        grid-template-columns: 1fr;
+      }
+      .booking-wrapper {
+        padding: 30px 20px;
+      }
+      .mobile-bar {
+        display: block;
+      }
+      body {
+        padding-bottom: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Harshal Concept Pitch Ribbon - Full Stretch 100px padding -->
+  <div class="concept-ribbon">
+    <div class="concept-ribbon-content">
+      <span class="concept-badge">Concept Preview</span>
+      <span>Specially curated for <strong>Pink Sand Designer Boutique, Spicer School Road, Aundh</strong> by <strong>Harshal Baviskar</strong></span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <span style="font-size: 12px; color: #FFD4DF;">Launch this website for ₹5,999</span>
+      <a href="https://wa.me/919834222631?text=Hi%20Pink%20Sand%20Boutique%2C%20I%20saw%20your%20official%20website%20preview%20created%20by%20Harshal%20Baviskar." class="ribbon-cta" target="_blank">Connect on WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- Main Sticky Header - Full Stretch 100px padding -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">
+        <span class="brand-title">PINK SAND</span>
+        <span class="brand-subtitle">Designer Boutique &middot; Aundh</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#collections">Lookbook</a></li>
+        <li><a href="#tailoring">Bespoke Fits</a></li>
+        <li><a href="#booking">Book Trial</a></li>
+        <li><a href="#location">Find Boutique</a></li>
+      </ul>
+
+      <div class="header-actions">
+        <a href="tel:+919834222631" class="btn-outline-berry">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          098342 22631
+        </a>
+        <a href="https://wa.me/919834222631?text=Hello%20Pink%20Sand%20Boutique!%20I%20am%20interested%20in%20browsing%20your%20western%20dresses%20and%20designer%20wear." target="_blank" class="btn-primary-wa">
+          <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          WhatsApp Studio
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span>★ Sunshine Riviera &middot; Spicer School Road, Aundh</span>
+      </div>
+      <h1 class="hero-title">
+        The Allure of <span>Contemporary</span> Dresses & Fusion Couture
+      </h1>
+      <p class="hero-desc">
+        Effortless western dresses, chic vacation silhouettes, bespoke Indo-Western tunics, and master tailoring. Designed to elevate your wardrobe with refined grace.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="https://wa.me/919834222631?text=Hi%20Pink%20Sand%20Boutique!%20I%20would%20like%20to%20view%20your%20latest%20dresses%20and%20collection." target="_blank" class="btn-hero-blush">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          Explore on WhatsApp
+        </a>
+        <a href="#collections" class="btn-hero-ghost">
+          Browse Curation
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat-item">
+          <strong>Sunshine Riviera</strong>
+          <span>Near Kohinoor Planet, Aundh</span>
+        </div>
+        <div class="hero-stat-item">
+          <strong>9:00 AM – 6:00 PM</strong>
+          <span>Daily Service</span>
+        </div>
+        <div class="hero-stat-item">
+          <strong>Resort & Evening</strong>
+          <span>Western Silhouette Edits</span>
+        </div>
+        <div class="hero-stat-item">
+          <strong>Custom Tailoring</strong>
+          <span>Precise Fit & Alterations</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Pink Sand Difference -->
+  <section class="section-block">
+    <div class="section-head">
+      <span class="section-label">The Studio Aesthetics</span>
+      <h2 class="section-heading">Breezy Luxury Tailored For You</h2>
+      <p class="section-subtext">Situated along Spicer School Road in Aundh, Pink Sand combines western flair with customized Indian fits.</p>
+    </div>
+
+    <div class="pillars-grid">
+      <div class="pillar-card">
+        <div class="pillar-icon">👗</div>
+        <h4>Chic Western Cuts</h4>
+        <p>Wrap dresses, flowing midi dresses, coordinated vacation sets, and tailored blazers in soft pastel tones.</p>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-icon">✨</div>
+        <h4>Festive Fusion</h4>
+        <p>Short kurtis paired with flared dhoti pants, lightweight cape sets, and modern day festive tunics.</p>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-icon">🪡</div>
+        <h4>Master Tailoring</h4>
+        <p>Custom stitching for blouses, ethnic suits, and customized dress materials with personalized fitting trials.</p>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-icon">🌸</div>
+        <h4>Curated Exclusivity</h4>
+        <p>Small-batch clothing edits so your wardrobe feels unique and personally styled for every outing.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collections Grid -->
+  <section class="section-block collections-section" id="collections">
+    <div class="section-head">
+      <span class="section-label">Curated In-Store</span>
+      <h2 class="section-heading">Signature Wardrobe Picks</h2>
+      <p class="section-subtext">From brunch dates to evening galas, explore styles designed to make you feel effortlessly radiant.</p>
+    </div>
+
+    <div class="collections-grid">
+      <!-- Card 1 -->
+      <div class="collection-item">
+        <div class="collection-image-box">
+          <img src="assets/dresses.jpg" alt="Western Dresses & Vacation Outfits">
+          <span class="collection-badge-tag">Bestseller</span>
+        </div>
+        <div class="collection-details">
+          <h3>Western Dresses & Co-Ords</h3>
+          <p>Breathable linen shirt dresses, flattering A-line midi dresses, and playful coordinates suited for Pune's vibrant lifestyle.</p>
+          <div class="collection-foot">
+            <span style="font-size: 13px; font-weight: 700; color: var(--rose-gold);">Ready to Wear</span>
+            <a href="https://wa.me/919834222631?text=Hi%20Pink%20Sand%20Boutique%2C%20I%20am%20interested%20in%20your%20Western%20Dresses%20collection." target="_blank">
+              Inquire
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="collection-item">
+        <div class="collection-image-box">
+          <img src="assets/hero.jpg" alt="Festive Cape Sets & Fusion Couture">
+          <span class="collection-badge-tag">Designer Edit</span>
+        </div>
+        <div class="collection-details">
+          <h3>Festive Cape Sets & Kurtis</h3>
+          <p>Flowing organza capes, embroidered shararas, and handcrafted festive tunics detailed with delicate sequin borders.</p>
+          <div class="collection-foot">
+            <span style="font-size: 13px; font-weight: 700; color: var(--rose-gold);">Custom Fit Included</span>
+            <a href="https://wa.me/919834222631?text=Hi%20Pink%20Sand%20Boutique%2C%20I%20would%20like%20to%20see%20your%20festive%20cape%20sets%20and%20kurtis." target="_blank">
+              Inquire
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="collection-item">
+        <div class="collection-image-box">
+          <img src="assets/resort.jpg" alt="Dress Materials & Custom Tailoring">
+          <span class="collection-badge-tag">Atelier Services</span>
+        </div>
+        <div class="collection-details">
+          <h3>Dress Materials & Tailoring</h3>
+          <p>Handpicked unstitched suit fabrics in pure silk, georgette, and cotton, crafted to your exact neckline and silhouette preferences.</p>
+          <div class="collection-foot">
+            <span style="font-size: 13px; font-weight: 700; color: var(--rose-gold);">Custom Made to Measure</span>
+            <a href="https://wa.me/919834222631?text=Hi%20Pink%20Sand%20Boutique%2C%20I%20want%20to%20discuss%20custom%20stitching%20and%20dress%20materials." target="_blank">
+              Inquire
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tailoring Section -->
+  <section class="section-block" id="tailoring">
+    <div class="spotlight-split">
+      <div class="spotlight-media">
+        <img src="assets/resort.jpg" alt="Pink Sand Tailoring Studio" class="spotlight-img">
+        <div class="spotlight-callout">
+          <strong>Sunshine Riviera Society</strong>
+          <span>Shop 2, Spicer School Road, Near Kohinoor Planet</span>
+        </div>
+      </div>
+
+      <div class="spotlight-info">
+        <span class="section-label">Custom Tailoring</span>
+        <h2 class="section-heading">Fits Cut to Millimeter Perfection</h2>
+        <p class="section-subtext">
+          Whether you want a western gown tapered to your waist, a padded blouse with delicate back tie-ups, or urgent alterations on your favorite outfit, our studio delivers impeccable results.
+        </p>
+
+        <div class="feature-list">
+          <div class="feature-item">
+            <div class="feature-icon">✓</div>
+            <div>
+              <strong style="color: var(--primary-berry); font-size: 15px;">Western & Ethnic Customization</strong>
+              <p style="font-size: 13px; color: var(--text-muted);">From chic cowl-neck dresses to royal salwar suits, tailored to your exact measurements.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">✓</div>
+            <div>
+              <strong style="color: var(--primary-berry); font-size: 15px;">Fabric Consultations</strong>
+              <p style="font-size: 13px; color: var(--text-muted);">Personal guidance on lining choices, drape volume, and neckline cuts.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">✓</div>
+            <div>
+              <strong style="color: var(--primary-berry); font-size: 15px;">Guaranteed Timelines</strong>
+              <p style="font-size: 13px; color: var(--text-muted);">Never worry about last-minute event delays — we honor every handover date.</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="https://wa.me/919834222631?text=Hello%20Pink%20Sand%20Boutique%2C%20I%20would%20like%20to%20schedule%20a%20measurement%20fitting%20session." target="_blank" class="btn-primary-wa" style="display: inline-flex;">
+          Schedule Studio Measurement
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Booking Block -->
+  <section class="section-block" style="padding-top: 0;" id="booking">
+    <div class="booking-wrapper">
+      <div class="booking-text">
+        <span style="color: #FFD4DF; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 700;">VIP Trial Session</span>
+        <h3>Reserve Your In-Store Fitting</h3>
+        <p>Book a dedicated fitting slot at our Spicer School Road boutique for relaxed browsing, personalized trials, and styling consultation.</p>
+        
+        <ul class="booking-perk-list">
+          <li>✨ Pre-selected outfits in your size ready in trial room</li>
+          <li>✨ Honest fit advice from our in-house styling team</li>
+          <li>✨ Complimentary minor hem & sleeve adjustments</li>
+        </ul>
+      </div>
+
+      <div class="booking-form-box">
+        <form id="pinkSandForm" onsubmit="event.preventDefault(); sendPinkSandBooking();">
+          <div class="field-group">
+            <label for="outfitStyle">Looking For:</label>
+            <select id="outfitStyle" class="form-ctrl" required>
+              <option value="Western Dresses & Vacation Sets">Western Dresses & Vacation Outfits</option>
+              <option value="Festive Indo-Western Ensembles">Festive Indo-Western Cape Sets</option>
+              <option value="Custom Tailoring & Blouse Stitching">Custom Tailoring & Blouse Stitching</option>
+              <option value="Unstitched Dress Materials">Unstitched Dress Materials</option>
+            </select>
+          </div>
+
+          <div class="field-group">
+            <label for="clientName">Your Name:</label>
+            <input type="text" id="clientName" class="form-ctrl" placeholder="e.g. Shruti Kadam" required>
+          </div>
+
+          <div class="field-group">
+            <label for="trialDate">Preferred Date:</label>
+            <input type="date" id="trialDate" class="form-ctrl" required>
+          </div>
+
+          <button type="submit" class="btn-submit-booking">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            Send WhatsApp Request to Pink Sand
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Store Section -->
+  <section class="section-block store-section" id="location">
+    <div class="store-layout">
+      <div class="store-info-col">
+        <div>
+          <span class="section-label">Visit Our Studio</span>
+          <h2 class="section-heading">Spicer School Road, Aundh</h2>
+          <p class="section-subtext">Located in Sunshine Riviera Society, adjacent to Kohinoor Planet in Aundh.</p>
+        </div>
+
+        <div class="store-info-row">
+          <div class="store-icon-box">📍</div>
+          <div class="store-text-box">
+            <h5>Boutique Address</h5>
+            <p>Shop No. 2, Sunshine Riviera Society, Spicer School Road,<br>Near Kohinoor Planet, Aundh, Pune – 411067</p>
+          </div>
+        </div>
+
+        <div class="store-info-row">
+          <div class="store-icon-box">⏰</div>
+          <div class="store-text-box">
+            <h5>Boutique Hours</h5>
+            <p><strong>Open Daily:</strong> 09:00 AM – 06:00 PM<br><span style="color: var(--primary-berry); font-weight: 700;">Fitting consultations open all week</span></p>
+          </div>
+        </div>
+
+        <div class="store-info-row">
+          <div class="store-icon-box">📞</div>
+          <div class="store-text-box">
+            <h5>Direct Contact</h5>
+            <p>
+              Call: <a href="tel:+919834222631" style="color: var(--primary-berry); font-weight: 700; text-decoration: none;">+91 98342 22631</a><br>
+              WhatsApp: <a href="https://wa.me/919834222631" target="_blank" style="color: #25D366; font-weight: 700; text-decoration: none;">+91 98342 22631</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-frame-box">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.3551523490714!2d73.8052162!3d18.5580665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9030b42f63f%3A0x6a0ff43542283bf3!2sSpicer%20Adventist%20University!5e0!3m2!1sen!2sin!4v1710400000000!5m2!1sen!2sin" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-top-row">
+      <div class="footer-logo-block">
+        <h4>PINK SAND DESIGNER BOUTIQUE</h4>
+        <p>Contemporary western dresses, resort wear, custom tailored ethnic wear, and bespoke styling in Aundh, Pune.</p>
+      </div>
+
+      <div class="footer-links-group">
+        <div class="footer-col-nav">
+          <h6>Collections</h6>
+          <ul>
+            <li>Western Dresses & Midi Gowns</li>
+            <li>Vacation & Resort Coordinates</li>
+            <li>Festive Indo-Western Cape Sets</li>
+            <li>Unstitched Dress Materials</li>
+            <li>Bespoke Tailoring Studio</li>
+          </ul>
+        </div>
+
+        <div class="footer-col-nav">
+          <h6>Visit Us</h6>
+          <ul>
+            <li>Shop 2, Sunshine Riviera</li>
+            <li>Spicer School Rd, Aundh, Pune</li>
+            <li>Open Daily: 9:00 AM – 6:00 PM</li>
+            <li>Phone: 098342 22631</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-base-row">
+      <div>&copy; 2026 Pink Sand Designer Boutique. All rights reserved. &middot; Aundh, Pune.</div>
+      <div>Designed & Developed by <a href="https://harshal.cloud" target="_blank" style="color: #FFD4DF; text-decoration: none;">Harshal Baviskar</a> (Pune Website Solutions)</div>
+    </div>
+  </footer>
+
+  <!-- Mobile Fixed Action Bar -->
+  <div class="mobile-bar">
+    <div class="mobile-bar-actions">
+      <a href="tel:+919834222631" class="btn-mobile-call">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        Call
+      </a>
+      <a href="https://wa.me/919834222631?text=Hi%20Pink%20Sand%20Boutique!%20I%20am%20interested%20in%20visiting%20your%20studio%20on%20Spicer%20School%20Road%20for%20dresses%20and%20tailoring." target="_blank" class="btn-mobile-wa">
+        <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        WhatsApp Us
+      </a>
+    </div>
+  </div>
+
+  <script>
+    function sendPinkSandBooking() {
+      const style = document.getElementById('outfitStyle').value;
+      const name = document.getElementById('clientName').value;
+      const date = document.getElementById('trialDate').value;
+      
+      const text = `Hello Pink Sand Boutique! My name is ${name}. I would like to book a fitting visit for *${style}* on ${date} at your Spicer School Road studio. Please let me know your available slots!`;
+      const waUrl = `https://wa.me/919834222631?text=${encodeURIComponent(text)}`;
+      window.open(waUrl, '_blank');
+    }
+  </script>
+</body>
+</html>
