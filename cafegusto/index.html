@@ -3,34 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GUSTO · Contemporary Dining & Bistro | Seasons Road, Aundh, Pune</title>
-  <meta name="description" content="Experience artisanal European & Continental dining at Gusto, Abja Pavillion, Seasons Road, Aundh. Handcrafted pastas, Neapolitan pizzas, specialty coffee & pet-friendly patio.">
+  <title>GUSTO Dining & Bistro | Coffee · Cuisine · Conversation | Abja Pavillion, Aundh, Pune</title>
+  <meta name="description" content="Welcome to Gusto Dining & Bistro at Abja Pavillion, Seasons Road, Aundh. Architectural dining designed by Hiraya Interiors, courtyard water fountain, floral photobooth, handcrafted pastas, sourdough pizzas & specialty brews.">
   
-  <!-- Open Graph / WhatsApp Preview -->
-  <meta property="og:title" content="GUSTO · Contemporary Dining & Bistro | Aundh, Pune">
-  <meta property="og:description" content="Handcrafted pastas, artisanal sourdough pizzas, specialty coffee & pet-friendly aesthetic dining at Seasons Road, Aundh.">
-  <meta property="og:image" content="https://harshu777.github.io/pune-website-demos/cafegusto/assets/hero.jpg">
+  <!-- Open Graph / WhatsApp Card Preview (Uses Real Grand Entrance Arch) -->
+  <meta property="og:title" content="GUSTO Dining & Bistro | Seasons Road, Aundh">
+  <meta property="og:description" content="Coffee · Cuisine · Conversation · All Day Dining at Abja Pavillion, Aundh. 4.7★ Rated on EazyDiner & Magicpin. Book a table or order direct on WhatsApp!">
+  <meta property="og:image" content="https://harshu777.github.io/pune-website-demos/cafegusto/assets/arch.jpg">
   <meta property="og:url" content="https://harshu777.github.io/pune-website-demos/cafegusto/">
   <meta property="og:type" content="restaurant">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --espresso: #181412;
-      --charcoal: #231E1B;
-      --terracotta: #A24836;
-      --terracotta-dark: #873929;
-      --cream: #FAF6F0;
+      --emerald: #0E332A;
+      --emerald-light: #164E41;
+      --emerald-neon: #10B981;
+      --emerald-glow: rgba(16, 185, 129, 0.25);
+      --cane: #C59A68;
+      --cane-light: #DFC4A4;
+      --amber: #F4A228;
+      --cream: #FAF7F2;
       --cream-card: #FFFFFF;
-      --champagne: #C89D42;
-      --sand: #F2ECE1;
-      --muted: #7A726D;
-      --border: rgba(162, 72, 54, 0.15);
-      --font-display: 'Playfair Display', Georgia, serif;
+      --charcoal: #141817;
+      --muted: #6B7572;
+      --border: rgba(14, 51, 42, 0.12);
+      --font-display: 'Cinzel', Georgia, serif;
+      --font-serif: 'Playfair Display', Georgia, serif;
       --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
     }
 
@@ -51,25 +54,25 @@
 
     /* HARSHAL CONCEPT RIBBON - 100px stretch */
     .concept-ribbon {
-      background: linear-gradient(135deg, #181412 0%, #2e1d16 100%);
-      color: #FAF6F0;
+      background: linear-gradient(135deg, #0A241E 0%, #123B31 100%);
+      color: #FAF7F2;
       font-size: 13px;
       padding: 10px 100px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 15px;
-      border-bottom: 1px solid rgba(200, 157, 66, 0.3);
+      border-bottom: 1px solid rgba(197, 154, 104, 0.3);
       position: relative;
       z-index: 1000;
     }
     .concept-ribbon strong {
-      color: var(--champagne);
+      color: var(--cane-light);
       letter-spacing: 0.5px;
     }
     .concept-ribbon a {
-      background: var(--champagne);
-      color: var(--espresso);
+      background: var(--cane);
+      color: var(--emerald);
       text-decoration: none;
       font-weight: 700;
       font-size: 12px;
@@ -79,7 +82,7 @@
       transition: all 0.25s ease;
     }
     .concept-ribbon a:hover {
-      background: #dfb55c;
+      background: #dfb584;
       transform: translateY(-1px);
     }
 
@@ -87,9 +90,9 @@
     header.site-header {
       position: sticky;
       top: 0;
-      background: rgba(250, 246, 240, 0.96);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
+      background: rgba(250, 247, 242, 0.96);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
       z-index: 999;
       border-bottom: 1px solid var(--border);
       padding: 0 100px;
@@ -99,47 +102,66 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 84px;
+      height: 92px;
     }
+
+    /* REAL BRAND CREST & LOGO REPRODUCTION */
     .brand-logo {
       text-decoration: none;
       display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .crest-icon {
+      width: 44px;
+      height: 48px;
+      background: linear-gradient(135deg, var(--emerald) 0%, var(--emerald-light) 100%);
+      border: 1.5px solid var(--cane);
+      border-radius: 24px 24px 8px 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--cane-light);
+      font-size: 20px;
+      box-shadow: 0 4px 12px rgba(14, 51, 42, 0.15);
+    }
+    .brand-text {
+      display: flex;
       flex-direction: column;
     }
-    .brand-logo .logo-main {
+    .brand-text .logo-main {
       font-family: var(--font-display);
       font-size: 28px;
       font-weight: 700;
       letter-spacing: 4px;
-      color: var(--espresso);
-      text-transform: uppercase;
+      color: var(--emerald);
       line-height: 1;
     }
-    .brand-logo .logo-sub {
-      font-size: 10px;
+    .brand-text .logo-tagline {
+      font-size: 9.5px;
       text-transform: uppercase;
-      letter-spacing: 3px;
-      color: var(--terracotta);
-      font-weight: 600;
-      margin-top: 4px;
+      letter-spacing: 2px;
+      color: var(--cane);
+      font-weight: 700;
+      margin-top: 5px;
     }
 
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 36px;
+      gap: 32px;
       list-style: none;
     }
     .nav-links a {
-      color: var(--charcoal);
+      color: var(--emerald);
       text-decoration: none;
-      font-size: 14px;
-      font-weight: 500;
+      font-size: 13.5px;
+      font-weight: 600;
       letter-spacing: 0.5px;
       transition: color 0.2s ease;
     }
     .nav-links a:hover {
-      color: var(--terracotta);
+      color: var(--cane);
     }
 
     .nav-actions {
@@ -147,231 +169,225 @@
       align-items: center;
       gap: 16px;
     }
-    .btn-reserve {
-      background: var(--terracotta);
+    .btn-reserve-nav {
+      background: var(--emerald);
       color: #FFF;
       text-decoration: none;
-      font-size: 13px;
-      font-weight: 600;
+      font-size: 12.5px;
+      font-weight: 700;
       letter-spacing: 1px;
       text-transform: uppercase;
-      padding: 12px 26px;
+      padding: 13px 26px;
       border-radius: 30px;
-      box-shadow: 0 6px 18px rgba(162, 72, 54, 0.25);
+      box-shadow: 0 6px 18px rgba(14, 51, 42, 0.25);
       transition: all 0.3s ease;
       display: inline-flex;
       align-items: center;
       gap: 8px;
     }
-    .btn-reserve:hover {
-      background: var(--terracotta-dark);
+    .btn-reserve-nav:hover {
+      background: var(--emerald-light);
       transform: translateY(-2px);
-      box-shadow: 0 10px 24px rgba(162, 72, 54, 0.35);
+      box-shadow: 0 10px 24px rgba(14, 51, 42, 0.35);
     }
 
-    /* HERO SECTION */
-    .hero {
-      position: relative;
-      min-height: 88vh;
-      display: flex;
+    /* EDITORIAL SPLIT HERO SECTION */
+    .hero-split {
+      padding: 60px 100px 90px;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 60px;
       align-items: center;
-      background: linear-gradient(rgba(24, 20, 18, 0.62), rgba(24, 20, 18, 0.72)), url('assets/hero.jpg') center/cover no-repeat;
-      color: #FFF;
-      padding: 0 100px;
+      position: relative;
     }
-    .hero-content {
-      max-width: 720px;
-      padding: 80px 0;
+    .hero-info {
+      padding-right: 20px;
     }
-    .hero-tagline {
+    .pill-rating {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      background: rgba(255, 255, 255, 0.12);
-      backdrop-filter: blur(8px);
-      padding: 6px 16px;
+      gap: 10px;
+      background: #FFF;
+      border: 1px solid rgba(197, 154, 104, 0.3);
+      padding: 8px 18px;
       border-radius: 30px;
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--champagne);
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--emerald);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.04);
       margin-bottom: 24px;
-      border: 1px solid rgba(200, 157, 66, 0.4);
     }
-    .hero h1 {
-      font-family: var(--font-display);
+    .pill-rating .stars {
+      color: var(--amber);
+      letter-spacing: 1px;
+    }
+    .hero-info h1 {
+      font-family: var(--font-serif);
       font-size: 56px;
       line-height: 1.15;
-      font-weight: 600;
-      margin-bottom: 24px;
+      font-weight: 700;
+      color: var(--emerald);
+      margin-bottom: 22px;
       letter-spacing: -0.5px;
     }
-    .hero h1 em {
+    .hero-info h1 em {
       font-style: italic;
-      color: #F8DFC0;
+      color: var(--cane);
+      font-weight: 400;
     }
-    .hero p {
-      font-size: 18px;
-      color: rgba(255, 255, 255, 0.88);
-      font-weight: 300;
-      margin-bottom: 36px;
-      line-height: 1.7;
+    .hero-info .hero-lead {
+      font-size: 17px;
+      color: var(--muted);
+      line-height: 1.75;
+      margin-bottom: 34px;
+      max-width: 600px;
     }
-    .hero-btns {
+    .hero-actions {
       display: flex;
       align-items: center;
       gap: 16px;
       flex-wrap: wrap;
     }
-    .btn-hero-primary {
-      background: var(--terracotta);
+    .btn-hero-wa {
+      background: #25D366;
       color: #FFF;
       text-decoration: none;
+      font-weight: 700;
       font-size: 14px;
-      font-weight: 600;
-      letter-spacing: 1px;
-      padding: 16px 36px;
+      letter-spacing: 0.5px;
+      padding: 16px 34px;
       border-radius: 40px;
-      transition: all 0.3s ease;
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      box-shadow: 0 10px 30px rgba(162, 72, 54, 0.4);
+      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.35);
+      transition: all 0.3s ease;
     }
-    .btn-hero-primary:hover {
-      background: #bf5640;
+    .btn-hero-wa:hover {
+      background: #20BA5C;
       transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(37, 211, 102, 0.45);
     }
-    .btn-hero-secondary {
-      background: rgba(255, 255, 255, 0.12);
-      backdrop-filter: blur(10px);
-      color: #FFF;
-      border: 1px solid rgba(255, 255, 255, 0.3);
+    .btn-hero-outline {
+      background: transparent;
+      color: var(--emerald);
+      border: 1.5px solid var(--emerald);
       text-decoration: none;
       font-size: 14px;
-      font-weight: 600;
-      letter-spacing: 1px;
-      padding: 16px 32px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      padding: 15px 30px;
       border-radius: 40px;
       transition: all 0.3s ease;
     }
-    .btn-hero-secondary:hover {
-      background: rgba(255, 255, 255, 0.22);
+    .btn-hero-outline:hover {
+      background: var(--emerald);
+      color: #FFF;
       transform: translateY(-2px);
     }
 
-    /* BADGES SECTION */
-    .feature-strip {
+    /* HERO REAL ARCH PHOTO SHOWCASE */
+    .hero-visual {
+      position: relative;
+    }
+    .arch-frame {
+      position: relative;
+      border-radius: 28px 28px 28px 28px;
+      overflow: hidden;
+      box-shadow: 0 25px 60px rgba(14, 51, 42, 0.22);
+      border: 4px solid #FFF;
+      height: 580px;
+    }
+    .arch-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.8s ease;
+    }
+    .arch-frame:hover img {
+      transform: scale(1.04);
+    }
+    .arch-floating-badge {
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
+      right: 24px;
+      background: rgba(14, 51, 42, 0.88);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      color: #FFF;
+      padding: 16px 20px;
+      border-radius: 18px;
+      border: 1px solid rgba(197, 154, 104, 0.4);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .arch-floating-badge .badge-icon {
+      font-size: 24px;
+      flex-shrink: 0;
+    }
+    .arch-floating-badge .badge-text h4 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--cane-light);
+      margin-bottom: 2px;
+    }
+    .arch-floating-badge .badge-text p {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 1.3;
+    }
+
+    /* ARCHITECTURAL HIGHLIGHTS STRIP */
+    .arch-strip {
       background: #FFF;
+      border-top: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
-      padding: 30px 100px;
+      padding: 32px 100px;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 30px;
     }
-    .feature-item {
+    .arch-pill-item {
       display: flex;
       align-items: center;
       gap: 16px;
     }
-    .feature-icon {
+    .arch-pill-icon {
       width: 48px;
       height: 48px;
-      background: var(--sand);
+      background: var(--cream);
+      border: 1px solid rgba(197, 154, 104, 0.3);
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 20px;
-      color: var(--terracotta);
+      color: var(--emerald);
       flex-shrink: 0;
     }
-    .feature-text h4 {
-      font-size: 15px;
+    .arch-pill-text h4 {
+      font-size: 14px;
       font-weight: 700;
-      color: var(--espresso);
+      color: var(--emerald);
       margin-bottom: 2px;
     }
-    .feature-text p {
+    .arch-pill-text p {
       font-size: 12px;
       color: var(--muted);
       line-height: 1.4;
     }
 
-    /* ABOUT STORY */
-    .story-section {
+    /* REAL VENUE GALLERY (HIRAYA INTERIORS ARCHITECTURE) */
+    .venue-gallery {
       padding: 100px;
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 80px;
-      align-items: center;
-    }
-    .story-text span.eyebrow {
-      font-size: 12px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      font-weight: 700;
-      color: var(--terracotta);
-      display: block;
-      margin-bottom: 12px;
-    }
-    .story-text h2 {
-      font-family: var(--font-display);
-      font-size: 42px;
-      line-height: 1.2;
-      color: var(--espresso);
-      margin-bottom: 24px;
-    }
-    .story-text p {
-      font-size: 16px;
-      color: #4A4440;
-      line-height: 1.8;
-      margin-bottom: 20px;
-    }
-    .story-card-box {
-      background: #FFF;
-      border-radius: 20px;
-      padding: 36px;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
-      border: 1px solid rgba(162, 72, 54, 0.12);
-      position: relative;
-    }
-    .story-card-box::before {
-      content: "“";
-      position: absolute;
-      top: -20px;
-      left: 30px;
-      font-family: var(--font-display);
-      font-size: 90px;
-      color: var(--champagne);
-      opacity: 0.4;
-      line-height: 1;
-    }
-    .story-quote {
-      font-family: var(--font-display);
-      font-size: 20px;
-      font-style: italic;
-      color: var(--charcoal);
-      margin-bottom: 18px;
-      line-height: 1.5;
-    }
-    .story-meta {
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--terracotta);
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
-
-    /* CURATED SIGNATURES */
-    .menu-section {
-      background: var(--sand);
-      padding: 100px;
+      background: var(--cream);
     }
     .section-header {
       text-align: center;
-      max-width: 680px;
+      max-width: 720px;
       margin: 0 auto 60px;
     }
     .section-header span.eyebrow {
@@ -379,245 +395,434 @@
       letter-spacing: 3px;
       text-transform: uppercase;
       font-weight: 700;
-      color: var(--terracotta);
+      color: var(--cane);
       display: block;
       margin-bottom: 12px;
     }
     .section-header h2 {
-      font-family: var(--font-display);
-      font-size: 40px;
-      color: var(--espresso);
+      font-family: var(--font-serif);
+      font-size: 42px;
+      color: var(--emerald);
+      line-height: 1.2;
       margin-bottom: 16px;
     }
     .section-header p {
       color: var(--muted);
       font-size: 16px;
+      line-height: 1.7;
     }
 
-    .culinary-grid {
+    .gallery-masonry {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 36px;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 24px;
     }
-    .dish-card {
-      background: #FFF;
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.05);
-      border: 1px solid rgba(162, 72, 54, 0.08);
-      transition: all 0.35s ease;
-      display: flex;
-      flex-direction: column;
-    }
-    .dish-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 24px 48px rgba(0, 0, 0, 0.1);
-    }
-    .dish-img-wrap {
-      height: 250px;
-      overflow: hidden;
+    .gallery-item {
       position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.06);
+      border: 3px solid #FFF;
+      background: #000;
     }
-    .dish-img-wrap img {
+    .gallery-item img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: transform 0.6s ease;
+      display: block;
+      transition: transform 0.7s ease, opacity 0.3s ease;
+      opacity: 0.95;
     }
-    .dish-card:hover .dish-img-wrap img {
-      transform: scale(1.06);
+    .gallery-item:hover img {
+      transform: scale(1.05);
+      opacity: 1;
     }
-    .dish-tag {
+    .gallery-item-caption {
       position: absolute;
-      top: 16px;
-      left: 16px;
-      background: rgba(24, 20, 18, 0.85);
-      backdrop-filter: blur(6px);
-      color: var(--champagne);
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      padding: 5px 12px;
-      border-radius: 20px;
-    }
-    .dish-body {
-      padding: 28px;
-      display: flex;
-      flex-direction: column;
-      flex-grow: 1;
-    }
-    .dish-title-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-bottom: 12px;
-    }
-    .dish-title-row h3 {
-      font-family: var(--font-display);
-      font-size: 22px;
-      color: var(--espresso);
-    }
-    .dish-price {
-      font-weight: 700;
-      color: var(--terracotta);
-      font-size: 18px;
-    }
-    .dish-body p {
-      font-size: 14px;
-      color: #615852;
-      line-height: 1.6;
-      margin-bottom: 24px;
-      flex-grow: 1;
-    }
-    .btn-dish-order {
-      align-self: flex-start;
-      background: var(--sand);
-      color: var(--espresso);
-      text-decoration: none;
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
-      padding: 10px 20px;
-      border-radius: 24px;
-      transition: all 0.25s ease;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .btn-dish-order:hover {
-      background: var(--terracotta);
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 24px 20px;
+      background: linear-gradient(transparent, rgba(14, 51, 42, 0.92) 80%);
       color: #FFF;
+      transform: translateY(10px);
+      transition: all 0.3s ease;
+    }
+    .gallery-item-caption h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--cane-light);
+      margin-bottom: 4px;
+    }
+    .gallery-item-caption p {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 1.4;
     }
 
-    /* DIGITAL MENU HIGHLIGHTS */
-    .menu-highlights {
+    .item-fountain {
+      grid-column: span 5;
+      height: 440px;
+    }
+    .item-photobooth {
+      grid-column: span 7;
+      height: 440px;
+    }
+    .item-hall {
+      grid-column: span 7;
+      height: 420px;
+    }
+    .item-mural {
+      grid-column: span 5;
+      height: 420px;
+    }
+
+    /* ARCHITECTURAL TRIBUTE CARD */
+    .architect-quote-bar {
+      margin-top: 40px;
+      background: #FFF;
+      border-radius: 18px;
+      padding: 24px 36px;
+      border: 1px solid rgba(197, 154, 104, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .architect-quote-bar p {
+      font-size: 14.5px;
+      color: var(--emerald);
+      font-weight: 500;
+      font-style: italic;
+    }
+    .architect-quote-bar span.badge {
+      background: var(--cream);
+      color: var(--cane);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 20px;
+      white-space: nowrap;
+      border: 1px solid rgba(197, 154, 104, 0.3);
+    }
+
+    /* INTERACTIVE FILTERABLE DIGITAL MENU */
+    .menu-experience {
       padding: 100px;
       background: #FFF;
     }
-    .menu-columns {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      margin-top: 40px;
-    }
-    .menu-cat h3 {
-      font-family: var(--font-display);
-      font-size: 26px;
-      color: var(--espresso);
-      border-bottom: 2px solid var(--border);
-      padding-bottom: 12px;
-      margin-bottom: 24px;
+    .menu-filter-pills {
       display: flex;
-      justify-content: space-between;
-      align-items: baseline;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
     }
-    .menu-cat h3 span {
-      font-family: var(--font-sans);
-      font-size: 12px;
-      color: var(--terracotta);
-      letter-spacing: 2px;
-      font-weight: 700;
-    }
-    .menu-item-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      padding: 14px 0;
-      border-bottom: 1px dashed rgba(0, 0, 0, 0.08);
-    }
-    .menu-item-info h4 {
-      font-size: 16px;
-      font-weight: 600;
-      color: var(--charcoal);
-      margin-bottom: 4px;
-    }
-    .menu-item-info p {
+    .menu-pill {
+      background: var(--cream);
+      color: var(--emerald);
+      border: 1px solid rgba(14, 51, 42, 0.15);
+      padding: 10px 22px;
+      border-radius: 30px;
       font-size: 13px;
-      color: var(--muted);
-    }
-    .menu-item-cost {
       font-weight: 700;
-      font-size: 15px;
-      color: var(--terracotta);
-      white-space: nowrap;
-      margin-left: 20px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+    .menu-pill:hover,
+    .menu-pill.active {
+      background: var(--emerald);
+      color: #FFF;
+      border-color: var(--emerald);
+      box-shadow: 0 4px 14px rgba(14, 51, 42, 0.2);
     }
 
-    /* RESERVATION CTA / BANNER */
-    .reservation-banner {
-      background: linear-gradient(135deg, var(--espresso) 0%, #291a14 100%);
-      color: #FFF;
-      padding: 80px 100px;
-      border-radius: 28px;
-      margin: 0 100px 100px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 40px;
-      position: relative;
-      overflow: hidden;
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
     }
-    .reservation-banner::after {
-      content: "";
-      position: absolute;
-      right: -100px;
-      bottom: -100px;
-      width: 320px;
-      height: 320px;
-      border-radius: 50%;
-      background: rgba(200, 157, 66, 0.08);
-      pointer-events: none;
-    }
-    .reservation-banner h2 {
-      font-family: var(--font-display);
-      font-size: 38px;
-      line-height: 1.25;
-      margin-bottom: 12px;
-    }
-    .reservation-banner h2 em {
-      color: var(--champagne);
-      font-style: italic;
-    }
-    .reservation-banner p {
-      font-size: 16px;
-      color: rgba(255, 255, 255, 0.8);
-      max-width: 580px;
-    }
-    .res-cta-group {
+    .dish-card-detailed {
+      background: var(--cream);
+      border: 1px solid rgba(14, 51, 42, 0.08);
+      border-radius: 18px;
+      padding: 24px 28px;
       display: flex;
       flex-direction: column;
-      gap: 12px;
-      align-items: flex-end;
-      flex-shrink: 0;
-    }
-    .btn-res-wa {
-      background: #25D366;
-      color: #FFF;
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 15px;
-      padding: 16px 36px;
-      border-radius: 40px;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      box-shadow: 0 10px 24px rgba(37, 211, 102, 0.35);
+      justify-content: space-between;
       transition: all 0.3s ease;
     }
-    .btn-res-wa:hover {
+    .dish-card-detailed:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.06);
+      border-color: rgba(197, 154, 104, 0.4);
+    }
+    .dish-top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 10px;
+    }
+    .dish-title-group h4 {
+      font-family: var(--font-serif);
+      font-size: 21px;
+      color: var(--emerald);
+      margin-bottom: 4px;
+    }
+    .dish-badge-tag {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--cane);
+    }
+    .dish-price-tag {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--emerald);
+      white-space: nowrap;
+      margin-left: 16px;
+    }
+    .dish-desc {
+      font-size: 13.5px;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+    .btn-dish-wa {
+      align-self: flex-start;
+      background: #FFF;
+      border: 1px solid rgba(14, 51, 42, 0.2);
+      color: var(--emerald);
+      text-decoration: none;
+      font-size: 11.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 8px 16px;
+      border-radius: 20px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+    .btn-dish-wa:hover {
+      background: #25D366;
+      color: #FFF;
+      border-color: #25D366;
+    }
+
+    /* INTERACTIVE WHATSAPP RESERVATION BUILDER */
+    .reservation-builder-section {
+      padding: 100px;
+      background: linear-gradient(135deg, #0A241E 0%, #133D33 100%);
+      color: #FFF;
+    }
+    .builder-wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(197, 154, 104, 0.35);
+      border-radius: 28px;
+      padding: 60px 70px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+    }
+    .builder-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .builder-header span.eyebrow {
+      color: var(--cane-light);
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 10px;
+    }
+    .builder-header h2 {
+      font-family: var(--font-serif);
+      font-size: 40px;
+      color: #FFF;
+      margin-bottom: 12px;
+    }
+    .builder-header p {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 15px;
+    }
+
+    .builder-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-bottom: 30px;
+    }
+    .builder-field label {
+      display: block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--cane-light);
+      margin-bottom: 8px;
+    }
+    .builder-field select,
+    .builder-field input {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: #FFF;
+      padding: 14px 18px;
+      border-radius: 14px;
+      font-size: 14px;
+      font-family: var(--font-sans);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .builder-field select option {
+      background: #0E332A;
+      color: #FFF;
+    }
+    .builder-field select:focus,
+    .builder-field input:focus {
+      border-color: var(--cane);
+    }
+
+    .btn-submit-res {
+      width: 100%;
+      background: #25D366;
+      color: #FFF;
+      border: none;
+      padding: 18px 30px;
+      border-radius: 40px;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.35);
+      transition: all 0.3s ease;
+    }
+    .btn-submit-res:hover {
       background: #20BA5C;
       transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(37, 211, 102, 0.45);
     }
-    .res-phone-note {
+    .builder-note {
+      text-align: center;
       font-size: 12px;
       color: rgba(255, 255, 255, 0.6);
+      margin-top: 14px;
+    }
+
+    /* VERIFIED DINER REVIEWS */
+    .reviews-section {
+      padding: 100px;
+      background: var(--cream);
+    }
+    .review-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+    .review-card {
+      background: #FFF;
+      border-radius: 20px;
+      padding: 30px;
+      border: 1px solid rgba(14, 51, 42, 0.08);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .review-stars {
+      color: var(--amber);
+      font-size: 16px;
+      margin-bottom: 12px;
+      letter-spacing: 2px;
+    }
+    .review-quote {
+      font-size: 14px;
+      color: #384542;
+      line-height: 1.65;
+      font-style: italic;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+    .reviewer-meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-top: 1px solid rgba(0, 0, 0, 0.06);
+      padding-top: 14px;
+    }
+    .reviewer-avatar {
+      width: 38px;
+      height: 38px;
+      background: var(--cream);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: var(--emerald);
+      font-size: 13px;
+      border: 1px solid rgba(197, 154, 104, 0.3);
+    }
+    .reviewer-info h4 {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--emerald);
+      margin-bottom: 1px;
+    }
+    .reviewer-info span {
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    /* AMENITIES SECTION */
+    .amenities-section {
+      padding: 80px 100px;
+      background: #FFF;
+      border-top: 1px solid var(--border);
+    }
+    .amenities-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 20px;
+      text-align: center;
+    }
+    .amenity-card {
+      background: var(--cream);
+      border-radius: 16px;
+      padding: 24px 16px;
+      border: 1px solid rgba(14, 51, 42, 0.08);
+      transition: all 0.25s ease;
+    }
+    .amenity-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--cane);
+    }
+    .amenity-card .icon {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    .amenity-card h4 {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--emerald);
     }
 
     /* FOOTER */
     footer.site-footer {
-      background: var(--espresso);
+      background: #0A1C17;
       color: rgba(255, 255, 255, 0.75);
       padding: 80px 100px 30px;
       font-size: 14px;
@@ -629,24 +834,23 @@
       gap: 60px;
       margin-bottom: 60px;
     }
-    .footer-brand h3 {
-      font-family: var(--font-display);
-      font-size: 26px;
+    .footer-brand .brand-logo {
+      margin-bottom: 16px;
+    }
+    .footer-brand .logo-main {
       color: #FFF;
-      margin-bottom: 14px;
-      letter-spacing: 2px;
     }
     .footer-brand p {
-      font-size: 14px;
+      font-size: 13.5px;
       line-height: 1.7;
-      color: rgba(255, 255, 255, 0.6);
+      color: rgba(255, 255, 255, 0.65);
       margin-bottom: 20px;
     }
     .footer-col h4 {
       color: #FFF;
-      font-size: 15px;
-      font-weight: 600;
-      letter-spacing: 1px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
       text-transform: uppercase;
       margin-bottom: 20px;
     }
@@ -657,12 +861,12 @@
       margin-bottom: 10px;
     }
     .footer-col ul li a {
-      color: rgba(255, 255, 255, 0.6);
+      color: rgba(255, 255, 255, 0.65);
       text-decoration: none;
       transition: color 0.2s ease;
     }
     .footer-col ul li a:hover {
-      color: var(--champagne);
+      color: var(--cane-light);
     }
     .footer-bottom {
       border-top: 1px solid rgba(255, 255, 255, 0.08);
@@ -682,7 +886,7 @@
       background: #25D366;
       color: #FFF;
       border-radius: 50px;
-      padding: 12px 22px;
+      padding: 13px 24px;
       display: flex;
       align-items: center;
       gap: 10px;
@@ -698,28 +902,40 @@
       box-shadow: 0 14px 30px rgba(37, 211, 102, 0.5);
     }
 
-    /* RESPONSIVE */
+    /* RESPONSIVE BREAKPOINTS */
     @media (max-width: 1024px) {
       .concept-ribbon,
       header.site-header,
-      .hero,
-      .feature-strip,
-      .story-section,
-      .menu-section,
-      .menu-highlights,
+      .hero-split,
+      .arch-strip,
+      .venue-gallery,
+      .menu-experience,
+      .reservation-builder-section,
+      .reviews-section,
+      .amenities-section,
       footer.site-footer {
         padding-left: 48px;
         padding-right: 48px;
       }
-      .reservation-banner {
-        margin: 0 48px 80px;
-        padding: 60px 48px;
+      .hero-split {
+        grid-template-columns: 1fr;
+        gap: 50px;
       }
-      .feature-strip {
+      .arch-frame {
+        height: 480px;
+      }
+      .arch-strip {
         grid-template-columns: repeat(2, 1fr);
       }
-      .culinary-grid {
+      .item-fountain, .item-photobooth, .item-hall, .item-mural {
+        grid-column: span 6;
+        height: 360px;
+      }
+      .review-grid {
         grid-template-columns: repeat(2, 1fr);
+      }
+      .amenities-grid {
+        grid-template-columns: repeat(3, 1fr);
       }
       .footer-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -730,399 +946,629 @@
     @media (max-width: 768px) {
       .concept-ribbon,
       header.site-header,
-      .hero,
-      .feature-strip,
-      .story-section,
-      .menu-section,
-      .menu-highlights,
+      .hero-split,
+      .arch-strip,
+      .venue-gallery,
+      .menu-experience,
+      .reservation-builder-section,
+      .reviews-section,
+      .amenities-section,
       footer.site-footer {
         padding-left: 20px;
         padding-right: 20px;
       }
-      .reservation-banner {
-        margin: 0 20px 60px;
-        padding: 40px 24px;
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .res-cta-group {
-        align-items: flex-start;
-        width: 100%;
-      }
-      .btn-res-wa {
-        width: 100%;
-        justify-content: center;
-      }
       .nav-links {
         display: none;
       }
-      .hero h1 {
+      .hero-info h1 {
         font-size: 38px;
       }
-      .story-section {
-        grid-template-columns: 1fr;
-        gap: 40px;
+      .arch-frame {
+        height: 380px;
       }
-      .culinary-grid {
+      .item-fountain, .item-photobooth, .item-hall, .item-mural {
+        grid-column: span 12;
+        height: 300px;
+      }
+      .menu-grid {
         grid-template-columns: 1fr;
       }
-      .menu-columns {
+      .builder-wrap {
+        padding: 40px 24px;
+      }
+      .builder-grid {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 16px;
+      }
+      .review-grid {
+        grid-template-columns: 1fr;
+      }
+      .amenities-grid {
+        grid-template-columns: repeat(2, 1fr);
       }
       .footer-grid {
         grid-template-columns: 1fr;
         gap: 30px;
-      }
-      .feature-strip {
-        grid-template-columns: 1fr;
       }
       .concept-ribbon {
         flex-direction: column;
         text-align: center;
         gap: 8px;
       }
+      .architect-quote-bar {
+        flex-direction: column;
+        text-align: center;
+      }
     }
   </style>
 </head>
 <body>
 
-  <!-- HARSHAL BAVISKAR DEMO RIBBON -->
+  <!-- HARSHAL CONCEPT DEMO RIBBON -->
   <div class="concept-ribbon">
     <div>
-      <strong>PORTFOLIO CONCEPT DEMO:</strong> Designed specifically for <strong>Gusto Dining & Bistro (Aundh)</strong> by Harshal Baviskar.
+      <strong>PORTFOLIO CONCEPT DEMO:</strong> Crafted specifically for <strong>Gusto Dining &amp; Bistro (Abja Pavillion, Aundh)</strong> by Harshal Baviskar.
     </div>
     <a href="https://wa.me/919420132081?text=Hi%20Harshal,%20I%20saw%20the%20Gusto%20Bistro%20website%20demo.%20I%20want%20to%20claim%20this%20for%20my%20business!" target="_blank" rel="noopener">
       Claim This Website (₹5,999) &rarr;
     </a>
   </div>
 
-  <!-- NAVIGATION -->
+  <!-- SITE HEADER -->
   <header class="site-header">
     <div class="nav-container">
       <a href="#" class="brand-logo">
-        <span class="logo-main">GUSTO</span>
-        <span class="logo-sub">Dining & Bistro · Aundh</span>
+        <div class="crest-icon">&#x2615;</div>
+        <div class="brand-text">
+          <span class="logo-main">GUSTO</span>
+          <span class="logo-tagline">Coffee &middot; Cuisine &middot; Conversation</span>
+        </div>
       </a>
 
       <ul class="nav-links">
-        <li><a href="#story">Our Story</a></li>
-        <li><a href="#signatures">Signatures</a></li>
+        <li><a href="#ambience">Architecture &amp; Vibe</a></li>
         <li><a href="#menu">Digital Menu</a></li>
-        <li><a href="#timings">Timings</a></li>
-        <li><a href="#contact">Location</a></li>
+        <li><a href="#reservation">Reserve Table</a></li>
+        <li><a href="#reviews">Diner Reviews</a></li>
+        <li><a href="#location">Find Us</a></li>
       </ul>
 
       <div class="nav-actions">
-        <a href="https://wa.me/919075059909?text=Hi%20Gusto%20Bistro,%20I%20would%20like%20to%20reserve%20a%20table%20at%20Abja%20Pavillion." target="_blank" rel="noopener" class="btn-reserve">
+        <a href="#reservation" class="btn-reserve-nav">
           <span>&#x1F374;</span> Book Table
         </a>
       </div>
     </div>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <div class="hero-content">
-      <div class="hero-tagline">&#x2728; Seasons Road, Aundh &middot; European & Continental Dining</div>
-      <h1>Artisanal Flavors, <em>Intimate Gatherings.</em></h1>
-      <p>
-        Step into an aesthetic sanctuary at Abja Pavillion. Indulge in slow-simmered handcrafted pastas, blistered sourdough pizzas, master-poured specialty coffee, and handcrafted desserts in our pet-friendly European bistro.
+  <!-- EDITORIAL SPLIT HERO SECTION -->
+  <section class="hero-split">
+    <div class="hero-info">
+      <div class="pill-rating">
+        <span class="stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span>
+        <span>4.7 &middot; 350+ Reviews on EazyDiner &amp; Magicpin</span>
+      </div>
+      <h1>Where Architectural Elegance Meets <em>Artisanal Flavor.</em></h1>
+      <p class="hero-lead">
+        Step through our grand illuminated Mediterranean entrance arch into Aundh’s most photogenic culinary retreat. Nestled in Abja Pavillion on Seasons Road, Gusto blends handcrafted Continental recipes, single-origin roasts, and tranquil courtyard fountain seating.
       </p>
-      <div class="hero-btns">
-        <a href="https://wa.me/919075059909?text=Hi%20Gusto,%20I%20would%20like%20to%20book%20a%20table%20for%20today." target="_blank" rel="noopener" class="btn-hero-primary">
-          <span>&#x1F4F1;</span> 1-Tap Table Reservation
+      <div class="hero-actions">
+        <a href="https://wa.me/919075059909?text=Hi%20Gusto%20Dining,%20I%20would%20like%20to%20reserve%20a%20table%20for%20today." target="_blank" rel="noopener" class="btn-hero-wa">
+          <span>&#x1F4AC;</span> 1-Tap Table Booking
         </a>
-        <a href="#menu" class="btn-hero-secondary">
-          Explore Digital Menu &darr;
+        <a href="#menu" class="btn-hero-outline">
+          Explore Curated Menu &darr;
         </a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="arch-frame">
+        <img src="assets/arch.jpg" alt="Gusto Dining Grand Stucco Entrance Arch at Abja Pavillion Aundh" loading="eager">
+        <div class="arch-floating-badge">
+          <div class="badge-icon">&#x1F3DB;&#xFE0F;</div>
+          <div class="badge-text">
+            <h4>Abja Pavillion &middot; Seasons Road</h4>
+            <p>Our grand illuminated archway welcomes you into the courtyard</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- HIGHLIGHT STRIP -->
-  <section class="feature-strip">
-    <div class="feature-item">
-      <div class="feature-icon">&#x1F35D;</div>
-      <div class="feature-text">
-        <h4>Artisanal Handmade Pasta</h4>
-        <p>Fresh dough rolled daily, slow sauces</p>
+  <!-- HIGHLIGHT BADGES -->
+  <section class="arch-strip">
+    <div class="arch-pill-item">
+      <div class="arch-pill-icon">&#x2728;</div>
+      <div class="arch-pill-text">
+        <h4>Hiraya Interiors Craft</h4>
+        <p>Bespoke fluted cane &amp; wave walls</p>
       </div>
     </div>
-    <div class="feature-item">
-      <div class="feature-icon">&#x1F355;</div>
-      <div class="feature-text">
-        <h4>Sourdough Pizzas</h4>
-        <p>48-hour fermented crusts, Italian cheese</p>
+    <div class="arch-pill-item">
+      <div class="arch-pill-icon">&#x26F2;</div>
+      <div class="arch-pill-text">
+        <h4>Courtyard Fountain</h4>
+        <p>4-tier marble fountain &amp; flowerbeds</p>
       </div>
     </div>
-    <div class="feature-item">
-      <div class="feature-icon">&#x2615;</div>
-      <div class="feature-text">
-        <h4>Specialty Brew Bar</h4>
-        <p>Single origin beans & artisanal patisserie</p>
+    <div class="arch-pill-item">
+      <div class="arch-pill-icon">&#x1F338;</div>
+      <div class="arch-pill-text">
+        <h4>Floral Photobooth Arch</h4>
+        <p>Instagram-famous vintage chairs</p>
       </div>
     </div>
-    <div class="feature-item">
-      <div class="feature-icon">&#x1F43E;</div>
-      <div class="feature-text">
+    <div class="arch-pill-item">
+      <div class="arch-pill-icon">&#x1F43E;</div>
+      <div class="arch-pill-text">
         <h4>Pet-Friendly Patio</h4>
-        <p>Green outdoor seating & free Wi-Fi</p>
+        <p>Relaxed open-air green seating</p>
       </div>
     </div>
   </section>
 
-  <!-- STORY SECTION -->
-  <section class="story-section" id="story">
-    <div class="story-text">
-      <span class="eyebrow">The Gusto Experience</span>
-      <h2>A culinary rendezvous nestled in the heart of Sanewadi.</h2>
+  <!-- REAL VENUE GALLERY & ARCHITECTURAL STORY -->
+  <section class="venue-gallery" id="ambience">
+    <div class="section-header">
+      <span class="eyebrow">The Gusto Sanctuary</span>
+      <h2>Designed for Memorable Conversations</h2>
       <p>
-        Located at Abja Pavillion along Seasons Road, Gusto was created as an antidote to frantic city dining. We blend the relaxed warmth of a Mediterranean trattoria with the meticulous precision of modern Continental culinary craft.
+        Every corner of Gusto was meticulously envisioned to balance the breezy warmth of a European courtyard with contemporary acoustic luxury.
       </p>
-      <p>
-        Whether it is a leisurely Sunday morning brunch with espresso tonics, an intimate anniversary dinner under warm ambient lights, or casual weekend laughter with furry friends on our garden patio — Gusto makes every meal an unforgettable memory.
-      </p>
-      <div style="margin-top: 30px;">
-        <a href="https://wa.me/919075059909?text=Hi%20Gusto,%20can%20you%20share%20today%27s%20chef%20specials?" target="_blank" rel="noopener" class="btn-reserve">
-          Enquire Chef's Specials &rarr;
+    </div>
+
+    <div class="gallery-masonry">
+      <!-- Item 1: Real Fountain -->
+      <div class="gallery-item item-fountain">
+        <img src="assets/fountain.jpg" alt="Gusto Courtyard 4-Tier Marble Fountain with Neon Sign" loading="lazy">
+        <div class="gallery-item-caption">
+          <h3>The Courtyard Water Fountain</h3>
+          <p>4-tier white marble centerpiece framed by blooming pansy flowerbeds &amp; emerald neon</p>
+        </div>
+      </div>
+
+      <!-- Item 2: Real Photobooth -->
+      <div class="gallery-item item-photobooth">
+        <img src="assets/photobooth.jpg" alt="Gusto Floral Photo Booth with Vintage Armchairs" loading="lazy">
+        <div class="gallery-item-caption">
+          <h3>Botanical Floral Arch Nook</h3>
+          <p>Aundh's favorite Instagram celebration frame with heirloom French armchairs</p>
+        </div>
+      </div>
+
+      <!-- Item 3: Real Dining Hall -->
+      <div class="gallery-item item-hall">
+        <img src="assets/interior.jpg" alt="Hiraya Interiors Dining Gallery with Cane Furniture and Draped Sails" loading="lazy">
+        <div class="gallery-item-caption">
+          <h3>The Main Dining Hall by Hiraya Interiors</h3>
+          <p>Geometric tile runners, handwoven cane seating, and draped linen ceiling sails</p>
+        </div>
+      </div>
+
+      <!-- Item 4: Real Wall Mural -->
+      <div class="gallery-item item-mural">
+        <img src="assets/mural.jpg" alt="Made With Gusto Arched Niche Wall Art" loading="lazy">
+        <div class="gallery-item-caption">
+          <h3>"Made WITH GUSTO" Arched Niche</h3>
+          <p>Our kitchen philosophy etched into Mediterranean stucco</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Interior Accreditation Bar -->
+    <div class="architect-quote-bar">
+      <p>“A harmonious blend of acoustic wave textures, natural rattan warmth, and ambient amber lighting created to make time slow down.”</p>
+      <span class="badge">Designed by Hiraya Interiors</span>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE FILTERABLE DIGITAL MENU -->
+  <section class="menu-experience" id="menu">
+    <div class="section-header">
+      <span class="eyebrow">Culinary Craft</span>
+      <h2>Curated All-Day Dining Menu</h2>
+      <p>Fresh ingredients, slow-simmered sauces, and single-origin beans prepared with unwavering culinary gusto.</p>
+    </div>
+
+    <!-- Filter Pills -->
+    <div class="menu-filter-pills">
+      <button class="menu-pill active" onclick="filterMenu('all', this)">All Offerings</button>
+      <button class="menu-pill" onclick="filterMenu('breakfast', this)">Breakfast &amp; Shakshuka</button>
+      <button class="menu-pill" onclick="filterMenu('pasta-pizza', this)">Handcrafted Pastas &amp; Pizzas</button>
+      <button class="menu-pill" onclick="filterMenu('sliders-mains', this)">Gourmet Sliders &amp; Mains</button>
+      <button class="menu-pill" onclick="filterMenu('brews', this)">Specialty Brews &amp; Desserts</button>
+    </div>
+
+    <!-- Menu Cards Grid -->
+    <div class="menu-grid" id="menu-container">
+
+      <!-- Item 1: Breakfast / Shakshuka -->
+      <div class="dish-card-detailed" data-category="breakfast">
+        <div class="dish-top-row">
+          <div class="dish-title-group">
+            <span class="dish-badge-tag">House Signature &middot; Breakfast</span>
+            <h4>Authentic Egg Shakshuka</h4>
+          </div>
+          <span class="dish-price-tag">&#x20B9;385</span>
+        </div>
+        <p class="dish-desc">
+          Two poached farm eggs nestled in a slow-simmered skillet of San Marzano tomatoes, bell peppers, roasted cumin, and crumbled feta cheese, served with warm house sourdough bread.
+        </p>
+        <a href="https://wa.me/919075059909?text=Hi%20Gusto,%20I%20would%20like%20to%20order%20the%20Authentic%20Egg%20Shakshuka." target="_blank" rel="noopener" class="btn-dish-wa">
+          <span>&#x1F4AC;</span> Order on WhatsApp
         </a>
       </div>
-    </div>
 
-    <div class="story-card-box">
-      <div class="story-quote">
-        "Gusto is our go-to in Aundh. The truffle pasta and sourdough pizzas are peerless, and the staff treats your pets like royalty."
+      <!-- Item 2: Sliders -->
+      <div class="dish-card-detailed" data-category="sliders-mains">
+        <div class="dish-top-row">
+          <div class="dish-title-group">
+            <span class="dish-badge-tag">Chef's Special &middot; Sliders</span>
+            <h4>Gusto Ham &amp; Cheese Brioche Sliders</h4>
+          </div>
+          <span class="dish-price-tag">&#x20B9;425</span>
+        </div>
+        <p class="dish-desc">
+          Trio of toasted artisanal brioche sliders layered with savory smoked ham, bubbling melted gruyere cheese, caramelized balsamic shallots, and whole-grain Dijon aioli.
+        </p>
+        <a href="https://wa.me/919075059909?text=Hi%20Gusto,%20I%20would%20like%20to%20order%20the%20Ham%20and%20Cheese%20Brioche%20Sliders." target="_blank" rel="noopener" class="btn-dish-wa">
+          <span>&#x1F4AC;</span> Order on WhatsApp
+        </a>
       </div>
-      <div class="story-meta">
-        — Aundh Diner Community &middot; 4.4&#x2605; Rated on Google &amp; Dineout
+
+      <!-- Item 3: Pasta -->
+      <div class="dish-card-detailed" data-category="pasta-pizza">
+        <div class="dish-top-row">
+          <div class="dish-title-group">
+            <span class="dish-badge-tag">Handmade &middot; Pasta</span>
+            <h4>Wild Mushroom Truffle Rigatoni</h4>
+          </div>
+          <span class="dish-price-tag">&#x20B9;485</span>
+        </div>
+        <p class="dish-desc">
+          Bronze-die extruded rigatoni bathed in a velvety porcini and button mushroom cream emulsion, finished with white truffle oil, shaved 24-month Grana Padano, and cracked pink peppercorn.
+        </p>
+        <a href="https://wa.me/919075059909?text=Hi%20Gusto,%20I%20would%20like%20to%20order%20the%20Wild%20Mushroom%20Truffle%20Rigatoni." target="_blank" rel="noopener" class="btn-dish-wa">
+          <span>&#x1F4AC;</span> Order on WhatsApp
+        </a>
       </div>
+
+      <!-- Item 4: Pizza -->
+      <div class="dish-card-detailed" data-category="pasta-pizza">
+        <div class="dish-top-row">
+          <div class="dish-title-group">
+            <span class="dish-badge-tag">450&deg;C Oven &middot; Sourdough</span>
+            <h4>Burrata &amp; Pine Nut Pesto Pizza</h4>
+          </div>
+          <span class="dish-price-tag">&#x20B9;545</span>
+        </div>
+        <p class="dish-desc">
+          48-hour cold fermented sourdough crust, San Marzano tomato base, roasted garlic pine nut pesto, crowned with a whole creamy burrata ball and baby basil microgreens.
+        </p>
+        <a href="https://wa.me/919075059909?text=Hi%20Gusto,%20I%20would%20like%20to%20order%20the%20Burrata%20and%20Pine%20Nut%20Pesto%20Pizza." target="_blank" rel="noopener" class="btn-dish-wa">
+          <span>&#x1F4AC;</span> Order on WhatsApp
+        </a>
+      </div>
+
+      <!-- Item 5: Salad / Mains -->
+      <div class="dish-card-detailed" data-category="sliders-mains">
+        <div class="dish-top-row">
+          <div class="dish-title-group">
+            <span class="dish-badge-tag">Fresh Greens &middot; Healthy</span>
+            <h4>Classic Chicken Caesar Crunch</h4>
+          </div>
+          <span class="dish-price-tag">&#x20B9;375</span>
+        </div>
+        <p class="dish-desc">
+          Crisp hydroponic romaine lettuce, herb-grilled chicken breast, toasted sourdough garlic croutons, house creamy anchovy-free dressing, and generous parmesan ribbons.
+        </p>
+        <a href="https://wa.me/919075059909?text=Hi%20Gusto,%20I%20would%20like%20to%20order%20the%20Classic%20Chicken%20Caesar%20Crunch." target="_blank" rel="noopener" class="btn-dish-wa">
+          <span>&#x1F4AC;</span> Order on WhatsApp
+        </a>
+      </div>
+
+      <!-- Item 6: Brews & Bakes -->
+      <div class="dish-card-detailed" data-category="brews">
+        <div class="dish-top-row">
+          <div class="dish-title-group">
+            <span class="dish-badge-tag">Signature Dessert &middot; Patisserie</span>
+            <h4>Gusto Classic Venetian Tiramisu</h4>
+          </div>
+          <span class="dish-price-tag">&#x20B9;345</span>
+        </div>
+        <p class="dish-desc">
+          Espresso-soaked Italian savoiardi biscuits, whipped mascarpone cream, Dutch dark cocoa dusting, and fine curls of 70% bittersweet Belgian chocolate.
+        </p>
+        <a href="https://wa.me/919075059909?text=Hi%20Gusto,%20I%20would%20like%20to%20order%20the%20Classic%20Venetian%20Tiramisu." target="_blank" rel="noopener" class="btn-dish-wa">
+          <span>&#x1F4AC;</span> Order on WhatsApp
+        </a>
+      </div>
+
+      <!-- Item 7: Brews & Bakes -->
+      <div class="dish-card-detailed" data-category="brews">
+        <div class="dish-top-row">
+          <div class="dish-title-group">
+            <span class="dish-badge-tag">Cold Brew &middot; Coffee</span>
+            <h4>Espresso Tonic with Yuzu Twist</h4>
+          </div>
+          <span class="dish-price-tag">&#x20B9;240</span>
+        </div>
+        <p class="dish-desc">
+          Double shot of estate single-origin medium-roast espresso poured gently over sparkling craft tonic water, fresh yuzu citrus reduction, and rosemary sprig.
+        </p>
+        <a href="https://wa.me/919075059909?text=Hi%20Gusto,%20I%20would%20like%20to%20order%20the%20Espresso%20Tonic." target="_blank" rel="noopener" class="btn-dish-wa">
+          <span>&#x1F4AC;</span> Order on WhatsApp
+        </a>
+      </div>
+
+      <!-- Item 8: Breakfast -->
+      <div class="dish-card-detailed" data-category="breakfast">
+        <div class="dish-top-row">
+          <div class="dish-title-group">
+            <span class="dish-badge-tag">Bakery &middot; Breakfast</span>
+            <h4>Croissant French Toast with Salted Caramel</h4>
+          </div>
+          <span class="dish-price-tag">&#x20B9;315</span>
+        </div>
+        <p class="dish-desc">
+          Flaky French butter croissant soaked in rich vanilla-custard egg wash, griddled golden brown, drizzled with homemade salted caramel and topped with toasted pecans.
+        </p>
+        <a href="https://wa.me/919075059909?text=Hi%20Gusto,%20I%20would%20like%20to%20order%20the%20Croissant%20French%20Toast." target="_blank" rel="noopener" class="btn-dish-wa">
+          <span>&#x1F4AC;</span> Order on WhatsApp
+        </a>
+      </div>
+
     </div>
   </section>
 
-  <!-- CURATED SIGNATURE DISHES -->
-  <section class="menu-section" id="signatures">
+  <!-- INTERACTIVE WHATSAPP RESERVATION BUILDER -->
+  <section class="reservation-builder-section" id="reservation">
+    <div class="builder-wrap">
+      <div class="builder-header">
+        <span class="eyebrow">Table Bookings &middot; Abja Pavillion</span>
+        <h2>Reserve Your Experience at Gusto</h2>
+        <p>Whether it’s a romantic candlelit date night, a lively family brunch, or an outdoor coffee gathering with your pets.</p>
+      </div>
+
+      <div class="builder-grid">
+        <div class="builder-field">
+          <label for="res-guests">Party Size</label>
+          <select id="res-guests">
+            <option value="2 Guests (Intimate Date Night)">2 Guests (Intimate Date Night)</option>
+            <option value="4 Guests (Friends & Family)" selected>4 Guests (Friends &amp; Family)</option>
+            <option value="6 Guests (Dinner Gathering)">6 Guests (Dinner Gathering)</option>
+            <option value="8+ Guests (Celebration Party)">8+ Guests (Celebration Party)</option>
+          </select>
+        </div>
+
+        <div class="builder-field">
+          <label for="res-seating">Seating Preference</label>
+          <select id="res-seating">
+            <option value="Garden Patio by the Fountain" selected>Garden Patio by the Fountain</option>
+            <option value="Indoor AC Lounge (Hiraya Hall)">Indoor AC Lounge (Hiraya Hall)</option>
+            <option value="Pet-Friendly Courtyard">Pet-Friendly Courtyard</option>
+            <option value="Shisha & Smoking Lounge">Shisha &amp; Smoking Lounge</option>
+          </select>
+        </div>
+
+        <div class="builder-field">
+          <label for="res-time">Preferred Time Slot</label>
+          <select id="res-time">
+            <option value="Morning Brunch (11:00 AM – 1:00 PM)">Morning Brunch (11:00 AM – 1:00 PM)</option>
+            <option value="Afternoon Coffee (3:00 PM – 5:30 PM)">Afternoon Coffee (3:00 PM – 5:30 PM)</option>
+            <option value="Sunset Dinner (7:00 PM – 8:30 PM)" selected>Sunset Dinner (7:00 PM – 8:30 PM)</option>
+            <option value="Late Night Dining (9:00 PM – 11:00 PM)">Late Night Dining (9:00 PM – 11:00 PM)</option>
+          </select>
+        </div>
+      </div>
+
+      <button class="btn-submit-res" onclick="submitReservation()">
+        <span>&#x1F4AC;</span> Confirm Reservation on WhatsApp &rarr;
+      </button>
+
+      <p class="builder-note">&#x1F517; Connects directly to Gusto Front Desk (+91 90750 59909) with your pre-filled reservation details</p>
+    </div>
+  </section>
+
+  <!-- VERIFIED DINER TESTIMONIALS -->
+  <section class="reviews-section" id="reviews">
     <div class="section-header">
-      <span class="eyebrow">Signature Offerings</span>
-      <h2>Crafted with Passion & Precision</h2>
-      <p>A handpicked selection of our most celebrated dishes, prepared with authentic imported olive oils, farm-fresh herbs, and organic produce.</p>
+      <span class="eyebrow">Verified Guest Feedback</span>
+      <h2>Loved by Pune’s Food Lovers</h2>
+      <p>Rated 4.7★ across 350+ reviews on EazyDiner and Magicpin.</p>
     </div>
 
-    <div class="culinary-grid">
-      <!-- Dish 1: Pasta -->
-      <div class="dish-card">
-        <div class="dish-img-wrap">
-          <img src="assets/pasta.jpg" alt="Truffle Rigatoni Pasta at Gusto Aundh" loading="lazy">
-          <span class="dish-tag">Chef's Signature</span>
+    <div class="review-grid">
+      <!-- Review 1 -->
+      <div class="review-card">
+        <div>
+          <div class="review-stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+          <p class="review-quote">
+            "Great place for relax time. Nice music, menu and ambience. Can spend few good hours."
+          </p>
         </div>
-        <div class="dish-body">
-          <div class="dish-title-row">
-            <h3>Truffle Rigatoni</h3>
-            <span class="dish-price">&#x20B9;485</span>
+        <div class="reviewer-meta">
+          <div class="reviewer-avatar">SM</div>
+          <div class="reviewer-info">
+            <h4>Shrikant Meshram</h4>
+            <span>Verified Diner &middot; 5/5</span>
           </div>
-          <p>Hand-extruded rigatoni in a rich wild mushroom emulsion, shaved parmesan reggiano, white truffle oil, and cracked pink peppercorn.</p>
-          <a href="https://wa.me/919075059909?text=Hi%20Gusto,%20I%20would%20like%20to%20order%20the%20Truffle%20Rigatoni." target="_blank" rel="noopener" class="btn-dish-order">
-            <span>&#x1F4AC;</span> Order on WhatsApp
-          </a>
         </div>
       </div>
 
-      <!-- Dish 2: Pizza -->
-      <div class="dish-card">
-        <div class="dish-img-wrap">
-          <img src="assets/pizza.jpg" alt="Burrata & Pesto Neapolitan Sourdough Pizza at Gusto Aundh" loading="lazy">
-          <span class="dish-tag">Wood Fired</span>
+      <!-- Review 2 -->
+      <div class="review-card">
+        <div>
+          <div class="review-stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+          <p class="review-quote">
+            "Amazing food, amazing service, and a great overall experience. Everything was fresh, delicious, and served with care. Highly recommended!"
+          </p>
         </div>
-        <div class="dish-body">
-          <div class="dish-title-row">
-            <h3>Burrata & Pesto Pizza</h3>
-            <span class="dish-price">&#x20B9;545</span>
+        <div class="reviewer-meta">
+          <div class="reviewer-avatar">VD</div>
+          <div class="reviewer-info">
+            <h4>Vaishnavi Desai</h4>
+            <span>Verified Diner &middot; 5/5</span>
           </div>
-          <p>48-hour fermented sourdough crust blistered at 450°C, San Marzano tomato base, creamy whole burrata, house pine-nut pesto, and microgreens.</p>
-          <a href="https://wa.me/919075059909?text=Hi%20Gusto,%20I%20would%20like%20to%20order%20the%20Burrata%20Pesto%20Pizza." target="_blank" rel="noopener" class="btn-dish-order">
-            <span>&#x1F4AC;</span> Order on WhatsApp
-          </a>
         </div>
       </div>
 
-      <!-- Dish 3: Dessert -->
-      <div class="dish-card">
-        <div class="dish-img-wrap">
-          <img src="assets/dessert.jpg" alt="Classic Tiramisu & Artisan Patisserie at Gusto" loading="lazy">
-          <span class="dish-tag">House Special</span>
+      <!-- Review 3 -->
+      <div class="review-card">
+        <div>
+          <div class="review-stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+          <p class="review-quote">
+            "Great food, great variation and lots of dishes to try. The interior is definitely date vibe!"
+          </p>
         </div>
-        <div class="dish-body">
-          <div class="dish-title-row">
-            <h3>Classic Tiramisu</h3>
-            <span class="dish-price">&#x20B9;345</span>
+        <div class="reviewer-meta">
+          <div class="reviewer-avatar">AP</div>
+          <div class="reviewer-info">
+            <h4>Adwait Parchure</h4>
+            <span>Verified Diner &middot; 5/5</span>
           </div>
-          <p>Espresso-dipped Italian savoiardi biscuits, whipped mascarpone zabaglione, Dutch cacao dusting, and bittersweet dark chocolate flakes.</p>
-          <a href="https://wa.me/919075059909?text=Hi%20Gusto,%20I%20would%20like%20to%20order%20the%20Classic%20Tiramisu." target="_blank" rel="noopener" class="btn-dish-order">
-            <span>&#x1F4AC;</span> Order on WhatsApp
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- DIGITAL MENU SECTIONS -->
-  <section class="menu-highlights" id="menu">
-    <div class="section-header">
-      <span class="eyebrow">Full Dining Menu</span>
-      <h2>Curated Culinary Selections</h2>
-      <p>Available for dine-in at Abja Pavillion or direct doorstep delivery via WhatsApp.</p>
-    </div>
-
-    <div class="menu-columns">
-      <!-- Col 1 -->
-      <div class="menu-cat">
-        <h3>Handmade Pastas & Risotto <span>CONTINENTAL</span></h3>
-
-        <div class="menu-item-row">
-          <div class="menu-item-info">
-            <h4>Wild Mushroom & Thyme Ravioli</h4>
-            <p>Stuffed pillow pasta, burnt sage butter, toasted walnuts</p>
-          </div>
-          <div class="menu-item-cost">&#x20B9;465</div>
-        </div>
-
-        <div class="menu-item-row">
-          <div class="menu-item-info">
-            <h4>Penne Alla Vodka (Pink Sauce)</h4>
-            <p>Velvety tomato cream sauce, calabrian chili flakes, fresh basil</p>
-          </div>
-          <div class="menu-item-cost">&#x20B9;425</div>
-        </div>
-
-        <div class="menu-item-row">
-          <div class="menu-item-info">
-            <h4>Spinach & Ricotta Cannelloni</h4>
-            <p>Oven-baked rolled pasta tubes, béchamel, golden mozzarella crust</p>
-          </div>
-          <div class="menu-item-cost">&#x20B9;445</div>
-        </div>
-
-        <div class="menu-item-row">
-          <div class="menu-item-info">
-            <h4>Saffron Saffron Arborio Risotto</h4>
-            <p>Creamy Carnaroli rice, grilled asparagus, lemon zest, grana padano</p>
-          </div>
-          <div class="menu-item-cost">&#x20B9;495</div>
         </div>
       </div>
 
-      <!-- Col 2 -->
-      <div class="menu-cat">
-        <h3>Artisan Burgers, Bowls & Brews <span>GOURMET</span></h3>
-
-        <div class="menu-item-row">
-          <div class="menu-item-info">
-            <h4>Truffle Smashed Brioche Burger</h4>
-            <p>Handcrafted patty, caramelized onions, smoked cheddar, truffle mayo</p>
-          </div>
-          <div class="menu-item-cost">&#x20B9;415</div>
+      <!-- Review 4 -->
+      <div class="review-card">
+        <div>
+          <div class="review-stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+          <p class="review-quote">
+            "Best restaurant with an amazing ambience! The food quality is excellent and everything tastes delicious. Loved the overall experience."
+          </p>
         </div>
-
-        <div class="menu-item-row">
-          <div class="menu-item-info">
-            <h4>Quinoa & Guacamole Nourish Bowl</h4>
-            <p>Roasted chickpeas, edamame, roasted cherry tomatoes, tahini lime</p>
+        <div class="reviewer-meta">
+          <div class="reviewer-avatar">PS</div>
+          <div class="reviewer-info">
+            <h4>Pratiksha Sankpal</h4>
+            <span>Verified Diner &middot; 5/5</span>
           </div>
-          <div class="menu-item-cost">&#x20B9;395</div>
-        </div>
-
-        <div class="menu-item-row">
-          <div class="menu-item-info">
-            <h4>Specialty Espresso Tonic / Affogato</h4>
-            <p>Double espresso shot over artisanal sparkling tonic / vanilla gelato</p>
-          </div>
-          <div class="menu-item-cost">&#x20B9;240</div>
-        </div>
-
-        <div class="menu-item-row">
-          <div class="menu-item-info">
-            <h4>Belgian Dark Chocolate Fondant</h4>
-            <p>Molten dark lava center, Madagascar vanilla bean gelato</p>
-          </div>
-          <div class="menu-item-cost">&#x20B9;325</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- TABLE RESERVATION BANNER -->
-  <section class="reservation-banner" id="timings">
-    <div>
-      <h2>Plan Your Evening at <em>Gusto.</em></h2>
-      <p>
-        Whether celebrating a milestone or enjoying a quiet evening coffee on our patio, we recommend reserving your table ahead for Friday to Sunday evenings.
-      </p>
-      <div style="margin-top: 16px; font-size: 14px; color: var(--champagne);">
-        &#x23F0; Open Daily: 11:30 AM – 11:30 PM &middot; Dine-in &amp; Takeaway
+  <!-- AMENITIES -->
+  <section class="amenities-section">
+    <div class="amenities-grid">
+      <div class="amenity-card">
+        <div class="icon">&#x1F43E;</div>
+        <h4>Pet-Friendly Patio</h4>
       </div>
-    </div>
-    <div class="res-cta-group">
-      <a href="https://wa.me/919075059909?text=Hi%20Gusto,%20I%20would%20like%20to%20reserve%20a%20table%20at%20Abja%20Pavillion%20for%20[Date]%20at%20[Time]%20for%20[Number]%20guests." target="_blank" rel="noopener" class="btn-res-wa">
-        <span>&#x1F4AC;</span> Reserve on WhatsApp
-      </a>
-      <span class="res-phone-note">Direct to Gusto Front Desk (+91 90750 59909)</span>
+      <div class="amenity-card">
+        <div class="icon">&#x1F697;</div>
+        <h4>Valet Parking</h4>
+      </div>
+      <div class="amenity-card">
+        <div class="icon">&#x1F3B6;</div>
+        <h4>Live Music</h4>
+      </div>
+      <div class="amenity-card">
+        <div class="icon">&#x1F4F8;</div>
+        <h4>Floral Photobooth</h4>
+      </div>
+      <div class="amenity-card">
+        <div class="icon">&#x1F4F6;</div>
+        <h4>Free High-Speed Wi-Fi</h4>
+      </div>
+      <div class="amenity-card">
+        <div class="icon">&#x1F32C;&#xFE0F;</div>
+        <h4>Smoking Lounge</h4>
+      </div>
     </div>
   </section>
 
   <!-- FOOTER / LOCATION -->
-  <footer class="site-footer" id="contact">
+  <footer class="site-footer" id="location">
     <div class="footer-grid">
       <div class="footer-brand">
-        <h3>GUSTO DINING &amp; BISTRO</h3>
+        <div class="brand-logo">
+          <div class="crest-icon">&#x2615;</div>
+          <div class="brand-text">
+            <span class="logo-main">GUSTO</span>
+            <span class="logo-tagline" style="color:var(--cane-light);">Coffee &middot; Cuisine &middot; Conversation</span>
+          </div>
+        </div>
         <p>
-          Contemporary European dining, handcrafted pasta, artisan sourdough pizza, and specialty coffee in an aesthetic green haven in Aundh, Pune.
+          Architectural European dining, artisanal bakery, handcrafted pasta, and specialty single-origin brews in Sanewadi, Aundh.
         </p>
-        <div style="font-size: 13px; color: var(--champagne); font-weight: 600;">
-          &#x1F4CD; Abja Pavillion, Seasons Road, Sahil Park, Sanewadi, Aundh, Pune – 411007
+        <div style="font-size: 13px; color: var(--cane-light); font-weight: 600;">
+          &#x1F4CD; Abja Pavillion, Seasons Road, Sahil Park, Sanewadi, Aundh, Pune – 411067
         </div>
       </div>
 
       <div class="footer-col">
-        <h4>Quick Links</h4>
+        <h4>Navigation</h4>
         <ul>
-          <li><a href="#story">Our Philosophy</a></li>
-          <li><a href="#signatures">Chef's Signatures</a></li>
+          <li><a href="#ambience">Architecture &amp; Vibe</a></li>
           <li><a href="#menu">Digital Menu</a></li>
-          <li><a href="#timings">Table Bookings</a></li>
+          <li><a href="#reservation">Table Reservation</a></li>
+          <li><a href="#reviews">Guest Feedback</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h4>Operating Hours</h4>
+        <h4>Hours &amp; Policies</h4>
         <ul>
-          <li>Monday – Thursday: 11:30 AM – 11:00 PM</li>
-          <li>Friday – Sunday: 11:30 AM – 11:30 PM</li>
-          <li>Weekend Brunch: 11:30 AM – 4:00 PM</li>
-          <li>Pet Friendly: All Day Everyday</li>
+          <li>Monday – Sunday</li>
+          <li>9:00 AM – 11:00 PM</li>
+          <li>Pet Friendly: All Day</li>
+          <li>Valet Parking: Available</li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h4>Direct Contact</h4>
+        <h4>Connect Directly</h4>
         <ul>
-          <li><strong style="color:#FFF;">Phone:</strong> +91 90750 59909</li>
-          <li><strong style="color:#FFF;">Location:</strong> Seasons Road, Aundh</li>
-          <li><strong style="color:#FFF;">Average Spend:</strong> &#x20B9;1,200 – &#x20B9;1,600 for two</li>
-          <li><a href="https://maps.google.com/?q=Abja+Pavillion+Seasons+Road+Aundh+Pune" target="_blank" rel="noopener" style="color:var(--champagne); font-weight:600;">Open in Google Maps &rarr;</a></li>
+          <li><strong style="color:#FFF;">Direct Counter:</strong> +91 90750 59909</li>
+          <li><strong style="color:#FFF;">Average Spend:</strong> &#x20B9;1,200 – &#x20B9;1,800 for two</li>
+          <li><a href="https://maps.google.com/?q=Abja+Pavillion+Seasons+Road+Sahil+Park+Sanewadi+Aundh+Pune" target="_blank" rel="noopener" style="color:var(--cane-light); font-weight:700;">Open in Google Maps &rarr;</a></li>
         </ul>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <div>&copy; 2026 Gusto Dining &amp; Bistro. All rights reserved.</div>
-      <div>Concept Designed &amp; Crafted by <a href="https://wa.me/919420132081?text=Hi%20Harshal,%20I%20love%20the%20Gusto%20Bistro%20website%20design!" target="_blank" rel="noopener" style="color: var(--champagne); text-decoration: none; font-weight: 600;">Harshal Baviskar</a> (Pune Web Designer)</div>
+      <div>&copy; 2026 Gusto Dining &amp; Bistro. All rights reserved. Architecture by Hiraya Interiors.</div>
+      <div>Bespoke Concept Designed by <a href="https://wa.me/919420132081?text=Hi%20Harshal,%20I%20love%20the%20Gusto%20Bistro%20website%20design!" target="_blank" rel="noopener" style="color: var(--cane-light); text-decoration: none; font-weight: 700;">Harshal Baviskar</a> (Pune Web Designer)</div>
     </div>
   </footer>
 
-  <!-- FLOATING WHATSAPP -->
-  <a href="https://wa.me/919075059909?text=Hi%20Gusto,%20I%20would%20like%20to%20book%20a%20table%20or%20place%20an%20order." target="_blank" rel="noopener" class="floating-wa">
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/919075059909?text=Hi%20Gusto%20Dining,%20I%20would%20like%20to%20book%20a%20table%20or%20ask%20a%20question." target="_blank" rel="noopener" class="floating-wa">
     <span>&#x1F4AC;</span> WhatsApp Gusto
   </a>
+
+  <!-- INTERACTIVE SCRIPTS -->
+  <script>
+    // Menu Category Filtering
+    function filterMenu(category, btn) {
+      document.querySelectorAll('.menu-pill').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const cards = document.querySelectorAll('.dish-card-detailed');
+      cards.forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.style.display = 'flex';
+          card.style.opacity = '1';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Reservation Builder to WhatsApp
+    function submitReservation() {
+      const guests = document.getElementById('res-guests').value;
+      const seating = document.getElementById('res-seating').value;
+      const time = document.getElementById('res-time').value;
+
+      const text = `Hi Gusto Dining! I would like to reserve a table at Abja Pavillion:%0A%0A👥 Party: ${encodeURIComponent(guests)}%0A📍 Seating: ${encodeURIComponent(seating)}%0A⏰ Time Slot: ${encodeURIComponent(time)}%0A%0APlease confirm table availability. Thank you!`;
+      const url = `https://wa.me/919075059909?text=${text}`;
+      window.open(url, '_blank');
+    }
+  </script>
 
 </body>
 </html>
