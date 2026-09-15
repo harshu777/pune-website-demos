@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Shah's Clinic & Wellness, Spa and Panchakarma Center | Aundh Pune</title>
+  
+  <!-- Open Graph / Meta -->
+  <meta name="description" content="Dr. Shah's Clinic & Wellness, Spa and Panchakarma Center — Premier Ayurvedic treatments, Shirodhara, Panchakarma detox, and therapeutic wellness spa opposite Westend Mall, Aundh, Pune.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dr. Shah's Clinic & Wellness | Spa & Panchakarma — Opp. Westend Mall, Aundh">
+  <meta property="og:description" content="Holistic Ayurvedic therapies, stress-relieving Shirodhara, authentic Panchakarma detoxification, and therapeutic body therapies. Book on WhatsApp.">
+  <meta property="og:image" content="https://harshu777.github.io/pune-website-demos/drshah/assets/hero.jpg">
+  <meta property="og:url" content="https://harshu777.github.io/pune-website-demos/drshah/">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    :root {
+      --primary: #92400e;        /* Warm Ayurvedic Bronze Gold */
+      --primary-dark: #78350f;
+      --primary-light: #fef3c7;
+      --primary-glow: rgba(146, 64, 14, 0.16);
+      --secondary: #065f46;      /* Ayurvedic Forest Jade */
+      --secondary-light: #ecfdf5;
+      --dark: #1c1917;
+      --text: #374151;
+      --text-muted: #6b7280;
+      --bg: #fcfbf9;            /* Cream Linen */
+      --surface: #ffffff;
+      --border: #e7e5e4;
+      --radius: 16px;
+      --shadow: 0 10px 30px -8px rgba(28, 25, 23, 0.07);
+      --shadow-lg: 0 20px 42px -12px rgba(146, 64, 14, 0.16);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4, .brand-title {
+      font-family: 'Cormorant Garamond', serif;
+      color: var(--dark);
+      font-weight: 700;
+    }
+
+    /* CONCEPT PREVIEW BAR - 100px DESKTOP PADDING STANDARD */
+    .concept-bar {
+      background: linear-gradient(90deg, #1c1917 0%, #292524 100%);
+      color: #d6d3d1;
+      font-size: 13px;
+      padding: 10px 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .concept-badge {
+      background: #b45309;
+      color: #fff;
+      padding: 3px 10px;
+      border-radius: 9999px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-right: 10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .concept-link {
+      color: #fde68a;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    .concept-link:hover {
+      color: #fef08a;
+      text-decoration: underline;
+    }
+
+    /* HEADER & NAVIGATION - 100px DESKTOP PADDING STANDARD */
+    header {
+      background: rgba(252, 251, 249, 0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 41px;
+      z-index: 999;
+    }
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 100px;
+      max-width: 100%;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+    }
+    .brand-logo {
+      width: 48px;
+      height: 48px;
+      background: linear-gradient(135deg, var(--primary) 0%, #b45309 100%);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      box-shadow: 0 4px 14px var(--primary-glow);
+    }
+    .brand-info .brand-title {
+      font-size: 22px;
+      line-height: 1.15;
+      color: var(--dark);
+      letter-spacing: -0.3px;
+    }
+    .brand-info .brand-sub {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 500;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      list-style: none;
+    }
+    .nav-link {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+      font-size: 15px;
+      transition: color 0.2s;
+    }
+    .nav-link:hover {
+      color: var(--primary);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 11px 22px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      cursor: pointer;
+      border: none;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+      box-shadow: 0 4px 14px var(--primary-glow);
+    }
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 18px rgba(146, 64, 14, 0.25);
+    }
+    .btn-whatsapp {
+      background: #25D366;
+      color: white;
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+    }
+    .btn-whatsapp:hover {
+      background: #1eb956;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 18px rgba(37, 211, 102, 0.4);
+    }
+    .btn-outline {
+      background: transparent;
+      border: 1.5px solid var(--border);
+      color: var(--dark);
+    }
+    .btn-outline:hover {
+      background: #f5f5f4;
+      border-color: #d6d3d1;
+    }
+
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* HERO SECTION */
+    .hero-section {
+      padding: 72px 0 60px;
+      background: radial-gradient(circle at top right, rgba(146, 64, 14, 0.08) 0%, rgba(252, 251, 249, 0) 60%),
+                  radial-gradient(circle at bottom left, rgba(6, 95, 70, 0.05) 0%, rgba(252, 251, 249, 0) 50%);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 50px;
+      align-items: center;
+    }
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 7px 16px;
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      border: 1px solid rgba(146, 64, 14, 0.2);
+    }
+    .hero-title {
+      font-size: 50px;
+      line-height: 1.15;
+      letter-spacing: -0.5px;
+      margin-bottom: 20px;
+      color: var(--dark);
+    }
+    .hero-title span {
+      background: linear-gradient(135deg, var(--primary) 0%, #d97706 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-desc {
+      font-size: 17px;
+      color: var(--text-muted);
+      margin-bottom: 30px;
+      line-height: 1.7;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 36px;
+    }
+
+    .hero-trust-bar {
+      display: flex;
+      gap: 28px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .trust-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: #f5f5f4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+    }
+    .trust-meta .trust-value {
+      font-weight: 700;
+      color: var(--dark);
+      font-size: 15px;
+      line-height: 1.2;
+    }
+    .trust-meta .trust-label {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    /* HERO IMAGE COMPOSITE */
+    .hero-visual {
+      position: relative;
+    }
+    .hero-main-card {
+      position: relative;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      border: 4px solid white;
+    }
+    .hero-main-card img {
+      width: 100%;
+      height: 430px;
+      object-fit: cover;
+      display: block;
+    }
+    .hero-overlay-badge {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: rgba(28, 25, 23, 0.88);
+      backdrop-filter: blur(8px);
+      padding: 12px 18px;
+      border-radius: 12px;
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .hero-floating-stat {
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      background: white;
+      padding: 14px 20px;
+      border-radius: 14px;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    /* STATUS BANNER */
+    .status-banner {
+      background: white;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+    }
+    .status-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .status-indicator {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .status-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #10b981;
+      box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+    }
+    .status-timings {
+      font-size: 14px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .status-timings strong {
+      color: var(--dark);
+    }
+
+    /* SECTION BASICS */
+    .section {
+      padding: 80px 0;
+    }
+    .section-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 50px;
+    }
+    .section-badge {
+      display: inline-block;
+      color: var(--primary);
+      background: var(--primary-light);
+      padding: 5px 14px;
+      border-radius: 9999px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-size: 38px;
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+    .section-subtitle {
+      font-size: 16px;
+      color: var(--text-muted);
+    }
+
+    /* SERVICES GRID */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .service-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px 28px;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+      border-color: #fde68a;
+    }
+    .service-icon-wrap {
+      width: 54px;
+      height: 54px;
+      border-radius: 14px;
+      background: var(--primary-light);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 22px;
+      transition: all 0.3s ease;
+    }
+    .service-card:hover .service-icon-wrap {
+      background: var(--primary);
+      color: white;
+    }
+    .service-title {
+      font-size: 22px;
+      margin-bottom: 12px;
+      color: var(--dark);
+    }
+    .service-desc {
+      font-size: 14.5px;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+    .service-features {
+      list-style: none;
+      border-top: 1px solid #f5f5f4;
+      padding-top: 16px;
+      margin-bottom: 20px;
+    }
+    .service-features li {
+      font-size: 13.5px;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    .service-features li i {
+      color: var(--secondary);
+      flex-shrink: 0;
+    }
+    .service-cta {
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 13.5px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .service-cta:hover {
+      text-decoration: underline;
+    }
+
+    /* TIMINGS & APPOINTMENT SCHEDULING CARD */
+    .schedule-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 36px;
+      align-items: stretch;
+    }
+    .timings-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 36px;
+      box-shadow: var(--shadow);
+    }
+    .timings-card h3 {
+      font-size: 26px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .timing-slot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px;
+      background: #fafaf9;
+      border-radius: 12px;
+      margin-bottom: 14px;
+      border: 1px solid #e7e5e4;
+    }
+    .timing-slot.highlight {
+      background: #fefce8;
+      border-color: #fef08a;
+    }
+    .timing-day {
+      font-weight: 600;
+      color: var(--dark);
+      font-size: 15px;
+    }
+    .timing-hours {
+      font-weight: 700;
+      color: var(--primary);
+      font-size: 14px;
+      text-align: right;
+    }
+
+    /* WHATSAPP APPOINTMENT BUILDER FORM */
+    .appointment-card {
+      background: linear-gradient(135deg, #92400e 0%, #78350f 100%);
+      color: white;
+      border-radius: var(--radius);
+      padding: 36px;
+      box-shadow: var(--shadow-lg);
+    }
+    .appointment-card h3 {
+      color: white;
+      font-size: 26px;
+      margin-bottom: 8px;
+    }
+    .appointment-card p {
+      color: #fef3c7;
+      font-size: 14px;
+      margin-bottom: 22px;
+    }
+    .form-group {
+      margin-bottom: 16px;
+    }
+    .form-label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: #fef3c7;
+      margin-bottom: 6px;
+    }
+    .form-control {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      background: rgba(255, 255, 255, 0.96);
+      color: var(--dark);
+      font-family: inherit;
+      font-size: 14px;
+    }
+    .form-control:focus {
+      outline: none;
+      border-color: white;
+      box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    /* REVIEWS SECTION */
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .review-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+    .review-rating {
+      color: #f59e0b;
+      margin-bottom: 12px;
+      display: flex;
+      gap: 3px;
+    }
+    .review-text {
+      font-size: 14px;
+      color: #4b5563;
+      line-height: 1.65;
+      margin-bottom: 18px;
+      font-style: italic;
+    }
+    .review-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .author-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #fef3c7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .author-name {
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--dark);
+    }
+    .author-sub {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    /* LOCATION & CONTACT */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 36px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .contact-info {
+      padding: 44px;
+    }
+    .contact-title {
+      font-size: 30px;
+      margin-bottom: 14px;
+    }
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .contact-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--primary-light);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .contact-detail h4 {
+      font-size: 16px;
+      margin-bottom: 4px;
+      color: var(--dark);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .contact-detail p {
+      color: var(--text-muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .contact-map {
+      background: #e2e8f0;
+      min-height: 380px;
+      position: relative;
+    }
+    .contact-map iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #1c1917;
+      color: #a8a29e;
+      padding: 60px 0 30px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .footer-brand .brand-title {
+      color: white;
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+    .footer-brand p {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .footer-col h4 {
+      color: white;
+      font-size: 16px;
+      margin-bottom: 16px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .footer-links {
+      list-style: none;
+    }
+    .footer-links li {
+      margin-bottom: 10px;
+    }
+    .footer-links a {
+      color: #a8a29e;
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover {
+      color: white;
+    }
+    .footer-bottom {
+      text-align: center;
+      font-size: 13px;
+      color: #78716c;
+    }
+
+    /* FLOATING WHATSAPP BUTTON */
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #25D366;
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
+      z-index: 1000;
+      text-decoration: none;
+      transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .floating-whatsapp:hover {
+      transform: scale(1.1);
+    }
+    .whatsapp-tooltip {
+      position: absolute;
+      right: 70px;
+      background: #1c1917;
+      color: white;
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      white-space: nowrap;
+      pointer-events: none;
+      opacity: 0;
+      transform: translateX(10px);
+      transition: all 0.2s;
+    }
+    .floating-whatsapp:hover .whatsapp-tooltip {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 1024px) {
+      .concept-bar, .nav-container {
+        padding-left: 48px;
+        padding-right: 48px;
+      }
+      .services-grid, .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .concept-bar, .nav-container {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .concept-bar {
+        flex-direction: column;
+        gap: 6px;
+        text-align: center;
+      }
+      .nav-menu {
+        display: none;
+      }
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+      .hero-title {
+        font-size: 36px;
+      }
+      .hero-trust-bar {
+        flex-direction: column;
+        gap: 14px;
+      }
+      .services-grid, .reviews-grid, .schedule-grid, .contact-grid, .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 100px DESKTOP CONCEPT BAR -->
+  <div class="concept-bar">
+    <div style="display: flex; align-items: center;">
+      <span class="concept-badge"><i data-lucide="sparkles" style="width:12px;height:12px;"></i> Mobile Preview</span>
+      <span>Concept Prepared for <strong>Dr. Shah's Clinic & Wellness, Spa and Panchakarma Center</strong> · Opp. Westend Mall, Aundh</span>
+    </div>
+    <div>
+      <span>Complete Ayurvedic Wellness Web Portal launch for <strong>₹5,999</strong> | <a href="https://wa.me/919405661998?text=Hi%20Harshal,%20I%20saw%20the%20Dr.%20Shah%20Clinic%20demo." class="concept-link">Contact Harshal (+91 94056 61998)</a></span>
+    </div>
+  </div>
+
+  <!-- 100px DESKTOP NAVIGATION -->
+  <header>
+    <div class="nav-container">
+      <a href="#" class="brand">
+        <div class="brand-logo">
+          <i data-lucide="sun" style="width: 24px; height: 24px; stroke-width: 2.2;"></i>
+        </div>
+        <div class="brand-info">
+          <div class="brand-title">Dr. Shah's Clinic & Wellness</div>
+          <div class="brand-sub">Ayurvedic Spa & Panchakarma Center · Aundh</div>
+        </div>
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="#overview" class="nav-link">Overview</a></li>
+        <li><a href="#therapies" class="nav-link">Therapies</a></li>
+        <li><a href="#wellness" class="nav-link">Wellness Spa</a></li>
+        <li><a href="#timings" class="nav-link">Hours</a></li>
+        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        <li><a href="#contact" class="nav-link">Location</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="tel:+918379880302" class="btn btn-outline" style="display: none; @media(min-width: 600px){display:inline-flex;}">
+          <i data-lucide="phone" style="width: 16px; height: 16px;"></i>
+          <span>Call Desk</span>
+        </a>
+        <a href="#book" class="btn btn-primary">
+          <i data-lucide="sparkles" style="width: 16px; height: 16px;"></i>
+          <span>Book Session</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- LIVE STATUS BAR -->
+  <div class="status-banner">
+    <div class="container">
+      <div class="status-flex">
+        <div class="status-indicator">
+          <div class="status-dot"></div>
+          <span>Wellness & Panchakarma Appointments Open Daily (Monday–Sunday)</span>
+        </div>
+        <div class="status-timings">
+          <i data-lucide="clock" style="width: 16px; height: 16px; color: var(--primary);"></i>
+          <span>Operating Hours: <strong>11:30 AM – 9:00 PM (All 7 Days)</strong></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section" id="overview">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-pill">
+            <i data-lucide="sparkles" style="width: 16px; height: 16px;"></i>
+            <span>Ayurvedic Healing & Rejuvenation Opposite Westend Mall</span>
+          </div>
+          <h1 class="hero-title">
+            Rejuvenate Your Body & Mind With <span>Traditional Panchakarma & Wellness</span>
+          </h1>
+          <p class="hero-desc">
+            Experience the transformative balance of authentic Ayurvedic healing, soothing Shirodhara, restorative herbal massages, and therapeutic pain relief protocols in a peaceful sanctuary designed for your wellness.
+          </p>
+
+          <div class="hero-actions">
+            <a href="https://wa.me/918379880302?text=Hi%20Dr.%20Shah's%20Clinic,%20I%20would%20like%20to%20inquire%20about%20a%20Panchakarma%20/%20wellness%20therapy%20session." class="btn btn-whatsapp" target="_blank">
+              <i data-lucide="message-circle" style="width: 18px; height: 18px;"></i>
+              <span>Book via WhatsApp (+91 83798 80302)</span>
+            </a>
+            <a href="tel:+918379880302" class="btn btn-outline">
+              <i data-lucide="phone-call" style="width: 18px; height: 18px;"></i>
+              <span>Call +91 83798 80302</span>
+            </a>
+          </div>
+
+          <div class="hero-trust-bar">
+            <div class="trust-item">
+              <div class="trust-icon">
+                <i data-lucide="star" style="width: 20px; height: 20px; fill: #f59e0b; stroke: #f59e0b;"></i>
+              </div>
+              <div class="trust-meta">
+                <div class="trust-value">4.7 / 5.0</div>
+                <div class="trust-label">Guest Satisfaction</div>
+              </div>
+            </div>
+
+            <div class="trust-item">
+              <div class="trust-icon">
+                <i data-lucide="calendar" style="width: 20px; height: 20px;"></i>
+              </div>
+              <div class="trust-meta">
+                <div class="trust-value">Open 7 Days</div>
+                <div class="trust-label">11:30 AM – 9:00 PM</div>
+              </div>
+            </div>
+
+            <div class="trust-item">
+              <div class="trust-icon">
+                <i data-lucide="droplet" style="width: 20px; height: 20px;"></i>
+              </div>
+              <div class="trust-meta">
+                <div class="trust-value">Pure Oils</div>
+                <div class="trust-label">Authentic Herbs</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-main-card">
+            <img src="assets/hero.jpg" alt="Dr. Shah's Clinic Wellness Sanctuary">
+            <div class="hero-overlay-badge">
+              <i data-lucide="map-pin" style="width: 18px; height: 18px; color: #fde68a;"></i>
+              <div>
+                <strong style="display:block; font-size: 13px;">A-9 Kumar Classics, Opp. Westend Mall</strong>
+                <span style="font-size: 11px; opacity: 0.85;">Besides Nakoda Jewellers, Aundh, Pune</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-floating-stat">
+            <div style="background: #fef3c7; width: 42px; height: 42px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #92400e;">
+              <i data-lucide="heart" style="width: 22px; height: 22px;"></i>
+            </div>
+            <div>
+              <div style="font-weight: 700; font-size: 15px; color: var(--dark);">Total Stress Relief</div>
+              <div style="font-size: 12px; color: var(--text-muted);">Mind & body tranquility</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THERAPIES & WELLNESS SERVICES -->
+  <section class="section" id="therapies">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Holistic Repertoire</span>
+        <h2 class="section-title">Authentic Therapies & Wellness Packages</h2>
+        <p class="section-subtitle">Tailored treatments using traditional herbs and medicated warm oils for holistic rejuvenation.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- 1 -->
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <i data-lucide="droplets" style="width: 28px; height: 28px;"></i>
+          </div>
+          <h3 class="service-title">Shirodhara Stress Therapy</h3>
+          <p class="service-desc">Continuous stream of warm medicated herbal oil poured rhythmically onto the third-eye chakra. Relieves chronic stress, anxiety, insomnia, hypertension, and mental fatigue.</p>
+          <ul class="service-features">
+            <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Deep neurological relaxation</li>
+            <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Restful sleep induction</li>
+            <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Calms chronic migraine & tension</li>
+          </ul>
+          <a href="#book" class="service-cta">Inquire Session <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i></a>
+        </div>
+
+        <!-- 2 -->
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <i data-lucide="sparkle" style="width: 28px; height: 28px;"></i>
+          </div>
+          <h3 class="service-title">Abhyanga Full Body Therapy</h3>
+          <p class="service-desc">Full-body synchronized herbal oil massage using authentic herbal decoctions. Stimulates lymphatic drainage, improves circulation, softens skin, and tones muscles.</p>
+          <ul class="service-features">
+            <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Full body lymphatic detox</li>
+            <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Joint flexibility enhancement</li>
+            <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Muscle fatigue elimination</li>
+          </ul>
+          <a href="#book" class="service-cta">Inquire Session <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i></a>
+        </div>
+
+        <!-- 3 -->
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <i data-lucide="flame" style="width: 28px; height: 28px;"></i>
+          </div>
+          <h3 class="service-title">Panchakarma Cellular Detox</h3>
+          <p class="service-desc">Comprehensive internal purification protocols to flush accumulated toxins (Ama) from tissues, restart metabolic equilibrium, and restore constitutional balance.</p>
+          <ul class="service-features">
+            <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Swedana herbal steam therapy</li>
+            <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Medicated Basti therapies</li>
+            <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Tailored detox diet guidance</li>
+          </ul>
+          <a href="#book" class="service-cta">Inquire Session <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i></a>
+        </div>
+
+        <!-- 4 -->
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <i data-lucide="shield" style="width: 28px; height: 28px;"></i>
+          </div>
+          <h3 class="service-title">Kati Basti (Back & Spine Care)</h3>
+          <p class="service-desc">Warm medicated herbal oil retained in a reservoir over the lumbar region. Highly effective for chronic low back pain, sciatica, disc slip, and stiffness.</p>
+          <ul class="service-features">
+            <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Relieves acute & chronic lower back pain</li>
+            <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Deep tissue nourishment for vertebrae</li>
+            <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Relaxes spastic spinal musculature</li>
+          </ul>
+          <a href="#book" class="service-cta">Inquire Session <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i></a>
+        </div>
+
+        <!-- 5 -->
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <i data-lucide="flower" style="width: 28px; height: 28px;"></i>
+          </div>
+          <h3 class="service-title">Therapeutic Wellness Spa</h3>
+          <p class="service-desc">Luxurious herbal body polish, natural ubtan treatments, facial rejuvenation therapies, and deep head massage designed to soothe the sensory organs and revitalize vitality.</p>
+          <ul class="service-features">
+            <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Herbal exfoliating body polish</li>
+            <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Mukha Lepa Ayurvedic facial therapy</li>
+            <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Padabhyanga foot reflex therapy</li>
+          </ul>
+          <a href="#book" class="service-cta">Inquire Session <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i></a>
+        </div>
+
+        <!-- 6 -->
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <i data-lucide="heart-pulse" style="width: 28px; height: 28px;"></i>
+          </div>
+          <h3 class="service-title">Ayurvedic Consultation</h3>
+          <p class="service-desc">Personalized assessment of your constitutional Prakriti and current Vikriti, providing customized herbal recommendations, wellness habits, and therapeutic diet routines.</p>
+          <ul class="service-features">
+            <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Prakriti (body constitution) analysis</li>
+            <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Chronic pain & vitality counsel</li>
+            <li><i data-lucide="check" style="width: 16px; height: 16px;"></i> Ongoing wellness roadmap</li>
+          </ul>
+          <a href="#book" class="service-cta">Inquire Session <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMINGS & APPOINTMENT SCHEDULING CARD -->
+  <section class="section" id="timings">
+    <div class="container">
+      <div class="schedule-grid" id="book">
+        <!-- Timings Card -->
+        <div class="timings-card">
+          <span class="section-badge">Convenient Schedule</span>
+          <h3><i data-lucide="clock" style="color: var(--primary);"></i> Center Visiting Hours</h3>
+          
+          <div class="timing-slot highlight">
+            <div>
+              <div class="timing-day">All 7 Days (Mon – Sun)</div>
+              <div style="font-size: 13px; color: var(--text-muted);">Including Weekends</div>
+            </div>
+            <div class="timing-hours">11:30 AM – 9:00 PM</div>
+          </div>
+
+          <div style="background: #fafaf9; border-radius: 12px; padding: 20px; margin-top: 20px; border: 1px solid var(--border);">
+            <h4 style="font-size: 15px; margin-bottom: 8px; color: var(--dark); font-family: 'Plus Jakarta Sans', sans-serif;">Why Pre-Book Your Session?</h4>
+            <p style="font-size: 13.5px; color: var(--text-muted); line-height: 1.6;">
+              Panchakarma and wellness spa therapies require warm oil preparation, customized herbal formulation, and dedicated therapist allocation. Pre-booking ensures an uninterrupted, serene experience.
+            </p>
+          </div>
+
+          <div style="margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--border);">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+              <span style="font-size: 14px; font-weight: 600; color: var(--dark);">Direct Reception Desk:</span>
+              <a href="tel:+918379880302" style="font-weight: 700; color: var(--primary); text-decoration: none; font-size: 16px;">
+                +91 83798 80302
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Appointment Form -->
+        <div class="appointment-card">
+          <span style="background: rgba(255,255,255,0.2); padding: 4px 12px; border-radius: 999px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">1-Tap Direct Booking</span>
+          <h3 style="margin-top: 10px;">Reserve a Wellness Slot</h3>
+          <p>Send your booking details directly to Dr. Shah's Clinic on WhatsApp for instant slot confirmation.</p>
+
+          <form id="appointment-form" onsubmit="handleAppointmentSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Your Name *</label>
+                <input type="text" id="guest-name" class="form-control" placeholder="e.g. Meera Deshmukh" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Phone Number *</label>
+                <input type="tel" id="guest-phone" class="form-control" placeholder="e.g. 98230XXXXX" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Preferred Date *</label>
+                <input type="date" id="pref-date" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Preferred Timing *</label>
+                <select id="pref-time" class="form-control" required>
+                  <option value="Afternoon (12:00 PM - 3:00 PM)">Afternoon: 12:00 PM – 3:00 PM</option>
+                  <option value="Evening (4:00 PM - 7:00 PM)">Evening: 4:00 PM – 7:00 PM</option>
+                  <option value="Night (7:00 PM - 9:00 PM)">Night: 7:00 PM – 9:00 PM</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Preferred Therapy / Service *</label>
+              <select id="therapy-service" class="form-control" required>
+                <option value="Shirodhara Stress Relief">Shirodhara (Stress & Sleep Therapy)</option>
+                <option value="Abhyanga Full Body Herbal Massage">Abhyanga Full Body Massage</option>
+                <option value="Panchakarma Detox Therapy">Panchakarma Cellular Detox</option>
+                <option value="Kati Basti (Spine / Back Pain Relief)">Kati Basti (Spine / Sciatica Pain)</option>
+                <option value="Wellness Spa & Body Polish">Ayurvedic Wellness Spa & Body Polish</option>
+                <option value="Doctor Ayurvedic Consultation">Doctor Ayurvedic Consultation</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-whatsapp" style="width: 100%; padding: 14px; font-size: 15px; margin-top: 8px;">
+              <i data-lucide="send" style="width: 18px; height: 18px;"></i>
+              <span>Send Reservation Request on WhatsApp</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS SECTION -->
+  <section class="section" id="reviews" style="background: #f5f5f4;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Client Experiences</span>
+        <h2 class="section-title">What Our Guests Say</h2>
+        <p class="section-subtitle">Real experiences from guests visiting Dr. Shah's Clinic & Wellness in Aundh.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-rating">
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b;"></i>
+          </div>
+          <p class="review-text">
+            "The Shirodhara session here gave me the deepest sleep I've had in months. The oils used are noticeably genuine and the therapists are very courteous and skilled."
+          </p>
+          <div class="review-author">
+            <div class="author-avatar">AP</div>
+            <div>
+              <div class="author-name">Anand Pendharkar</div>
+              <div class="author-sub">Resident · Seasons Road, Aundh</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-rating">
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b;"></i>
+          </div>
+          <p class="review-text">
+            "Very conveniently located right in front of Westend Mall. The Kati Basti for my severe back stiffness worked wonders. Clean rooms and warm hospitality."
+          </p>
+          <div class="review-author">
+            <div class="author-avatar">SK</div>
+            <div>
+              <div class="author-name">Shalini Kapoor</div>
+              <div class="author-sub">Parihar Chowk, Aundh</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-rating">
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b;"></i>
+          </div>
+          <p class="review-text">
+            "They are open till 9 PM including Sundays, which makes it very easy to fit into a hectic work schedule. Truly relaxing environment."
+          </p>
+          <div class="review-author">
+            <div class="author-avatar">RM</div>
+            <div>
+              <div class="author-name">Rohan Mehta</div>
+              <div class="author-sub">Wireless Colony, Aundh</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION & CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="section-badge">Center Location</span>
+          <h2 class="contact-title">Visit Our Wellness Sanctuary</h2>
+          <p style="color: var(--text-muted); margin-bottom: 28px; font-size: 15px;">Located directly opposite Westend Mall in central Aundh.</p>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i data-lucide="map-pin"></i>
+            </div>
+            <div class="contact-detail">
+              <h4>Address</h4>
+              <p>A-9, Kumar Classics Co-operative Housing Society,<br>Besides Nakoda Jewellers, In Front of Westend Mall,<br>Near Parihar Chowk, Aundh, Pune, Maharashtra 411007</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i data-lucide="phone"></i>
+            </div>
+            <div class="contact-detail">
+              <h4>Direct Telephone</h4>
+              <p><a href="tel:+918379880302" style="color: var(--primary); text-decoration: none; font-weight: 600;">+91 83798 80302</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i data-lucide="clock"></i>
+            </div>
+            <div class="contact-detail">
+              <h4>Operational Hours</h4>
+              <p>Monday to Sunday: <strong>11:30 AM – 9:00 PM</strong><br><span style="color: var(--secondary); font-weight: 600;">Open All 7 Days</span></p>
+            </div>
+          </div>
+
+          <div style="margin-top: 32px; display: flex; gap: 14px;">
+            <a href="https://maps.google.com/?q=Kumar+Classics+Opposite+Westend+Mall+Aundh+Pune" target="_blank" class="btn btn-outline">
+              <i data-lucide="navigation" style="width: 16px; height: 16px;"></i>
+              <span>Get Directions</span>
+            </a>
+            <a href="https://wa.me/918379880302" target="_blank" class="btn btn-whatsapp">
+              <i data-lucide="message-circle" style="width: 16px; height: 16px;"></i>
+              <span>WhatsApp Us</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-map">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.261294867491!2d73.8052162!3d18.5622432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf3835698b67%3A0x2897ec76241b777a!2sWestend%20Mall%2C%20Aundh%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1710400000000!5m2!1sen!2sin" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-title">Dr. Shah's Clinic & Wellness</div>
+          <p>
+            Ayurvedic Spa & Panchakarma Center offering therapeutic stress relief, Shirodhara, traditional detoxification, and pain management in Aundh, Pune.
+          </p>
+          <div style="margin-top: 16px; font-size: 13px; color: #78716c;">
+            A-9 Kumar Classics, Opp. Westend Mall, Aundh, Pune — 411007
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Signature Therapies</h4>
+          <ul class="footer-links">
+            <li><a href="#therapies">Shirodhara Stress Therapy</a></li>
+            <li><a href="#therapies">Abhyanga Full Body Massage</a></li>
+            <li><a href="#therapies">Panchakarma Detoxification</a></li>
+            <li><a href="#therapies">Kati Basti Spine & Back Relief</a></li>
+            <li><a href="#therapies">Ayurvedic Wellness Spa</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Appointments & Contact</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+918379880302">Mobile: +91 83798 80302</a></li>
+            <li><a href="https://wa.me/918379880302">WhatsApp: +91 83798 80302</a></li>
+            <li><a href="#timings">Daily: 11:30 AM – 9:00 PM</a></li>
+            <li><a href="#timings">Open Sundays</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Dr. Shah's Clinic & Wellness, Spa and Panchakarma Center. All rights reserved.</p>
+        <p style="margin-top: 8px; font-size: 12px; color: #78716c;">
+          Mobile Website Concept engineered by <a href="https://harshu777.github.io/pune-website-demos/" style="color: #fde68a; text-decoration: none;">Pune Web Ventures</a>. Verified local business preview.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/918379880302?text=Hi%20Dr.%20Shah's%20Clinic,%20I%20would%20like%20to%20inquire%20about%20a%20therapy%20session." class="floating-whatsapp" target="_blank" aria-label="Book on WhatsApp">
+    <span class="whatsapp-tooltip">Chat on WhatsApp</span>
+    <i data-lucide="message-circle" style="width: 32px; height: 32px;"></i>
+  </a>
+
+  <!-- SCRIPTS -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Set today's date in appointment form
+    document.addEventListener('DOMContentLoaded', () => {
+      const dateInput = document.getElementById('pref-date');
+      if (dateInput) {
+        const today = new Date().toISOString().split('T')[0];
+        dateInput.min = today;
+        dateInput.value = today;
+      }
+    });
+
+    // Form submission handler
+    function handleAppointmentSubmit(event) {
+      event.preventDefault();
+      const name = document.getElementById('guest-name').value;
+      const phone = document.getElementById('guest-phone').value;
+      const date = document.getElementById('pref-date').value;
+      const time = document.getElementById('pref-time').value;
+      const service = document.getElementById('therapy-service').value;
+
+      const message = `Hello Dr. Shah's Clinic & Wellness,\n\nI would like to reserve a session:\n• Name: ${name}\n• Contact: ${phone}\n• Preferred Date: ${date}\n• Preferred Time: ${time}\n• Desired Therapy: ${service}\n\nPlease confirm slot availability. Thank you!`;
+
+      const whatsappUrl = `https://wa.me/918379880302?text=${encodeURIComponent(message)}`;
+      window.open(whatsappUrl, '_blank');
+    }
+  </script>
+</body>
+</html>
