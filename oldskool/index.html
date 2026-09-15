@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Old Skool | Retro Diner & Specialty Brews | ITI Road, Aundh, Pune</title>
+  <meta name="description" content="Welcome to Café Old Skool on ITI Road, Aundh (Opp. Gold's Gym). Famous for our signature Eiskafee, Old Skool Frappes, artisan smashed burgers, fluffy buttermilk pancakes & pasta.">
+  
+  <!-- Open Graph / WhatsApp Preview -->
+  <meta property="og:title" content="Café Old Skool | ITI Road, Aundh, Pune">
+  <meta property="og:description" content="Famous Eiskafee, thick frappes, gourmet smashed burgers & fluffy pancakes opposite Gold's Gym on ITI Road. Direct WhatsApp ordering & table booking.">
+  <meta property="og:image" content="https://harshu777.github.io/pune-website-demos/oldskool/assets/hero.jpg">
+  <meta property="og:url" content="https://harshu777.github.io/pune-website-demos/oldskool/">
+  <meta property="og:type" content="restaurant">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --dark-navy: #18202C;
+      --charcoal: #12171F;
+      --amber: #E29D26;
+      --amber-light: #F7C062;
+      --amber-dark: #C2821A;
+      --rust: #BD4A32;
+      --cream: #FAF7F0;
+      --cream-card: #FFFFFF;
+      --text-muted: #6E7987;
+      --border: rgba(226, 157, 38, 0.18);
+      --font-display: 'DM Serif Display', Georgia, serif;
+      --font-body: 'Space Grotesk', system-ui, sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      background-color: var(--cream);
+      color: var(--dark-navy);
+      font-family: var(--font-body);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* HARSHAL CONCEPT RIBBON - 100px stretch */
+    .concept-ribbon {
+      background: linear-gradient(135deg, #12171F 0%, #1e2837 100%);
+      color: #FAF7F0;
+      font-size: 13px;
+      padding: 10px 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      border-bottom: 1px solid rgba(226, 157, 38, 0.35);
+      position: relative;
+      z-index: 1000;
+    }
+    .concept-ribbon strong {
+      color: var(--amber-light);
+      letter-spacing: 0.5px;
+    }
+    .concept-ribbon a {
+      background: var(--amber);
+      color: var(--charcoal);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 12px;
+      padding: 5px 14px;
+      border-radius: 20px;
+      white-space: nowrap;
+      transition: all 0.25s ease;
+    }
+    .concept-ribbon a:hover {
+      background: var(--amber-light);
+      transform: translateY(-1px);
+    }
+
+    /* NAVIGATION - 100px stretch */
+    header.site-header {
+      position: sticky;
+      top: 0;
+      background: rgba(250, 247, 240, 0.96);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      z-index: 999;
+      border-bottom: 1px solid var(--border);
+      padding: 0 100px;
+      transition: all 0.3s ease;
+    }
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 84px;
+    }
+    .brand-logo {
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+    }
+    .brand-logo .logo-main {
+      font-family: var(--font-display);
+      font-size: 27px;
+      font-weight: 400;
+      letter-spacing: 1.5px;
+      color: var(--dark-navy);
+      line-height: 1;
+    }
+    .brand-logo .logo-sub {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      color: var(--rust);
+      font-weight: 700;
+      margin-top: 4px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      list-style: none;
+    }
+    .nav-links a {
+      color: var(--dark-navy);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      transition: color 0.2s ease;
+    }
+    .nav-links a:hover {
+      color: var(--amber-dark);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .btn-nav-order {
+      background: var(--amber);
+      color: var(--charcoal);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 12px 24px;
+      border-radius: 30px;
+      box-shadow: 0 6px 18px rgba(226, 157, 38, 0.3);
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-nav-order:hover {
+      background: var(--amber-light);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(226, 157, 38, 0.4);
+    }
+
+    /* HERO SECTION */
+    .hero {
+      position: relative;
+      min-height: 86vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(rgba(18, 23, 31, 0.65), rgba(18, 23, 31, 0.78)), url('assets/hero.jpg') center/cover no-repeat;
+      color: #FFF;
+      padding: 0 100px;
+    }
+    .hero-content {
+      max-width: 720px;
+      padding: 70px 0;
+    }
+    .hero-tagline {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(226, 157, 38, 0.18);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(247, 192, 98, 0.45);
+      padding: 6px 16px;
+      border-radius: 30px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--amber-light);
+      margin-bottom: 24px;
+    }
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: 54px;
+      line-height: 1.15;
+      margin-bottom: 22px;
+      letter-spacing: -0.5px;
+    }
+    .hero h1 span {
+      color: var(--amber-light);
+      font-style: italic;
+    }
+    .hero p {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.9);
+      font-weight: 400;
+      margin-bottom: 36px;
+      line-height: 1.7;
+    }
+    .hero-btns {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .btn-hero-primary {
+      background: var(--amber);
+      color: var(--charcoal);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      padding: 16px 36px;
+      border-radius: 40px;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 10px 30px rgba(226, 157, 38, 0.4);
+    }
+    .btn-hero-primary:hover {
+      background: var(--amber-light);
+      transform: translateY(-2px);
+    }
+    .btn-hero-secondary {
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(10px);
+      color: #FFF;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      padding: 16px 32px;
+      border-radius: 40px;
+      transition: all 0.3s ease;
+    }
+    .btn-hero-secondary:hover {
+      background: rgba(255, 255, 255, 0.22);
+      transform: translateY(-2px);
+    }
+
+    /* BADGES STRIP */
+    .badge-strip {
+      background: #FFF;
+      border-bottom: 1px solid var(--border);
+      padding: 28px 100px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+    }
+    .badge-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .badge-icon {
+      width: 48px;
+      height: 48px;
+      background: rgba(226, 157, 38, 0.12);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      color: var(--amber-dark);
+      flex-shrink: 0;
+    }
+    .badge-text h4 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--dark-navy);
+      margin-bottom: 2px;
+    }
+    .badge-text p {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* ABOUT STORY */
+    .story-section {
+      padding: 100px;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .story-text span.eyebrow {
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--rust);
+      display: block;
+      margin-bottom: 12px;
+    }
+    .story-text h2 {
+      font-family: var(--font-display);
+      font-size: 42px;
+      line-height: 1.2;
+      color: var(--dark-navy);
+      margin-bottom: 24px;
+    }
+    .story-text p {
+      font-size: 16px;
+      color: #384252;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+    .retro-badge-box {
+      background: #FFF;
+      border-radius: 20px;
+      padding: 36px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
+      border: 2px dashed rgba(226, 157, 38, 0.35);
+      position: relative;
+    }
+    .retro-badge-box .stamp {
+      position: absolute;
+      top: -16px;
+      right: 28px;
+      background: var(--rust);
+      color: #FFF;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 12px;
+    }
+    .retro-quote {
+      font-family: var(--font-display);
+      font-size: 22px;
+      color: var(--dark-navy);
+      margin-bottom: 16px;
+      line-height: 1.45;
+    }
+    .retro-meta {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--amber-dark);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    /* SIGNATURE SHOWCASE */
+    .signatures-section {
+      background: #F4EFE6;
+      padding: 100px;
+    }
+    .section-header {
+      text-align: center;
+      max-width: 650px;
+      margin: 0 auto 60px;
+    }
+    .section-header span.eyebrow {
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--rust);
+      display: block;
+      margin-bottom: 12px;
+    }
+    .section-header h2 {
+      font-family: var(--font-display);
+      font-size: 40px;
+      color: var(--dark-navy);
+      margin-bottom: 16px;
+    }
+    .section-header p {
+      color: var(--text-muted);
+      font-size: 16px;
+    }
+
+    .signature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 36px;
+    }
+    .card-item {
+      background: #FFF;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.05);
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      transition: all 0.35s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-item:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 24px 48px rgba(0, 0, 0, 0.1);
+    }
+    .card-img-wrap {
+      height: 250px;
+      overflow: hidden;
+      position: relative;
+    }
+    .card-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+    .card-item:hover .card-img-wrap img {
+      transform: scale(1.06);
+    }
+    .card-tag {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      background: var(--dark-navy);
+      color: var(--amber-light);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 20px;
+    }
+    .card-body {
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .card-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 12px;
+    }
+    .card-title-row h3 {
+      font-family: var(--font-display);
+      font-size: 22px;
+      color: var(--dark-navy);
+    }
+    .card-price {
+      font-weight: 700;
+      color: var(--rust);
+      font-size: 18px;
+    }
+    .card-body p {
+      font-size: 14px;
+      color: #556070;
+      line-height: 1.6;
+      margin-bottom: 24px;
+      flex-grow: 1;
+    }
+    .btn-card-order {
+      align-self: flex-start;
+      background: #F4EFE6;
+      color: var(--dark-navy);
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      padding: 10px 20px;
+      border-radius: 24px;
+      transition: all 0.25s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .btn-card-order:hover {
+      background: var(--amber);
+      color: var(--charcoal);
+    }
+
+    /* DIGITAL MENU HIGHLIGHTS */
+    .menu-highlights {
+      padding: 100px;
+      background: #FFF;
+    }
+    .menu-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      margin-top: 40px;
+    }
+    .menu-cat h3 {
+      font-family: var(--font-display);
+      font-size: 26px;
+      color: var(--dark-navy);
+      border-bottom: 2px solid rgba(226, 157, 38, 0.25);
+      padding-bottom: 12px;
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .menu-cat h3 span {
+      font-family: var(--font-body);
+      font-size: 12px;
+      color: var(--rust);
+      letter-spacing: 2px;
+      font-weight: 700;
+    }
+    .menu-item-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 14px 0;
+      border-bottom: 1px dashed rgba(0, 0, 0, 0.08);
+    }
+    .menu-item-info h4 {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--dark-navy);
+      margin-bottom: 4px;
+    }
+    .menu-item-info p {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .menu-item-cost {
+      font-weight: 700;
+      font-size: 15px;
+      color: var(--rust);
+      white-space: nowrap;
+      margin-left: 20px;
+    }
+
+    /* HANGOUT BANNER */
+    .hangout-banner {
+      background: linear-gradient(135deg, var(--dark-navy) 0%, #101620 100%);
+      color: #FFF;
+      padding: 80px 100px;
+      border-radius: 28px;
+      margin: 0 100px 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hangout-banner::after {
+      content: "";
+      position: absolute;
+      right: -80px;
+      bottom: -80px;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: rgba(226, 157, 38, 0.1);
+      pointer-events: none;
+    }
+    .hangout-banner h2 {
+      font-family: var(--font-display);
+      font-size: 38px;
+      line-height: 1.25;
+      margin-bottom: 12px;
+    }
+    .hangout-banner h2 span {
+      color: var(--amber-light);
+      font-style: italic;
+    }
+    .hangout-banner p {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.85);
+      max-width: 580px;
+    }
+    .hangout-cta-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: flex-end;
+      flex-shrink: 0;
+    }
+    .btn-wa-action {
+      background: #25D366;
+      color: #FFF;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 15px;
+      padding: 16px 36px;
+      border-radius: 40px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 10px 24px rgba(37, 211, 102, 0.35);
+      transition: all 0.3s ease;
+    }
+    .btn-wa-action:hover {
+      background: #20BA5C;
+      transform: translateY(-2px);
+    }
+    .phone-badge-sub {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.65);
+    }
+
+    /* FOOTER */
+    footer.site-footer {
+      background: var(--charcoal);
+      color: rgba(255, 255, 255, 0.75);
+      padding: 80px 100px 30px;
+      font-size: 14px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 60px;
+      margin-bottom: 60px;
+    }
+    .footer-brand h3 {
+      font-family: var(--font-display);
+      font-size: 26px;
+      color: #FFF;
+      margin-bottom: 14px;
+      letter-spacing: 1px;
+    }
+    .footer-brand p {
+      font-size: 14px;
+      line-height: 1.7;
+      color: rgba(255, 255, 255, 0.6);
+      margin-bottom: 20px;
+    }
+    .footer-col h4 {
+      color: #FFF;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .footer-col ul {
+      list-style: none;
+    }
+    .footer-col ul li {
+      margin-bottom: 10px;
+    }
+    .footer-col ul li a {
+      color: rgba(255, 255, 255, 0.6);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .footer-col ul li a:hover {
+      color: var(--amber-light);
+    }
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.45);
+    }
+
+    /* FLOATING WHATSAPP */
+    .floating-wa {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      background: #25D366;
+      color: #FFF;
+      border-radius: 50px;
+      padding: 12px 22px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+      z-index: 9999;
+      transition: all 0.3s ease;
+    }
+    .floating-wa:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 14px 30px rgba(37, 211, 102, 0.5);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 1024px) {
+      .concept-ribbon,
+      header.site-header,
+      .hero,
+      .badge-strip,
+      .story-section,
+      .signatures-section,
+      .menu-highlights,
+      footer.site-footer {
+        padding-left: 48px;
+        padding-right: 48px;
+      }
+      .hangout-banner {
+        margin: 0 48px 80px;
+        padding: 60px 48px;
+      }
+      .badge-strip {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .signature-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .concept-ribbon,
+      header.site-header,
+      .hero,
+      .badge-strip,
+      .story-section,
+      .signatures-section,
+      .menu-highlights,
+      footer.site-footer {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .hangout-banner {
+        margin: 0 20px 60px;
+        padding: 40px 24px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .hangout-cta-group {
+        align-items: flex-start;
+        width: 100%;
+      }
+      .btn-wa-action {
+        width: 100%;
+        justify-content: center;
+      }
+      .nav-links {
+        display: none;
+      }
+      .hero h1 {
+        font-size: 38px;
+      }
+      .story-section {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .signature-grid {
+        grid-template-columns: 1fr;
+      }
+      .menu-columns {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      .badge-strip {
+        grid-template-columns: 1fr;
+      }
+      .concept-ribbon {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HARSHAL CONCEPT DEMO RIBBON -->
+  <div class="concept-ribbon">
+    <div>
+      <strong>PORTFOLIO CONCEPT DEMO:</strong> Designed specifically for <strong>Café Old Skool (Aundh)</strong> by Harshal Baviskar.
+    </div>
+    <a href="https://wa.me/919420132081?text=Hi%20Harshal,%20I%20saw%20the%20Cafe%20Old%20Skool%20website%20demo.%20I%20want%20to%20claim%20this%20for%20my%20business!" target="_blank" rel="noopener">
+      Claim This Website (₹5,999) &rarr;
+    </a>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">
+        <span class="logo-main">Café Old Skool</span>
+        <span class="logo-sub">ITI Road &middot; Opp. Gold's Gym &middot; Aundh</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#story">Our Vibe</a></li>
+        <li><a href="#signatures">Classics</a></li>
+        <li><a href="#menu">Full Menu</a></li>
+        <li><a href="#hours">Timings</a></li>
+        <li><a href="#location">Find Us</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="https://wa.me/919561859999?text=Hi%20Cafe%20Old%20Skool,%20I%20would%20like%20to%20place%20an%20order%20or%20reserve%20a%20table." target="_blank" rel="noopener" class="btn-nav-order">
+          <span>&#x1F354;</span> Order on WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-tagline">&#x2615; ITI Road, Aundh &middot; The Classic Neighborhood Diner</div>
+      <h1>Good Music, Smashed Burgers &amp; <span>Nostalgic Brews.</span></h1>
+      <p>
+        Right opposite Gold’s Gym on ITI Road, Café Old Skool is Pune’s favorite collegiate hangout. From our signature ice cream Eiskafee to hot pressed burgers and golden stacks of buttermilk pancakes, we serve comfort food done right.
+      </p>
+      <div class="hero-btns">
+        <a href="https://wa.me/919561859999?text=Hi%20Cafe%20Old%20Skool,%20please%20send%20today%27s%20menu%20and%20specials!" target="_blank" rel="noopener" class="btn-hero-primary">
+          <span>&#x1F4F1;</span> Direct WhatsApp Order
+        </a>
+        <a href="#menu" class="btn-hero-secondary">
+          Browse Old Skool Menu &darr;
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BADGE STRIP -->
+  <section class="badge-strip">
+    <div class="badge-item">
+      <div class="badge-icon">&#x1F964;</div>
+      <div class="badge-text">
+        <h4>Signature Eiskafee</h4>
+        <p>Vanilla ice cream float &amp; espresso</p>
+      </div>
+    </div>
+    <div class="badge-item">
+      <div class="badge-icon">&#x1F354;</div>
+      <div class="badge-text">
+        <h4>Juicy Smashed Burgers</h4>
+        <p>Buttery brioche buns &amp; house sauces</p>
+      </div>
+    </div>
+    <div class="badge-item">
+      <div class="badge-icon">&#x1F95E;</div>
+      <div class="badge-text">
+        <h4>All-Day Breakfast</h4>
+        <p>Fluffy buttermilk pancakes &amp; omelettes</p>
+      </div>
+    </div>
+    <div class="badge-item">
+      <div class="badge-icon">&#x1F3A7;</div>
+      <div class="badge-text">
+        <h4>Chilled Retro Vibes</h4>
+        <p>Great music, board games &amp; corner booths</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT STORY -->
+  <section class="story-section" id="story">
+    <div class="story-text">
+      <span class="eyebrow">The Old Skool Ethos</span>
+      <h2>Where college nostalgia meets serious cafe comfort.</h2>
+      <p>
+        Tucked into Chaitraban Residency along ITI Road, Café Old Skool is built for the post-workout recharge, late-afternoon study sessions, and heartfelt weekend reunions with old friends.
+      </p>
+      <p>
+        We believe that comfort food should never cut corners. Our patties are pressed fresh to order, our sauces are simmered from scratch, and our specialty coffee blends deliver that authentic roast kick that keeps Aundh coming back day after day.
+      </p>
+      <div style="margin-top: 30px;">
+        <a href="https://wa.me/919561859999?text=Hi%20Cafe%20Old%20Skool,%20are%20tables%20available%20right%20now?" target="_blank" rel="noopener" class="btn-nav-order">
+          Check Table Availability &rarr;
+        </a>
+      </div>
+    </div>
+
+    <div class="retro-badge-box">
+      <span class="stamp">Aundh Favorite</span>
+      <div class="retro-quote">
+        "Best Eiskafee and burgers on ITI Road! The ambiance is super chilled out, playlist is always on point, and prices won’t pinch your pocket."
+      </div>
+      <div class="retro-meta">
+        — ITI Road Hangout Regulars &middot; 4.3&#x2605; Local Rating
+      </div>
+    </div>
+  </section>
+
+  <!-- SIGNATURE CLASSICS -->
+  <section class="signatures-section" id="signatures">
+    <div class="section-header">
+      <span class="eyebrow">Fan Favorites</span>
+      <h2>Old Skool Signatures</h2>
+      <p>The dishes and drinks that put us on the Aundh food map. Freshly whipped, sizzled, and poured to order.</p>
+    </div>
+
+    <div class="signature-grid">
+      <!-- Item 1: Eiskafee -->
+      <div class="card-item">
+        <div class="card-img-wrap">
+          <img src="assets/coffee.jpg" alt="Signature Eiskafee at Cafe Old Skool" loading="lazy">
+          <span class="card-tag">Most Iconic</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title-row">
+            <h3>Signature Eiskafee</h3>
+            <span class="card-price">&#x20B9;190</span>
+          </div>
+          <p>German-style iced coffee treat with rich espresso poured over creamy artisan vanilla ice cream, topped with cocoa dust and chocolate shavings.</p>
+          <a href="https://wa.me/919561859999?text=Hi%20Cafe%20Old%20Skool,%20I%20want%20to%20order%20the%20Signature%20Eiskafee!" target="_blank" rel="noopener" class="btn-card-order">
+            <span>&#x1F4AC;</span> Order on WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Item 2: Burger -->
+      <div class="card-item">
+        <div class="card-img-wrap">
+          <img src="assets/burger.jpg" alt="Old Skool Gourmet Smashed Burger" loading="lazy">
+          <span class="card-tag">Chef's Special</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title-row">
+            <h3>Old Skool Smashed Burger</h3>
+            <span class="card-price">&#x20B9;240</span>
+          </div>
+          <p>Juicy handcrafted smashed patty, double melted cheddar, caramelized onions, crispy gherkins, and house secret burger sauce in toasted brioche.</p>
+          <a href="https://wa.me/919561859999?text=Hi%20Cafe%20Old%20Skool,%20I%20want%20to%20order%20the%20Old%20Skool%20Smashed%20Burger!" target="_blank" rel="noopener" class="btn-card-order">
+            <span>&#x1F4AC;</span> Order on WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Item 3: Pancakes -->
+      <div class="card-item">
+        <div class="card-img-wrap">
+          <img src="assets/pancakes.jpg" alt="Golden Buttermilk Pancakes at Cafe Old Skool" loading="lazy">
+          <span class="card-tag">All-Day Sweet</span>
+        </div>
+        <div class="card-body">
+          <div class="card-title-row">
+            <h3>Fluffy Buttermilk Pancakes</h3>
+            <span class="card-price">&#x20B9;210</span>
+          </div>
+          <p>Triple stack of golden, cloud-soft pancakes served with pure maple syrup, whipped butter rosette, and seasonal sliced berries.</p>
+          <a href="https://wa.me/919561859999?text=Hi%20Cafe%20Old%20Skool,%20I%20want%20to%20order%20the%20Buttermilk%20Pancakes!" target="_blank" rel="noopener" class="btn-card-order">
+            <span>&#x1F4AC;</span> Order on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIGITAL MENU HIGHLIGHTS -->
+  <section class="menu-highlights" id="menu">
+    <div class="section-header">
+      <span class="eyebrow">Complete Diner Fare</span>
+      <h2>Burgers, Pastas &amp; Beverages</h2>
+      <p>Direct doorstep delivery across Aundh or hot takeaway ready in 15 minutes.</p>
+    </div>
+
+    <div class="menu-columns">
+      <!-- Col 1 -->
+      <div class="menu-cat">
+        <h3>Burgers, Pastas &amp; Bowls <span>MAINS</span></h3>
+
+        <div class="menu-item-row">
+          <div class="menu-item-info">
+            <h4>Bolognese Pasta (Veg / Non-Veg)</h4>
+            <p>Rich Italian slow-simmered herb tomato sauce with parmesan</p>
+          </div>
+          <div class="menu-item-cost">&#x20B9;260</div>
+        </div>
+
+        <div class="menu-item-row">
+          <div class="menu-item-info">
+            <h4>Crispy Falafel &amp; Hummus Burger</h4>
+            <p>Herb-infused patty, pickled veggies, garlic tahini spread</p>
+          </div>
+          <div class="menu-item-cost">&#x20B9;210</div>
+        </div>
+
+        <div class="menu-item-row">
+          <div class="menu-item-info">
+            <h4>Butter Chicken Rice Bowl</h4>
+            <p>Aromatic basmati rice topped with smoky butter gravy &amp; cilantro</p>
+          </div>
+          <div class="menu-item-cost">&#x20B9;270</div>
+        </div>
+
+        <div class="menu-item-row">
+          <div class="menu-item-info">
+            <h4>Honey Chilli Potato Wedges</h4>
+            <p>Crisp skin-on potatoes tossed in sweet spicy sesame glaze</p>
+          </div>
+          <div class="menu-item-cost">&#x20B9;180</div>
+        </div>
+      </div>
+
+      <!-- Col 2 -->
+      <div class="menu-cat">
+        <h3>Shakes, Frappes &amp; Brews <span>DRINKS</span></h3>
+
+        <div class="menu-item-row">
+          <div class="menu-item-info">
+            <h4>Old Skool Special Chocolate Chip Frappe</h4>
+            <p>Blended dark roast espresso, chocolate chips, ice cream dome</p>
+          </div>
+          <div class="menu-item-cost">&#x20B9;200</div>
+        </div>
+
+        <div class="menu-item-row">
+          <div class="menu-item-info">
+            <h4>Classic Cold Coffee</h4>
+            <p>Thick, frothy, bittersweet Pune-style caffeinated goodness</p>
+          </div>
+          <div class="menu-item-cost">&#x20B9;140</div>
+        </div>
+
+        <div class="menu-item-row">
+          <div class="menu-item-info">
+            <h4>Peanut Butter &amp; Banana Toast</h4>
+            <p>Thick multigrain toast with chunky peanut butter &amp; honey drizzle</p>
+          </div>
+          <div class="menu-item-cost">&#x20B9;160</div>
+        </div>
+
+        <div class="menu-item-row">
+          <div class="menu-item-info">
+            <h4>Hot Hazelnut Hot Chocolate</h4>
+            <p>Velvety melted dark cocoa infused with toasted hazelnut notes</p>
+          </div>
+          <div class="menu-item-cost">&#x20B9;180</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HANGOUT CALLOUT -->
+  <section class="hangout-banner" id="hours">
+    <div>
+      <h2>Hang Out with Us at <span>Old Skool.</span></h2>
+      <p>
+        Whether you just finished a workout at Gold's Gym across the street or need an afternoon caffeine boost with board games, your seat is waiting.
+      </p>
+      <div style="margin-top: 16px; font-size: 14px; color: var(--amber-light);">
+        &#x23F0; Open Everyday: 10:30 AM – 11:00 PM &middot; Dine-in &amp; Takeaway
+      </div>
+    </div>
+    <div class="hangout-cta-group">
+      <a href="https://wa.me/919561859999?text=Hi%20Cafe%20Old%20Skool,%20I%20would%20like%20to%20order%20takeaway%20or%20reserve%20seats." target="_blank" rel="noopener" class="btn-wa-action">
+        <span>&#x1F4AC;</span> WhatsApp Old Skool
+      </a>
+      <span class="phone-badge-sub">Direct to ITI Road Counter (+91 95618 59999)</span>
+    </div>
+  </section>
+
+  <!-- FOOTER / LOCATION -->
+  <footer class="site-footer" id="location">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>CAFÉ OLD SKOOL</h3>
+        <p>
+          Retro collegiate cafe, signature Eiskafee, gourmet smashed burgers, fluffy buttermilk pancakes &amp; hearty pasta bowls on ITI Road, Aundh.
+        </p>
+        <div style="font-size: 13px; color: var(--amber-light); font-weight: 600;">
+          &#x1F4CD; Chaitraban Residency - I, C-1, ITI Rd, Opp. Gold's Gym, Aundh, Pune – 411007
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#story">About Old Skool</a></li>
+          <li><a href="#signatures">Classic Hits</a></li>
+          <li><a href="#menu">Digital Menu</a></li>
+          <li><a href="#hours">Timings</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <ul>
+          <li>Monday – Sunday</li>
+          <li>10:30 AM – 11:00 PM</li>
+          <li>Breakfast Served All Day</li>
+          <li>Average Spend: &#x20B9;500 – &#x20B9;700 for two</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact &amp; Location</h4>
+        <ul>
+          <li><strong style="color:#FFF;">Phone:</strong> +91 95618 59999</li>
+          <li><strong style="color:#FFF;">Landmark:</strong> Directly Opp. Gold's Gym</li>
+          <li><a href="https://maps.google.com/?q=Cafe+Old+Skool+Chaitraban+ITI+Road+Aundh+Pune" target="_blank" rel="noopener" style="color:var(--amber-light); font-weight:600;">View on Google Maps &rarr;</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>&copy; 2026 Café Old Skool. All rights reserved.</div>
+      <div>Concept Designed &amp; Crafted by <a href="https://wa.me/919420132081?text=Hi%20Harshal,%20I%20love%20the%20Cafe%20Old%20Skool%20website%20design!" target="_blank" rel="noopener" style="color: var(--amber-light); text-decoration: none; font-weight: 600;">Harshal Baviskar</a> (Pune Web Designer)</div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/919561859999?text=Hi%20Cafe%20Old%20Skool,%20I%20want%20to%20order%20or%20ask%20a%20question." target="_blank" rel="noopener" class="floating-wa">
+    <span>&#x1F4AC;</span> WhatsApp Old Skool
+  </a>
+
+</body>
+</html>

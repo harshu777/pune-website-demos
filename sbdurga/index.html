@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S.B. Durga's Cafe House | Pune's Iconic Cold Coffee & Quick Bites | Anand Park, Aundh</title>
+  <meta name="description" content="Home of Pune's iconic thick cold coffee, crispy butter masala dosa, sizzling pav bhaji & bun maska at Anand Park, Aundh. Fast 1-tap WhatsApp ordering & takeaway.">
+  
+  <!-- Open Graph / WhatsApp Preview -->
+  <meta property="og:title" content="S.B. Durga's Cafe House | Anand Park, Aundh, Pune">
+  <meta property="og:description" content="Pune's legendary thick cold coffee, crispy masala dosa, pav bhaji & hot snacks. Order direct on WhatsApp!">
+  <meta property="og:image" content="https://harshu777.github.io/pune-website-demos/sbdurga/assets/hero.jpg">
+  <meta property="og:url" content="https://harshu777.github.io/pune-website-demos/sbdurga/">
+  <meta property="og:type" content="restaurant">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --coffee: #25160E;
+      --espresso: #1A0F0A;
+      --red: #C8321B;
+      --red-hover: #A82410;
+      --amber: #EAA824;
+      --amber-light: #F9C55C;
+      --cream: #FAF7F0;
+      --cream-card: #FFFFFF;
+      --parchment: #F3EBDD;
+      --muted: #6B5E57;
+      --border: rgba(200, 50, 27, 0.15);
+      --font-display: 'Space Grotesk', system-ui, sans-serif;
+      --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      background-color: var(--cream);
+      color: var(--coffee);
+      font-family: var(--font-body);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* HARSHAL CONCEPT RIBBON - 100px stretch */
+    .concept-ribbon {
+      background: linear-gradient(135deg, #1A0F0A 0%, #2A170F 100%);
+      color: #FAF7F0;
+      font-size: 13px;
+      padding: 10px 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      border-bottom: 1px solid rgba(249, 197, 92, 0.3);
+      position: relative;
+      z-index: 1000;
+    }
+    .concept-ribbon strong {
+      color: var(--amber-light);
+      letter-spacing: 0.5px;
+    }
+    .concept-ribbon a {
+      background: var(--amber);
+      color: var(--espresso);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 12px;
+      padding: 5px 14px;
+      border-radius: 20px;
+      white-space: nowrap;
+      transition: all 0.25s ease;
+    }
+    .concept-ribbon a:hover {
+      background: var(--amber-light);
+      transform: translateY(-1px);
+    }
+
+    /* NAVIGATION - 100px stretch */
+    header.site-header {
+      position: sticky;
+      top: 0;
+      background: rgba(250, 247, 240, 0.96);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      z-index: 999;
+      border-bottom: 1px solid var(--border);
+      padding: 0 100px;
+      transition: all 0.3s ease;
+    }
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 82px;
+    }
+    .brand-logo {
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+    }
+    .brand-logo .logo-main {
+      font-family: var(--font-display);
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: var(--coffee);
+      line-height: 1;
+    }
+    .brand-logo .logo-sub {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--red);
+      font-weight: 700;
+      margin-top: 3px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      list-style: none;
+    }
+    .nav-links a {
+      color: var(--coffee);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      transition: color 0.2s ease;
+    }
+    .nav-links a:hover {
+      color: var(--red);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .btn-nav-order {
+      background: var(--red);
+      color: #FFF;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      padding: 12px 24px;
+      border-radius: 30px;
+      box-shadow: 0 6px 18px rgba(200, 50, 27, 0.3);
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-nav-order:hover {
+      background: var(--red-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(200, 50, 27, 0.4);
+    }
+
+    /* HERO SECTION */
+    .hero {
+      position: relative;
+      min-height: 86vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(rgba(26, 15, 10, 0.7), rgba(26, 15, 10, 0.8)), url('assets/hero.jpg') center/cover no-repeat;
+      color: #FFF;
+      padding: 0 100px;
+    }
+    .hero-content {
+      max-width: 720px;
+      padding: 80px 0;
+    }
+    .hero-tagline {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(234, 168, 36, 0.2);
+      backdrop-filter: blur(8px);
+      padding: 6px 16px;
+      border-radius: 30px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--amber-light);
+      margin-bottom: 24px;
+      border: 1px solid rgba(249, 197, 92, 0.45);
+    }
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: 54px;
+      line-height: 1.15;
+      font-weight: 700;
+      margin-bottom: 22px;
+      letter-spacing: -0.5px;
+    }
+    .hero h1 span {
+      color: var(--amber-light);
+    }
+    .hero p {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.9);
+      font-weight: 300;
+      margin-bottom: 36px;
+      line-height: 1.7;
+    }
+    .hero-btns {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .btn-hero-primary {
+      background: var(--red);
+      color: #FFF;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      padding: 16px 36px;
+      border-radius: 40px;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 10px 30px rgba(200, 50, 27, 0.45);
+    }
+    .btn-hero-primary:hover {
+      background: var(--red-hover);
+      transform: translateY(-2px);
+    }
+    .btn-hero-secondary {
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(10px);
+      color: #FFF;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      padding: 16px 32px;
+      border-radius: 40px;
+      transition: all 0.3s ease;
+    }
+    .btn-hero-secondary:hover {
+      background: rgba(255, 255, 255, 0.22);
+      transform: translateY(-2px);
+    }
+
+    /* BADGES SECTION */
+    .feature-strip {
+      background: #FFF;
+      border-bottom: 1px solid var(--border);
+      padding: 28px 100px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+    }
+    .feature-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .feature-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--parchment);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      color: var(--red);
+      flex-shrink: 0;
+    }
+    .feature-text h4 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--coffee);
+      margin-bottom: 2px;
+    }
+    .feature-text p {
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    /* ABOUT STORY */
+    .story-section {
+      padding: 100px;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .story-text span.eyebrow {
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--red);
+      display: block;
+      margin-bottom: 12px;
+    }
+    .story-text h2 {
+      font-family: var(--font-display);
+      font-size: 42px;
+      line-height: 1.2;
+      color: var(--coffee);
+      margin-bottom: 24px;
+    }
+    .story-text p {
+      font-size: 16px;
+      color: #4A3E38;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+    .story-card-box {
+      background: #FFF;
+      border-radius: 20px;
+      padding: 36px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border);
+      position: relative;
+    }
+    .story-card-box .stamp {
+      position: absolute;
+      top: -14px;
+      right: 28px;
+      background: var(--red);
+      color: #FFF;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 12px;
+    }
+    .story-quote {
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--coffee);
+      margin-bottom: 18px;
+      line-height: 1.5;
+    }
+    .story-meta {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--red);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    /* CURATED SIGNATURES */
+    .signatures-section {
+      background: var(--parchment);
+      padding: 100px;
+    }
+    .section-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 60px;
+    }
+    .section-header span.eyebrow {
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--red);
+      display: block;
+      margin-bottom: 12px;
+    }
+    .section-header h2 {
+      font-family: var(--font-display);
+      font-size: 40px;
+      color: var(--coffee);
+      margin-bottom: 16px;
+    }
+    .section-header p {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .signature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 36px;
+    }
+    .dish-card {
+      background: #FFF;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.05);
+      border: 1px solid rgba(200, 50, 27, 0.1);
+      transition: all 0.35s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .dish-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 24px 48px rgba(0, 0, 0, 0.1);
+    }
+    .dish-img-wrap {
+      height: 250px;
+      overflow: hidden;
+      position: relative;
+    }
+    .dish-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+    .dish-card:hover .dish-img-wrap img {
+      transform: scale(1.06);
+    }
+    .dish-tag {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      background: var(--coffee);
+      color: var(--amber-light);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 20px;
+    }
+    .dish-body {
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .dish-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 12px;
+    }
+    .dish-title-row h3 {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--coffee);
+    }
+    .dish-price {
+      font-weight: 700;
+      color: var(--red);
+      font-size: 18px;
+    }
+    .dish-body p {
+      font-size: 14px;
+      color: #63544D;
+      line-height: 1.6;
+      margin-bottom: 24px;
+      flex-grow: 1;
+    }
+    .btn-dish-order {
+      align-self: flex-start;
+      background: var(--parchment);
+      color: var(--coffee);
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      padding: 10px 20px;
+      border-radius: 24px;
+      transition: all 0.25s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .btn-dish-order:hover {
+      background: var(--red);
+      color: #FFF;
+    }
+
+    /* DIGITAL MENU HIGHLIGHTS */
+    .menu-highlights {
+      padding: 100px;
+      background: #FFF;
+    }
+    .menu-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      margin-top: 40px;
+    }
+    .menu-cat h3 {
+      font-family: var(--font-display);
+      font-size: 26px;
+      color: var(--coffee);
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 12px;
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .menu-cat h3 span {
+      font-size: 12px;
+      color: var(--red);
+      letter-spacing: 2px;
+      font-weight: 700;
+    }
+    .menu-item-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 14px 0;
+      border-bottom: 1px dashed rgba(0, 0, 0, 0.08);
+    }
+    .menu-item-info h4 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--coffee);
+      margin-bottom: 4px;
+    }
+    .menu-item-info p {
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .menu-item-cost {
+      font-weight: 700;
+      font-size: 15px;
+      color: var(--red);
+      white-space: nowrap;
+      margin-left: 20px;
+    }
+
+    /* CALLOUT BANNER */
+    .durga-banner {
+      background: linear-gradient(135deg, var(--coffee) 0%, #30170E 100%);
+      color: #FFF;
+      padding: 80px 100px;
+      border-radius: 28px;
+      margin: 0 100px 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    .durga-banner::after {
+      content: "";
+      position: absolute;
+      right: -80px;
+      bottom: -80px;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: rgba(234, 168, 36, 0.1);
+      pointer-events: none;
+    }
+    .durga-banner h2 {
+      font-family: var(--font-display);
+      font-size: 38px;
+      line-height: 1.25;
+      margin-bottom: 12px;
+    }
+    .durga-banner h2 span {
+      color: var(--amber-light);
+    }
+    .durga-banner p {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.85);
+      max-width: 580px;
+    }
+    .durga-cta-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: flex-end;
+      flex-shrink: 0;
+    }
+    .btn-wa-action {
+      background: #25D366;
+      color: #FFF;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 15px;
+      padding: 16px 36px;
+      border-radius: 40px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 10px 24px rgba(37, 211, 102, 0.35);
+      transition: all 0.3s ease;
+    }
+    .btn-wa-action:hover {
+      background: #20BA5C;
+      transform: translateY(-2px);
+    }
+    .phone-badge-sub {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.65);
+    }
+
+    /* FOOTER */
+    footer.site-footer {
+      background: var(--espresso);
+      color: rgba(255, 255, 255, 0.75);
+      padding: 80px 100px 30px;
+      font-size: 14px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 60px;
+      margin-bottom: 60px;
+    }
+    .footer-brand h3 {
+      font-family: var(--font-display);
+      font-size: 26px;
+      color: #FFF;
+      margin-bottom: 14px;
+      letter-spacing: 1px;
+    }
+    .footer-brand p {
+      font-size: 14px;
+      line-height: 1.7;
+      color: rgba(255, 255, 255, 0.6);
+      margin-bottom: 20px;
+    }
+    .footer-col h4 {
+      color: #FFF;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .footer-col ul {
+      list-style: none;
+    }
+    .footer-col ul li {
+      margin-bottom: 10px;
+    }
+    .footer-col ul li a {
+      color: rgba(255, 255, 255, 0.6);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .footer-col ul li a:hover {
+      color: var(--amber-light);
+    }
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.45);
+    }
+
+    /* FLOATING WHATSAPP */
+    .floating-wa {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      background: #25D366;
+      color: #FFF;
+      border-radius: 50px;
+      padding: 12px 22px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+      z-index: 9999;
+      transition: all 0.3s ease;
+    }
+    .floating-wa:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 14px 30px rgba(37, 211, 102, 0.5);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 1024px) {
+      .concept-ribbon,
+      header.site-header,
+      .hero,
+      .feature-strip,
+      .story-section,
+      .signatures-section,
+      .menu-highlights,
+      footer.site-footer {
+        padding-left: 48px;
+        padding-right: 48px;
+      }
+      .durga-banner {
+        margin: 0 48px 80px;
+        padding: 60px 48px;
+      }
+      .feature-strip {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .signature-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .concept-ribbon,
+      header.site-header,
+      .hero,
+      .feature-strip,
+      .story-section,
+      .signatures-section,
+      .menu-highlights,
+      footer.site-footer {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .durga-banner {
+        margin: 0 20px 60px;
+        padding: 40px 24px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .durga-cta-group {
+        align-items: flex-start;
+        width: 100%;
+      }
+      .btn-wa-action {
+        width: 100%;
+        justify-content: center;
+      }
+      .nav-links {
+        display: none;
+      }
+      .hero h1 {
+        font-size: 36px;
+      }
+      .story-section {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .signature-grid {
+        grid-template-columns: 1fr;
+      }
+      .menu-columns {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      .feature-strip {
+        grid-template-columns: 1fr;
+      }
+      .concept-ribbon {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HARSHAL CONCEPT DEMO RIBBON -->
+  <div class="concept-ribbon">
+    <div>
+      <strong>PORTFOLIO CONCEPT DEMO:</strong> Designed specifically for <strong>S.B. Durga's Cafe House (Aundh)</strong> by Harshal Baviskar.
+    </div>
+    <a href="https://wa.me/919420132081?text=Hi%20Harshal,%20I%20saw%20the%20Durga%20Cafe%20website%20demo.%20I%20want%20to%20claim%20this%20for%20my%20business!" target="_blank" rel="noopener">
+      Claim This Website (₹5,999) &rarr;
+    </a>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">
+        <span class="logo-main">S.B. DURGA'S</span>
+        <span class="logo-sub">Cafe House &middot; Anand Park, Aundh</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#story">Pune Tradition</a></li>
+        <li><a href="#signatures">Iconic Hits</a></li>
+        <li><a href="#menu">Digital Menu</a></li>
+        <li><a href="#hours">Timings</a></li>
+        <li><a href="#location">Find Us</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="https://wa.me/917507547765?text=Hi%20Durga%20Cafe,%20I%20would%20like%20to%20place%20an%20order%20for%20takeaway." target="_blank" rel="noopener" class="btn-nav-order">
+          <span>&#x2615;</span> WhatsApp Order
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-tagline">&#x2615; Anand Park, Aundh &middot; Pune's Legendary Cafe</div>
+      <h1>Iconic Thick Cold Coffee &amp; <span>Crispy Masala Dosa.</span></h1>
+      <p>
+        The daily ritual of Pune students, families, and food lovers. From our legendary chocolate-dusted Durga cold coffee to sizzling buttery pav bhaji and hot golden dosas, served fresh and fast.
+      </p>
+      <div class="hero-btns">
+        <a href="https://wa.me/917507547765?text=Hi%20Durga%20Cafe,%20I%20want%20to%20order%20cold%20coffee%20and%20snacks." target="_blank" rel="noopener" class="btn-hero-primary">
+          <span>&#x1F4F1;</span> Direct WhatsApp Order
+        </a>
+        <a href="#menu" class="btn-hero-secondary">
+          View Durga Menu &darr;
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BADGE STRIP -->
+  <section class="feature-strip">
+    <div class="feature-item">
+      <div class="feature-icon">&#x2615;</div>
+      <div class="feature-text">
+        <h4>Legendary Cold Coffee</h4>
+        <p>Thick, creamy &amp; cocoa-dusted Pune ritual</p>
+      </div>
+    </div>
+    <div class="feature-item">
+      <div class="feature-icon">&#x1F958;</div>
+      <div class="feature-text">
+        <h4>Crisp Golden Dosas</h4>
+        <p>Hot from the griddle with coconut chutney</p>
+      </div>
+    </div>
+    <div class="feature-item">
+      <div class="feature-icon">&#x1F965;</div>
+      <div class="feature-text">
+        <h4>Amul Butter Pav Bhaji</h4>
+        <p>Slow-mashed spicy bhaji &amp; toasted pav</p>
+      </div>
+    </div>
+    <div class="feature-item">
+      <div class="feature-icon">&#x26A1;</div>
+      <div class="feature-text">
+        <h4>Lightning Fast Pickup</h4>
+        <p>Ready in 10 mins via 1-tap WhatsApp</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT STORY -->
+  <section class="story-section" id="story">
+    <div class="story-text">
+      <span class="eyebrow">A Pure Pune Emotion</span>
+      <h2>More than a cafe — a timeless Pune community ritual.</h2>
+      <p>
+        Located at 66, KVP Sapatnekar Marg in Anand Park, Aundh, S.B. Durga's Cafe House is the heartbeat of local conversations. Whether it’s an energetic morning breakfast of steaming hot Poha and chai or an evening hangout over tall glasses of chilled, frothy cold coffee, Durga is where memories happen.
+      </p>
+      <p>
+        We keep our flavors pure, our butter generous, our coffee thick, and our prices honest. No gimmicks — just authentic taste prepared with love and served with a smile.
+      </p>
+      <div style="margin-top: 30px;">
+        <a href="https://wa.me/917507547765?text=Hi%20Durga%20Cafe,%20what%20are%20today%27s%20breakfast%20specials?" target="_blank" rel="noopener" class="btn-nav-order">
+          Ask for Today's Specials &rarr;
+        </a>
+      </div>
+    </div>
+
+    <div class="story-card-box">
+      <span class="stamp">Pune Heritage</span>
+      <div class="story-quote">
+        "Durga's Cold Coffee is the gold standard of Pune! Pair it with their crisp Masala Dosa or Pav Bhaji and you have the perfect snack anytime."
+      </div>
+      <div class="story-meta">
+        — Aundh Regulars &middot; Rated 4.3&#x2605; by Thousands of Punekars
+      </div>
+    </div>
+  </section>
+
+  <!-- SIGNATURE SHOWCASE -->
+  <section class="signatures-section" id="signatures">
+    <div class="section-header">
+      <span class="eyebrow">Crowd Favorites</span>
+      <h2>Durga's Most Loved Hits</h2>
+      <p>Freshly whipped, toasted, and grilled to order. Hot, satisfying, and deeply comforting.</p>
+    </div>
+
+    <div class="signature-grid">
+      <!-- Item 1: Cold Coffee -->
+      <div class="dish-card">
+        <div class="dish-img-wrap">
+          <img src="assets/coldcoffee.jpg" alt="Iconic Durga Cold Coffee" loading="lazy">
+          <span class="dish-tag">#1 Best Seller</span>
+        </div>
+        <div class="dish-body">
+          <div class="dish-title-row">
+            <h3>Durga Special Cold Coffee</h3>
+            <span class="dish-price">&#x20B9;60</span>
+          </div>
+          <p>The iconic Pune classic! Thick, velvety, bittersweet coffee blended with fresh creamy milk and crowned with a heavy sprinkle of dark drinking chocolate.</p>
+          <a href="https://wa.me/917507547765?text=Hi%20Durga%20Cafe,%20I%20want%20to%20order%20Durga%20Special%20Cold%20Coffee!" target="_blank" rel="noopener" class="btn-dish-order">
+            <span>&#x1F4AC;</span> Order on WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Item 2: Dosa -->
+      <div class="dish-card">
+        <div class="dish-img-wrap">
+          <img src="assets/dosa.jpg" alt="Crisp Butter Masala Dosa" loading="lazy">
+          <span class="dish-tag">Chef's Pride</span>
+        </div>
+        <div class="dish-body">
+          <div class="dish-title-row">
+            <h3>Butter Masala Dosa</h3>
+            <span class="dish-price">&#x20B9;90</span>
+          </div>
+          <p>Golden, paper-crisp fermented crepe roasted with pure butter, stuffed with spiced potato masala, served with piping hot dal sambar and fresh coconut chutney.</p>
+          <a href="https://wa.me/917507547765?text=Hi%20Durga%20Cafe,%20I%20want%20to%20order%20Butter%20Masala%20Dosa!" target="_blank" rel="noopener" class="btn-dish-order">
+            <span>&#x1F4AC;</span> Order on WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Item 3: Pav Bhaji -->
+      <div class="dish-card">
+        <div class="dish-img-wrap">
+          <img src="assets/pavbhaji.jpg" alt="Amul Butter Pav Bhaji at Durga Cafe" loading="lazy">
+          <span class="dish-tag">Evening Ritual</span>
+        </div>
+        <div class="dish-body">
+          <div class="dish-title-row">
+            <h3>Special Amul Pav Bhaji</h3>
+            <span class="dish-price">&#x20B9;130</span>
+          </div>
+          <p>Slow-cooked spicy vegetable mash infused with house aromatic spices and a generous slab of melting Amul butter, paired with golden griddled pav and fresh lemon onion salad.</p>
+          <a href="https://wa.me/917507547765?text=Hi%20Durga%20Cafe,%20I%20want%20to%20order%20Special%20Pav%20Bhaji!" target="_blank" rel="noopener" class="btn-dish-order">
+            <span>&#x1F4AC;</span> Order on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIGITAL MENU HIGHLIGHTS -->
+  <section class="menu-highlights" id="menu">
+    <div class="section-header">
+      <span class="eyebrow">Full Durga Menu</span>
+      <h2>Quick Bites, Snacks &amp; Sips</h2>
+      <p>Available for fast curb-side pickup or direct neighborhood delivery via WhatsApp.</p>
+    </div>
+
+    <div class="menu-columns">
+      <!-- Col 1 -->
+      <div class="menu-cat">
+        <h3>South Indian &amp; Street Bites <span>FOOD</span></h3>
+
+        <div class="menu-item-row">
+          <div class="menu-item-info">
+            <h4>Cheese Masala Dosa</h4>
+            <p>Crispy dosa layered with shredded mozzarella and potato bhaji</p>
+          </div>
+          <div class="menu-item-cost">&#x20B9;120</div>
+        </div>
+
+        <div class="menu-item-row">
+          <div class="menu-item-info">
+            <h4>Amul Masala Pav (2 Pcs)</h4>
+            <p>Pan-toasted pav soaked in spicy onion-tomato butter masala</p>
+          </div>
+          <div class="menu-item-cost">&#x20B9;80</div>
+        </div>
+
+        <div class="menu-item-row">
+          <div class="menu-item-info">
+            <h4>Veg Cheese Grilled Sandwich</h4>
+            <p>Triple-layer toast stuffed with spiced potato, veggies, and cheese</p>
+          </div>
+          <div class="menu-item-cost">&#x20B9;110</div>
+        </div>
+
+        <div class="menu-item-row">
+          <div class="menu-item-info">
+            <h4>Traditional Kanda Poha</h4>
+            <p>Steamed flattened rice tossed with mustard, green chili, peanuts, fresh coconut</p>
+          </div>
+          <div class="menu-item-cost">&#x20B9;45</div>
+        </div>
+      </div>
+
+      <!-- Col 2 -->
+      <div class="menu-cat">
+        <h3>Beverages &amp; Bakery <span>HOT &amp; COLD</span></h3>
+
+        <div class="menu-item-row">
+          <div class="menu-item-info">
+            <h4>Durga Thick Cold Coffee (Large)</h4>
+            <p>The original Pune sensation with chocolate sprinkle</p>
+          </div>
+          <div class="menu-item-cost">&#x20B9;80</div>
+        </div>
+
+        <div class="menu-item-row">
+          <div class="menu-item-info">
+            <h4>Fresh Bun Maska</h4>
+            <p>Soft sweet bakery bun stuffed with chilled dollops of Amul butter</p>
+          </div>
+          <div class="menu-item-cost">&#x20B9;40</div>
+        </div>
+
+        <div class="menu-item-row">
+          <div class="menu-item-info">
+            <h4>Special Kadak Masala Chai</h4>
+            <p>Freshly brewed strong tea infused with crushed ginger and green cardamom</p>
+          </div>
+          <div class="menu-item-cost">&#x20B9;25</div>
+        </div>
+
+        <div class="menu-item-row">
+          <div class="menu-item-info">
+            <h4>Durga Hot Chocolate / Hot Coffee</h4>
+            <p>Steaming cup of frothy dark chocolate or brewed filter coffee</p>
+          </div>
+          <div class="menu-item-cost">&#x20B9;40</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DURGA CALLOUT BANNER -->
+  <section class="durga-banner" id="hours">
+    <div>
+      <h2>Craving Cold Coffee? <span>Skip the Queue.</span></h2>
+      <p>
+        Send your order directly to our Anand Park counter on WhatsApp. We'll keep your food freshly packed and your cold coffee chilled and ready for instant pickup!
+      </p>
+      <div style="margin-top: 16px; font-size: 14px; color: var(--amber-light);">
+        &#x23F0; Open Everyday: 8:00 AM – 10:30 PM &middot; Dine-in &amp; Quick Takeaway
+      </div>
+    </div>
+    <div class="durga-cta-group">
+      <a href="https://wa.me/917507547765?text=Hi%20Durga%20Cafe,%20I%20want%20to%20order%20for%20takeaway." target="_blank" rel="noopener" class="btn-wa-action">
+        <span>&#x1F4AC;</span> WhatsApp Order
+      </a>
+      <span class="phone-badge-sub">Direct Counter (+91 75075 47765)</span>
+    </div>
+  </section>
+
+  <!-- FOOTER / LOCATION -->
+  <footer class="site-footer" id="location">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>S.B. DURGA'S CAFE HOUSE</h3>
+        <p>
+          The legendary Pune cold coffee, crispy butter masala dosa, sizzling pav bhaji &amp; fresh snacks at Anand Park, Aundh.
+        </p>
+        <div style="font-size: 13px; color: var(--amber-light); font-weight: 600;">
+          &#x1F4CD; 66, KVP Sapatnekar Marg, Anand Park, Aundh, Pune – 411007
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#story">Pune Tradition</a></li>
+          <li><a href="#signatures">Iconic Hits</a></li>
+          <li><a href="#menu">Digital Menu</a></li>
+          <li><a href="#hours">Timings</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Operating Hours</h4>
+        <ul>
+          <li>Monday – Sunday</li>
+          <li>8:00 AM – 10:30 PM</li>
+          <li>Breakfast, Lunch &amp; Snacks</li>
+          <li>Spend: &#x20B9;150 – &#x20B9;300 for two</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact &amp; Location</h4>
+        <ul>
+          <li><strong style="color:#FFF;">Phone:</strong> +91 75075 47765</li>
+          <li><strong style="color:#FFF;">Area:</strong> Anand Park, Aundh</li>
+          <li><a href="https://maps.google.com/?q=Durga+Cafe+Anand+Park+Aundh+Pune" target="_blank" rel="noopener" style="color:var(--amber-light); font-weight:600;">Open in Google Maps &rarr;</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>&copy; 2026 S.B. Durga's Cafe House. All rights reserved.</div>
+      <div>Concept Designed &amp; Crafted by <a href="https://wa.me/919420132081?text=Hi%20Harshal,%20I%20love%20the%20Durga%20Cafe%20website%20design!" target="_blank" rel="noopener" style="color: var(--amber-light); text-decoration: none; font-weight: 600;">Harshal Baviskar</a> (Pune Web Designer)</div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/917507547765?text=Hi%20Durga%20Cafe,%20I%20would%20like%20to%20order%20takeaway." target="_blank" rel="noopener" class="floating-wa">
+    <span>&#x1F4AC;</span> WhatsApp Durga Cafe
+  </a>
+
+</body>
+</html>
