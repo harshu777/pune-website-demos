@@ -1,0 +1,1561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khelkar's Dent O Spa | Dr. Sayalee (MDS Prosthodontist) — Seasons Road Aundh Pune</title>
+  
+  <!-- Open Graph / Meta -->
+  <meta name="description" content="Khelkar's Dent O Spa — Luxury dental spa experience, advanced Prosthodontics, Dental Implants, and Smile Designing by Dr. Sayalee (MDS) & Dr. Anupama Khelkar on Seasons Road, Sanewadi, Aundh, Pune.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Khelkar's Dent O Spa | Dr. Sayalee — Seasons Road, Aundh Pune">
+  <meta property="og:description" content="Painless dental spa treatments, full mouth implant rehabilitation, porcelain veneers, and gentle dentistry opposite Kothari Hyundai, Aundh. Book on WhatsApp.">
+  <meta property="og:image" content="https://harshu777.github.io/pune-website-demos/drsayalee/assets/hero.jpg">
+  <meta property="og:url" content="https://harshu777.github.io/pune-website-demos/drsayalee/">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    :root {
+      --primary: #7c3aed;        /* Luxury Dental Spa Violet */
+      --primary-dark: #6d28d9;
+      --primary-light: #ede9fe;
+      --primary-glow: rgba(124, 58, 237, 0.16);
+      --secondary: #0284c7;      /* Sky Blue */
+      --secondary-light: #e0f2fe;
+      --accent: #f59e0b;
+      --dark: #0f172a;
+      --text: #334155;
+      --text-muted: #64748b;
+      --bg: #fafafc;
+      --surface: #ffffff;
+      --border: #e2e8f0;
+      --radius: 16px;
+      --shadow: 0 10px 30px -8px rgba(15, 23, 42, 0.08);
+      --shadow-lg: 0 20px 42px -12px rgba(124, 58, 237, 0.18);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4, .brand-title {
+      font-family: 'Outfit', sans-serif;
+      color: var(--dark);
+      font-weight: 700;
+    }
+
+    /* CONCEPT PREVIEW BAR - 100px DESKTOP PADDING STANDARD */
+    .concept-bar {
+      background: linear-gradient(90deg, #0f172a 0%, #3b0764 100%);
+      color: #e9d5ff;
+      font-size: 13px;
+      padding: 10px 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .concept-badge {
+      background: #7c3aed;
+      color: #fff;
+      padding: 3px 10px;
+      border-radius: 9999px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-right: 10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .concept-link {
+      color: #c084fc;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    .concept-link:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    /* HEADER & NAVIGATION - 100px DESKTOP PADDING STANDARD */
+    header {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 41px;
+      z-index: 999;
+    }
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 100px;
+      max-width: 100%;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+    }
+    .brand-logo {
+      width: 46px;
+      height: 46px;
+      background: linear-gradient(135deg, var(--primary) 0%, #a855f7 100%);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      box-shadow: 0 4px 12px var(--primary-glow);
+    }
+    .brand-info .brand-title {
+      font-size: 20px;
+      line-height: 1.2;
+      color: var(--dark);
+      letter-spacing: -0.3px;
+    }
+    .brand-info .brand-sub {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      list-style: none;
+    }
+    .nav-link {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+      font-size: 15px;
+      transition: color 0.2s;
+    }
+    .nav-link:hover {
+      color: var(--primary);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 11px 22px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      cursor: pointer;
+      border: none;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+      box-shadow: 0 4px 14px var(--primary-glow);
+    }
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 18px rgba(124, 58, 237, 0.25);
+    }
+    .btn-whatsapp {
+      background: #25D366;
+      color: white;
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+    }
+    .btn-whatsapp:hover {
+      background: #1eb956;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 18px rgba(37, 211, 102, 0.4);
+    }
+    .btn-outline {
+      background: transparent;
+      border: 1.5px solid var(--border);
+      color: var(--dark);
+    }
+    .btn-outline:hover {
+      background: #f1f5f9;
+      border-color: #cbd5e1;
+    }
+
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* HERO SECTION */
+    .hero-section {
+      padding: 72px 0 60px;
+      background: radial-gradient(circle at top right, rgba(124, 58, 237, 0.08) 0%, rgba(250, 250, 252, 0) 60%),
+                  radial-gradient(circle at bottom left, rgba(2, 132, 199, 0.06) 0%, rgba(250, 250, 252, 0) 50%);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 50px;
+      align-items: center;
+    }
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      padding: 7px 16px;
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      border: 1px solid rgba(124, 58, 237, 0.2);
+    }
+    .hero-title {
+      font-size: 46px;
+      line-height: 1.15;
+      letter-spacing: -1px;
+      margin-bottom: 20px;
+      color: var(--dark);
+    }
+    .hero-title span {
+      background: linear-gradient(135deg, var(--primary) 0%, #a855f7 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-desc {
+      font-size: 17px;
+      color: var(--text-muted);
+      margin-bottom: 30px;
+      line-height: 1.65;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 36px;
+    }
+
+    .hero-trust-bar {
+      display: flex;
+      gap: 28px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .trust-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: #ede9fe;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+    }
+    .trust-meta .trust-value {
+      font-weight: 700;
+      color: var(--dark);
+      font-size: 15px;
+      line-height: 1.2;
+    }
+    .trust-meta .trust-label {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    /* HERO IMAGE COMPOSITE */
+    .hero-visual {
+      position: relative;
+    }
+    .hero-main-card {
+      position: relative;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      border: 4px solid white;
+    }
+    .hero-main-card img {
+      width: 100%;
+      height: 430px;
+      object-fit: cover;
+      display: block;
+    }
+    .hero-overlay-badge {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: rgba(15, 23, 42, 0.9);
+      backdrop-filter: blur(8px);
+      padding: 12px 18px;
+      border-radius: 12px;
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .hero-floating-stat {
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      background: white;
+      padding: 14px 20px;
+      border-radius: 14px;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    /* STATUS BANNER */
+    .status-banner {
+      background: white;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+    }
+    .status-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .status-indicator {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .status-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #10b981;
+      box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+    }
+    .status-timings {
+      font-size: 14px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .status-timings strong {
+      color: var(--dark);
+    }
+
+    /* SECTION BASICS */
+    .section {
+      padding: 80px 0;
+    }
+    .section-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 50px;
+    }
+    .section-badge {
+      display: inline-block;
+      color: var(--primary);
+      background: var(--primary-light);
+      padding: 5px 14px;
+      border-radius: 9999px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-size: 36px;
+      line-height: 1.25;
+      margin-bottom: 14px;
+      letter-spacing: -0.5px;
+    }
+    .section-subtitle {
+      font-size: 16px;
+      color: var(--text-muted);
+    }
+
+    /* SERVICES GRID */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .service-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px 28px;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+      border-color: #c084fc;
+    }
+    .service-icon-wrap {
+      width: 54px;
+      height: 54px;
+      border-radius: 14px;
+      background: var(--primary-light);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 22px;
+      transition: all 0.3s ease;
+    }
+    .service-card:hover .service-icon-wrap {
+      background: var(--primary);
+      color: white;
+    }
+    .service-title {
+      font-size: 20px;
+      margin-bottom: 12px;
+      color: var(--dark);
+    }
+    .service-desc {
+      font-size: 14.5px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+    .service-features {
+      list-style: none;
+      border-top: 1px solid #f1f5f9;
+      padding-top: 16px;
+      margin-bottom: 20px;
+    }
+    .service-features li {
+      font-size: 13.5px;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    .service-features li i {
+      color: var(--primary);
+      flex-shrink: 0;
+    }
+    .service-cta {
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 13.5px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .service-cta:hover {
+      text-decoration: underline;
+    }
+
+    /* DOCTOR PROFILE SECTION */
+    .doctor-section {
+      background: white;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .doctor-card {
+      background: linear-gradient(135deg, #f8fafc 0%, #faf5ff 100%);
+      border: 1px solid #e2e8f0;
+      border-radius: 20px;
+      padding: 48px;
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 44px;
+      align-items: center;
+    }
+    .doctor-photo-wrap {
+      position: relative;
+    }
+    .doctor-photo {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      border: 3px solid white;
+    }
+    .doctor-exp-tag {
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #0f172a;
+      color: white;
+      padding: 6px 18px;
+      border-radius: 9999px;
+      font-size: 12px;
+      font-weight: 600;
+      white-space: nowrap;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .doctor-details h3 {
+      font-size: 30px;
+      margin-bottom: 6px;
+      color: var(--dark);
+    }
+    .doctor-sub {
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 16px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .doctor-bio {
+      color: var(--text-muted);
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+    .doctor-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+    .doc-badge {
+      background: white;
+      border: 1px solid #cbd5e1;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--dark);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* TIMINGS & APPOINTMENT SCHEDULING CARD */
+    .schedule-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 36px;
+      align-items: stretch;
+    }
+    .timings-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 36px;
+      box-shadow: var(--shadow);
+    }
+    .timings-card h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .timing-slot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px;
+      background: #f8fafc;
+      border-radius: 12px;
+      margin-bottom: 14px;
+      border: 1px solid #edf2f7;
+    }
+    .timing-slot.highlight {
+      background: #faf5ff;
+      border-color: #e9d5ff;
+    }
+    .timing-day {
+      font-weight: 600;
+      color: var(--dark);
+      font-size: 15px;
+    }
+    .timing-hours {
+      font-weight: 700;
+      color: var(--primary);
+      font-size: 14px;
+      text-align: right;
+    }
+    .timing-note {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* WHATSAPP APPOINTMENT BUILDER FORM */
+    .appointment-card {
+      background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+      color: white;
+      border-radius: var(--radius);
+      padding: 36px;
+      box-shadow: var(--shadow-lg);
+    }
+    .appointment-card h3 {
+      color: white;
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+    .appointment-card p {
+      color: #e9d5ff;
+      font-size: 14px;
+      margin-bottom: 22px;
+    }
+    .form-group {
+      margin-bottom: 16px;
+    }
+    .form-label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: #e9d5ff;
+      margin-bottom: 6px;
+    }
+    .form-control {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      background: rgba(255, 255, 255, 0.96);
+      color: var(--dark);
+      font-family: inherit;
+      font-size: 14px;
+    }
+    .form-control:focus {
+      outline: none;
+      border-color: white;
+      box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    /* REVIEWS SECTION */
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .review-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+    .review-rating {
+      color: #f59e0b;
+      margin-bottom: 12px;
+      display: flex;
+      gap: 3px;
+    }
+    .review-text {
+      font-size: 14px;
+      color: #475569;
+      line-height: 1.65;
+      margin-bottom: 18px;
+      font-style: italic;
+    }
+    .review-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .author-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #ede9fe;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .author-name {
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--dark);
+    }
+    .author-sub {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    /* LOCATION & CONTACT */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 36px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .contact-info {
+      padding: 44px;
+    }
+    .contact-title {
+      font-size: 28px;
+      margin-bottom: 14px;
+    }
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .contact-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--primary-light);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .contact-detail h4 {
+      font-size: 16px;
+      margin-bottom: 4px;
+      color: var(--dark);
+    }
+    .contact-detail p {
+      color: var(--text-muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .contact-map {
+      background: #e2e8f0;
+      min-height: 380px;
+      position: relative;
+    }
+    .contact-map iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #0f172a;
+      color: #94a3b8;
+      padding: 60px 0 30px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .footer-brand .brand-title {
+      color: white;
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+    .footer-brand p {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .footer-col h4 {
+      color: white;
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+    .footer-links {
+      list-style: none;
+    }
+    .footer-links li {
+      margin-bottom: 10px;
+    }
+    .footer-links a {
+      color: #94a3b8;
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover {
+      color: white;
+    }
+    .footer-bottom {
+      text-align: center;
+      font-size: 13px;
+      color: #64748b;
+    }
+
+    /* FLOATING WHATSAPP BUTTON */
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #25D366;
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
+      z-index: 1000;
+      text-decoration: none;
+      transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .floating-whatsapp:hover {
+      transform: scale(1.1);
+    }
+    .whatsapp-tooltip {
+      position: absolute;
+      right: 70px;
+      background: #0f172a;
+      color: white;
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      white-space: nowrap;
+      pointer-events: none;
+      opacity: 0;
+      transform: translateX(10px);
+      transition: all 0.2s;
+    }
+    .floating-whatsapp:hover .whatsapp-tooltip {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 1024px) {
+      .concept-bar, .nav-container {
+        padding-left: 48px;
+        padding-right: 48px;
+      }
+      .services-grid, .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .doctor-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .doctor-photo {
+        max-width: 280px;
+        margin: 0 auto;
+      }
+      .doctor-badges {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .concept-bar, .nav-container {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .concept-bar {
+        flex-direction: column;
+        gap: 6px;
+        text-align: center;
+      }
+      .nav-menu {
+        display: none;
+      }
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+      .hero-title {
+        font-size: 34px;
+      }
+      .hero-trust-bar {
+        flex-direction: column;
+        gap: 14px;
+      }
+      .services-grid, .reviews-grid, .schedule-grid, .contact-grid, .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 100px DESKTOP CONCEPT PREVIEW BAR -->
+  <div class="concept-bar">
+    <div style="display: flex; align-items: center;">
+      <span class="concept-badge"><i data-lucide="sparkles" style="width:12px;height:12px;"></i> Mobile Preview</span>
+      <span>Concept Prepared for <strong>Khelkar's Dent O Spa (Dr. Sayalee)</strong> · Seasons Road, Aundh</span>
+    </div>
+    <div>
+      <span>Complete Dental Spa Portal launch for <strong>₹5,999</strong> | <a href="https://wa.me/919405661998?text=Hi%20Harshal,%20I%20saw%20the%20Dent%20O%20Spa%20demo." class="concept-link">Contact Harshal (+91 94056 61998)</a></span>
+    </div>
+  </div>
+
+  <!-- 100px DESKTOP NAVIGATION -->
+  <header>
+    <div class="nav-container">
+      <a href="#" class="brand">
+        <div class="brand-logo">
+          <i data-lucide="sparkles" style="width: 24px; height: 24px; stroke-width: 2.2;"></i>
+        </div>
+        <div class="brand-info">
+          <div class="brand-title">Khelkar's Dent O Spa</div>
+          <div class="brand-sub">Advanced Prosthodontics & Implantology · Aundh</div>
+        </div>
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="#overview" class="nav-link">Overview</a></li>
+        <li><a href="#treatments" class="nav-link">Spa Treatments</a></li>
+        <li><a href="#doctor" class="nav-link">Specialists</a></li>
+        <li><a href="#timings" class="nav-link">Visiting Hours</a></li>
+        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        <li><a href="#contact" class="nav-link">Location</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="tel:+918850976936" class="btn btn-outline" style="display: none; @media(min-width: 600px){display:inline-flex;}">
+          <i data-lucide="phone" style="width: 16px; height: 16px;"></i>
+          <span>Call Desk</span>
+        </a>
+        <a href="#book" class="btn btn-primary">
+          <i data-lucide="calendar" style="width: 16px; height: 16px;"></i>
+          <span>Book Slot</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- LIVE STATUS BAR -->
+  <div class="status-banner">
+    <div class="container">
+      <div class="status-flex">
+        <div class="status-indicator">
+          <div class="status-dot"></div>
+          <span>Dent O Spa Open Today (Mon–Sat)</span>
+        </div>
+        <div class="status-timings">
+          <i data-lucide="clock" style="width: 16px; height: 16px; color: var(--primary);"></i>
+          <span>Morning: <strong>10:00 AM – 2:00 PM</strong> &nbsp;|&nbsp; Evening: <strong>5:00 PM – 9:00 PM</strong></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section" id="overview">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-pill">
+            <i data-lucide="sparkles" style="width: 16px; height: 16px;"></i>
+            <span>Luxury Dental Spa & Advanced Prosthodontics in Aundh</span>
+          </div>
+          <h1 class="hero-title">
+            Where Advanced Dentistry Meets <span>A Relaxing Spa Experience</span>
+          </h1>
+          <p class="hero-desc">
+            Led by Dr. Sayalee (MDS Prosthodontist & Oral Implantologist) and Dr. Anupama Khelkar, Khelkar's Dent O Spa transforms dental care into a calm, gentle experience with precision implants, porcelain smile makeovers, and soothing comfort.
+          </p>
+
+          <div class="hero-actions">
+            <a href="https://wa.me/918850976936?text=Hi%20Khelkar's%20Dent%20O%20Spa,%20I%20would%20like%20to%20book%20a%20dental%20appointment." class="btn btn-whatsapp" target="_blank">
+              <i data-lucide="message-circle" style="width: 18px; height: 18px;"></i>
+              <span>Book via WhatsApp (+91 88509 76936)</span>
+            </a>
+            <a href="tel:+918850976936" class="btn btn-outline">
+              <i data-lucide="phone-call" style="width: 18px; height: 18px;"></i>
+              <span>Call +91 88509 76936</span>
+            </a>
+          </div>
+
+          <div class="hero-trust-bar">
+            <div class="trust-item">
+              <div class="trust-icon">
+                <i data-lucide="star" style="width: 20px; height: 20px; fill: #f59e0b; stroke: #f59e0b;"></i>
+              </div>
+              <div class="trust-meta">
+                <div class="trust-value">4.9 / 5.0</div>
+                <div class="trust-label">Patient Feedback</div>
+              </div>
+            </div>
+
+            <div class="trust-item">
+              <div class="trust-icon">
+                <i data-lucide="award" style="width: 20px; height: 20px;"></i>
+              </div>
+              <div class="trust-meta">
+                <div class="trust-value">MDS Specialist</div>
+                <div class="trust-label">Prosthodontics</div>
+              </div>
+            </div>
+
+            <div class="trust-item">
+              <div class="trust-icon">
+                <i data-lucide="heart" style="width: 20px; height: 20px;"></i>
+              </div>
+              <div class="trust-meta">
+                <div class="trust-value">Spa Ambience</div>
+                <div class="trust-label">Zero Pain & Anxiety</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-main-card">
+            <img src="assets/hero.jpg" alt="Khelkar's Dent O Spa Interior">
+            <div class="hero-overlay-badge">
+              <i data-lucide="map-pin" style="width: 18px; height: 18px; color: #c084fc;"></i>
+              <div>
+                <strong style="display:block; font-size: 13px;">205 Seasons Road, Opp. Croma</strong>
+                <span style="font-size: 11px; opacity: 0.85;">Opposite Kothari Hyundai, Sanewadi, Aundh</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-floating-stat">
+            <div style="background: #ede9fe; width: 42px; height: 42px; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #7c3aed;">
+              <i data-lucide="smile" style="width: 22px; height: 22px;"></i>
+            </div>
+            <div>
+              <div style="font-weight: 700; font-size: 15px; color: var(--dark);">Smile Aesthetics</div>
+              <div style="font-size: 12px; color: var(--text-muted);">Veneers & Full Mouth Makeover</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TREATMENTS SECTION -->
+  <section class="section" id="treatments">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Signature Dental Spa Care</span>
+        <h2 class="section-title">Advanced Dental & Aesthetic Services</h2>
+        <p class="section-subtitle">Precision prosthodontics and implantology delivered in a relaxing spa environment.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- 1 -->
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <i data-lucide="gem" style="width: 28px; height: 28px;"></i>
+          </div>
+          <h3 class="service-title">Porcelain Veneers & Smile Makeovers</h3>
+          <p class="service-desc">Ultra-thin, handcrafted ceramic laminates designed to correct discolored, chipped, or unevenly spaced teeth, crafting a natural, camera-ready smile.</p>
+          <ul class="service-features">
+            <li><i data-lucide="check-circle" style="width: 16px; height: 16px;"></i> Digital aesthetic preview</li>
+            <li><i data-lucide="check-circle" style="width: 16px; height: 16px;"></i> Minimal tooth enamel preparation</li>
+            <li><i data-lucide="check-circle" style="width: 16px; height: 16px;"></i> Stain-resistant porcelain finish</li>
+          </ul>
+          <a href="#book" class="service-cta">Inquire Veneers <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i></a>
+        </div>
+
+        <!-- 2 -->
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <i data-lucide="anchor" style="width: 28px; height: 28px;"></i>
+          </div>
+          <h3 class="service-title">Prosthodontics & Oral Implants</h3>
+          <p class="service-desc">Specialist dental implantology and full-arch rehabilitation for missing teeth, restoring complete masticatory function and facial bone support.</p>
+          <ul class="service-features">
+            <li><i data-lucide="check-circle" style="width: 16px; height: 16px;"></i> MDS Prosthodontist expertise</li>
+            <li><i data-lucide="check-circle" style="width: 16px; height: 16px;"></i> All-on-4 / All-on-6 full arch solutions</li>
+            <li><i data-lucide="check-circle" style="width: 16px; height: 16px;"></i> Premium Swiss & German implant brands</li>
+          </ul>
+          <a href="#book" class="service-cta">Inquire Implants <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i></a>
+        </div>
+
+        <!-- 3 -->
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <i data-lucide="sparkle" style="width: 28px; height: 28px;"></i>
+          </div>
+          <h3 class="service-title">Dental Spa Teeth Whitening</h3>
+          <p class="service-desc">In-office LED power bleaching and gentle stain polishing that lightens teeth by up to 6–8 shades in a single relaxing session without tooth sensitivity.</p>
+          <ul class="service-features">
+            <li><i data-lucide="check-circle" style="width: 16px; height: 16px;"></i> Instant brightening results</li>
+            <li><i data-lucide="check-circle" style="width: 16px; height: 16px;"></i> Enamel-safe desensitizing agents</li>
+            <li><i data-lucide="check-circle" style="width: 16px; height: 16px;"></i> Tea, wine & tobacco stain removal</li>
+          </ul>
+          <a href="#book" class="service-cta">Book Whitening <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i></a>
+        </div>
+
+        <!-- 4 -->
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <i data-lucide="shield-check" style="width: 28px; height: 28px;"></i>
+          </div>
+          <h3 class="service-title">Painless Root Canal & Crowns</h3>
+          <p class="service-desc">Single-sitting rotary endodontics with precision apex locators followed by metal-free translucent zirconia crowns for permanent tooth restoration.</p>
+          <ul class="service-features">
+            <li><i data-lucide="check-circle" style="width: 16px; height: 16px;"></i> Fast, painless treatment</li>
+            <li><i data-lucide="check-circle" style="width: 16px; height: 16px;"></i> Biocompatible zirconia crowns</li>
+            <li><i data-lucide="check-circle" style="width: 16px; height: 16px;"></i> 10-year crown warranty</li>
+          </ul>
+          <a href="#book" class="service-cta">Inquire RCT <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i></a>
+        </div>
+
+        <!-- 5 -->
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <i data-lucide="smile" style="width: 28px; height: 28px;"></i>
+          </div>
+          <h3 class="service-title">Clear Aligners & Orthodontics</h3>
+          <p class="service-desc">Straighten misaligned teeth discreetly using transparent invisible aligner trays. Eat what you like with completely removable trays.</p>
+          <ul class="service-features">
+            <li><i data-lucide="check-circle" style="width: 16px; height: 16px;"></i> 100% transparent aligner trays</li>
+            <li><i data-lucide="check-circle" style="width: 16px; height: 16px;"></i> 3D treatment outcome preview</li>
+            <li><i data-lucide="check-circle" style="width: 16px; height: 16px;"></i> Comfortable & bracket-free</li>
+          </ul>
+          <a href="#book" class="service-cta">Aligner Assessment <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i></a>
+        </div>
+
+        <!-- 6 -->
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <i data-lucide="heart" style="width: 28px; height: 28px;"></i>
+          </div>
+          <h3 class="service-title">Preventive Oral Spa & Gum Care</h3>
+          <p class="service-desc">Deep ultrasonic scaling, air polishing, and gentle laser gingival therapy to rejuvenate gums, prevent periodontal pocketing, and keep breath fresh.</p>
+          <ul class="service-features">
+            <li><i data-lucide="check-circle" style="width: 16px; height: 16px;"></i> Non-surgical deep pocket curettage</li>
+            <li><i data-lucide="check-circle" style="width: 16px; height: 16px;"></i> Air-flow stain elimination</li>
+            <li><i data-lucide="check-circle" style="width: 16px; height: 16px;"></i> Fluoride remineralization</li>
+          </ul>
+          <a href="#book" class="service-cta">Oral Spa Clean <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOCTOR PROFILE SECTION -->
+  <section class="section doctor-section" id="doctor">
+    <div class="container">
+      <div class="doctor-card">
+        <div class="doctor-photo-wrap">
+          <img src="assets/doctor.jpg" alt="Dr. Sayalee - MDS Prosthodontist" class="doctor-photo">
+          <div class="doctor-exp-tag">Specialist Clinician</div>
+        </div>
+
+        <div class="doctor-details">
+          <span class="section-badge">Lead Specialist</span>
+          <h3>Dr. Sayalee</h3>
+          <div class="doctor-sub">
+            <i data-lucide="stethoscope" style="width: 18px; height: 18px;"></i>
+            <span>MDS · Prosthodontist & Oral Implantologist</span>
+          </div>
+
+          <p class="doctor-bio">
+            Dr. Sayalee brings postgraduate specialist mastery in Prosthodontics and Oral Implantology to Khelkar's Dent O Spa. Working alongside senior clinician Dr. Anupama Khelkar (20+ years clinical experience), the practice is dedicated to delivering painless, high-precision aesthetic dental restorations in an ambient, spa-inspired setting.
+          </p>
+
+          <div class="doctor-badges">
+            <div class="doc-badge">
+              <i data-lucide="check" style="width: 16px; height: 16px; color: var(--primary);"></i>
+              MDS Prosthodontist & Implantologist
+            </div>
+            <div class="doc-badge">
+              <i data-lucide="check" style="width: 16px; height: 16px; color: var(--primary);"></i>
+              Full Mouth Rehabilitation Expert
+            </div>
+            <div class="doc-badge">
+              <i data-lucide="check" style="width: 16px; height: 16px; color: var(--primary);"></i>
+              Cosmetic Veneers & Smile Designing
+            </div>
+            <div class="doc-badge">
+              <i data-lucide="check" style="width: 16px; height: 16px; color: var(--primary);"></i>
+              Gentle Spa-Level Comfort Protocol
+            </div>
+          </div>
+
+          <div>
+            <a href="https://wa.me/918850976936?text=Hello%20Dr.%20Sayalee,%20I%20would%20like%20to%20consult%20at%20Khelkar's%20Dent%20O%20Spa." class="btn btn-primary" target="_blank">
+              <i data-lucide="message-square" style="width: 18px; height: 18px;"></i>
+              <span>Consult Dr. Sayalee on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMINGS & APPOINTMENT SCHEDULING CARD -->
+  <section class="section" id="timings">
+    <div class="container">
+      <div class="schedule-grid" id="book">
+        <!-- Timings Card -->
+        <div class="timings-card">
+          <span class="section-badge">OPD Timings</span>
+          <h3><i data-lucide="calendar-clock" style="color: var(--primary);"></i> Dent O Spa Hours</h3>
+          
+          <div class="timing-slot highlight">
+            <div>
+              <div class="timing-day">Morning Session</div>
+              <div style="font-size: 13px; color: var(--text-muted);">Monday to Saturday</div>
+            </div>
+            <div class="timing-hours">10:00 AM – 2:00 PM</div>
+          </div>
+
+          <div class="timing-slot highlight">
+            <div>
+              <div class="timing-day">Evening Session</div>
+              <div style="font-size: 13px; color: var(--text-muted);">Monday to Saturday</div>
+            </div>
+            <div class="timing-hours">5:00 PM – 9:00 PM</div>
+          </div>
+
+          <div class="timing-slot" style="opacity: 0.75; background: #fff1f2; border-color: #fecdd3;">
+            <div>
+              <div class="timing-day" style="color: #be123c;">Sunday</div>
+              <div style="font-size: 13px; color: #e11d48;">Weekly Off / Clinic Closed</div>
+            </div>
+            <div class="timing-hours" style="color: #be123c;">Closed</div>
+          </div>
+
+          <div class="timing-note">
+            <i data-lucide="info" style="width: 18px; height: 18px; color: var(--primary); flex-shrink: 0;"></i>
+            <span>Each appointment is scheduled with ample dedicated time so you enjoy a serene, unhurried dental spa session.</span>
+          </div>
+
+          <div style="margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border);">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+              <span style="font-size: 14px; font-weight: 600; color: var(--dark);">Direct Reception Line:</span>
+              <a href="tel:+918850976936" style="font-weight: 700; color: var(--primary); text-decoration: none; font-size: 16px;">
+                +91 88509 76936
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Appointment Form -->
+        <div class="appointment-card">
+          <span style="background: rgba(255,255,255,0.2); padding: 4px 12px; border-radius: 999px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">1-Tap Direct Booking</span>
+          <h3 style="margin-top: 10px;">Reserve a Dental Spa Slot</h3>
+          <p>Send your requested time and dental concern directly to Khelkar's Dent O Spa on WhatsApp.</p>
+
+          <form id="appointment-form" onsubmit="handleAppointmentSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Your Full Name *</label>
+                <input type="text" id="patient-name" class="form-control" placeholder="e.g. Shruti Kulkarni" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Phone Number *</label>
+                <input type="tel" id="patient-phone" class="form-control" placeholder="e.g. 98220XXXXX" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Preferred Date *</label>
+                <input type="date" id="pref-date" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Preferred Slot *</label>
+                <select id="pref-slot" class="form-control" required>
+                  <option value="Morning (10:00 AM - 2:00 PM)">Morning: 10:00 AM – 2:00 PM</option>
+                  <option value="Evening (5:00 PM - 9:00 PM)">Evening: 5:00 PM – 9:00 PM</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Desired Treatment / Consultation *</label>
+              <select id="visit-reason" class="form-control" required>
+                <option value="Smile Makeover / Veneers">Cosmetic Smile Makeover / Veneers</option>
+                <option value="Dental Implants Consultation">Dental Implants / Missing Teeth</option>
+                <option value="Teeth Whitening Spa Session">Teeth Whitening & Oral Spa</option>
+                <option value="Painless Root Canal & Crown">Root Canal & Ceramic Crown</option>
+                <option value="Clear Invisible Aligners">Invisible Clear Aligners</option>
+                <option value="General Comprehensive Checkup">Comprehensive Dental Checkup</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-whatsapp" style="width: 100%; padding: 14px; font-size: 15px; margin-top: 8px;">
+              <i data-lucide="send" style="width: 18px; height: 18px;"></i>
+              <span>Send Request on WhatsApp</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VERIFIED REVIEWS -->
+  <section class="section" id="reviews" style="background: #f1f5f9;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Patient Reviews</span>
+        <h2 class="section-title">What Our Patients Experience</h2>
+        <p class="section-subtitle">Real feedback from clients visiting Khelkar's Dent O Spa on Seasons Road, Aundh.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-rating">
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b;"></i>
+          </div>
+          <p class="review-text">
+            "The concept of 'Dent O Spa' is truly real here. Calming music, zero clinical smell, and Dr. Sayalee is amazingly gentle. My porcelain veneers completely transformed my smile!"
+          </p>
+          <div class="review-author">
+            <div class="author-avatar">SK</div>
+            <div>
+              <div class="author-name">Swati Kane</div>
+              <div class="author-sub">Sanewadi, Aundh</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-rating">
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b;"></i>
+          </div>
+          <p class="review-text">
+            "Both Dr. Sayalee and Dr. Anupama Khelkar are exceptionally competent. They placed an implant for my lower molar with zero post-operative swelling. Five-star dental clinic in Pune."
+          </p>
+          <div class="review-author">
+            <div class="author-avatar">AP</div>
+            <div>
+              <div class="author-name">Arun Paranjpe</div>
+              <div class="author-sub">Seasons Road, Aundh</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-rating">
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b;"></i>
+            <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b;"></i>
+          </div>
+          <p class="review-text">
+            "Got teeth cleaning and power whitening done before my brother's wedding. The results were dramatic and didn't cause any tooth sensitivity at all. Wonderful team."
+          </p>
+          <div class="review-author">
+            <div class="author-avatar">PR</div>
+            <div>
+              <div class="author-name">Prachi Rane</div>
+              <div class="author-sub">Parihar Chowk, Aundh</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION & CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="section-badge">Clinic Location</span>
+          <h2 class="contact-title">Visit Khelkar's Dent O Spa</h2>
+          <p style="color: var(--text-muted); margin-bottom: 28px; font-size: 15px;">Located conveniently on Seasons Road opposite Kothari Hyundai and Croma.</p>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i data-lucide="map-pin"></i>
+            </div>
+            <div class="contact-detail">
+              <h4>Address</h4>
+              <p>205, Seasons Road, Opposite Kothari Hyundai & Croma,<br>Sanewadi, Aundh, Pune, Maharashtra 411007</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i data-lucide="phone"></i>
+            </div>
+            <div class="contact-detail">
+              <h4>Direct Telephone</h4>
+              <p><a href="tel:+918850976936" style="color: var(--primary); text-decoration: none; font-weight: 600;">+91 88509 76936</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i data-lucide="clock"></i>
+            </div>
+            <div class="contact-detail">
+              <h4>Consultation Slots</h4>
+              <p>Mon – Sat: 10:00 AM – 2:00 PM & 5:00 PM – 9:00 PM<br><span style="color: #ef4444; font-weight: 500;">Sunday: Closed</span></p>
+            </div>
+          </div>
+
+          <div style="margin-top: 32px; display: flex; gap: 14px;">
+            <a href="https://maps.google.com/?q=Seasons+Road+Aundh+Pune+Croma" target="_blank" class="btn btn-outline">
+              <i data-lucide="navigation" style="width: 16px; height: 16px;"></i>
+              <span>Get Directions</span>
+            </a>
+            <a href="https://wa.me/918850976936" target="_blank" class="btn btn-whatsapp">
+              <i data-lucide="message-circle" style="width: 16px; height: 16px;"></i>
+              <span>WhatsApp Us</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-map">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.261294867491!2d73.8052162!3d18.5622432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf3835698b67%3A0x2897ec76241b777a!2sSeasons%20Rd%2C%20Aundh%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1710400000000!5m2!1sen!2sin" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-title">Khelkar's Dent O Spa</div>
+          <p>
+            Advanced Prosthodontics, Dental Implants, Porcelain Veneers, and luxury dental spa care by Dr. Sayalee (MDS) on Seasons Road, Aundh, Pune.
+          </p>
+          <div style="margin-top: 16px; font-size: 13px; color: #64748b;">
+            205 Seasons Road, Opp. Croma, Sanewadi, Aundh — 411007
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Signature Treatments</h4>
+          <ul class="footer-links">
+            <li><a href="#treatments">Porcelain Smile Veneers</a></li>
+            <li><a href="#treatments">Prosthodontics & Implants</a></li>
+            <li><a href="#treatments">Teeth Whitening Spa</a></li>
+            <li><a href="#treatments">Painless Root Canals</a></li>
+            <li><a href="#treatments">Invisible Clear Aligners</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Clinic Contact</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+918850976936">Phone: +91 88509 76936</a></li>
+            <li><a href="https://wa.me/918850976936">WhatsApp: +91 88509 76936</a></li>
+            <li><a href="#timings">Morning: 10:00 AM – 2:00 PM</a></li>
+            <li><a href="#timings">Evening: 5:00 PM – 9:00 PM</a></li>
+            <li><a href="#timings">Sunday Closed</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Khelkar's Dent O Spa. All rights reserved.</p>
+        <p style="margin-top: 8px; font-size: 12px; color: #475569;">
+          Mobile Website Concept engineered by <a href="https://harshu777.github.io/pune-website-demos/" style="color: #c084fc; text-decoration: none;">Pune Web Ventures</a>. Verified local business preview.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/918850976936?text=Hi%20Khelkar's%20Dent%20O%20Spa,%20I%20would%20like%20to%20inquire%20about%20a%20dental%20appointment." class="floating-whatsapp" target="_blank" aria-label="Book on WhatsApp">
+    <span class="whatsapp-tooltip">Chat on WhatsApp</span>
+    <i data-lucide="message-circle" style="width: 32px; height: 32px;"></i>
+  </a>
+
+  <!-- SCRIPTS -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Set today's date in appointment form
+    document.addEventListener('DOMContentLoaded', () => {
+      const dateInput = document.getElementById('pref-date');
+      if (dateInput) {
+        const today = new Date().toISOString().split('T')[0];
+        dateInput.min = today;
+        dateInput.value = today;
+      }
+    });
+
+    // Form submission handler
+    function handleAppointmentSubmit(event) {
+      event.preventDefault();
+      const name = document.getElementById('patient-name').value;
+      const phone = document.getElementById('patient-phone').value;
+      const date = document.getElementById('pref-date').value;
+      const slot = document.getElementById('pref-slot').value;
+      const reason = document.getElementById('visit-reason').value;
+
+      const message = `Hello Khelkar's Dent O Spa,\n\nI would like to book a dental appointment:\n• Patient Name: ${name}\n• Phone: ${phone}\n• Preferred Date: ${date}\n• Preferred Slot: ${slot}\n• Desired Treatment: ${reason}\n\nPlease confirm appointment availability. Thank you!`;
+
+      const whatsappUrl = `https://wa.me/918850976936?text=${encodeURIComponent(message)}`;
+      window.open(whatsappUrl, '_blank');
+    }
+  </script>
+</body>
+</html>
