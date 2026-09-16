@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whitefield Dental Lounge | Cosmetic Dentistry & Implants — Seasons Business Square, Aundh Pune</title>
+  
+  <!-- Open Graph / Meta -->
+  <meta name="description" content="Whitefield Dental Lounge — Advanced Dental Implants, Cosmetic Smile Makeovers, Painless Single-Visit RCT, and Laser Dentistry by Dr. Paritosh Kabra at Seasons Business Square, Aundh, Pune.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Whitefield Dental Lounge | Advanced Aesthetic & Implant Clinic — Aundh">
+  <meta property="og:description" content="Painless laser dentistry, zirconia smile makeovers, and immediate implants at 501 Seasons Business Square, Aundh. Book your consultation on WhatsApp.">
+  <meta property="og:image" content="https://harshu777.github.io/pune-website-demos/whitefielddental/assets/hero.jpg">
+  <meta property="og:url" content="https://harshu777.github.io/pune-website-demos/whitefielddental/">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    :root {
+      --primary: #0891b2;        /* Vibrant Dental Cyan */
+      --primary-dark: #0e7490;
+      --primary-light: #e0f2fe;
+      --primary-glow: rgba(8, 145, 178, 0.16);
+      --secondary: #3b82f6;      /* Modern Clinical Blue */
+      --secondary-light: #eff6ff;
+      --accent: #f59e0b;        /* Gold Award Accent */
+      --dark: #0f172a;          /* Deep Slate */
+      --text: #334155;
+      --text-muted: #64748b;
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --border: #e2e8f0;
+      --radius: 16px;
+      --shadow: 0 10px 30px -8px rgba(15, 23, 42, 0.08);
+      --shadow-lg: 0 20px 42px -12px rgba(8, 145, 178, 0.18);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4, .brand-title {
+      font-family: 'Outfit', sans-serif;
+      color: var(--dark);
+      font-weight: 700;
+    }
+
+    /* CONCEPT PREVIEW BAR - 100px DESKTOP PADDING STANDARD */
+    .concept-bar {
+      background: linear-gradient(90deg, #0f172a 0%, #164e63 100%);
+      color: #bae6fd;
+      font-size: 13px;
+      padding: 10px 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .concept-badge {
+      background: #0891b2;
+      color: #fff;
+      padding: 3px 10px;
+      border-radius: 9999px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-right: 10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .concept-link {
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    .concept-link:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    /* HEADER & NAVIGATION - 100px DESKTOP PADDING STANDARD */
+    header {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 41px;
+      z-index: 999;
+    }
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 100px;
+      max-width: 100%;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+    .brand-icon {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, #0891b2 0%, #0284c7 100%);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      box-shadow: 0 4px 12px rgba(8, 145, 178, 0.3);
+    }
+    .brand-title {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--dark);
+      letter-spacing: -0.3px;
+      line-height: 1.1;
+    }
+    .brand-sub {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+    .nav-link {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    .nav-link:hover {
+      color: var(--primary);
+    }
+    .nav-cta {
+      background: linear-gradient(135deg, #0891b2 0%, #0e7490 100%);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 9999px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 14px rgba(8, 145, 178, 0.28);
+      transition: all 0.2s ease;
+    }
+    .nav-cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(8, 145, 178, 0.36);
+      color: white;
+    }
+
+    /* HERO SECTION */
+    .hero-section {
+      padding: 60px 100px;
+      background: linear-gradient(180deg, #f0fdfa 0%, #f8fafc 100%);
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 50px;
+      align-items: center;
+    }
+    .badge-rating {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--dark);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      margin-bottom: 20px;
+    }
+    .hero-title {
+      font-size: 46px;
+      line-height: 1.15;
+      font-weight: 800;
+      margin-bottom: 18px;
+      letter-spacing: -0.5px;
+    }
+    .hero-title span {
+      background: linear-gradient(135deg, #0891b2 0%, #0284c7 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-desc {
+      font-size: 16px;
+      color: var(--text-muted);
+      margin-bottom: 28px;
+      line-height: 1.7;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 36px;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #0891b2 0%, #0e7490 100%);
+      color: white;
+      padding: 14px 28px;
+      border-radius: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 8px 24px rgba(8, 145, 178, 0.3);
+      transition: all 0.2s ease;
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(8, 145, 178, 0.4);
+      color: white;
+    }
+    .btn-secondary {
+      background: #ffffff;
+      color: var(--dark);
+      border: 1px solid var(--border);
+      padding: 14px 24px;
+      border-radius: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s;
+    }
+    .btn-secondary:hover {
+      background: #f1f5f9;
+      border-color: #cbd5e1;
+    }
+    .hero-highlights {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+    }
+    .highlight-item {
+      display: flex;
+      flex-direction: column;
+    }
+    .highlight-val {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--dark);
+    }
+    .highlight-label {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    /* HERO IMAGE CARD */
+    .hero-card {
+      position: relative;
+    }
+    .hero-image-wrapper {
+      position: relative;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      border: 4px solid #ffffff;
+    }
+    .hero-image-wrapper img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      display: block;
+    }
+    .doctor-pill {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      background: rgba(15, 23, 42, 0.88);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 16px;
+      padding: 16px;
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .doc-avatar {
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      object-fit: cover;
+      border: 2px solid #38bdf8;
+    }
+    .doc-info h4 {
+      color: white;
+      font-size: 15px;
+      margin-bottom: 2px;
+    }
+    .doc-info p {
+      color: #94a3b8;
+      font-size: 12px;
+    }
+
+    /* SECTION CONTAINERS */
+    .section-container {
+      padding: 80px 100px;
+    }
+    .section-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 50px auto;
+    }
+    .section-badge {
+      display: inline-block;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      padding: 4px 14px;
+      border-radius: 9999px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-size: 34px;
+      line-height: 1.25;
+      margin-bottom: 12px;
+    }
+    .section-desc {
+      font-size: 15px;
+      color: var(--text-muted);
+    }
+
+    /* CLINICAL SPECIALTIES GRID */
+    .specialties-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .spec-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 30px;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow);
+    }
+    .spec-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+      border-color: #38bdf8;
+    }
+    .spec-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .spec-card h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .spec-card p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+    .spec-link {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 13px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* CLINICAL EXCELLENCE FEATURE */
+    .excellence-banner {
+      background: linear-gradient(135deg, #0f172a 0%, #164e63 100%);
+      color: white;
+      border-radius: 28px;
+      padding: 50px 60px;
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+    .excellence-banner h3 {
+      color: white;
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+    .excellence-banner p {
+      color: #94a3b8;
+      font-size: 15px;
+      margin-bottom: 24px;
+      line-height: 1.7;
+    }
+    .ex-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .ex-list li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 14px;
+      color: #e2e8f0;
+      font-weight: 500;
+    }
+    .ex-list li i {
+      color: #38bdf8;
+    }
+    .ex-image {
+      border-radius: 20px;
+      overflow: hidden;
+      border: 3px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+    }
+    .ex-image img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* DOCTOR PROFILE SECTION */
+    .doctor-section {
+      background: white;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .doctor-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .doctor-photo-frame {
+      position: relative;
+      border-radius: 24px;
+      overflow: hidden;
+      border: 4px solid white;
+      box-shadow: var(--shadow-lg);
+    }
+    .doctor-photo-frame img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      display: block;
+    }
+    .doc-tag {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: #0891b2;
+      color: white;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    .doc-heading h2 {
+      font-size: 34px;
+      margin-bottom: 6px;
+    }
+    .doc-subtitle {
+      font-size: 15px;
+      color: var(--primary);
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+    .doc-bio {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.8;
+      margin-bottom: 24px;
+    }
+    .credential-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 30px;
+    }
+    .cred-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      padding: 16px;
+      border-radius: 14px;
+    }
+    .cred-card h4 {
+      font-size: 14px;
+      margin-bottom: 4px;
+      color: var(--dark);
+    }
+    .cred-card p {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    /* INTERACTIVE WHATSAPP APPOINTMENT BUILDER */
+    .builder-section {
+      background: linear-gradient(180deg, #f8fafc 0%, #f0fdfa 100%);
+    }
+    .builder-wrapper {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 40px 50px;
+      box-shadow: var(--shadow-lg);
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .builder-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 8px;
+    }
+    .form-control {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      font-family: inherit;
+      font-size: 14px;
+      background: #f8fafc;
+      color: var(--text);
+      outline: none;
+      transition: all 0.2s;
+    }
+    .form-control:focus {
+      border-color: var(--primary);
+      background: #ffffff;
+      box-shadow: 0 0 0 3px rgba(8, 145, 178, 0.12);
+    }
+    .slots-pill-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 8px;
+    }
+    .slot-pill {
+      background: #f1f5f9;
+      padding: 8px 14px;
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.2s;
+    }
+    .slot-pill:hover, .slot-pill.active {
+      background: var(--primary);
+      color: white;
+    }
+    .builder-btn {
+      width: 100%;
+      background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+      color: white;
+      padding: 16px;
+      border: none;
+      border-radius: 14px;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.3);
+      transition: all 0.2s;
+    }
+    .builder-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(37, 211, 102, 0.4);
+    }
+
+    /* REVIEWS SECTION */
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .review-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+    }
+    .review-stars {
+      display: flex;
+      gap: 4px;
+      color: #f59e0b;
+      margin-bottom: 14px;
+    }
+    .review-text {
+      font-size: 14px;
+      color: var(--text);
+      line-height: 1.6;
+      margin-bottom: 18px;
+      flex-grow: 1;
+      font-style: italic;
+    }
+    .reviewer-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-top: 1px solid #f1f5f9;
+      padding-top: 14px;
+    }
+    .reviewer-initial {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      font-weight: 700;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .reviewer-details h5 {
+      font-size: 13px;
+      color: var(--dark);
+    }
+    .reviewer-details span {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    /* LOCATION & TIMINGS */
+    .location-section {
+      background: white;
+      border-top: 1px solid var(--border);
+    }
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+    .info-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 32px;
+    }
+    .info-card h3 {
+      font-size: 20px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .schedule-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px dashed var(--border);
+      font-size: 14px;
+    }
+    .schedule-row:last-child {
+      border-bottom: none;
+    }
+    .schedule-day {
+      font-weight: 600;
+      color: var(--dark);
+    }
+    .schedule-time {
+      color: var(--primary-dark);
+      font-weight: 700;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--dark);
+      color: #94a3b8;
+      padding: 60px 100px 30px 100px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: 40px;
+    }
+    .footer-brand h3 {
+      color: white;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    .footer-brand p {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .footer-col h4 {
+      color: white;
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 14px;
+    }
+    .footer-links a {
+      color: #94a3b8;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover {
+      color: white;
+    }
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+    }
+
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 1024px) {
+      .concept-bar {
+        padding: 10px 48px;
+      }
+      .nav-container {
+        padding: 14px 48px;
+      }
+      .hero-section, .section-container, footer {
+        padding-left: 48px;
+        padding-right: 48px;
+      }
+      .hero-section {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .specialties-grid, .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .doctor-grid {
+        grid-template-columns: 1fr;
+      }
+      .excellence-banner {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .concept-bar {
+        padding: 10px 20px;
+        flex-direction: column;
+        gap: 6px;
+        text-align: center;
+      }
+      .nav-container {
+        padding: 12px 20px;
+      }
+      .nav-links {
+        display: none;
+      }
+      .hero-section, .section-container, footer {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .hero-title {
+        font-size: 32px;
+      }
+      .specialties-grid, .reviews-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-highlights {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+      .builder-grid {
+        grid-template-columns: 1fr;
+      }
+      .location-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- CONCEPT PREVIEW BAR - 100px DESKTOP PADDING STANDARD -->
+  <div class="concept-bar">
+    <div style="display: flex; align-items: center;">
+      <span class="concept-badge"><i data-lucide="sparkles" style="width: 12px; height: 12px;"></i> Live Concept Demo</span>
+      <span>Designed for <strong>Whitefield Dental Lounge (Dr. Paritosh Kabra)</strong></span>
+    </div>
+    <div>
+      <a href="https://wa.me/919420132081?text=Hi%20Harshal%2C%20I%20saw%20the%20Whitefield%20Dental%20Lounge%20website%20demo%20and%20want%20to%20claim%20it%20for%20my%20business." target="_blank" class="concept-link">
+        Claim this site for ₹5,999 + ₹3,500/yr hosting &rarr;
+      </a>
+    </div>
+  </div>
+
+  <!-- NAVIGATION - 100px DESKTOP PADDING STANDARD -->
+  <header>
+    <div class="nav-container">
+      <a href="#" class="brand">
+        <div class="brand-icon">
+          <i data-lucide="shield-check" style="width: 24px; height: 24px;"></i>
+        </div>
+        <div>
+          <div class="brand-title">WHITEFIELD</div>
+          <div class="brand-sub">Dental Lounge · Aundh</div>
+        </div>
+      </a>
+
+      <div class="nav-links">
+        <a href="#specialties" class="nav-link">Treatments</a>
+        <a href="#doctor" class="nav-link">About Dr. Kabra</a>
+        <a href="#booking" class="nav-link">Book Appointment</a>
+        <a href="#reviews" class="nav-link">Patient Reviews</a>
+        <a href="#location" class="nav-link">Contact & Hours</a>
+      </div>
+
+      <a href="https://wa.me/919105104010?text=Hello%20Whitefield%20Dental%20Lounge%2C%20I%20would%20like%20to%20book%20a%20consultation%20with%20Dr.%20Paritosh%20Kabra." target="_blank" class="nav-cta">
+        <i data-lucide="message-circle" style="width: 16px; height: 16px;"></i>
+        <span>Book on WhatsApp</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section">
+    <div>
+      <div class="badge-rating">
+        <i data-lucide="star" style="width: 14px; height: 14px; fill: #f59e0b; stroke: none;"></i>
+        <span>4.9★ Rated on Practo & Google (100+ Verified Patients)</span>
+      </div>
+      <h1 class="hero-title">
+        Advanced Aesthetic Smile Design & <span>Painless Laser Dentistry</span> in Aundh.
+      </h1>
+      <p class="hero-desc">
+        Welcome to Whitefield Dental Lounge at Seasons Business Square. Led by <strong>Dr. Paritosh Kabra</strong> (Cosmetic Dentist & Implantologist), we combine state-of-the-art dental technology with gentle, patient-first care for pain-free treatments.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#booking" class="btn-primary">
+          <i data-lucide="calendar" style="width: 18px; height: 18px;"></i>
+          <span>Schedule Visit</span>
+        </a>
+        <a href="tel:+919105104010" class="btn-secondary">
+          <i data-lucide="phone-call" style="width: 18px; height: 18px;"></i>
+          <span>+91 91051 04010</span>
+        </a>
+      </div>
+
+      <div class="hero-highlights">
+        <div class="highlight-item">
+          <span class="highlight-val">10+ Yrs</span>
+          <span class="highlight-label">Clinical Experience</span>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-val">Single-Visit</span>
+          <span class="highlight-label">Painless Root Canals</span>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-val">5th Floor</span>
+          <span class="highlight-label">Seasons Business Sq.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- HERO IMAGE CARD -->
+    <div class="hero-card">
+      <div class="hero-image-wrapper">
+        <img src="assets/hero.jpg" alt="Whitefield Dental Lounge Operatory">
+        <div class="doctor-pill">
+          <img src="assets/doctor.jpg" alt="Dr. Paritosh Kabra" class="doc-avatar">
+          <div class="doc-info">
+            <h4>Dr. Paritosh Kabra</h4>
+            <p>BDS · Cosmetic Dentistry & Implantology</p>
+          </div>
+          <div style="margin-left: auto;">
+            <i data-lucide="badge-check" style="width: 24px; height: 24px; color: #38bdf8;"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECIALTIES SECTION -->
+  <section class="section-container" id="specialties">
+    <div class="section-header">
+      <span class="section-badge">Comprehensive Clinical Care</span>
+      <h2 class="section-title">Specialized Treatments Crafted for Your Perfect Smile</h2>
+      <p class="section-desc">From single-visit root canals to full-mouth implant rehabilitation, experience gentle dental precision in a calm, modern lounge setting.</p>
+    </div>
+
+    <div class="specialties-grid">
+      <!-- Card 1 -->
+      <div class="spec-card">
+        <div class="spec-icon">
+          <i data-lucide="sparkles" style="width: 26px; height: 26px;"></i>
+        </div>
+        <h3>Cosmetic Smile Makeover</h3>
+        <p>Custom porcelain veneers, composite bonding, and zirconia aesthetic crowns tailored to enhance your facial symmetry and confidence.</p>
+        <a href="https://wa.me/919105104010?text=Hi%20Whitefield%20Dental%2C%20I%20want%20to%20enquire%20about%20Cosmetic%20Smile%20Design." target="_blank" class="spec-link">
+          Consult on WhatsApp <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+        </a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="spec-card">
+        <div class="spec-icon">
+          <i data-lucide="anchor" style="width: 26px; height: 26px;"></i>
+        </div>
+        <h3>Dental Implants & Prosthesis</h3>
+        <p>Titanium and ceramic tooth replacement with immediate socket placement. Permanent, natural chewing function designed to last a lifetime.</p>
+        <a href="https://wa.me/919105104010?text=Hi%20Whitefield%20Dental%2C%20I%20want%20to%20enquire%20about%20Dental%20Implants." target="_blank" class="spec-link">
+          Consult on WhatsApp <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+        </a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="spec-card">
+        <div class="spec-icon">
+          <i data-lucide="activity" style="width: 26px; height: 26px;"></i>
+        </div>
+        <h3>Single-Visit Painless RCT</h3>
+        <p>Precision root canal treatment using rotary endodontics and apex locators, eliminating dental infection comfortably in just one appointment.</p>
+        <a href="https://wa.me/919105104010?text=Hi%20Whitefield%20Dental%2C%20I%20want%20to%20enquire%20about%20Root%20Canal%20Treatment." target="_blank" class="spec-link">
+          Consult on WhatsApp <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+        </a>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="spec-card">
+        <div class="spec-icon">
+          <i data-lucide="smile" style="width: 26px; height: 26px;"></i>
+        </div>
+        <h3>Clear Aligners & Orthodontics</h3>
+        <p>Discreet, wire-free transparent aligners that straighten crooked teeth without the hassle or embarrassment of traditional metallic brackets.</p>
+        <a href="https://wa.me/919105104010?text=Hi%20Whitefield%20Dental%2C%20I%20want%20to%20enquire%20about%20Clear%20Aligners." target="_blank" class="spec-link">
+          Consult on WhatsApp <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+        </a>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="spec-card">
+        <div class="spec-icon">
+          <i data-lucide="sun" style="width: 26px; height: 26px;"></i>
+        </div>
+        <h3>Laser Teeth Whitening</h3>
+        <p>Professional in-chair bleaching and stain removal that lifts years of tea, coffee, and tobacco discoloration up to 8 shades brighter in 45 mins.</p>
+        <a href="https://wa.me/919105104010?text=Hi%20Whitefield%20Dental%2C%20I%20want%20to%20enquire%20about%20Teeth%20Whitening." target="_blank" class="spec-link">
+          Consult on WhatsApp <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+        </a>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="spec-card">
+        <div class="spec-icon">
+          <i data-lucide="shield" style="width: 26px; height: 26px;"></i>
+        </div>
+        <h3>Preventive & Pediatric Care</h3>
+        <p>Routine dental scaling, dental fluorides, pit & fissure sealants for kids, and custom night guards for bruxism (teeth grinding).</p>
+        <a href="https://wa.me/919105104010?text=Hi%20Whitefield%20Dental%2C%20I%20want%20to%20enquire%20about%20Preventive%20Dental%20Care." target="_blank" class="spec-link">
+          Consult on WhatsApp <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- EXCELLENCE BANNER -->
+    <div class="excellence-banner">
+      <div>
+        <h3>Precision Technology. Zero Dental Anxiety.</h3>
+        <p>At Whitefield Dental Lounge, we adhere to hospital-grade sterilization protocols and ultra-fine micro-instrumentation to preserve your natural teeth.</p>
+        <ul class="ex-list">
+          <li><i data-lucide="check-circle-2" style="width: 18px; height: 18px;"></i> Class-B Autoclave 4-Tier Sterilization for 100% Patient Safety</li>
+          <li><i data-lucide="check-circle-2" style="width: 18px; height: 18px;"></i> Low-Radiation Digital Radiovisiography (RVG) Imaging</li>
+          <li><i data-lucide="check-circle-2" style="width: 18px; height: 18px;"></i> Premium European Bio-compatible Restorative Materials</li>
+          <li><i data-lucide="check-circle-2" style="width: 18px; height: 18px;"></i> Transparent Cost Estimates & Patient Education at Every Step</li>
+        </ul>
+      </div>
+      <div class="ex-image">
+        <img src="assets/implants.jpg" alt="Clinical Excellence at Whitefield Dental Lounge">
+      </div>
+    </div>
+  </section>
+
+  <!-- DOCTOR SECTION -->
+  <section class="section-container doctor-section" id="doctor">
+    <div class="doctor-grid">
+      <div class="doctor-photo-frame">
+        <span class="doc-tag">Lead Implantologist & Dentist</span>
+        <img src="assets/doctor.jpg" alt="Dr. Paritosh Kabra">
+      </div>
+
+      <div>
+        <div class="doc-heading">
+          <span class="section-badge">Meet Your Doctor</span>
+          <h2>Dr. Paritosh Kabra</h2>
+          <div class="doc-subtitle">BDS · Specialist in Cosmetic Dentistry & Dental Implantology</div>
+        </div>
+        <p class="doc-bio">
+          Dr. Paritosh Kabra brings over a decade of specialized dental expertise to Aundh. Known for his calm bedside manner, meticulous eye for smile aesthetics, and conservative approach that prioritizes saving natural teeth, Dr. Kabra has treated thousands of satisfied patients across Pune.
+        </p>
+
+        <div class="credential-cards">
+          <div class="cred-card">
+            <h4><i data-lucide="award" style="width: 16px; height: 16px; color: #0891b2; vertical-align: middle;"></i> 10+ Years Experience</h4>
+            <p>Proven track record in implant surgeries and complex cosmetic restorations.</p>
+          </div>
+          <div class="cred-card">
+            <h4><i data-lucide="smile" style="width: 16px; height: 16px; color: #0891b2; vertical-align: middle;"></i> 4.9★ Rated on Practo</h4>
+            <p>Consistently praised for gentle, virtually pain-free dental procedures.</p>
+          </div>
+          <div class="cred-card">
+            <h4><i data-lucide="map-pin" style="width: 16px; height: 16px; color: #0891b2; vertical-align: middle;"></i> Seasons Business Sq.</h4>
+            <p>Modern suite on 5th floor with ample parking and elevator access.</p>
+          </div>
+          <div class="cred-card">
+            <h4><i data-lucide="badge-dollar-sign" style="width: 16px; height: 16px; color: #0891b2; vertical-align: middle;"></i> ₹500 Consultation</h4>
+            <p>Honest diagnosis, digital X-rays, and detailed treatment counseling.</p>
+          </div>
+        </div>
+
+        <a href="https://wa.me/919105104010?text=Hello%20Dr.%20Kabra%2C%20I%20would%20like%20to%20schedule%20a%20consultation%20at%20Whitefield%20Dental%20Lounge." target="_blank" class="btn-primary">
+          <i data-lucide="message-circle" style="width: 18px; height: 18px;"></i>
+          <span>Chat with Dr. Kabra on WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE APPOINTMENT BUILDER -->
+  <section class="section-container builder-section" id="booking">
+    <div class="section-header">
+      <span class="section-badge">Fast 1-Tap Booking</span>
+      <h2 class="section-title">Schedule Your Consultation in 30 Seconds</h2>
+      <p class="section-desc">Select your desired treatment and convenient time slot to send a pre-filled WhatsApp booking request directly to our reception.</p>
+    </div>
+
+    <div class="builder-wrapper">
+      <div class="builder-grid">
+        <div class="form-group">
+          <label>Your Full Name</label>
+          <input type="text" id="patientName" class="form-control" placeholder="e.g. Rahul Sharma" value="Rahul Sharma">
+        </div>
+        <div class="form-group">
+          <label>Treatment Required</label>
+          <select id="treatmentType" class="form-control">
+            <option value="Consultation & Routine Checkup">Consultation & Routine Checkup (₹500)</option>
+            <option value="Tooth Pain / Root Canal Treatment">Tooth Pain / Root Canal Treatment (RCT)</option>
+            <option value="Dental Implants Consultation">Dental Implants Consultation</option>
+            <option value="Cosmetic Smile Makeover & Veneers">Cosmetic Smile Makeover & Veneers</option>
+            <option value="Teeth Cleaning & Polishing">Teeth Cleaning & Polishing</option>
+            <option value="Invisalign / Clear Aligners">Invisalign / Clear Aligners</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group" style="margin-bottom: 24px;">
+        <label>Preferred Visit Day</label>
+        <div class="slots-pill-group" id="dayPills">
+          <span class="slot-pill active" onclick="selectDay(this, 'Today')">Today</span>
+          <span class="slot-pill" onclick="selectDay(this, 'Tomorrow')">Tomorrow</span>
+          <span class="slot-pill" onclick="selectDay(this, 'This Weekend')">This Weekend</span>
+          <span class="slot-pill" onclick="selectDay(this, 'Upcoming Weekday')">Upcoming Weekday</span>
+        </div>
+      </div>
+
+      <div class="form-group" style="margin-bottom: 30px;">
+        <label>Preferred Time Slot</label>
+        <div class="slots-pill-group" id="timePills">
+          <span class="slot-pill active" onclick="selectTime(this, 'Morning (10:30 AM – 1:00 PM)')">Morning (10:30 AM – 1:00 PM)</span>
+          <span class="slot-pill" onclick="selectTime(this, 'Afternoon (2:00 PM – 5:00 PM)')">Afternoon (2:00 PM – 5:00 PM)</span>
+          <span class="slot-pill" onclick="selectTime(this, 'Evening (5:30 PM – 8:00 PM)')">Evening (5:30 PM – 8:00 PM)</span>
+        </div>
+      </div>
+
+      <button class="builder-btn" onclick="sendBookingWhatsApp()">
+        <i data-lucide="message-circle" style="width: 20px; height: 20px;"></i>
+        <span>Send Appointment Request via WhatsApp</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- REVIEWS SECTION -->
+  <section class="section-container" id="reviews">
+    <div class="section-header">
+      <span class="section-badge">Verified Patient Feedback</span>
+      <h2 class="section-title">What Patients Say About Dr. Paritosh Kabra</h2>
+      <p class="section-desc">Real reviews from Pune residents who received treatment at Whitefield Dental Lounge.</p>
+    </div>
+
+    <div class="reviews-grid">
+      <!-- Review 1 -->
+      <div class="review-card">
+        <div class="review-stars">
+          <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b; stroke: none;"></i>
+          <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b; stroke: none;"></i>
+          <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b; stroke: none;"></i>
+          <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b; stroke: none;"></i>
+          <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b; stroke: none;"></i>
+        </div>
+        <p class="review-text">
+          "Dr. Paritosh Kabra is extremely skilled and patient-friendly. I had terrible dental anxiety, but he completed my root canal without any pain whatsoever. The clinic at Seasons Business Square is spotless and equipped with high-tech equipment."
+        </p>
+        <div class="reviewer-meta">
+          <div class="reviewer-initial">SD</div>
+          <div class="reviewer-details">
+            <h5>Saurabh Deshmukh</h5>
+            <span>Aundh Resident · Practo Verified</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="review-card">
+        <div class="review-stars">
+          <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b; stroke: none;"></i>
+          <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b; stroke: none;"></i>
+          <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b; stroke: none;"></i>
+          <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b; stroke: none;"></i>
+          <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b; stroke: none;"></i>
+        </div>
+        <p class="review-text">
+          "Got two dental implants placed by Dr. Kabra. He explained the entire surgical process with 3D digital images before touching anything. Recovery was very quick and the teeth look 100% natural. Highly recommended in Aundh!"
+        </p>
+        <div class="reviewer-meta">
+          <div class="reviewer-initial">PK</div>
+          <div class="reviewer-details">
+            <h5>Pooja Kulkarni</h5>
+            <span>Baner · Google Review</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="review-card">
+        <div class="review-stars">
+          <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b; stroke: none;"></i>
+          <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b; stroke: none;"></i>
+          <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b; stroke: none;"></i>
+          <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b; stroke: none;"></i>
+          <i data-lucide="star" style="width: 16px; height: 16px; fill: #f59e0b; stroke: none;"></i>
+        </div>
+        <p class="review-text">
+          "Very honest doctor who doesn't suggest unnecessary procedures. I went for tooth sensitivity and he resolved it conservatively with enamel treatment instead of asking for costly crowns. Clean lounge and very polite staff."
+        </p>
+        <div class="reviewer-meta">
+          <div class="reviewer-initial">AM</div>
+          <div class="reviewer-details">
+            <h5>Amit Mehta</h5>
+            <span>Sanewadi Aundh · Practo Verified</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION & TIMINGS -->
+  <section class="section-container location-section" id="location">
+    <div class="section-header">
+      <span class="section-badge">Visit Our Lounge</span>
+      <h2 class="section-title">Convenient Location & Flexible Timings</h2>
+      <p class="section-desc">Located at Seasons Business Square with elevator access, ample parking, and Sunday morning hours.</p>
+    </div>
+
+    <div class="location-grid">
+      <!-- Address Card -->
+      <div class="info-card">
+        <h3><i data-lucide="map-pin" style="color: #0891b2;"></i> Clinic Address</h3>
+        <p style="font-size: 15px; line-height: 1.7; margin-bottom: 20px; color: var(--dark);">
+          <strong>Whitefield Dental Lounge</strong><br>
+          Office No. 501, 5th Floor, Seasons Business Square,<br>
+          Sanewadi, Aundh, Pune, Maharashtra 411007.<br>
+          <span style="color: var(--text-muted); font-size: 13px;">Landmark: Near Croma Showroom & Gaikwad Petrol Pump (Opp. Kothari Hyundai)</span>
+        </p>
+        
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <a href="https://maps.google.com/?cid=12849177481941991746" target="_blank" class="btn-secondary" style="font-size: 13px; padding: 10px 18px;">
+            <i data-lucide="navigation" style="width: 14px; height: 14px;"></i>
+            <span>Google Maps Directions</span>
+          </a>
+          <a href="tel:+919105104010" class="btn-secondary" style="font-size: 13px; padding: 10px 18px;">
+            <i data-lucide="phone" style="width: 14px; height: 14px;"></i>
+            <span>+91 91051 04010</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Schedule Card -->
+      <div class="info-card">
+        <h3><i data-lucide="clock" style="color: #0891b2;"></i> Operating Hours</h3>
+        <div class="schedule-row">
+          <span class="schedule-day">Monday – Friday</span>
+          <span class="schedule-time">10:00 AM – 8:00 PM</span>
+        </div>
+        <div class="schedule-row">
+          <span class="schedule-day">Saturday</span>
+          <span class="schedule-time">10:00 AM – 8:00 PM</span>
+        </div>
+        <div class="schedule-row">
+          <span class="schedule-day">Sunday</span>
+          <span class="schedule-time">10:00 AM – 5:00 PM (Prior Appointment)</span>
+        </div>
+        <div class="schedule-row">
+          <span class="schedule-day">Consultation Fee</span>
+          <span class="schedule-time" style="color: #0891b2;">₹500 (Detailed Checkup)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Whitefield Dental Lounge</h3>
+        <p>
+          High-precision aesthetic smile designing, painless microscope root canal therapy, and dental implants by Dr. Paritosh Kabra in Sanewadi, Aundh, Pune.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Key Treatments</h4>
+        <ul class="footer-links">
+          <li><a href="#specialties">Cosmetic Smile Makeover</a></li>
+          <li><a href="#specialties">Dental Implants</a></li>
+          <li><a href="#specialties">Painless Root Canals</a></li>
+          <li><a href="#specialties">Clear Aligners</a></li>
+          <li><a href="#specialties">Teeth Whitening</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Clinic Contact</h4>
+        <ul class="footer-links">
+          <li><i data-lucide="phone" style="width: 12px; height: 12px; vertical-align: middle;"></i> +91 91051 04010</li>
+          <li><i data-lucide="map-pin" style="width: 12px; height: 12px; vertical-align: middle;"></i> 501 Seasons Business Sq, Aundh</li>
+          <li><i data-lucide="calendar" style="width: 12px; height: 12px; vertical-align: middle;"></i> Mon–Sat 10am–8pm | Sun 10am–5pm</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Whitefield Dental Lounge. All rights reserved.</p>
+      <p style="color: #64748b;">
+        Concept demonstration designed by <a href="https://harshal.cloud" target="_blank" style="color: #38bdf8; text-decoration: none;">Harshal Baviskar</a> · Fast Pune Web Development
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    let selectedDay = 'Today';
+    let selectedTime = 'Morning (10:30 AM – 1:00 PM)';
+
+    function selectDay(element, day) {
+      document.querySelectorAll('#dayPills .slot-pill').forEach(el => el.classList.remove('active'));
+      element.classList.add('active');
+      selectedDay = day;
+    }
+
+    function selectTime(element, time) {
+      document.querySelectorAll('#timePills .slot-pill').forEach(el => el.classList.remove('active'));
+      element.classList.add('active');
+      selectedTime = time;
+    }
+
+    function sendBookingWhatsApp() {
+      const patient = document.getElementById('patientName').value.trim() || 'Patient';
+      const treatment = document.getElementById('treatmentType').value;
+      
+      const msg = `Hello Whitefield Dental Lounge,\n\nI would like to book a dental appointment with Dr. Paritosh Kabra.\n\n👤 Patient: ${patient}\n🦷 Treatment: ${treatment}\n📅 Preferred Day: ${selectedDay}\n⏰ Preferred Slot: ${selectedTime}\n\nPlease confirm availability. Thank you!`;
+      
+      const encoded = encodeURIComponent(msg);
+      window.open(`https://wa.me/919105104010?text=${encoded}`, '_blank');
+    }
+  </script>
+</body>
+</html>
